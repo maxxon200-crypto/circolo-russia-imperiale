@@ -1,31 +1,39 @@
 /* =====================================================================
    Circolo Russia Imperiale — Foglio di stile principale
+   Palette: identita russa nobilitata (avorio, blu notte, granato, oro).
    Tutti i valori derivano da DESIGN.md (guida assoluta).
    ===================================================================== */
 
 /* ---------- 2. Token di colore (da DESIGN.md) ---------- */
 :root {
-  /* Base — avorio della carta antica e dello stucco, non "crema da AI" */
-  --avorio:        #F4EFE6;   /* sfondo principale, avorio caldo */
-  --avorio-chiaro: #FBF8F1;   /* superfici sollevate, card */
-  --pergamena:     #E8DEC9;   /* fasce e sezioni alternate */
+  /* Base chiara — avorio della carta antica, bianco caldo */
+  --avorio:        #F4EFE6;
+  --avorio-chiaro: #FBF8F1;
+  --pergamena:     #EBE3D2;
 
-  /* Inchiostro — nero imperiale */
-  --nero:          #15110C;   /* testo principale e fondali profondi */
-  --nero-soft:     #3A332A;   /* testo secondario */
+  /* Blu — istituzionale forte: blu notte / zaffiro imperiale */
+  --blu:           #14284B;
+  --blu-zaffiro:   #1B2F57;
+  --blu-scuro:     #0E1B33;
+  --blu-chiaro:    #2E4A7D;
 
-  /* Oro — l'identita, oro brunito/antico (NON oro giallo acceso) */
-  --oro:           #A9863B;   /* accenti, titoli, fregi, profili */
-  --oro-scuro:     #7C6026;   /* hover, dettagli incisi */
-  --oro-chiaro:    #D8C089;   /* riflessi tenui, bordi sottili dorati */
+  /* Rosso — lacca/granato scuro e nobile, accento per CTA */
+  --granato:       #7C1F2E;
+  --granato-scuro: #5E1622;
+  --granato-chiaro:#9B3340;
 
-  /* Smalti imperiali — usati RARAMENTE, per accenti speciali */
-  --zaffiro:       #1B3A5B;   /* blu degli Ordini imperiali */
-  --lacca:         #7B2233;   /* rosso lacca/granato, per richiami speciali */
+  /* Oro — brunito/antico, la rifinitura preziosa */
+  --oro:           #B8924A;
+  --oro-scuro:     #8A6B30;
+  --oro-chiaro:    #DBC081;
+
+  /* Inchiostro — testi su fondo chiaro */
+  --nero:          #15110C;
+  --nero-soft:     #3A332A;
 
   /* Funzionali */
-  --linea:         #D8CCB4;   /* righe e bordi sottili */
-  --linea-oro:     #C7A24E;   /* filetti dorati sottili (separatori firma) */
+  --linea:         #D8CCB4;
+  --linea-oro:     #C7A24E;
 
   /* ---------- 3. Tipografia (da DESIGN.md) ---------- */
   --font-display: "Cormorant Garamond", "EB Garamond", "Playfair Display", Georgia, serif;
@@ -33,10 +41,10 @@
   --font-util:    "Spectral SC", "Inter", system-ui, sans-serif;
 
   /* ---------- 4. Layout ---------- */
-  --max:      1140px;   /* larghezza massima contenuto */
-  --max-read:  720px;   /* colonna di lettura stretta per articoli */
-  --radius:    4px;     /* border-radius contenuto, quasi squadrato */
-  --gap-sez: clamp(4.5rem, 9vw, 8rem);  /* ritmo verticale tra sezioni */
+  --max:      1140px;
+  --max-read:  720px;
+  --radius:    4px;
+  --gap-sez: clamp(4.5rem, 9vw, 8rem);
 }
 
 /* ---------- Reset essenziale ---------- */
@@ -59,8 +67,8 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
-a { color: var(--oro-scuro); text-decoration: none; }
-a:hover { color: var(--nero); }
+a { color: var(--granato); text-decoration: none; }
+a:hover { color: var(--granato-scuro); }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
@@ -87,7 +95,7 @@ select:focus-visible {
   position: absolute;
   left: -999px;
   top: 0;
-  background: var(--nero);
+  background: var(--blu);
   color: var(--avorio);
   padding: 0.7rem 1.1rem;
   z-index: 200;
@@ -106,60 +114,109 @@ select:focus-visible {
 
 .section { padding-block: var(--gap-sez); }
 .section--pergamena { background: var(--pergamena); }
-.section--scuro { background: var(--nero); color: var(--avorio); }
-.section--scuro h2,
-.section--scuro h3 { color: var(--avorio); }
+
+/* Sezioni a fondo blu notte (istituzionali) */
+.section--blu {
+  background:
+    linear-gradient(160deg, var(--blu-zaffiro) 0%, var(--blu) 55%, var(--blu-scuro) 100%);
+  color: var(--avorio);
+}
+.section--blu h2,
+.section--blu h3 { color: var(--avorio); }
+.section--blu p { color: #DCE2EC; }
+
+/* Sezione granato (l'unico invito forte) */
+.section--granato {
+  background:
+    linear-gradient(160deg, var(--granato-chiaro) 0%, var(--granato) 55%, var(--granato-scuro) 100%);
+  color: var(--avorio);
+}
+.section--granato h2,
+.section--granato h3 { color: var(--avorio); }
+.section--granato p { color: #F1DEDF; }
 
 /* ---------- Etichetta di sezione (eyebrow) ---------- */
 .eyebrow {
   font-family: var(--font-util);
   font-size: 0.78rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--oro-scuro);
   margin: 0 0 0.8rem;
 }
-.section--scuro .eyebrow { color: var(--oro-chiaro); }
+.section--blu .eyebrow,
+.section--granato .eyebrow,
+.hero .eyebrow { color: var(--oro-chiaro); }
 
-/* ---------- Filetto dorato: il "filo" firma ---------- */
+/* ---------- Fregio araldico dorato: il "filo" firma (§7) ---------- */
+.fregio {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+.fregio::before,
+.fregio::after {
+  content: "";
+  height: 1px;
+  flex: 0 0 auto;
+  width: clamp(38px, 11vw, 92px);
+}
+.fregio::before { background: linear-gradient(90deg, transparent, var(--linea-oro)); }
+.fregio::after  { background: linear-gradient(90deg, var(--linea-oro), transparent); }
+.fregio .rombo {
+  width: 9px;
+  height: 9px;
+  flex: none;
+  background: var(--oro);
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 3px rgba(184, 146, 74, 0.18);
+}
+.fregio--center { justify-content: center; }
+/* Variante su fondo scuro: oro piu chiaro */
+.section--blu .fregio::before,
+.hero .fregio::before { background: linear-gradient(90deg, transparent, var(--oro-chiaro)); }
+.section--blu .fregio::after,
+.hero .fregio::after { background: linear-gradient(90deg, var(--oro-chiaro), transparent); }
+.section--blu .fregio .rombo,
+.section--granato .fregio .rombo,
+.hero .fregio .rombo { background: var(--oro-chiaro); box-shadow: 0 0 0 3px rgba(219, 192, 129, 0.16); }
+.section--granato .fregio::before { background: linear-gradient(90deg, transparent, var(--oro-chiaro)); }
+.section--granato .fregio::after { background: linear-gradient(90deg, var(--oro-chiaro), transparent); }
+
+/* Filetto semplice (separatore minore) */
 .filetto {
-  width: 84px;
-  height: 0;
-  border: none;
+  width: 84px; height: 0; border: none;
   border-top: 1px solid var(--linea-oro);
   margin: 1.4rem 0;
 }
 .filetto--center { margin-inline: auto; }
-.filetto--hero {
-  width: 120px;
-  border-top: 1px solid var(--oro);
-  opacity: 0.9;
-}
 
-/* Intestazione di sezione con eyebrow + titolo */
+/* Intestazione di sezione con eyebrow + titolo + fregio */
 .sezione-testa { max-width: 56ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .sezione-testa h2 {
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  font-weight: 400;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 500;
 }
 
 /* =====================================================================
-   HEADER / NAVIGAZIONE
+   HEADER / NAVIGAZIONE — chiaro, con filo oro
    ===================================================================== */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(244, 239, 230, 0.92);
+  background: rgba(251, 248, 241, 0.93);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--linea);
+  box-shadow: 0 1px 0 rgba(184, 146, 74, 0.25);
 }
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-block: 0.85rem;
+  padding-block: 0.8rem;
 }
 .brand {
   display: flex;
@@ -169,26 +226,29 @@ select:focus-visible {
 }
 .brand:hover { color: var(--nero); }
 .brand .stemma {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   flex: none;
   display: grid;
   place-items: center;
-  border: 1px solid var(--linea-oro);
+  border: 1px solid var(--oro);
   border-radius: var(--radius);
   font-family: var(--font-util);
   font-size: 0.5rem;
   text-align: center;
   line-height: 1.05;
   color: var(--oro-scuro);
-  background: var(--avorio-chiaro);
+  background: linear-gradient(160deg, var(--blu-zaffiro), var(--blu));
   padding: 2px;
 }
+.brand .stemma { color: var(--oro-chiaro); }
 .brand .brand-name {
   font-family: var(--font-display);
-  font-size: 1.18rem;
+  font-size: 1.22rem;
+  font-weight: 600;
   letter-spacing: 0.02em;
   line-height: 1.05;
+  color: var(--blu);
 }
 .brand .brand-name small {
   display: block;
@@ -213,9 +273,8 @@ select:focus-visible {
 }
 .nav-toggle span {
   display: block;
-  width: 22px;
-  height: 1.5px;
-  background: var(--nero);
+  width: 22px; height: 1.5px;
+  background: var(--blu);
 }
 
 .main-nav ul {
@@ -223,20 +282,19 @@ select:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 1.4rem;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
 }
 .main-nav a {
   font-family: var(--font-util);
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--nero-soft);
+  color: var(--blu);
   padding-block: 0.3rem;
   position: relative;
 }
 .main-nav a:hover,
-.main-nav a[aria-current="page"] { color: var(--oro-scuro); }
+.main-nav a[aria-current="page"] { color: var(--granato); }
 .main-nav a[aria-current="page"]::after {
   content: "";
   position: absolute;
@@ -246,72 +304,76 @@ select:focus-visible {
 }
 
 /* =====================================================================
-   HERO — la firma "soglia imperiale"
+   HERO — la firma "soglia imperiale" (fondo blu notte profondo)
    ===================================================================== */
 .hero {
   position: relative;
-  background: var(--nero);
   color: var(--avorio);
   overflow: hidden;
   isolation: isolate;
+  background: var(--blu-scuro);
 }
-/* Placeholder immagine storica (sostituire con foto reale) */
+/* Placeholder immagine storica (sostituire con foto reale scura) */
 .hero-media {
   position: absolute;
   inset: 0;
   z-index: -2;
   display: grid;
-  place-items: center;
+  place-items: end center;
   background:
-    radial-gradient(120% 90% at 50% 0%, #241c12 0%, #15110c 70%);
+    radial-gradient(120% 100% at 75% 0%, var(--blu-zaffiro) 0%, var(--blu) 45%, var(--blu-scuro) 100%);
   color: var(--oro-chiaro);
   font-family: var(--font-util);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   letter-spacing: 0.06em;
   text-align: center;
-  padding: 2rem;
+  padding: 1.4rem;
 }
 .hero-media .ph-tag {
-  border: 1px dashed rgba(216, 192, 137, 0.45);
+  border: 1px dashed rgba(219, 192, 129, 0.4);
   border-radius: var(--radius);
-  padding: 0.9rem 1.3rem;
-  max-width: 30rem;
+  padding: 0.6rem 1rem;
+  max-width: 32rem;
+  opacity: 0.6;
 }
-/* Velo scuro per leggibilita del testo sopra la futura foto */
+/* Velo per leggibilita + vignettatura calda d'angolo */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg,
-    rgba(21, 17, 12, 0.55) 0%,
-    rgba(21, 17, 12, 0.78) 100%);
+  background:
+    radial-gradient(90% 80% at 18% 30%, rgba(184, 146, 74, 0.12) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(14, 27, 51, 0.45) 0%, rgba(14, 27, 51, 0.82) 100%);
 }
 .hero-inner {
   position: relative;
-  min-height: clamp(30rem, 78vh, 46rem);
+  min-height: clamp(32rem, 80vh, 48rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-block: clamp(4rem, 12vh, 8rem);
-  max-width: 46rem;
+  max-width: 48rem;
 }
-.hero .eyebrow { color: var(--oro-chiaro); }
 .hero h1 {
   color: var(--avorio);
-  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-size: clamp(2.8rem, 6.5vw, 5rem);
   font-weight: 500;
-  line-height: 1.08;
-  margin-bottom: 0.4em;
+  line-height: 1.06;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.35em;
 }
-.hero h1 .oro { color: var(--oro-chiaro); }
+.hero h1 .oro {
+  color: var(--oro-chiaro);
+  display: block;
+}
 .hero-sub {
-  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  color: #E9E1D2;
-  max-width: 34rem;
-  margin-bottom: 1.6rem;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  color: #E7EBF2;
+  max-width: 36rem;
+  margin-bottom: 0;
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.6rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
 
 /* =====================================================================
    PULSANTI
@@ -324,30 +386,46 @@ select:focus-visible {
   font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 1.6rem;
   border-radius: var(--radius);
-  border: 1px solid var(--oro);
+  border: 1px solid transparent;
   cursor: pointer;
-  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
 }
+.btn:hover { transform: translateY(-1px); }
+
+/* Primario: granato (CTA d'onore) */
+.btn--rosso {
+  background: var(--granato);
+  color: var(--avorio);
+  border-color: var(--granato);
+  box-shadow: 0 6px 16px rgba(94, 22, 34, 0.25);
+}
+.btn--rosso:hover { background: var(--granato-scuro); border-color: var(--granato-scuro); color: #fff; }
+
+/* Oro pieno */
 .btn--oro {
   background: var(--oro);
-  color: var(--nero);
+  color: var(--blu-scuro);
   border-color: var(--oro);
 }
 .btn--oro:hover { background: var(--oro-scuro); border-color: var(--oro-scuro); color: var(--avorio); }
+
+/* Contorno chiaro su fondo scuro */
 .btn--ghost {
   background: transparent;
   color: var(--avorio);
-  border-color: rgba(216, 192, 137, 0.6);
+  border-color: rgba(219, 192, 129, 0.6);
 }
 .btn--ghost:hover { border-color: var(--oro-chiaro); color: var(--oro-chiaro); }
+
+/* Contorno su fondo chiaro */
 .btn--scuro {
   background: transparent;
-  color: var(--nero);
+  color: var(--blu);
   border-color: var(--oro);
 }
-.btn--scuro:hover { background: var(--nero); color: var(--avorio); border-color: var(--nero); }
+.btn--scuro:hover { background: var(--blu); color: var(--avorio); border-color: var(--blu); }
 
 /* =====================================================================
    SEZIONE MISSIONE
@@ -358,32 +436,37 @@ select:focus-visible {
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 }
+@media (min-width: 880px) {
+  .missione { grid-template-columns: 1.2fr 1fr; }
+}
 .missione .intro { max-width: 60ch; }
 .missione .intro h2 {
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  font-weight: 400;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 500;
 }
 .statuto {
   background: var(--avorio-chiaro);
   border: 1px solid var(--linea);
-  border-left: 2px solid var(--linea-oro);
+  border-top: 3px solid var(--oro);
   border-radius: var(--radius);
-  padding: clamp(1.4rem, 3vw, 2rem);
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  box-shadow: 0 16px 38px rgba(20, 40, 75, 0.08);
 }
 .statuto .ph-tag {
   font-family: var(--font-util);
   font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--oro-scuro);
   display: inline-block;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 .statuto blockquote {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.32rem;
   line-height: 1.5;
-  color: var(--nero-soft);
+  color: var(--blu);
 }
 
 /* =====================================================================
@@ -402,45 +485,47 @@ select:focus-visible {
   .griglia--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Scheda generica */
+/* Scheda con profondita: si solleva dal fondo, filo dorato in alto */
 .card {
   background: var(--avorio-chiaro);
   border: 1px solid var(--linea);
+  border-top: 3px solid var(--oro);
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 26px rgba(20, 40, 75, 0.10);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(21, 17, 12, 0.1);
-  border-color: var(--linea-oro);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 42px rgba(20, 40, 75, 0.20);
+  border-top-color: var(--granato);
 }
 .card-media {
   aspect-ratio: 3 / 2;
   display: grid;
   place-items: center;
-  background: var(--pergamena);
-  color: var(--oro-scuro);
+  background: linear-gradient(160deg, var(--blu-zaffiro), var(--blu-scuro));
+  color: var(--oro-chiaro);
   font-family: var(--font-util);
   font-size: 0.76rem;
   letter-spacing: 0.05em;
   text-align: center;
   padding: 1rem;
-  border-bottom: 1px solid var(--linea);
 }
 .card-body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
 .card .data {
   font-family: var(--font-util);
   font-size: 0.85rem;
-  color: var(--oro-scuro);
+  color: var(--granato);
   margin-bottom: 0.5rem;
 }
 .card h3 {
   font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: var(--blu);
 }
 .card p { font-size: 0.98rem; color: var(--nero-soft); margin-bottom: 1rem; }
 .card .card-link {
@@ -452,12 +537,12 @@ select:focus-visible {
   color: var(--oro-scuro);
 }
 .card .card-link::after { content: " \203A"; }
-.card:hover .card-link { color: var(--nero); }
+.card:hover .card-link { color: var(--granato); }
 
 /* Galleria anteprima */
 .galleria-grid {
   display: grid;
-  gap: 0.8rem;
+  gap: 0.9rem;
   grid-template-columns: repeat(2, 1fr);
 }
 @media (min-width: 720px) { .galleria-grid { grid-template-columns: repeat(4, 1fr); } }
@@ -465,45 +550,56 @@ select:focus-visible {
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
-  background: var(--pergamena);
-  border: 1px solid var(--linea);
+  background: linear-gradient(160deg, var(--blu-zaffiro), var(--blu-scuro));
+  border: 1px solid rgba(219, 192, 129, 0.35);
   border-radius: var(--radius);
-  color: var(--oro-scuro);
+  color: var(--oro-chiaro);
   font-family: var(--font-util);
   font-size: 0.72rem;
   text-align: center;
   padding: 0.7rem;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(14, 27, 51, 0.30);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-.galleria-item:hover { border-color: var(--linea-oro); transform: translateY(-3px); }
+.galleria-item:hover {
+  border-color: var(--oro-chiaro);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(14, 27, 51, 0.45);
+}
 
 /* Link "vedi tutto" sotto una griglia */
 .vedi-tutto {
-  margin-top: clamp(1.6rem, 3vw, 2.4rem);
+  margin-top: clamp(1.8rem, 3vw, 2.6rem);
   display: flex;
   justify-content: center;
 }
+/* Su fondo blu, il pulsante contorno usa l'oro chiaro */
+.section--blu .btn--scuro { color: var(--avorio); border-color: var(--oro-chiaro); }
+.section--blu .btn--scuro:hover { background: var(--oro); color: var(--blu-scuro); border-color: var(--oro); }
 
 /* =====================================================================
-   INVITO "DIVENTA SOCIO" (fondo scuro solenne)
+   INVITO "DIVENTA SOCIO" (fondo granato, l'unico)
    ===================================================================== */
 .invito {
   text-align: center;
   max-width: 42rem;
   margin-inline: auto;
 }
-.invito h2 { color: var(--avorio); font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 400; }
-.invito p { color: #E2D9C8; font-size: 1.1rem; }
+.invito h2 { color: var(--avorio); font-size: clamp(2rem, 4.5vw, 3.1rem); font-weight: 500; }
+.invito p { color: #F1DEDF; font-size: 1.12rem; }
 .invito .hero-actions { justify-content: center; }
+.section--granato .btn--ghost { border-color: rgba(244, 239, 230, 0.7); }
+.section--granato .btn--ghost:hover { border-color: #fff; color: #fff; }
 
 /* =====================================================================
-   FOOTER
+   FOOTER (blu profondo)
    ===================================================================== */
 .site-footer {
-  background: var(--nero);
-  color: #CDC4B2;
+  background: var(--blu-scuro);
+  color: #C4CCDA;
   font-size: 0.95rem;
   padding-block: clamp(3rem, 6vw, 4.5rem) 2rem;
+  border-top: 3px solid var(--oro);
 }
 .footer-grid {
   display: grid;
@@ -521,14 +617,14 @@ select:focus-visible {
   color: var(--oro-chiaro);
   margin-bottom: 1rem;
 }
-.site-footer a { color: #DAD0BE; }
+.site-footer a { color: #D2D9E5; }
 .site-footer a:hover { color: var(--oro-chiaro); }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
 .footer-brand .stemma-foot {
   display: inline-grid;
   place-items: center;
-  width: 54px; height: 54px;
-  border: 1px solid var(--oro-scuro);
+  width: 56px; height: 56px;
+  border: 1px solid var(--oro);
   border-radius: var(--radius);
   color: var(--oro-chiaro);
   font-family: var(--font-util);
@@ -538,11 +634,11 @@ select:focus-visible {
   padding: 3px;
   margin-bottom: 1rem;
 }
-.footer-brand p { color: #B7AE9C; max-width: 32ch; }
+.footer-brand p { color: #9FA9BC; max-width: 32ch; }
 .footer-bottom {
   margin-top: 2.6rem;
   padding-top: 1.4rem;
-  border-top: 1px solid rgba(124, 96, 38, 0.4);
+  border-top: 1px solid rgba(184, 146, 74, 0.35);
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem 1.4rem;
@@ -550,14 +646,12 @@ select:focus-visible {
   font-family: var(--font-util);
   font-size: 0.78rem;
   letter-spacing: 0.04em;
-  color: #9A917F;
+  color: #7C879C;
 }
 
 /* =====================================================================
    5. MOVIMENTO — rivelazioni delicate, tempi variati
    ===================================================================== */
-/* Solo quando il JS e attivo (html.js) il contenuto parte nascosto e
-   si rivela allo scroll. Senza JS resta tutto visibile (robustezza + SEO). */
 .js .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -566,13 +660,13 @@ select:focus-visible {
 .js .reveal.is-visible { opacity: 1; transform: none; }
 
 /* Comparsa morbida dell'hero, una volta sola */
-.hero h1, .hero .eyebrow, .hero-sub, .hero .filetto, .hero-actions {
+.hero h1, .hero .eyebrow, .hero-sub, .hero .fregio, .hero-actions {
   animation: heroIn 1.2s ease both;
 }
 .hero .eyebrow { animation-delay: 0.1s; }
 .hero h1 { animation-delay: 0.25s; }
 .hero-sub { animation-delay: 0.5s; }
-.hero .filetto { animation-delay: 0.65s; }
+.hero .fregio { animation-delay: 0.65s; }
 .hero-actions { animation-delay: 0.8s; }
 @keyframes heroIn {
   from { opacity: 0; transform: translateY(14px); }
@@ -582,7 +676,7 @@ select:focus-visible {
 /* Rispetta sempre le preferenze di riduzione del movimento */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
 
 /* =====================================================================
@@ -596,12 +690,12 @@ select:focus-visible {
     left: 0; right: 0;
     background: var(--avorio-chiaro);
     border-bottom: 1px solid var(--linea);
-    box-shadow: 0 12px 24px rgba(21, 17, 12, 0.08);
+    box-shadow: 0 12px 24px rgba(20, 40, 75, 0.12);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
   }
-  .main-nav.open { max-height: 70vh; }
+  .main-nav.open { max-height: 80vh; }
   .main-nav ul {
     flex-direction: column;
     gap: 0;

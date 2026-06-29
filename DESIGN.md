@@ -19,87 +19,111 @@ storia, alla cultura e alle tradizioni dell'Impero Russo.
 - **Lingua:** italiano.
 - **Compito principale di ogni pagina:** far conoscere il Circolo, le sue attività e la sua
   cultura, e invitare ad avvicinarsi (iscriversi, partecipare agli eventi, leggere).
-- **Carattere:** elegante, autorevole, colto, ma accogliente e vivo. Non polveroso, non freddo.
+- **Carattere:** elegante, autorevole, colto, ricco e vivo. Non polveroso, non freddo, non spento.
 
 **Regola anti-slop:** ogni scelta nasce dal mondo dell'Impero Russo (i suoi materiali,
 la sua araldica, la sua arte), non da un template. Immagini storiche vere, testi curati,
-sobrietà aristocratica.
+sobrietà aristocratica ma con personalità cromatica forte.
 
 ---
 
 ## 1. La trappola da evitare (leggi prima di tutto)
 
-Il rischio numero uno per un sito "storico-elegante" è cadere nell'estetica AI di default:
-sfondo crema, grande serif ad alto contrasto, un accento caldo, righe sottili ovunque.
-È riconoscibile e impersonale.
+Due rischi opposti da evitare:
 
-Per evitarlo, questo sistema **ancóra** la palette nero/oro/avorio (richiesta dal cliente) ai
-**materiali reali dell'epoca imperiale russa**: l'oro brunito delle icone e delle cornici,
-il blu zaffiro e il rosso lacca degli smalti e degli Ordini imperiali, l'avorio della carta
-antica e dello stucco dei palazzi. È la specificità storica a dare anima, non la palette in sé.
+1. **L'estetica AI di default:** tutto crema/beige con un accento caldo, righe sottili
+   ovunque, piatto e impersonale. Riconoscibile e anonimo.
+2. **Il poster acceso:** i tre colori della bandiera russa (bianco, blu, rosso) nelle loro
+   versioni primarie e sparate, in parità, tipo cartellone. Sembra una grafica da chiosco,
+   non un'istituzione di prestigio.
+
+La via giusta sta nel mezzo: **l'identità cromatica della bandiera russa, ma nobilitata.**
+Bianco diventa avorio caldo; blu diventa blu notte profondo, zaffiro istituzionale; rosso
+diventa lacca/granato scuro e prezioso. L'oro brunito lega il tutto e dà la nobiltà. Sono i
+materiali reali dell'epoca imperiale (l'oro delle icone, il blu degli Ordini, il rosso lacca
+degli smalti, l'avorio della carta antica) a dare anima, non i colori in sé.
 
 Tre regole non negoziabili:
 1. **Immagini storiche vere e di qualità** (Palazzo d'Inverno, Famiglia Imperiale, Pietro il
    Grande, opere d'arte). Mai stock generico, mai placeholder lasciati nel sito finito.
 2. **Testi curati in italiano**, dal tono colto ma chiaro. Niente marketese, niente frasi vuote.
-3. **Eleganza per sottrazione.** L'oro e l'ornamento usati con misura preziosa. Il kitsch
-   (oro sparato ovunque, fregi pesanti) è il nemico: ucciderebbe la credibilità.
+3. **Ricchezza disciplinata.** Colori profondi e ritmo cromatico forte, ma un colore domina
+   per sezione e l'oro è una rifinitura preziosa, mai sparato. Il kitsch è il nemico.
 
 ---
 
 ## 2. Token di colore
 
-Palette della **bandiera imperiale antica (nero, oro, bianco/avorio)**, arricchita dai
-materiali dell'epoca. Usa SEMPRE variabili CSS, mai hex sparsi nel codice.
+Palette dell'**identità russa nobilitata**: avorio, blu notte, granato e oro brunito.
+I colori della bandiera nelle loro versioni profonde e aristocratiche, mai accese.
+Usa SEMPRE variabili CSS, mai hex sparsi nel codice.
 
 ```css
 :root {
-  /* Base — avorio della carta antica e dello stucco, non "crema da AI" */
-  --avorio:        #F4EFE6;   /* sfondo principale, avorio caldo */
-  --avorio-chiaro: #FBF8F1;   /* superfici sollevate, card */
-  --pergamena:     #E8DEC9;   /* fasce e sezioni alternate */
+  /* Base chiara — avorio della carta antica, bianco caldo (NON bianco freddo) */
+  --avorio:        #F4EFE6;   /* sfondo chiaro principale, per la lettura */
+  --avorio-chiaro: #FBF8F1;   /* superfici sollevate, card su fondo chiaro */
+  --pergamena:     #EBE3D2;   /* fasce chiare alternate, leggermente più calde */
 
-  /* Inchiostro — nero imperiale */
-  --nero:          #15110C;   /* testo principale e fondali profondi */
-  --nero-soft:     #3A332A;   /* testo secondario */
+  /* Blu — colore ISTITUZIONALE forte: blu notte / zaffiro imperiale */
+  --blu:           #14284B;   /* blu notte, fondali di sezione e hero */
+  --blu-zaffiro:   #1B2F57;   /* variante zaffiro, gradienti e superfici */
+  --blu-scuro:     #0E1B33;   /* blu profondissimo, footer e fondali estremi */
+  --blu-chiaro:    #2E4A7D;   /* hover, bordi e dettagli su fondo blu */
 
-  /* Oro — l'identità, oro brunito/antico (NON oro giallo acceso) */
-  --oro:           #A9863B;   /* accenti, titoli, fregi, profili */
-  --oro-scuro:     #7C6026;   /* hover, dettagli incisi */
-  --oro-chiaro:    #D8C089;   /* riflessi tenui, bordi sottili dorati */
+  /* Rosso — lacca/granato scuro e nobile, ACCENTO per CTA ed evidenziazioni */
+  --granato:       #7C1F2E;   /* rosso lacca/granato, pulsanti e accenti */
+  --granato-scuro: #5E1622;   /* hover dei CTA, dettagli incisi */
+  --granato-chiaro:#9B3340;   /* richiami più tenui, bordi */
 
-  /* Smalti imperiali — usati RARAMENTE, per accenti speciali */
-  --zaffiro:       #1B3A5B;   /* blu degli Ordini imperiali */
-  --lacca:         #7B2233;   /* rosso lacca/granato, per richiami speciali */
+  /* Oro — brunito/antico, la rifinitura preziosa che lega tutto */
+  --oro:           #B8924A;   /* accenti, titoli chiave, fregi, profili */
+  --oro-scuro:     #8A6B30;   /* testo oro su fondo chiaro, hover */
+  --oro-chiaro:    #DBC081;   /* oro su fondo scuro, riflessi, filetti tenui */
+
+  /* Inchiostro — per i testi su fondo chiaro */
+  --nero:          #15110C;   /* testo principale su avorio */
+  --nero-soft:     #3A332A;   /* testo secondario su avorio */
 
   /* Funzionali */
-  --linea:         #D8CCB4;   /* righe e bordi sottili */
-  --linea-oro:     #C7A24E;   /* filetti dorati sottili (separatori firma) */
+  --linea:         #D8CCB4;   /* righe e bordi sottili su fondo chiaro */
+  --linea-oro:     #C7A24E;   /* filetti dorati sottili, separatori firma */
 }
 ```
 
-**Regola d'uso dell'oro:** l'oro è una **rifinitura preziosa**, non un colore di riempimento.
-Compare nei titoli chiave, nei filetti separatori, nei profili di un'immagine, nell'araldica.
-Se l'oro è ovunque, diventa kitsch e perde valore. Lo zaffiro e la lacca sono accenti rari,
-per un singolo dettaglio speciale (un titolo di sezione importante, un bordo d'onore), mai diffusi.
+**Ritmo cromatico (regola di sistema):** il sito NON deve essere tutto chiaro. Alterna le
+sezioni per dare respiro e identità:
+- sezioni di **lettura** (testi, articoli, missione): fondo **avorio/pergamena**, testo scuro;
+- sezioni **istituzionali e d'apertura** (hero, eventi, inviti forti): fondo **blu notte**,
+  testo avorio e accenti oro;
+- **un solo** momento per pagina può usare il **granato** come fondo pieno (di norma il CTA
+  "Diventa socio"): è il colore più raro e prezioso, mai diffuso.
 
-> **Variante "fondo scuro solenne"** (per l'hero o sezioni d'apertura): fondo `--nero` con
-> testo `--avorio` e oro come unico accento. Dà gravità e prestigio. Usala per i momenti
-> più solenni (hero, intestazioni di sezione), non per i testi lunghi da leggere.
+**Regola d'uso dei colori:**
+- **Un colore domina per sezione.** Gli altri due restano accenti. Non mettere mai blu, rosso
+  e oro accesi in parità nello stesso blocco.
+- **L'oro è rifinitura, non riempimento:** filetti, fregi araldici, titoli chiave, profili
+  delle immagini, lo stemma. Se è ovunque diventa kitsch.
+- **Il granato è un accento d'onore:** CTA principali, una parola evidenziata, un dettaglio.
+  Mai grandi superfici rosse diffuse (tranne l'unica sezione-invito).
+- **Su fondo blu** usa testo avorio e oro chiaro (`--oro-chiaro`) per i dettagli: l'oro scuro
+  non avrebbe contrasto sufficiente.
 
 ---
 
 ## 3. Tipografia
 
-Niente font di sistema, niente Inter. La tipografia porta l'autorevolezza storica.
+Niente font di sistema, niente Inter nei titoli. La tipografia porta l'autorevolezza storica
+e dà carattere. Il contrasto tra il serif elegante dei titoli e il serif da lettura del corpo
+è parte dell'identità.
 
 ```css
 :root {
-  /* Display — serif classico ed elegante, per titoli. Nobiltà e tradizione. */
+  /* Display — serif classico ed elegante, per titoli. Nobiltà e personalità. */
   --font-display: "Cormorant Garamond", "EB Garamond", "Playfair Display", Georgia, serif;
   /* Body — serif leggibile per i testi lunghi (articoli storici). */
   --font-body:    "Lora", "EB Garamond", Georgia, serif;
-  /* Utility — sans sobrio per etichette, date, menu, didascalie. */
+  /* Utility — sans sobrio in maiuscoletto per etichette, date, menu, didascalie. */
   --font-util:    "Spectral SC", "Inter", system-ui, sans-serif;
 }
 ```
@@ -108,60 +132,62 @@ Niente font di sistema, niente Inter. La tipografia porta l'autorevolezza storic
 
 | Ruolo | Dimensione | Stile | Note |
 |---|---|---|---|
-| Hero / H1 | `clamp(2.6rem, 6vw, 4.6rem)` | display, 400–500 | line-height 1.08, elegante, mai grassetto pesante |
-| H2 sezione | `clamp(1.9rem, 4vw, 2.8rem)` | display, 400 | spesso con filetto dorato sopra o sotto |
-| H3 | `1.35rem` | display/body 600 | |
+| Hero / H1 | `clamp(2.8rem, 6.5vw, 5rem)` | display, 500 | line-height 1.06, elegante, ben spaziato, mai grassetto pesante |
+| H2 sezione | `clamp(1.9rem, 4vw, 2.9rem)` | display, 500 | accompagnato da eyebrow e fregio dorato |
+| H3 | `1.35rem` | display/body 600 | titoli di scheda |
 | Corpo articoli | `1.075rem` | body, 400 | line-height 1.7, pensato per LEGGERE testi lunghi |
-| Eyebrow/etichetta | `0.78rem` | util, maiuscoletto | letter-spacing 0.14em, colore --oro-scuro |
+| Eyebrow/etichetta | `0.78rem` | util, maiuscoletto | letter-spacing 0.16em, color oro (su chiaro: oro scuro) |
 | Data/didascalia | `0.85rem` | util | per eventi, articoli, foto storiche |
 
-**Firma tipografica:** le etichette di sezione (eyebrow) in maiuscoletto spaziato color oro
-scuro, eventualmente accompagnate da un filetto dorato sottile, danno subito un'aria di
-documento storico curato. I testi degli articoli in serif da lettura: il sito si LEGGE,
-non si scorre soltanto.
+**Firma tipografica:** le etichette di sezione (eyebrow) in maiuscoletto spaziato color oro,
+accompagnate dal fregio dorato, danno subito un'aria di documento storico curato. I titoli in
+serif display, grandi e arieggiati, con personalità. I testi degli articoli in serif da
+lettura: il sito si LEGGE, non si scorre soltanto.
 
 ---
 
-## 4. Layout e spaziatura
+## 4. Layout, spaziatura e profondità
 
 - **Griglia:** contenuto centrato, larghezza massima `1140px`; per gli articoli lunghi,
   colonna di lettura più stretta (`720px`) per leggibilità.
 - **Ritmo verticale:** sezioni separate da `clamp(4.5rem, 9vw, 8rem)`. Molto respiro:
-  l'eleganza è fatta di spazio bianco, non di riempimento.
+  l'eleganza è fatta di spazio, non di riempimento.
 - **Border-radius:** molto contenuto, `4px` (quasi squadrato), coerente con un'estetica
   classica e istituzionale. Niente bolle arrotondate.
+- **Profondità (importante):** le schede (eventi, articoli, galleria) si SOLLEVANO dal fondo
+  con un'ombra morbida e, su fondo chiaro, un sottile filo dorato in alto. Mai rettangoli
+  piatti dello stesso colore del fondo. Su fondo blu, le schede sono avorio e risaltano.
 - **Bordi e filetti:** righe sottili `1px solid var(--linea)`; come accento, filetti dorati
-  sottili `var(--linea-oro)` per separare sezioni importanti (è un elemento firma, usalo con misura).
+  `var(--linea-oro)` e il **fregio araldico** (vedi §7) per separare sezioni importanti.
 - **Mobile-first:** molti apriranno da telefono. Tutto deve impilarsi in modo pulito ed elegante.
 
-### Wireframe della HOME
+### Wireframe della HOME (con ritmo cromatico)
 
 ```
 ┌───────────────────────────────────────────────┐
-│ [stemma] CIRCOLO RUSSIA IMPERIALE      menu ☰  │ ← header sobrio, stemma + nome
+│ [stemma] CIRCOLO RUSSIA IMPERIALE      menu ☰  │ ← header chiaro, stemma + nome, filo oro
 ├───────────────────────────────────────────────┤
-│  ███ HERO su fondo scuro/immagine imperiale ███ │
-│  [IMMAGINE: Palazzo d'Inverno / Famiglia Imp.] │
-│  Nome del Circolo + breve frase nobile          │
-│  ─────── filetto dorato ───────                 │
+│  ███ HERO — fondo BLU NOTTE profondo ███████████ │
+│  [IMMAGINE storica scura: Palazzo d'Inverno…]  │
+│  Nome del Circolo in oro/avorio + frase nobile  │
+│  ─────── fregio dorato ───────                  │
 ├───────────────────────────────────────────────┤
-│  LA NOSTRA MISSIONE                             │
-│  [estratto Statuto / finalità del Circolo]      │
+│  LA NOSTRA MISSIONE      (fondo AVORIO, lettura) │
 ├───────────────────────────────────────────────┤
-│  PROSSIMI EVENTI (anteprime a schede)           │
+│  PROSSIMI EVENTI         (fondo BLU, card avorio)│
 ├───────────────────────────────────────────────┤
-│  DALLA STORIA DELL'IMPERO (ultimi articoli)     │
+│  DALLA STORIA DELL'IMPERO (fondo AVORIO, lettura)│
 ├───────────────────────────────────────────────┤
-│  GALLERIA (anteprima immagini eventi)           │
+│  GALLERIA                (fondo BLU profondo)    │
 ├───────────────────────────────────────────────┤
-│  DIVENTA SOCIO (invito al tesseramento)         │
+│  DIVENTA SOCIO           (fondo GRANATO, l'unico)│
 ├───────────────────────────────────────────────┤
-│  Footer: contatti, email, Facebook, stemma      │
+│  Footer: contatti, email, Facebook (BLU scuro)  │
 └───────────────────────────────────────────────┘
 ```
 
 La home è una **soglia**: dà il senso del prestigio e mostra le porte (eventi, storia,
-galleria, tesseramento) verso il resto.
+galleria, tesseramento) verso il resto. Il ritmo blu/avorio/blu evita la piattezza.
 
 ---
 
@@ -172,8 +198,8 @@ Minimo ed elegante. Il movimento deve dare solennità e cura, mai spettacolo.
 - **Hero:** comparsa morbida e lenta del titolo e dell'immagine. Una volta sola, dignitosa.
 - **Scroll:** rivelazioni delicate (leggera dissolvenza/salita) con tempi VARIATI, mai lo
   stesso identico fade ovunque (è la firma dei siti AI).
-- **Hover:** sulle schede (eventi, articoli) un sollevamento lieve e la comparsa di un filetto
-  dorato. Discreto.
+- **Hover:** sulle schede (eventi, articoli) un sollevamento lieve, ombra più marcata e la
+  comparsa di un filo dorato. Discreto.
 - **Sempre:** rispetta `prefers-reduced-motion`. Niente animazioni vistose o continue.
 
 ---
@@ -209,13 +235,15 @@ così: sono codice, non testo visibile).
 ## 7. Elementi distintivi del tema (l'anima)
 
 Da usare con misura, per radicare il sito nell'Impero Russo senza scadere nel kitsch:
-- **Stemma/aquila bicipite:** usato nell'header e nel footer in versione sobria e monocromatica
-  (oro su scuro o nero su avorio). È il simbolo, non un timbro ripetuto ovunque.
-- **Filetto dorato** come separatore tra sezioni importanti: il "filo" elegante ricorrente.
-- **Immagini storiche** con cornice sottile (eventuale filetto oro) e didascalia in font util:
-  trattate come opere, non come riempitivo.
-- **Eventuale richiamo cromatico** allo zaffiro/lacca degli smalti imperiali per UN dettaglio
-  speciale per pagina, non diffuso.
+- **Fregio araldico dorato:** il "filo conduttore" ricorrente. Un piccolo motivo araldico in
+  oro (un losanga/rombo con sottili linee dorate ai lati, richiamo agli ornamenti imperiali)
+  separa le sezioni importanti e firma le intestazioni. Elegante, mai pesante.
+- **Stemma/aquila bicipite:** nell'header e nel footer in versione sobria e monocromatica
+  (oro su blu o nero su avorio). È il simbolo, non un timbro ripetuto ovunque.
+- **Immagini storiche** come opere: cornice sottile con filetto oro e didascalia in font util.
+  NIENTE texture rumorose, NIENTE righe diagonali, niente riempitivi.
+- **Accento granato** allo smalto degli Ordini imperiali per UN dettaglio d'onore (un CTA, una
+  parola evidenziata), non diffuso.
 
 ---
 
@@ -225,10 +253,11 @@ Claude costruisce ogni pagina rispettando questi minimi, senza che debba chieder
 - **Responsive** fino a 320px, impilamento pulito ed elegante su mobile.
 - **Performance:** immagini storiche ottimizzate (WebP/AVIF, dimensionate). Le immagini
   storiche sono pesanti: vanno compresse bene.
-- **Accessibilità:** contrasto AA (attenzione al testo su fondi scuri e all'oro su avorio,
-  che può avere contrasto debole: verificalo), focus tastiera visibile, `alt` descrittivi
+- **Accessibilità:** contrasto AA. Attenzione al testo avorio su blu (deve restare ben
+  leggibile) e all'oro, che su fondo chiaro va scurito (`--oro-scuro`) e su fondo scuro
+  schiarito (`--oro-chiaro`): verifica sempre. Focus tastiera visibile, `alt` descrittivi
   sulle immagini storiche, navigazione da tastiera.
-- **SEO in italiano:** title e meta per ogni pagina (es. "Storia dell'Impero Russo — Circolo
+- **SEO in italiano:** title e meta per ogni pagina (es. "Storia dell'Impero Russo, Circolo
   Russia Imperiale"); struttura semantica corretta.
 - **Leggibilità degli articoli:** colonna di lettura stretta, interlinea generosa. Il sito
   ospita testi lunghi: devono essere piacevoli da leggere.
@@ -237,31 +266,36 @@ Claude costruisce ogni pagina rispettando questi minimi, senza che debba chieder
 
 ## 9. La firma (l'elemento da ricordare)
 
-Ogni sito ha **un** elemento memorabile. Qui la firma di default è:
+Ogni sito ha **un** elemento memorabile. Qui la firma è:
 
-> **La soglia imperiale.** L'hero è una "soglia" solenne: fondo scuro (--nero) o grande
-> immagine storica dell'Impero, il nome del Circolo in serif elegante color avorio/oro,
-> chiuso da un sottile filetto dorato. Dà subito il senso di entrare in un luogo di prestigio
-> e storia. Da quel filetto dorato nasce il "filo" che separa con eleganza tutte le sezioni
-> del sito. È l'unico punto dove l'oro e la solennità sono pieni; tutto il resto resta quieto,
-> avorio, leggibile.
+> **La soglia imperiale.** L'hero è una "soglia" solenne: fondo **blu notte profondo** (o
+> grande immagine storica scura dell'Impero), il nome del Circolo in serif elegante color
+> oro/avorio, chiuso da un **fregio dorato araldico**. Dà subito il senso di entrare in un
+> luogo di prestigio e storia. Da quel fregio nasce il "filo" dorato che separa con eleganza
+> tutte le sezioni del sito, mentre il colore alterna blu istituzionale e avorio da lettura.
+> Il blu e il granato danno l'identità russa; l'oro la nobiltà. È nell'hero che oro e
+> solennità sono pieni; il resto resta disciplinato e leggibile.
 
-Spendi l'audacia QUI. Tieni tutto il resto sobrio e disciplinato.
+Spendi l'audacia QUI. Tieni tutto il resto ricco ma disciplinato.
 
 ---
 
 ## 10. Checklist anti-slop (rivedere prima di consegnare)
 
-- [ ] L'hero usa un'immagine storica vera dell'Impero, non un placeholder o stock generico?
-- [ ] La palette è nero/oro/avorio ancorata ai materiali storici, non il solito crema da AI?
-- [ ] L'oro è usato con misura (titoli, filetti, araldica) e non sparato ovunque?
-- [ ] La tipografia display NON è un font di sistema?
+- [ ] L'hero ha presenza (fondo blu notte o immagine storica scura), non testo su beige?
+- [ ] La palette è l'identità russa nobilitata (avorio, blu notte, granato, oro), non beige piatto?
+- [ ] C'è un vero ritmo cromatico (sezioni blu alternate ad avorio, granato solo una volta)?
+- [ ] Un colore domina per sezione, gli altri sono accenti, mai i tre accesi in parità?
+- [ ] L'oro è usato con misura (titoli, fregi, araldica) e non sparato ovunque?
+- [ ] Le schede hanno profondità (ombra morbida, filo dorato), non rettangoli piatti?
+- [ ] La tipografia display NON è un font di sistema ed è ben spaziata?
 - [ ] I testi visibili sono senza trattini lunghi "—"?
 - [ ] I testi suonano colti ma chiari, senza frasi vuote e magniloquenti?
 - [ ] Gli articoli lunghi sono leggibili (colonna stretta, interlinea generosa)?
+- [ ] Il contrasto è AA (avorio su blu, oro leggibile sul suo fondo)?
 - [ ] Il movimento è minimo, elegante e con tempi variati?
-- [ ] Lo stemma/aquila è sobrio e non ripetuto ovunque?
-- [ ] C'è UNA sola firma piena (la soglia imperiale) e il resto è quieto?
+- [ ] Lo stemma/aquila e il fregio araldico sono sobri e non ripetuti ovunque?
+- [ ] C'è UNA sola firma piena (la soglia imperiale) e il resto è disciplinato?
 - [ ] Funziona e si legge bene sul telefono?
 
 ---
