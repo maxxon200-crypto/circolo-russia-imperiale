@@ -54,60 +54,52 @@ Tre regole non negoziabili:
 
 ## 2. Token di colore
 
-Palette dell'**identità russa nobilitata**: avorio, blu notte, granato e oro brunito.
-I colori della bandiera nelle loro versioni profonde e aristocratiche, mai accese.
-Usa SEMPRE variabili CSS, mai hex sparsi nel codice.
+Palette dei **colori della bandiera russa** (blu cobalto, rosso vermiglio) su fondo bianco
+caldo, con l'oro come rifinitura. Valori ESATTI, da non reinterpretare. Usa SEMPRE variabili
+CSS, mai hex sparsi nel codice.
 
 ```css
 :root {
-  /* Base chiara — avorio della carta antica, bianco caldo (NON bianco freddo) */
-  --avorio:        #F4EFE6;   /* sfondo chiaro principale, per la lettura */
-  --avorio-chiaro: #FBF8F1;   /* superfici sollevate, card su fondo chiaro */
-  --pergamena:     #EBE3D2;   /* fasce chiare alternate, leggermente più calde */
-
-  /* Blu — colore ISTITUZIONALE forte: blu notte / zaffiro imperiale */
-  --blu:           #14284B;   /* blu notte, fondali di sezione e hero */
-  --blu-zaffiro:   #1B2F57;   /* variante zaffiro, gradienti e superfici */
-  --blu-scuro:     #0E1B33;   /* blu profondissimo, footer e fondali estremi */
-  --blu-chiaro:    #2E4A7D;   /* hover, bordi e dettagli su fondo blu */
-
-  /* Rosso — lacca/granato scuro e nobile, ACCENTO per CTA ed evidenziazioni */
-  --granato:       #7C1F2E;   /* rosso lacca/granato, pulsanti e accenti */
-  --granato-scuro: #5E1622;   /* hover dei CTA, dettagli incisi */
-  --granato-chiaro:#9B3340;   /* richiami più tenui, bordi */
-
-  /* Oro — brunito/antico, la rifinitura preziosa che lega tutto */
-  --oro:           #B8924A;   /* accenti, titoli chiave, fregi, profili */
-  --oro-scuro:     #8A6B30;   /* testo oro su fondo chiaro, hover */
-  --oro-chiaro:    #DBC081;   /* oro su fondo scuro, riflessi, filetti tenui */
-
-  /* Inchiostro — per i testi su fondo chiaro */
-  --nero:          #15110C;   /* testo principale su avorio */
-  --nero-soft:     #3A332A;   /* testo secondario su avorio */
-
-  /* Funzionali */
-  --linea:         #D8CCB4;   /* righe e bordi sottili su fondo chiaro */
-  --linea-oro:     #C7A24E;   /* filetti dorati sottili, separatori firma */
+  --bianco:      #FBFAF7;   /* sfondo principale chiaro, bianco caldo */
+  --bianco-2:    #FFFFFF;   /* card e superfici su fondo chiaro */
+  --blu:         #0B3D91;   /* BLU bandiera russa, cobalto pulito - colore primario */
+  --blu-scuro:   #082D6B;   /* hover e dettagli del blu */
+  --rosso:       #C8102E;   /* ROSSO bandiera russa, vermiglio - accento forte */
+  --rosso-scuro: #9E0C24;   /* hover del rosso */
+  --oro:         #C9A227;   /* oro, rifiniture e filetti */
+  --oro-chiaro:  #E3C766;   /* riflessi e bordi dorati sottili */
+  --inchiostro:  #1A1A1A;   /* testo scuro su fondo chiaro */
+  --grigio:      #5A5A5A;   /* testo secondario */
+  --linea:       #E2DDD0;   /* bordi sottili */
 }
 ```
 
-**Ritmo cromatico (regola di sistema):** il sito NON deve essere tutto chiaro. Alterna le
-sezioni per dare respiro e identità:
-- sezioni di **lettura** (testi, articoli, missione): fondo **avorio/pergamena**, testo scuro;
-- sezioni **istituzionali e d'apertura** (hero, eventi, inviti forti): fondo **blu notte**,
-  testo avorio e accenti oro;
-- **un solo** momento per pagina può usare il **granato** come fondo pieno (di norma il CTA
-  "Diventa socio"): è il colore più raro e prezioso, mai diffuso.
+**Dove usare ogni colore (regole precise, non a intuito):**
+- **Sfondo del sito:** `--bianco`. La maggior parte delle sezioni è su fondo chiaro, testo
+  `--inchiostro`. Le sezioni di contenuto e lettura restano chiare e ariose.
+- **Blu pieno (`--blu`) SOLO per:** hero, footer e UNA fascia "Diventa socio" come invito
+  finale. Non colorare di blu/rosso intere sezioni a caso.
+- **Hero:** fondo `--blu` pieno sopra una grande immagine storica scurita; nome del Circolo in
+  `--oro` (Cormorant 600, molto grande), sottotitolo in `--bianco`, filetto orizzontale `--oro`
+  sotto il titolo. Il blu deve dare fierezza, non cupezza.
+- **Header:** fondo `--bianco`, testo `--inchiostro`, voce attiva e hover in `--rosso`, filetto
+  `--oro` sottile sotto l'header.
+- **Footer:** fondo `--blu`, testo `--bianco`, titoli colonna in `--oro` (su blu usa
+  `--oro-chiaro` se il contrasto del testo piccolo è debole), link `--bianco` con hover `--oro`.
+- **Card (eventi, articoli):** fondo `--bianco-2`, bordo 1px `--linea`, ombra morbida, filetto
+  superiore `--oro` spesso 2px. Titolo in Cormorant `--inchiostro`. All'hover il filetto
+  diventa `--rosso` e la card si solleva di 2px.
+- **Pulsanti primari (CTA tipo "Diventa socio"):** fondo `--rosso`, testo `--bianco`, hover
+  `--rosso-scuro`.
+- **Pulsanti secondari ("Scopri", "Leggi"):** bordo 1px `--blu`, testo `--blu`, fondo
+  trasparente, hover fondo `--blu` testo `--bianco`. (Sopra fondo blu si usa un contorno chiaro.)
+- **Link nel testo:** `--blu`, sottolineati, hover `--rosso`.
+- **Separatori tra sezioni:** linea sottile `--oro` (1px) centrata, con un piccolo rombo `--oro`
+  al centro. Sottile, mai kitsch.
 
-**Regola d'uso dei colori:**
-- **Un colore domina per sezione.** Gli altri due restano accenti. Non mettere mai blu, rosso
-  e oro accesi in parità nello stesso blocco.
-- **L'oro è rifinitura, non riempimento:** filetti, fregi araldici, titoli chiave, profili
-  delle immagini, lo stemma. Se è ovunque diventa kitsch.
-- **Il granato è un accento d'onore:** CTA principali, una parola evidenziata, un dettaglio.
-  Mai grandi superfici rosse diffuse (tranne l'unica sezione-invito).
-- **Su fondo blu** usa testo avorio e oro chiaro (`--oro-chiaro`) per i dettagli: l'oro scuro
-  non avrebbe contrasto sufficiente.
+**Contrasto:** il testo `--oro` su `--blu` va verificato. Per i titoli grandi (hero) `--oro` va
+bene; per il testo piccolo su blu usa `--oro-chiaro`. Su fondo bianco l'oro NON si usa per il
+testo (contrasto debole): l'oro resta filetto/rifinitura, il testo piccolo è `--blu`/`--grigio`.
 
 ---
 
@@ -117,14 +109,17 @@ Niente font di sistema, niente Inter nei titoli. La tipografia porta l'autorevol
 e dà carattere. Il contrasto tra il serif elegante dei titoli e il serif da lettura del corpo
 è parte dell'identità.
 
+Importa da Google Fonts e usa SOLO questi tre. Niente Playfair, niente Inter, niente font di
+sistema (solo come ultima fallback generica).
+
 ```css
 :root {
-  /* Display — serif classico ed elegante, per titoli. Nobiltà e personalità. */
-  --font-display: "Cormorant Garamond", "EB Garamond", "Playfair Display", Georgia, serif;
-  /* Body — serif leggibile per i testi lunghi (articoli storici). */
-  --font-body:    "Lora", "EB Garamond", Georgia, serif;
-  /* Utility — sans sobrio in maiuscoletto per etichette, date, menu, didascalie. */
-  --font-util:    "Spectral SC", "Inter", system-ui, sans-serif;
+  /* Titoli (h1, h2, h3) e nome del Circolo — Cormorant Garamond, pesi 500 e 600 */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  /* Testo corrente, paragrafi, didascalie — PT Serif, pesi 400 e 700 */
+  --font-body:    "PT Serif", Georgia, serif;
+  /* Etichette piccole, menu, eyebrow, date — PT Sans, pesi 400 e 700, MAIUSCOLO ls 0.12em */
+  --font-util:    "PT Sans", system-ui, sans-serif;
 }
 ```
 
@@ -132,17 +127,17 @@ e dà carattere. Il contrasto tra il serif elegante dei titoli e il serif da let
 
 | Ruolo | Dimensione | Stile | Note |
 |---|---|---|---|
-| Hero / H1 | `clamp(2.8rem, 6.5vw, 5rem)` | display, 500 | line-height 1.06, elegante, ben spaziato, mai grassetto pesante |
-| H2 sezione | `clamp(1.9rem, 4vw, 2.9rem)` | display, 500 | accompagnato da eyebrow e fregio dorato |
-| H3 | `1.35rem` | display/body 600 | titoli di scheda |
-| Corpo articoli | `1.075rem` | body, 400 | line-height 1.7, pensato per LEGGERE testi lunghi |
-| Eyebrow/etichetta | `0.78rem` | util, maiuscoletto | letter-spacing 0.16em, color oro (su chiaro: oro scuro) |
-| Data/didascalia | `0.85rem` | util | per eventi, articoli, foto storiche |
+| Hero / H1 | `clamp(2.8rem, 6.5vw, 5rem)` | Cormorant 600 | nome del Circolo in oro su blu, ben spaziato |
+| H2 sezione | `clamp(1.9rem, 4vw, 2.9rem)` | Cormorant 600 | accompagnato da eyebrow e filetto oro |
+| H3 | `1.35rem` | Cormorant 600 | titoli di scheda, color inchiostro |
+| Corpo articoli | `1.075rem` | PT Serif 400 | line-height 1.7, pensato per LEGGERE testi lunghi |
+| Eyebrow/etichetta | `0.78rem` | PT Sans 700 | MAIUSCOLO, letter-spacing 0.12em |
+| Data/didascalia | `0.85rem` | PT Sans 400 | MAIUSCOLO ls 0.12em, per eventi, articoli, foto |
 
-**Firma tipografica:** le etichette di sezione (eyebrow) in maiuscoletto spaziato color oro,
-accompagnate dal fregio dorato, danno subito un'aria di documento storico curato. I titoli in
-serif display, grandi e arieggiati, con personalità. I testi degli articoli in serif da
-lettura: il sito si LEGGE, non si scorre soltanto.
+**Firma tipografica:** le etichette (eyebrow, menu, date) in PT Sans maiuscolo spaziato 0.12em;
+i titoli in Cormorant Garamond grandi e arieggiati, con personalità; i testi in PT Serif da
+lettura. Il contrasto tra il serif elegante dei titoli e il serif del corpo dà carattere: il
+sito si LEGGE, non si scorre soltanto.
 
 ---
 
@@ -165,29 +160,30 @@ lettura: il sito si LEGGE, non si scorre soltanto.
 
 ```
 ┌───────────────────────────────────────────────┐
-│ [stemma] CIRCOLO RUSSIA IMPERIALE      menu ☰  │ ← header chiaro, stemma + nome, filo oro
+│ [stemma] CIRCOLO RUSSIA IMPERIALE      menu ☰  │ ← header BIANCO, stemma + nome, filo oro
 ├───────────────────────────────────────────────┤
-│  ███ HERO — fondo BLU NOTTE profondo ███████████ │
+│  ███ HERO — fondo BLU pieno (#0B3D91) ██████████ │
 │  [IMMAGINE storica scura: Palazzo d'Inverno…]  │
-│  Nome del Circolo in oro/avorio + frase nobile  │
-│  ─────── fregio dorato ───────                  │
+│  Nome del Circolo in ORO + sottotitolo bianco   │
+│  ─────── filetto oro ───────                    │
 ├───────────────────────────────────────────────┤
-│  LA NOSTRA MISSIONE      (fondo AVORIO, lettura) │
+│  LA NOSTRA MISSIONE       (fondo BIANCO, lettura)│
+│  · · · rombo oro separatore · · ·               │
+│  PROSSIMI EVENTI          (fondo BIANCO, card)   │
+│  · · · rombo oro separatore · · ·               │
+│  DALLA STORIA DELL'IMPERO  (fondo BIANCO, lettura)│
+│  · · · rombo oro separatore · · ·               │
+│  GALLERIA                 (fondo BIANCO)         │
 ├───────────────────────────────────────────────┤
-│  PROSSIMI EVENTI         (fondo BLU, card avorio)│
+│  DIVENTA SOCIO            (fascia BLU, l'unica)   │
 ├───────────────────────────────────────────────┤
-│  DALLA STORIA DELL'IMPERO (fondo AVORIO, lettura)│
-├───────────────────────────────────────────────┤
-│  GALLERIA                (fondo BLU profondo)    │
-├───────────────────────────────────────────────┤
-│  DIVENTA SOCIO           (fondo GRANATO, l'unico)│
-├───────────────────────────────────────────────┤
-│  Footer: contatti, email, Facebook (BLU scuro)  │
+│  Footer: contatti, email, Facebook (fondo BLU)  │
 └───────────────────────────────────────────────┘
 ```
 
 La home è una **soglia**: dà il senso del prestigio e mostra le porte (eventi, storia,
-galleria, tesseramento) verso il resto. Il ritmo blu/avorio/blu evita la piattezza.
+galleria, tesseramento) verso il resto. Il blu pieno apre (hero) e chiude (invito, footer);
+in mezzo le sezioni restano chiare e ariose, separate da sottili rombi dorati.
 
 ---
 
@@ -242,8 +238,8 @@ Da usare con misura, per radicare il sito nell'Impero Russo senza scadere nel ki
   (oro su blu o nero su avorio). È il simbolo, non un timbro ripetuto ovunque.
 - **Immagini storiche** come opere: cornice sottile con filetto oro e didascalia in font util.
   NIENTE texture rumorose, NIENTE righe diagonali, niente riempitivi.
-- **Accento granato** allo smalto degli Ordini imperiali per UN dettaglio d'onore (un CTA, una
-  parola evidenziata), non diffuso.
+- **Accento rosso vermiglio** (`--rosso`) per i CTA principali e qualche dettaglio d'onore,
+  non diffuso su grandi superfici.
 
 ---
 
@@ -268,13 +264,12 @@ Claude costruisce ogni pagina rispettando questi minimi, senza che debba chieder
 
 Ogni sito ha **un** elemento memorabile. Qui la firma è:
 
-> **La soglia imperiale.** L'hero è una "soglia" solenne: fondo **blu notte profondo** (o
-> grande immagine storica scura dell'Impero), il nome del Circolo in serif elegante color
-> oro/avorio, chiuso da un **fregio dorato araldico**. Dà subito il senso di entrare in un
-> luogo di prestigio e storia. Da quel fregio nasce il "filo" dorato che separa con eleganza
-> tutte le sezioni del sito, mentre il colore alterna blu istituzionale e avorio da lettura.
-> Il blu e il granato danno l'identità russa; l'oro la nobiltà. È nell'hero che oro e
-> solennità sono pieni; il resto resta disciplinato e leggibile.
+> **La soglia imperiale.** L'hero è una "soglia" solenne: fondo **blu pieno della bandiera**
+> (`#0B3D91`) sopra una grande immagine storica scura dell'Impero, il nome del Circolo in
+> **Cormorant Garamond 600 color oro**, chiuso da un **filetto orizzontale dorato**. Dà subito
+> il senso di entrare in un luogo di prestigio e storia. Da quel filetto nasce il "filo" dorato
+> (filetti e piccoli rombi) che separa con eleganza le sezioni chiare del sito. Il blu apre e
+> chiude (hero, invito, footer); il rosso vermiglio è l'accento dei CTA; l'oro lega tutto.
 
 Spendi l'audacia QUI. Tieni tutto il resto ricco ma disciplinato.
 
@@ -282,13 +277,13 @@ Spendi l'audacia QUI. Tieni tutto il resto ricco ma disciplinato.
 
 ## 10. Checklist anti-slop (rivedere prima di consegnare)
 
-- [ ] L'hero ha presenza (fondo blu notte o immagine storica scura), non testo su beige?
-- [ ] La palette è l'identità russa nobilitata (avorio, blu notte, granato, oro), non beige piatto?
-- [ ] C'è un vero ritmo cromatico (sezioni blu alternate ad avorio, granato solo una volta)?
-- [ ] Un colore domina per sezione, gli altri sono accenti, mai i tre accesi in parità?
-- [ ] L'oro è usato con misura (titoli, fregi, araldica) e non sparato ovunque?
-- [ ] Le schede hanno profondità (ombra morbida, filo dorato), non rettangoli piatti?
-- [ ] La tipografia display NON è un font di sistema ed è ben spaziata?
+- [ ] L'hero ha presenza (fondo blu pieno #0B3D91 su immagine storica scura), nome in oro?
+- [ ] La palette usa i valori esatti (bianco, blu #0B3D91, rosso #C8102E, oro #C9A227)?
+- [ ] Il blu pieno è usato SOLO per hero, footer e la fascia "Diventa socio"?
+- [ ] Le sezioni di contenuto restano chiare e ariose, separate da rombi dorati?
+- [ ] L'oro è usato con misura (filetti, rombi, bordo superiore card) e non come testo su bianco?
+- [ ] Le schede hanno profondità (ombra morbida, filetto oro 2px in alto), non rettangoli piatti?
+- [ ] I font sono Cormorant Garamond (titoli), PT Serif (testo), PT Sans (etichette)?
 - [ ] I testi visibili sono senza trattini lunghi "—"?
 - [ ] I testi suonano colti ma chiari, senza frasi vuote e magniloquenti?
 - [ ] Gli articoli lunghi sono leggibili (colonna stretta, interlinea generosa)?

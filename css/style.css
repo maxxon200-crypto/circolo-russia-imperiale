@@ -1,44 +1,26 @@
 /* =====================================================================
    Circolo Russia Imperiale — Foglio di stile principale
-   Palette: identita russa nobilitata (avorio, blu notte, granato, oro).
-   Tutti i valori derivano da DESIGN.md (guida assoluta).
+   Palette e font con valori ESATTI da DESIGN.md (guida assoluta).
    ===================================================================== */
 
-/* ---------- 2. Token di colore (da DESIGN.md) ---------- */
+/* ---------- 2. Token di colore (valori esatti) ---------- */
 :root {
-  /* Base chiara — avorio della carta antica, bianco caldo */
-  --avorio:        #F4EFE6;
-  --avorio-chiaro: #FBF8F1;
-  --pergamena:     #EBE3D2;
+  --bianco:      #FBFAF7;   /* sfondo principale chiaro, bianco caldo */
+  --bianco-2:    #FFFFFF;   /* card e superfici su fondo chiaro */
+  --blu:         #0B3D91;   /* BLU bandiera russa, cobalto - colore primario */
+  --blu-scuro:   #082D6B;   /* hover e dettagli del blu */
+  --rosso:       #C8102E;   /* ROSSO bandiera russa, vermiglio - accento forte */
+  --rosso-scuro: #9E0C24;   /* hover del rosso */
+  --oro:         #C9A227;   /* oro, rifiniture e filetti */
+  --oro-chiaro:  #E3C766;   /* riflessi e bordi dorati sottili */
+  --inchiostro:  #1A1A1A;   /* testo scuro su fondo chiaro */
+  --grigio:      #5A5A5A;   /* testo secondario */
+  --linea:       #E2DDD0;   /* bordi sottili */
 
-  /* Blu — istituzionale forte: blu notte / zaffiro imperiale */
-  --blu:           #14284B;
-  --blu-zaffiro:   #1B2F57;
-  --blu-scuro:     #0E1B33;
-  --blu-chiaro:    #2E4A7D;
-
-  /* Rosso — lacca/granato scuro e nobile, accento per CTA */
-  --granato:       #7C1F2E;
-  --granato-scuro: #5E1622;
-  --granato-chiaro:#9B3340;
-
-  /* Oro — brunito/antico, la rifinitura preziosa */
-  --oro:           #B8924A;
-  --oro-scuro:     #8A6B30;
-  --oro-chiaro:    #DBC081;
-
-  /* Inchiostro — testi su fondo chiaro */
-  --nero:          #15110C;
-  --nero-soft:     #3A332A;
-
-  /* Funzionali */
-  --linea:         #D8CCB4;
-  --linea-oro:     #C7A24E;
-
-  /* ---------- 3. Tipografia (da DESIGN.md) ---------- */
-  --font-display: "Cormorant Garamond", "EB Garamond", "Playfair Display", Georgia, serif;
-  --font-body:    "Lora", "EB Garamond", Georgia, serif;
-  --font-util:    "Spectral SC", "Inter", system-ui, sans-serif;
+  /* ---------- 3. Tipografia (solo questi font) ---------- */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body:    "PT Serif", Georgia, serif;
+  --font-util:    "PT Sans", system-ui, sans-serif;
 
   /* ---------- 4. Layout ---------- */
   --max:      1140px;
@@ -56,8 +38,8 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--avorio);
-  color: var(--nero);
+  background: var(--bianco);
+  color: var(--inchiostro);
   font-family: var(--font-body);
   font-size: 1.075rem;
   line-height: 1.7;
@@ -67,15 +49,20 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
-a { color: var(--granato); text-decoration: none; }
-a:hover { color: var(--granato-scuro); }
+/* Link nel testo: blu sottolineato, hover rosso */
+a { color: var(--blu); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--rosso); }
+/* I link strutturali (non di prosa) non sono sottolineati */
+.brand, .main-nav a, .btn, .card-link, .site-footer a, .vedi-tutto a, .skip-link {
+  text-decoration: none;
+}
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.12;
   margin: 0 0 0.5em;
-  color: var(--nero);
+  color: var(--inchiostro);
 }
 
 p { margin: 0 0 1.1em; }
@@ -86,7 +73,7 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--oro-scuro);
+  outline: 2px solid var(--rosso);
   outline-offset: 3px;
 }
 
@@ -96,7 +83,7 @@ select:focus-visible {
   left: -999px;
   top: 0;
   background: var(--blu);
-  color: var(--avorio);
+  color: var(--bianco);
   padding: 0.7rem 1.1rem;
   z-index: 200;
   font-family: var(--font-util);
@@ -113,103 +100,85 @@ select:focus-visible {
 }
 
 .section { padding-block: var(--gap-sez); }
-.section--pergamena { background: var(--pergamena); }
 
-/* Sezioni a fondo blu notte (istituzionali) */
+/* Fascia blu piena (solo "Diventa socio") */
 .section--blu {
-  background:
-    linear-gradient(160deg, var(--blu-zaffiro) 0%, var(--blu) 55%, var(--blu-scuro) 100%);
-  color: var(--avorio);
+  background: var(--blu);
+  color: var(--bianco);
 }
 .section--blu h2,
-.section--blu h3 { color: var(--avorio); }
-.section--blu p { color: #DCE2EC; }
-
-/* Sezione granato (l'unico invito forte) */
-.section--granato {
-  background:
-    linear-gradient(160deg, var(--granato-chiaro) 0%, var(--granato) 55%, var(--granato-scuro) 100%);
-  color: var(--avorio);
-}
-.section--granato h2,
-.section--granato h3 { color: var(--avorio); }
-.section--granato p { color: #F1DEDF; }
+.section--blu h3 { color: var(--bianco); }
+.section--blu p { color: #E6ECF6; }
 
 /* ---------- Etichetta di sezione (eyebrow) ---------- */
 .eyebrow {
   font-family: var(--font-util);
+  font-weight: 700;
   font-size: 0.78rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--oro-scuro);
+  color: var(--blu);
   margin: 0 0 0.8rem;
 }
 .section--blu .eyebrow,
-.section--granato .eyebrow,
 .hero .eyebrow { color: var(--oro-chiaro); }
 
-/* ---------- Fregio araldico dorato: il "filo" firma (§7) ---------- */
-.fregio {
+/* ---------- Filetto oro semplice (separatore minore, hero, header titoli) ---------- */
+.filetto {
+  width: 88px; height: 0; border: none;
+  border-top: 1px solid var(--oro);
+  margin: 1.3rem 0;
+}
+.filetto--center { margin-inline: auto; }
+.filetto--hero {
+  width: 132px;
+  border-top: 2px solid var(--oro);
+  margin: 1.6rem 0;
+}
+
+/* ---------- Rombo / fregio oro: separatore tra sezioni ---------- */
+.divisore {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin: 1.5rem 0;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: clamp(1.1rem, 4vw, 2.2rem);
 }
-.fregio::before,
-.fregio::after {
+.divisore::before,
+.divisore::after {
   content: "";
   height: 1px;
-  flex: 0 0 auto;
-  width: clamp(38px, 11vw, 92px);
+  flex: 1 1 auto;
+  max-width: 180px;
 }
-.fregio::before { background: linear-gradient(90deg, transparent, var(--linea-oro)); }
-.fregio::after  { background: linear-gradient(90deg, var(--linea-oro), transparent); }
-.fregio .rombo {
-  width: 9px;
-  height: 9px;
+.divisore::before { background: linear-gradient(90deg, transparent, var(--oro)); }
+.divisore::after  { background: linear-gradient(90deg, var(--oro), transparent); }
+.rombo {
+  width: 9px; height: 9px;
   flex: none;
   background: var(--oro);
   transform: rotate(45deg);
-  box-shadow: 0 0 0 3px rgba(184, 146, 74, 0.18);
 }
-.fregio--center { justify-content: center; }
-/* Variante su fondo scuro: oro piu chiaro */
-.section--blu .fregio::before,
-.hero .fregio::before { background: linear-gradient(90deg, transparent, var(--oro-chiaro)); }
-.section--blu .fregio::after,
-.hero .fregio::after { background: linear-gradient(90deg, var(--oro-chiaro), transparent); }
-.section--blu .fregio .rombo,
-.section--granato .fregio .rombo,
-.hero .fregio .rombo { background: var(--oro-chiaro); box-shadow: 0 0 0 3px rgba(219, 192, 129, 0.16); }
-.section--granato .fregio::before { background: linear-gradient(90deg, transparent, var(--oro-chiaro)); }
-.section--granato .fregio::after { background: linear-gradient(90deg, var(--oro-chiaro), transparent); }
 
-/* Filetto semplice (separatore minore) */
-.filetto {
-  width: 84px; height: 0; border: none;
-  border-top: 1px solid var(--linea-oro);
-  margin: 1.4rem 0;
-}
-.filetto--center { margin-inline: auto; }
-
-/* Intestazione di sezione con eyebrow + titolo + fregio */
+/* Intestazione di sezione: eyebrow + titolo + filetto oro */
 .sezione-testa { max-width: 56ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .sezione-testa h2 {
   font-size: clamp(1.9rem, 4vw, 2.9rem);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* =====================================================================
-   HEADER / NAVIGAZIONE — chiaro, con filo oro
+   HEADER / NAVIGAZIONE — fondo bianco, filetto oro sotto
    ===================================================================== */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(251, 248, 241, 0.93);
+  background: rgba(251, 250, 247, 0.94);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--linea);
-  box-shadow: 0 1px 0 rgba(184, 146, 74, 0.25);
+  border-bottom: 1px solid var(--oro);
 }
 .header-inner {
   display: flex;
@@ -222,42 +191,44 @@ select:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--nero);
+  color: var(--inchiostro);
 }
-.brand:hover { color: var(--nero); }
+.brand:hover { color: var(--inchiostro); }
 .brand .stemma {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   flex: none;
   display: grid;
   place-items: center;
   border: 1px solid var(--oro);
   border-radius: var(--radius);
   font-family: var(--font-util);
+  font-weight: 700;
   font-size: 0.5rem;
+  letter-spacing: 0.04em;
   text-align: center;
   line-height: 1.05;
-  color: var(--oro-scuro);
-  background: linear-gradient(160deg, var(--blu-zaffiro), var(--blu));
+  color: var(--oro-chiaro);
+  background: var(--blu);
   padding: 2px;
 }
-.brand .stemma { color: var(--oro-chiaro); }
 .brand .brand-name {
   font-family: var(--font-display);
-  font-size: 1.22rem;
+  font-size: 1.32rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.05;
+  letter-spacing: 0.01em;
+  line-height: 1.02;
   color: var(--blu);
 }
 .brand .brand-name small {
   display: block;
   font-family: var(--font-util);
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--oro-scuro);
-  margin-top: 2px;
+  color: var(--grigio);
+  margin-top: 3px;
 }
 
 /* Navigazione */
@@ -271,11 +242,7 @@ select:focus-visible {
   padding: 0.55rem 0.6rem;
   cursor: pointer;
 }
-.nav-toggle span {
-  display: block;
-  width: 22px; height: 1.5px;
-  background: var(--blu);
-}
+.nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--blu); }
 
 .main-nav ul {
   list-style: none;
@@ -286,34 +253,35 @@ select:focus-visible {
 }
 .main-nav a {
   font-family: var(--font-util);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blu);
+  color: var(--inchiostro);
   padding-block: 0.3rem;
   position: relative;
 }
 .main-nav a:hover,
-.main-nav a[aria-current="page"] { color: var(--granato); }
+.main-nav a[aria-current="page"] { color: var(--rosso); }
 .main-nav a[aria-current="page"]::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -2px;
-  height: 1px;
-  background: var(--linea-oro);
+  height: 2px;
+  background: var(--rosso);
 }
 
 /* =====================================================================
-   HERO — la firma "soglia imperiale" (fondo blu notte profondo)
+   HERO — fondo blu pieno, nome in oro (firma: soglia imperiale)
    ===================================================================== */
 .hero {
   position: relative;
-  color: var(--avorio);
+  color: var(--bianco);
   overflow: hidden;
   isolation: isolate;
-  background: var(--blu-scuro);
+  background: var(--blu);
 }
-/* Placeholder immagine storica (sostituire con foto reale scura) */
+/* Placeholder grande immagine storica scurita (sostituire con foto reale) */
 .hero-media {
   position: absolute;
   inset: 0;
@@ -321,30 +289,30 @@ select:focus-visible {
   display: grid;
   place-items: end center;
   background:
-    radial-gradient(120% 100% at 75% 0%, var(--blu-zaffiro) 0%, var(--blu) 45%, var(--blu-scuro) 100%);
+    linear-gradient(180deg, var(--blu) 0%, var(--blu-scuro) 100%);
   color: var(--oro-chiaro);
   font-family: var(--font-util);
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-align: center;
   padding: 1.4rem;
 }
 .hero-media .ph-tag {
-  border: 1px dashed rgba(219, 192, 129, 0.4);
+  border: 1px dashed rgba(227, 199, 102, 0.4);
   border-radius: var(--radius);
   padding: 0.6rem 1rem;
   max-width: 32rem;
   opacity: 0.6;
 }
-/* Velo per leggibilita + vignettatura calda d'angolo */
+/* Velo per scurire la futura immagine e mantenere il blu fiero */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    radial-gradient(90% 80% at 18% 30%, rgba(184, 146, 74, 0.12) 0%, transparent 55%),
-    linear-gradient(180deg, rgba(14, 27, 51, 0.45) 0%, rgba(14, 27, 51, 0.82) 100%);
+  background: linear-gradient(180deg, rgba(11, 61, 145, 0.55) 0%, rgba(8, 45, 107, 0.8) 100%);
 }
 .hero-inner {
   position: relative;
@@ -353,23 +321,21 @@ select:focus-visible {
   flex-direction: column;
   justify-content: center;
   padding-block: clamp(4rem, 12vh, 8rem);
-  max-width: 48rem;
+  max-width: 50rem;
 }
 .hero h1 {
-  color: var(--avorio);
+  color: var(--oro);
+  font-family: var(--font-display);
   font-size: clamp(2.8rem, 6.5vw, 5rem);
-  font-weight: 500;
-  line-height: 1.06;
+  font-weight: 600;
+  line-height: 1.04;
   letter-spacing: 0.01em;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.2em;
 }
-.hero h1 .oro {
-  color: var(--oro-chiaro);
-  display: block;
-}
+.hero h1 .riga2 { display: block; }
 .hero-sub {
   font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-  color: #E7EBF2;
+  color: var(--bianco);
   max-width: 36rem;
   margin-bottom: 0;
 }
@@ -383,8 +349,9 @@ select:focus-visible {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-util);
-  font-size: 0.82rem;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 0.85rem 1.6rem;
   border-radius: var(--radius);
@@ -392,40 +359,30 @@ select:focus-visible {
   cursor: pointer;
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
 }
-.btn:hover { transform: translateY(-1px); }
 
-/* Primario: granato (CTA d'onore) */
+/* Primario: rosso vermiglio (CTA principale) */
 .btn--rosso {
-  background: var(--granato);
-  color: var(--avorio);
-  border-color: var(--granato);
-  box-shadow: 0 6px 16px rgba(94, 22, 34, 0.25);
+  background: var(--rosso);
+  color: var(--bianco);
+  border-color: var(--rosso);
 }
-.btn--rosso:hover { background: var(--granato-scuro); border-color: var(--granato-scuro); color: #fff; }
+.btn--rosso:hover { background: var(--rosso-scuro); border-color: var(--rosso-scuro); transform: translateY(-2px); }
 
-/* Oro pieno */
-.btn--oro {
-  background: var(--oro);
-  color: var(--blu-scuro);
-  border-color: var(--oro);
-}
-.btn--oro:hover { background: var(--oro-scuro); border-color: var(--oro-scuro); color: var(--avorio); }
-
-/* Contorno chiaro su fondo scuro */
-.btn--ghost {
-  background: transparent;
-  color: var(--avorio);
-  border-color: rgba(219, 192, 129, 0.6);
-}
-.btn--ghost:hover { border-color: var(--oro-chiaro); color: var(--oro-chiaro); }
-
-/* Contorno su fondo chiaro */
-.btn--scuro {
+/* Secondario: contorno blu su fondo chiaro */
+.btn--outline {
   background: transparent;
   color: var(--blu);
-  border-color: var(--oro);
+  border-color: var(--blu);
 }
-.btn--scuro:hover { background: var(--blu); color: var(--avorio); border-color: var(--blu); }
+.btn--outline:hover { background: var(--blu); color: var(--bianco); border-color: var(--blu); transform: translateY(-2px); }
+
+/* Contorno chiaro su fondo scuro (hero, fascia blu) */
+.btn--ghost {
+  background: transparent;
+  color: var(--bianco);
+  border-color: rgba(251, 250, 247, 0.65);
+}
+.btn--ghost:hover { background: var(--bianco); color: var(--blu); border-color: var(--bianco); transform: translateY(-2px); }
 
 /* =====================================================================
    SEZIONE MISSIONE
@@ -442,29 +399,31 @@ select:focus-visible {
 .missione .intro { max-width: 60ch; }
 .missione .intro h2 {
   font-size: clamp(1.9rem, 4vw, 2.9rem);
-  font-weight: 500;
+  font-weight: 600;
 }
 .statuto {
-  background: var(--avorio-chiaro);
+  background: var(--bianco-2);
   border: 1px solid var(--linea);
-  border-top: 3px solid var(--oro);
+  border-top: 2px solid var(--oro);
   border-radius: var(--radius);
   padding: clamp(1.5rem, 3vw, 2.2rem);
-  box-shadow: 0 16px 38px rgba(20, 40, 75, 0.08);
+  box-shadow: 0 14px 34px rgba(11, 61, 145, 0.08);
 }
 .statuto .ph-tag {
   font-family: var(--font-util);
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--oro-scuro);
+  color: var(--grigio);
   display: inline-block;
   margin-bottom: 0.9rem;
 }
 .statuto blockquote {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.32rem;
+  font-weight: 500;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: var(--blu);
 }
@@ -485,59 +444,65 @@ select:focus-visible {
   .griglia--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Scheda con profondita: si solleva dal fondo, filo dorato in alto */
+/* Scheda: bianco, bordo linea, filetto oro 2px in alto, ombra morbida */
 .card {
-  background: var(--avorio-chiaro);
+  background: var(--bianco-2);
   border: 1px solid var(--linea);
-  border-top: 3px solid var(--oro);
+  border-top: 2px solid var(--oro);
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 26px rgba(20, 40, 75, 0.10);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 8px 22px rgba(26, 26, 26, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-top-color 0.25s ease;
 }
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 42px rgba(20, 40, 75, 0.20);
-  border-top-color: var(--granato);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(26, 26, 26, 0.13);
+  border-top-color: var(--rosso);
 }
 .card-media {
   aspect-ratio: 3 / 2;
   display: grid;
   place-items: center;
-  background: linear-gradient(160deg, var(--blu-zaffiro), var(--blu-scuro));
+  background: var(--blu-scuro);
   color: var(--oro-chiaro);
   font-family: var(--font-util);
-  font-size: 0.76rem;
-  letter-spacing: 0.05em;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
   padding: 1rem;
 }
 .card-body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
 .card .data {
   font-family: var(--font-util);
-  font-size: 0.85rem;
-  color: var(--granato);
-  margin-bottom: 0.5rem;
-}
-.card h3 {
-  font-size: 1.35rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--blu);
-}
-.card p { font-size: 0.98rem; color: var(--nero-soft); margin-bottom: 1rem; }
-.card .card-link {
-  margin-top: auto;
-  font-family: var(--font-util);
+  font-weight: 700;
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--oro-scuro);
+  color: var(--grigio);
+  margin-bottom: 0.5rem;
+}
+.card h3 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--inchiostro);
+}
+.card p { font-size: 0.98rem; color: var(--grigio); margin-bottom: 1rem; }
+.card .card-link {
+  margin-top: auto;
+  font-family: var(--font-util);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blu);
 }
 .card .card-link::after { content: " \203A"; }
-.card:hover .card-link { color: var(--granato); }
+.card:hover .card-link { color: var(--rosso); }
 
 /* Galleria anteprima */
 .galleria-grid {
@@ -550,21 +515,24 @@ select:focus-visible {
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
-  background: linear-gradient(160deg, var(--blu-zaffiro), var(--blu-scuro));
-  border: 1px solid rgba(219, 192, 129, 0.35);
+  background: var(--blu-scuro);
+  border: 1px solid var(--linea);
+  border-top: 2px solid var(--oro);
   border-radius: var(--radius);
   color: var(--oro-chiaro);
   font-family: var(--font-util);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   text-align: center;
   padding: 0.7rem;
-  box-shadow: 0 8px 20px rgba(14, 27, 51, 0.30);
-  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(26, 26, 26, 0.08);
+  transition: border-top-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .galleria-item:hover {
-  border-color: var(--oro-chiaro);
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(14, 27, 51, 0.45);
+  border-top-color: var(--rosso);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(26, 26, 26, 0.16);
 }
 
 /* Link "vedi tutto" sotto una griglia */
@@ -573,33 +541,28 @@ select:focus-visible {
   display: flex;
   justify-content: center;
 }
-/* Su fondo blu, il pulsante contorno usa l'oro chiaro */
-.section--blu .btn--scuro { color: var(--avorio); border-color: var(--oro-chiaro); }
-.section--blu .btn--scuro:hover { background: var(--oro); color: var(--blu-scuro); border-color: var(--oro); }
 
 /* =====================================================================
-   INVITO "DIVENTA SOCIO" (fondo granato, l'unico)
+   INVITO "DIVENTA SOCIO" (unica fascia blu)
    ===================================================================== */
 .invito {
   text-align: center;
   max-width: 42rem;
   margin-inline: auto;
 }
-.invito h2 { color: var(--avorio); font-size: clamp(2rem, 4.5vw, 3.1rem); font-weight: 500; }
-.invito p { color: #F1DEDF; font-size: 1.12rem; }
+.invito h2 { color: var(--bianco); font-size: clamp(2rem, 4.5vw, 3.1rem); font-weight: 600; }
+.invito p { color: #E6ECF6; font-size: 1.12rem; }
 .invito .hero-actions { justify-content: center; }
-.section--granato .btn--ghost { border-color: rgba(244, 239, 230, 0.7); }
-.section--granato .btn--ghost:hover { border-color: #fff; color: #fff; }
 
 /* =====================================================================
-   FOOTER (blu profondo)
+   FOOTER (fondo blu)
    ===================================================================== */
 .site-footer {
-  background: var(--blu-scuro);
-  color: #C4CCDA;
+  background: var(--blu);
+  color: var(--bianco);
   font-size: 0.95rem;
   padding-block: clamp(3rem, 6vw, 4.5rem) 2rem;
-  border-top: 3px solid var(--oro);
+  border-top: 2px solid var(--oro);
 }
 .footer-grid {
   display: grid;
@@ -611,42 +574,46 @@ select:focus-visible {
 }
 .site-footer h4 {
   font-family: var(--font-util);
+  font-weight: 700;
   font-size: 0.78rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--oro-chiaro);
   margin-bottom: 1rem;
 }
-.site-footer a { color: #D2D9E5; }
+.site-footer a { color: var(--bianco); }
 .site-footer a:hover { color: var(--oro-chiaro); }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
 .footer-brand .stemma-foot {
   display: inline-grid;
   place-items: center;
-  width: 56px; height: 56px;
+  width: 58px; height: 58px;
   border: 1px solid var(--oro);
   border-radius: var(--radius);
   color: var(--oro-chiaro);
   font-family: var(--font-util);
+  font-weight: 700;
   font-size: 0.5rem;
+  letter-spacing: 0.04em;
   text-align: center;
   line-height: 1.1;
   padding: 3px;
   margin-bottom: 1rem;
 }
-.footer-brand p { color: #9FA9BC; max-width: 32ch; }
+.footer-brand p { color: #C7D2E6; max-width: 32ch; }
 .footer-bottom {
   margin-top: 2.6rem;
   padding-top: 1.4rem;
-  border-top: 1px solid rgba(184, 146, 74, 0.35);
+  border-top: 1px solid rgba(227, 199, 102, 0.3);
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem 1.4rem;
   justify-content: space-between;
   font-family: var(--font-util);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  color: #7C879C;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9DAFCB;
 }
 
 /* =====================================================================
@@ -660,13 +627,13 @@ select:focus-visible {
 .js .reveal.is-visible { opacity: 1; transform: none; }
 
 /* Comparsa morbida dell'hero, una volta sola */
-.hero h1, .hero .eyebrow, .hero-sub, .hero .fregio, .hero-actions {
+.hero h1, .hero .eyebrow, .hero-sub, .hero .filetto, .hero-actions {
   animation: heroIn 1.2s ease both;
 }
 .hero .eyebrow { animation-delay: 0.1s; }
 .hero h1 { animation-delay: 0.25s; }
 .hero-sub { animation-delay: 0.5s; }
-.hero .fregio { animation-delay: 0.65s; }
+.hero .filetto { animation-delay: 0.65s; }
 .hero-actions { animation-delay: 0.8s; }
 @keyframes heroIn {
   from { opacity: 0; transform: translateY(14px); }
@@ -688,9 +655,9 @@ select:focus-visible {
     position: absolute;
     top: 100%;
     left: 0; right: 0;
-    background: var(--avorio-chiaro);
-    border-bottom: 1px solid var(--linea);
-    box-shadow: 0 12px 24px rgba(20, 40, 75, 0.12);
+    background: var(--bianco-2);
+    border-bottom: 1px solid var(--oro);
+    box-shadow: 0 12px 24px rgba(11, 61, 145, 0.12);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
@@ -702,7 +669,7 @@ select:focus-visible {
     padding: 0.5rem clamp(1.1rem, 4vw, 2.2rem) 1.2rem;
   }
   .main-nav li { border-bottom: 1px solid var(--linea); }
-  .main-nav a { display: block; padding: 0.9rem 0; font-size: 0.9rem; }
+  .main-nav a { display: block; padding: 0.9rem 0; font-size: 0.88rem; }
 }
 @media (min-width: 861px) {
   .nav-toggle { display: none; }
