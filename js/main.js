@@ -26,7 +26,18 @@
     });
   }
 
-  /* ---------- 2. Rivelazioni allo scroll ---------- */
+  /* ---------- 2. Ombra dell'header allo scroll ---------- */
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () {
+      if (window.scrollY > 8) { header.classList.add("scrolled"); }
+      else { header.classList.remove("scrolled"); }
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  /* ---------- 3. Rivelazioni allo scroll ---------- */
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var items = document.querySelectorAll(".reveal");
 

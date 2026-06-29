@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 26" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fregio ornamentale dorato">
+  <defs>
+    <linearGradient id="oro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0C98C"/>
+      <stop offset="0.5" stop-color="#C5A059"/>
+      <stop offset="1" stop-color="#9C7A38"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#oro)" stroke-width="1.4" stroke-linecap="round">
+    <path d="M10 13 H96"/>
+    <path d="M144 13 H230"/>
+    <path d="M96 13 c9 0 13 -6 22 -6"/>
+    <path d="M96 13 c9 0 13 6 22 6"/>
+    <path d="M144 13 c-9 0 -13 -6 -22 -6"/>
+    <path d="M144 13 c-9 0 -13 6 -22 6"/>
+  </g>
+  <g fill="url(#oro)">
+    <path d="M120 3 C123 9 127 10 132 13 C127 16 123 17 120 23 C117 17 113 16 108 13 C113 10 117 9 120 3 Z"/>
+    <circle cx="8" cy="13" r="1.6"/>
+    <circle cx="232" cy="13" r="1.6"/>
+  </g>
+</svg>
