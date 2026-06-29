@@ -1,5 +1,5 @@
 /* =====================================================================
-   Circolo Russia Imperiale — JS minimo
+   Circolo Internazionale Amici della Russia Imperiale - Terza Roma — JS minimo
    1) Menu mobile  2) Rivelazioni delicate allo scroll (tempi variati)
    ===================================================================== */
 (function () {

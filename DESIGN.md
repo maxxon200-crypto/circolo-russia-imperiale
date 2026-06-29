@@ -1,4 +1,4 @@
-# DESIGN.md — Circolo Russia Imperiale
+# DESIGN.md — Circolo Internazionale Amici della Russia Imperiale - Terza Roma
 
 > **Come usare questo file:** Tienilo nella cartella del progetto `circolo-russia-imperiale`.
 > All'inizio di OGNI sessione con Claude Code scrivi:
@@ -10,7 +10,7 @@
 
 ## 0. Scopo e contesto
 
-Sito per il **Circolo Russia Imperiale**, associazione culturale italiana dedicata alla
+Sito per il **Circolo Internazionale Amici della Russia Imperiale - Terza Roma**, associazione culturale italiana dedicata alla
 storia, alla cultura e alle tradizioni dell'Impero Russo.
 
 - **Natura:** culturale e istituzionale, NON commerciale. Deve trasmettere prestigio storico,
