@@ -110,21 +110,16 @@ campitura. La ricchezza viene dalle IMMAGINI storiche e dalla tipografia, non da
 
 ## 3. Tipografia
 
-Niente font di sistema, niente Inter nei titoli. La tipografia porta l'autorevolezza storica
-e dà carattere. Il contrasto tra il serif elegante dei titoli e il serif da lettura del corpo
-è parte dell'identità.
-
-Importa da Google Fonts e usa SOLO questi tre. Niente Playfair, niente Inter, niente font di
-sistema (solo come ultima fallback generica).
+**UN SOLO font in tutto il sito: Inter.** Look pulito, moderno e ordinato, in stile Apple.
+Niente Cormorant, niente PT Serif, niente Playfair: un'unica famiglia, usata con pesi diversi
+per creare gerarchia (non con font diversi). Importa Inter da Google Fonts.
 
 ```css
 :root {
-  /* Titoli (h1, h2, h3) e nome del Circolo — Cormorant Garamond, pesi 500 e 600 */
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  /* Testo corrente, paragrafi, didascalie — PT Serif, pesi 400 e 700 */
-  --font-body:    "PT Serif", Georgia, serif;
-  /* Etichette, eyebrow, menu, date — PT Sans peso 700, MAIUSCOLO, letter-spacing 0.14em */
-  --font-util:    "PT Sans", system-ui, sans-serif;
+  /* Un unico font per titoli, testo ed etichette: Inter */
+  --font-display: "Inter", system-ui, -apple-system, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, sans-serif;
+  --font-util:    "Inter", system-ui, -apple-system, sans-serif;
 }
 ```
 
@@ -132,17 +127,16 @@ sistema (solo come ultima fallback generica).
 
 | Ruolo | Dimensione | Stile | Note |
 |---|---|---|---|
-| Hero / H1 | `clamp(2.8rem, 6.5vw, 5rem)` | Cormorant 600 | nome del Circolo in oro su blu, ben spaziato |
-| H2 sezione | `clamp(1.9rem, 4vw, 2.9rem)` | Cormorant 600 | accompagnato da eyebrow e filetto oro |
-| H3 | `1.35rem` | Cormorant 600 | titoli di scheda, color inchiostro |
-| Corpo articoli | `1.075rem` | PT Serif 400 | line-height 1.7, pensato per LEGGERE testi lunghi |
-| Eyebrow/etichetta | `0.78rem` | PT Sans 700 | MAIUSCOLO, letter-spacing 0.14em, color oro |
-| Data/didascalia | `0.82rem` | PT Sans 700 | MAIUSCOLO ls 0.14em, color grigio, per eventi e foto |
+| Hero (nome) | `clamp(1.85rem, 4.2vw, 3.1rem)` | Inter 600 | righe equilibrate, centrate, stessa dimensione |
+| H2 sezione | `clamp(1.9rem, 4vw, 2.9rem)` | Inter 600 | accompagnato da eyebrow e filetto oro |
+| H3 | `1.35rem` | Inter 600 | titoli di scheda, color inchiostro |
+| Corpo / articoli | `1.075rem` | Inter 400 | line-height 1.7, per leggere testi lunghi |
+| Eyebrow/etichetta | `0.78rem` | Inter 600/700 | MAIUSCOLO, letter-spacing 0.14em, color oro |
+| Data/didascalia | `0.82rem` | Inter 600 | MAIUSCOLO ls 0.14em, color grigio |
 
-**Firma tipografica:** le etichette (eyebrow, menu, date) in PT Sans maiuscolo spaziato 0.12em;
-i titoli in Cormorant Garamond grandi e arieggiati, con personalità; i testi in PT Serif da
-lettura. Il contrasto tra il serif elegante dei titoli e il serif del corpo dà carattere: il
-sito si LEGGE, non si scorre soltanto.
+**Firma tipografica:** la gerarchia nasce dai PESI di Inter (400 testo, 500/600 titoli, 600/700
+etichette maiuscole spaziate), non da font diversi. Equilibrio e pulizia prima di tutto: niente
+contrasti estremi di dimensione, niente titoli "esplosi". Ordine e respiro in stile Apple.
 
 ---
 
@@ -270,12 +264,12 @@ Claude costruisce ogni pagina rispettando questi minimi, senza che debba chieder
 Ogni sito ha **un** elemento memorabile. Qui la firma è:
 
 > **La soglia imperiale.** L'hero è una "soglia" solenne: una **grande immagine storica**
-> dell'Impero che riempie lo schermo, con una velatura scura solo quanto basta per leggere il
-> testo. Sopra, il nome del Circolo in **Cormorant Garamond 600 color bianco**, chiuso da un
-> **filetto orizzontale dorato**. Dà subito il senso di entrare in un museo imperiale. Da quel
-> filetto nasce il "filo" dorato (filetti e piccoli rombi) che dà ritmo alle sezioni, tutte su
-> avorio. L'unico altro momento scuro è il footer. Eleganza per sottrazione: il colore è raro,
-> l'oro è un dettaglio, la ricchezza la portano le immagini e la tipografia.
+> dell'Impero come **sfondo a tutta altezza**, con una velatura scura solo quanto basta per
+> leggere il testo. Sopra, centrato ed equilibrato, il nome completo del Circolo in **Inter**
+> color avorio (righe della stessa dimensione, niente titoli "esplosi"), con il solo **"Terza
+> Roma"** in oro come accento. Pulizia e ordine in stile Apple. Da lì nasce il "filo" dorato
+> (filetti e piccoli rombi) che dà ritmo alle sezioni, tutte su avorio. L'unico altro momento
+> scuro è il footer. Eleganza per sottrazione: il colore è raro, l'oro è un dettaglio.
 
 Spendi l'audacia QUI. Tieni tutto il resto ricco ma disciplinato.
 
