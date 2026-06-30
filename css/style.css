@@ -28,7 +28,17 @@
   --max:      1140px;
   --max-read:  720px;
   --radius:    6px;
-  --gap-sez: clamp(5rem, 9vw, 8.5rem);
+
+  /* ---------- Scala di spaziatura armonica ---------- */
+  --sp-1: 4px;   /* micro-dettagli */
+  --sp-2: 8px;   /* spazi interni piccoli */
+  --sp-3: 16px;  /* padding standard */
+  --sp-4: 24px;  /* tra elementi correlati */
+  --sp-5: 32px;  /* tra sezioni */
+  --sp-6: 48px;  /* tra blocchi principali */
+  --sp-7: 64px;  /* tra sezioni importanti */
+  --sp-8: 96px;  /* tra macro-sezioni, respiro ampio */
+  --gap-sez: clamp(var(--sp-7), 9vw, var(--sp-8));
 }
 
 /* ---------- Reset ---------- */
@@ -92,23 +102,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .hero .eyebrow, .section--scuro .eyebrow { color: var(--oro); }
 
-/* ---------- Divisore: fregio dorato (SVG) ---------- */
-.divisore {
-  height: 26px;
-  background: url("../assets/img/fregio.svg") center / auto 100% no-repeat;
+/* ---------- Divisore di sezione: linea 1px oro con piccolo rombo vuoto ---------- */
+.divisore { display: flex; align-items: center; justify-content: center; gap: var(--sp-3); }
+.divisore::before, .divisore::after { content: ""; height: 1px; width: 64px; background: var(--oro); }
+.divisore .rombo {
+  display: block; width: 8px; height: 8px;
+  border: 1px solid var(--oro); background: transparent; transform: rotate(45deg);
 }
-.divisore .rombo { display: none; }
 
-/* Filetto semplice (oro) */
-.filetto { width: 90px; height: 0; border: none; border-top: 1px solid var(--oro); margin: 1.3rem 0; }
+/* Filetto semplice (1px oro, discreto) */
+.filetto { width: 88px; height: 0; border: none; border-top: 1px solid var(--oro); margin: var(--sp-4) 0; }
 .filetto--center { margin-inline: auto; }
 
-/* Intestazione di sezione: eyebrow + titolo Cormorant + fregio */
-.sezione-testa { max-width: 54ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
+/* Intestazione di sezione: eyebrow + titolo Cormorant + filetto con cerchietto */
+.sezione-testa { max-width: 54ch; margin-bottom: clamp(var(--sp-5), 4vw, var(--sp-6)); }
 .sezione-testa h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 600; }
 .sezione-testa .filetto {
-  width: 180px; height: 18px; border: none; margin-top: 1.2rem;
-  background: url("../assets/img/fregio.svg") left center / auto 100% no-repeat;
+  width: 120px; height: 0; border: none; border-top: 1px solid var(--oro);
+  margin-top: var(--sp-3); position: relative;
+}
+.sezione-testa .filetto::before {
+  content: ""; position: absolute; left: 0; top: 50%; margin-top: -4px;
+  width: 7px; height: 7px; border: 1px solid var(--oro); border-radius: 50%; background: var(--crema);
 }
 
 /* =====================================================================
@@ -121,7 +136,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: box-shadow 0.3s ease;
 }
 .site-header.scrolled { box-shadow: 0 8px 28px rgba(11, 25, 44, 0.28); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.8rem; }
+.header-inner { display: flex; align-items: center; justify-content: flex-start; gap: var(--sp-4); padding-block: 0.8rem; }
 .brand { display: inline-flex; align-items: center; color: var(--crema); }
 .brand .stemma {
   width: 50px; height: 50px; flex: none;
@@ -140,6 +155,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-radius: var(--radius); padding: 0.55rem 0.6rem; cursor: pointer;
 }
 .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--crema); }
+.main-nav { margin-left: auto; }
 .main-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 0; padding: 0; }
 .main-nav a {
   font-family: var(--font-body); font-weight: 500; font-size: 0.82rem;
@@ -202,18 +218,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-top: 2.2rem; justify-content: center; }
 
-/* Ornamenti d'angolo (oro) per le sezioni importanti */
-.angoli { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
-.angoli .ang {
-  position: absolute; width: 58px; height: 58px;
-  background: url("../assets/img/angolo.svg") center / contain no-repeat;
-  opacity: 0.9;
-}
-.angoli .a-tl { top: 18px; left: 18px; }
-.angoli .a-tr { top: 18px; right: 18px; transform: scaleX(-1); }
-.angoli .a-bl { bottom: 18px; left: 18px; transform: scaleY(-1); }
-.angoli .a-br { bottom: 18px; right: 18px; transform: scale(-1, -1); }
-
 /* =====================================================================
    PULSANTI (grandi, con presenza)
    ===================================================================== */
@@ -260,7 +264,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Card immagine evocativa (mission) */
 .ritratto {
-  background: var(--bianco); border: 1px solid var(--linea); border-top: 2px solid var(--oro);
+  background: var(--bianco); border: 1px solid var(--oro);
   border-radius: var(--radius); overflow: hidden;
   box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 14px 36px rgba(11, 25, 44, 0.10);
 }
@@ -278,8 +282,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .statuto {
-  background: var(--bianco); border: 1px solid var(--linea); border-top: 2px solid var(--oro);
-  border-radius: var(--radius); padding: clamp(1.6rem, 3vw, 2.3rem);
+  background: var(--bianco); border: 1px solid var(--oro);
+  border-radius: var(--radius); padding: clamp(var(--sp-4), 3vw, var(--sp-6));
   box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 14px 36px rgba(11, 25, 44, 0.10);
 }
 .statuto .ph-tag {
@@ -301,15 +305,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .card {
   background: var(--bianco);
-  border: 1px solid var(--linea); border-top: 2px solid var(--oro);
+  border: 1px solid var(--oro);
   border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column;
   box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 14px 36px rgba(11, 25, 44, 0.10);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 2px 6px rgba(11, 25, 44, 0.08), 0 26px 52px rgba(11, 25, 44, 0.18);
-  border-top-color: var(--cremisi);
 }
 .card-media {
   aspect-ratio: 3 / 2; display: grid; place-items: center;
@@ -318,7 +321,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-family: var(--font-body); font-weight: 500; font-size: 0.72rem;
   letter-spacing: 0.1em; text-transform: uppercase; text-align: center; padding: 1rem;
 }
-.card-body { padding: 1.4rem 1.5rem 1.6rem; display: flex; flex-direction: column; flex: 1; }
+.card-body { padding: var(--sp-4); display: flex; flex-direction: column; flex: 1; }
 .card .data {
   font-family: var(--font-body); font-weight: 500; font-size: 0.74rem;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--oro); margin-bottom: 0.6rem;
@@ -338,7 +341,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .galleria-item {
   aspect-ratio: 1 / 1; display: grid; place-items: center;
   background: linear-gradient(160deg, #1a2c44, var(--navy));
-  border: 1px solid var(--oro-soft); border-radius: var(--radius);
+  border: 1px solid var(--oro); border-radius: var(--radius);
   color: rgba(255, 255, 255, 0.5);
   font-family: var(--font-body); font-weight: 500; font-size: 0.7rem;
   letter-spacing: 0.08em; text-transform: uppercase; text-align: center; padding: 0.7rem;
@@ -351,7 +354,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .foto .ph-img {
   aspect-ratio: 4 / 3; display: grid; place-items: center;
   background: linear-gradient(160deg, #1a2c44, var(--navy));
-  border-radius: var(--radius); color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--oro); border-radius: var(--radius); color: rgba(255, 255, 255, 0.5);
   font-family: var(--font-body); font-weight: 500; font-size: 0.7rem;
   letter-spacing: 0.08em; text-transform: uppercase; text-align: center; padding: 0.8rem;
   box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 12px 30px rgba(11, 25, 44, 0.12);
@@ -367,10 +370,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    ===================================================================== */
 .invito {
   position: relative; text-align: center; max-width: 46rem; margin-inline: auto;
-  background: var(--bianco); border-radius: var(--radius);
-  padding: clamp(2.8rem, 6vw, 4.5rem) clamp(1.5rem, 5vw, 3.5rem);
+  background: var(--bianco); border: 1px solid var(--oro); border-radius: var(--radius);
+  padding: clamp(var(--sp-6), 6vw, 72px) clamp(var(--sp-4), 5vw, var(--sp-7));
   box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 18px 44px rgba(11, 25, 44, 0.12);
-  box-shadow: inset 0 0 0 1px var(--oro-soft), 0 1px 3px rgba(11, 25, 44, 0.06), 0 18px 44px rgba(11, 25, 44, 0.12);
 }
 .invito h2 { color: var(--navy); font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 600; }
 .invito p { color: var(--testo-2); font-size: 1.1rem; }
@@ -378,12 +380,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-family: var(--font-display); font-weight: 500; color: var(--navy);
   font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.45;
 }
-.invito .hero-actions { justify-content: center; margin-top: 1.8rem; }
-.invito .angoli .ang { width: 46px; height: 46px; }
-.invito .angoli .a-tl { top: 12px; left: 12px; }
-.invito .angoli .a-tr { top: 12px; right: 12px; }
-.invito .angoli .a-bl { bottom: 12px; left: 12px; }
-.invito .angoli .a-br { bottom: 12px; right: 12px; }
+.invito .hero-actions { justify-content: center; margin-top: var(--sp-5); }
 
 /* =====================================================================
    FOOTER (navy)
@@ -438,7 +435,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .form textarea { min-height: 8.5rem; resize: vertical; }
 .form .nota { font-size: 0.9rem; color: var(--testo-2); margin: 0; }
 
-.box-info { background: var(--bianco); border: 1px solid var(--linea); border-left: 3px solid var(--oro); border-radius: var(--radius); padding: clamp(1.3rem, 3vw, 1.8rem); margin-top: 2rem; box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 12px 30px rgba(11, 25, 44, 0.08); }
+.box-info { background: var(--bianco); border: 1px solid var(--oro); border-radius: var(--radius); padding: clamp(var(--sp-3), 3vw, var(--sp-4)); margin-top: var(--sp-5); box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 12px 30px rgba(11, 25, 44, 0.08); }
 .box-info .tag { font-family: var(--font-body); font-weight: 600; font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--oro); display: inline-block; margin-bottom: 0.5rem; }
 .box-info p { margin: 0; color: var(--testo-2); }
 
@@ -449,8 +446,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .prossimamente {
   max-width: 42rem; margin: 0 auto; text-align: center; background: var(--bianco);
-  border-radius: var(--radius); padding: clamp(2.8rem, 7vw, 4.5rem) clamp(1.5rem, 5vw, 3.5rem);
-  box-shadow: inset 0 0 0 1px var(--oro-soft), 0 1px 3px rgba(11, 25, 44, 0.06), 0 18px 44px rgba(11, 25, 44, 0.12);
+  border: 1px solid var(--oro); border-radius: var(--radius);
+  padding: clamp(var(--sp-6), 7vw, 72px) clamp(var(--sp-4), 5vw, var(--sp-7));
+  box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 18px 44px rgba(11, 25, 44, 0.12);
   position: relative;
 }
 .prossimamente .sigillo { font-family: var(--font-body); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--oro); }
@@ -492,15 +490,44 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .main-nav ul { flex-direction: column; gap: 0; padding: 0.5rem clamp(1.1rem, 4vw, 2.2rem) 1.2rem; }
   .main-nav li { border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   .main-nav a { display: block; padding: 0.9rem 0; font-size: 0.9rem; }
+  .nav-toggle { margin-left: auto; }
 }
 @media (min-width: 861px) { .nav-toggle { display: none; } .main-nav { max-height: none !important; } }
 
-@media (max-width: 560px) {
-  .angoli .ang { width: 36px; height: 36px; }
-  .angoli .a-tl, .angoli .a-tr { top: 10px; }
-  .angoli .a-bl, .angoli .a-br { bottom: 10px; }
-  .angoli .a-tl, .angoli .a-bl { left: 10px; }
-  .angoli .a-tr, .angoli .a-br { right: 10px; }
-}
-
 .site-header .wrap { position: relative; }
+
+/* =====================================================================
+   SELETTORE LINGUA (Google Translate, stilizzato sui colori del sito)
+   ===================================================================== */
+.lang { display: inline-flex; align-items: center; gap: var(--sp-2); flex: none; }
+.lang-label {
+  font-family: var(--font-body); font-weight: 500; font-size: 0.68rem;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--oro); white-space: nowrap;
+}
+/* Nel footer il selettore va nella sua colonna */
+.footer-lang { margin-top: var(--sp-3); }
+
+/* Addomestica e ristiliza il widget Google Translate */
+#google_translate_element { display: inline-block; line-height: 0; }
+.goog-te-gadget { font-size: 0 !important; line-height: 0 !important; color: transparent !important; }
+.goog-te-gadget > span { display: none !important; }
+.goog-logo-link { display: none !important; }
+.goog-te-gadget .goog-te-combo {
+  margin: 0 !important;
+  font-family: var(--font-body) !important; font-size: 0.78rem !important; font-weight: 500;
+  color: var(--crema); background: transparent;
+  border: 1px solid rgba(197, 160, 89, 0.55); border-radius: var(--radius);
+  padding: 6px 10px; cursor: pointer; max-width: 9.5rem;
+}
+.goog-te-gadget .goog-te-combo:hover { border-color: var(--oro); }
+.goog-te-combo option { color: var(--navy); }
+/* Footer: testo su navy va bene crema, bordo oro */
+.site-footer .goog-te-gadget .goog-te-combo { color: var(--crema); }
+/* Nascondi la barra superiore iniettata da Google e ripristina il layout */
+.goog-te-banner-frame.skiptranslate, iframe.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+@media (max-width: 520px) {
+  .lang-label { display: none; }
+  .goog-te-gadget .goog-te-combo { max-width: 7.5rem; }
+}

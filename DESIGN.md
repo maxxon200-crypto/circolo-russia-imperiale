@@ -104,17 +104,21 @@ L'occhio deve cadere PRIMA sui titoli (emozione), POI sulle descrizioni (informa
 
 ---
 
-## 6. Ornamenti dorati (SVG, disegnati da noi)
+## 6. Rifiniture oro (sottili, mai ingombranti)
 
-Linguaggio decorativo imperiale russo, elegante e discreto, in **SVG** (nitido, leggero,
-senza immagini scaricate):
-- **Fregio/voluta dorato** in stile barocco imperiale (riccioli e foglie d'acanto), con leggero
-  **gradiente oro** per effetto rilievo (alla Hermitage), usato come:
-  - **divisore centrale** tra le sezioni (piccolo e simmetrico), e
-  - **ornamento d'angolo** discreto sulle sezioni più importanti (hero, "Diventa socio"),
-    specchiato per i quattro angoli.
-- Mai sgargiante o folkloristico. Solo sugli elementi importanti.
-- **Su mobile** gli ornamenti si rimpiccioliscono o si semplificano: la leggibilità prima di tutto.
+**Principio:** "Meno è più. L'oro accompagna, non domina. Ogni dettaglio ha uno scopo, ogni
+spazio ha un respiro." L'oro non occupa mai spazio da solo: incornicia e accompagna il testo,
+in silenzio. Niente volute, niente foglie barocche, niente ornamenti d'angolo. Solo linee
+sottili, cornici fini, piccoli rombi/cerchietti.
+
+- **Cornici card/box:** un bordo sottile **1px `--oro`** attorno alle card e ai box importanti,
+  angoli leggermente arrotondati, come la cornice di un documento prezioso. Niente decori
+  dentro o sopra: solo la linea di contorno fine.
+- **Divisori di sezione:** una linea orizzontale sottile **1px `--oro`** con un piccolo
+  **rombo o cerchietto vuoto** in `--oro` all'inizio o al centro. Discreto.
+- **Eyebrow:** Inter maiuscolo spaziato, `--oro`, piccole e raffinate, sopra i titoli.
+- **Filetti:** sempre 1px, sempre `--oro`, per sottolineare un titolo o separare blocchi.
+- **Su mobile** restano sottili e leggibili: la leggibilità prima di tutto.
 
 ---
 
@@ -136,9 +140,31 @@ senza immagini scaricate):
 ## 8. Layout e spaziatura
 
 - Contenuto centrato, larghezza max `1140px`; colonna di lettura `720px` per i testi lunghi.
-- Ritmo verticale ampio: sezioni separate da `clamp(5rem, 9vw, 8.5rem)`.
 - Border-radius contenuto (`6px`), elegante e non gonfio.
 - Mobile-first: tutto si impila con eleganza fino a 320px.
+
+**Scala di spaziatura armonica** (usala in modo coerente in tutto il sito):
+
+| Token | Valore | Uso |
+|---|---|---|
+| `--sp-1` | 4px | micro-dettagli |
+| `--sp-2` | 8px | spazi interni piccoli |
+| `--sp-3` | 16px | padding standard |
+| `--sp-4` | 24px | tra elementi correlati |
+| `--sp-5` | 32px | tra sezioni |
+| `--sp-6` | 48px | tra blocchi principali |
+| `--sp-7` | 64px | tra sezioni importanti |
+| `--sp-8` | 96px | tra macro-sezioni (respiro ampio) |
+
+Le sezioni sono separate da `clamp(var(--sp-7), 9vw, var(--sp-8))` (respiro ampio).
+
+---
+
+## 8b. Traduttore multilingua
+
+Selettore di lingua nell'header (voce "Lingua") con il widget **Google Website Translator**,
+stilizzato sui colori del sito (testo crema, bordo `--oro`, niente blocco Google sgargiante).
+Traduce automaticamente in tutte le lingue. Discreto ma visibile.
 
 ---
 

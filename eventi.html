@@ -36,6 +36,11 @@
             <li><a href="area-riservata.html">Area riservata</a></li>
           </ul>
         </nav>
+
+        <div class="lang">
+          <span class="lang-label">Lingua</span>
+          <div id="google_translate_element"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -186,5 +191,13 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
