@@ -497,6 +497,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-header .wrap { position: relative; }
 
 /* =====================================================================
+   INSERIMENTO FOTO REALI
+   Per aggiungere una foto: metti un <img> dentro il contenitore segnaposto,
+   es. <div class="card-media"><img src="assets/img/foto.jpg" alt="descrizione"></div>
+   L'immagine riempie automaticamente lo spazio, ben ritagliata.
+   ===================================================================== */
+.card-media > img,
+.ritratto .ph-img > img,
+.foto .ph-img > img,
+.galleria-item > img {
+  width: 100%; height: 100%; object-fit: cover; display: block; border-radius: inherit;
+}
+.brand .stemma > img,
+.footer-brand .stemma-foot > img { width: 100%; height: 100%; object-fit: contain; }
+/* Hero con foto reale: aggiungi la classe "has-photo" alla sezione .hero e
+   imposta qui sotto l'immagine. */
+.hero.has-photo .hero-media {
+  background-image: url("../assets/img/hero.jpg");
+  background-size: cover; background-position: center;
+}
+.hero.has-photo .hero-media .ph-tag { display: none; }
+
+/* =====================================================================
    SELETTORE LINGUA (Google Translate, stilizzato sui colori del sito)
    ===================================================================== */
 .lang { display: inline-flex; align-items: center; gap: var(--sp-2); flex: none; }
