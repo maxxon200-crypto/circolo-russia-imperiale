@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#14315C">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,50 +40,56 @@
             <li><a href="area-riservata.html">Area riservata</a></li>
           </ul>
         </nav>
+
+        <div class="lang">
+          <span class="lang-label">Lingua</span>
+          <div id="google_translate_element"></div>
+        </div>
       </div>
     </div>
   </header>
 
   <main id="contenuto">
 
-    <!-- ============================ HERO (foto di sfondo a tutta altezza + testo sopra) ============================ -->
+    <!-- ============================ HERO (foto di sfondo + velatura navy + testo evocativo) ============================ -->
     <section class="hero" aria-label="Benvenuto">
       <!-- La foto storica e lo SFONDO dell'hero. Sostituire il placeholder con l'immagine reale
            impostando in CSS .hero-media { background-image: url('assets/img/hero.jpg'); } -->
       <div class="hero-media" aria-hidden="true">
-        <span class="ph-tag">[FOTO SFONDO HERO: Palazzo d'Inverno, orizzontale, alta qualita]</span>
+        <span class="ph-tag">[FOTO SFONDO HERO: Palazzo d'Inverno orizzontale alta qualita]</span>
       </div>
       <div class="wrap">
         <div class="hero-inner">
+          <p class="eyebrow">Associazione culturale</p>
           <h1 class="hero-nome">
             <span class="nome-main">Circolo Internazionale Amici della Russia Imperiale</span>
             <span class="nome-motto">Terza Roma</span>
           </h1>
-          <p class="hero-sub">Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo. Un luogo per conoscere, leggere e incontrarsi.</p>
+          <p class="hero-sub">Dove la memoria di un Impero diventa incontro, bellezza e amicizia.</p>
           <div class="hero-actions">
-            <a class="btn btn--lg btn--ghost" href="storia.html">Scopri la storia</a>
+            <a class="btn btn--lg btn--ghost" href="storia.html">Scopri di piu</a>
             <a class="btn btn--lg btn--rosso" href="tesseramento.html">Diventa socio</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================ MISSIONE (fondo bianco, lettura) ============================ -->
+    <!-- ============================ MISSIONE (una idea, molto respiro) ============================ -->
     <section class="section" aria-labelledby="missione-tit">
       <div class="wrap">
         <div class="missione">
           <div class="intro reveal">
-            <p class="eyebrow">La nostra missione</p>
-            <h2 id="missione-tit">Custodire e far conoscere l'eredita dell'Impero Russo</h2>
-            <p>Il Circolo riunisce appassionati di storia e cultura russa. Promuoviamo incontri, letture e ricerche dedicate all'Impero Russo, alla sua arte, alle sue tradizioni civili e religiose.</p>
-            <p>Crediamo nello studio serio e nella divulgazione accessibile. Le porte sono aperte a soci e a chiunque desideri avvicinarsi a questo patrimonio.</p>
+            <p class="eyebrow">Chi siamo</p>
+            <h2 id="missione-tit">Custodire la bellezza di un mondo che non vogliamo dimenticare</h2>
+            <p class="lead">C'e una nostalgia luminosa nella storia dell'Impero Russo: i palazzi, le icone, la musica e le voci di un'epoca che continua a parlarci.</p>
+            <p>Il Circolo nasce dall'amore per questa eredita. Ci incontriamo per studiarla, raccontarla e condividerla, con il rigore di chi cerca la verita storica e la cura di chi se ne sente custode.</p>
             <hr class="filetto" aria-hidden="true">
-            <a class="btn btn--rosso" href="tesseramento.html">Avvicinati al Circolo</a>
+            <a class="btn btn--rosso" href="storia.html">Scopri di piu</a>
           </div>
-          <aside class="statuto reveal" data-delay="0.15s">
-            <span class="ph-tag">Dallo Statuto del Circolo</span>
-            <blockquote>[TESTO MISSION / ESTRATTO STATUTO. Qui andra un breve estratto delle finalita del Circolo, fornito dal cliente. Sostituire questo testo segnaposto.]</blockquote>
-          </aside>
+          <figure class="ritratto reveal" data-delay="0.15s">
+            <div class="ph-img" aria-hidden="true">[FOTO: ritratto imperiale o veduta del Palazzo d'Inverno, verticale]</div>
+            <figcaption>La grazia di un'epoca, custodita con cura.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -272,5 +278,13 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
