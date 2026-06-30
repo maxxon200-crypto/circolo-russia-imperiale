@@ -182,6 +182,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 1.3rem;
 }
 .hero-media .ph-tag { max-width: 40rem; opacity: 0.4; }
+/* Foto di sfondo dell'hero (a tutta larghezza/altezza, centrata, non deformata) */
+.hero-media img.hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background: linear-gradient(180deg, rgba(11, 25, 44, 0.62) 0%, rgba(11, 25, 44, 0.82) 100%);
