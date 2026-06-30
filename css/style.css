@@ -214,7 +214,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-sub {
   font-family: var(--font-display); font-weight: 500;
   font-size: clamp(1.3rem, 2.4vw, 1.8rem); line-height: 1.4;
-  color: var(--crema); opacity: 0.92;
+  color: rgba(248, 246, 240, 0.82);
   max-width: 34rem; margin: 1.6rem auto 0;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.4);
 }
@@ -562,3 +562,19 @@ body { top: 0 !important; }
   .lang-label { display: none; }
   .goog-te-gadget .goog-te-combo { max-width: 7.5rem; }
 }
+
+/* =====================================================================
+   GERARCHIA DI OPACITA E UTILITA TESTUALI
+   ===================================================================== */
+strong { font-weight: 600; color: var(--navy); }
+.hero-sub strong { color: #FFFFFF; font-weight: 600; }
+.tenue { color: var(--testo-3) !important; }
+.firma { font-size: 0.96rem; line-height: 1.7; }
+/* Contenitore verticale per ritratti/icone (es. icona Famiglia Imperiale) */
+.ritratto--v .ph-img { aspect-ratio: 4 / 5; }
+/* Griglia a quattro (Le nostre finalita) */
+@media (min-width: 620px) { .griglia--4 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 980px) { .griglia--4 { grid-template-columns: repeat(4, 1fr); } }
+/* Card di solo testo (finalita, eventi senza foto) */
+.card--testo .card-body { padding: var(--sp-5) var(--sp-4); }
+.card--testo h3 { margin-bottom: var(--sp-2); }
