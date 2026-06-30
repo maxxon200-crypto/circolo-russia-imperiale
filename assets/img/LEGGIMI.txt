@@ -1,0 +1,21 @@
+CARTELLA DELLE IMMAGINI DEL SITO
+================================
+
+Metti QUI tutte le foto del sito (questa cartella: assets/img).
+
+Come caricarle da GitHub:
+1. Apri questa cartella su GitHub.
+2. In alto a destra premi "Add file" e poi "Upload files".
+3. Trascina qui le tue immagini.
+4. In fondo premi il bottone verde "Commit changes".
+
+Consigli:
+- Formato JPG (o WebP). PNG solo per il logo con sfondo trasparente.
+- Nomi semplici, senza spazi ne accenti (es. hero.jpg, evento-1.jpg, galleria-1.jpg).
+- Comprimi le foto (es. tinypng.com) cosi il sito resta veloce.
+
+Dopo aver caricato i file, vanno collegati alle pagine: puoi farlo tu seguendo
+gli esempi, oppure scrivimi e li inserisco io al posto giusto.
+
+Questo file di testo si puo cancellare quando vuoi: serve solo a far esistere
+la cartella.
