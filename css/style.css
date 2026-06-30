@@ -271,7 +271,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   box-shadow: 0 1px 3px rgba(11, 25, 44, 0.06), 0 14px 36px rgba(11, 25, 44, 0.10);
 }
 .ritratto .ph-img {
-  aspect-ratio: 4 / 5; display: grid; place-items: center;
+  aspect-ratio: 16 / 10; display: grid; place-items: center;
   background: linear-gradient(160deg, #1a2c44, var(--navy));
   color: rgba(255, 255, 255, 0.55);
   font-family: var(--font-body); font-weight: 500; font-size: 0.74rem;
@@ -504,14 +504,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    es. <div class="card-media"><img src="assets/img/foto.jpg" alt="descrizione"></div>
    L'immagine riempie automaticamente lo spazio, ben ritagliata.
    ===================================================================== */
+.card-media, .ritratto .ph-img, .foto .ph-img, .galleria-item { position: relative; }
 .card-media > img,
 .ritratto .ph-img > img,
 .foto .ph-img > img,
-.galleria-item > img {
-  width: 100%; height: 100%; object-fit: cover; display: block; border-radius: inherit;
+.galleria-item > img,
+.hero-media > img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center; display: block;
 }
-.brand .stemma > img,
-.footer-brand .stemma-foot > img { width: 100%; height: 100%; object-fit: contain; }
+/* Ritratti verticali: tieni il volto in alto quando il contenitore e orizzontale */
+img.img-top { object-position: center top; }
+/* Logo del Circolo nei riquadri stemma (con respiro sul fondo navy) */
+.brand .stemma, .footer-brand .stemma-foot { padding: 4px; background: rgba(255, 255, 255, 0.06); overflow: hidden; }
+.brand .stemma > img.logo-img,
+.footer-brand .stemma-foot > img.logo-img { width: 100%; height: 100%; object-fit: contain; }
 /* Hero con foto reale: aggiungi la classe "has-photo" alla sezione .hero e
    imposta qui sotto l'immagine. */
 .hero.has-photo .hero-media {
