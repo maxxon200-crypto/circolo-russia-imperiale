@@ -73,7 +73,7 @@
     "foot-cookie":     { it: "Cookie Policy", ru: "Политика cookies" },
 
     /* --- Moduli --- */
-    "lbl-nome":     { it: "Nome", ru: "Имя и фамилия" },
+    "lbl-nome":     { it: "Nome", ru: "Имя" },
     "lbl-cognome":  { it: "Cognome", ru: "Фамилия" },
     "lbl-email":    { it: "Email", ru: "Электронная почта" },
     "lbl-telefono": { it: "Telefono (facoltativo)", ru: "Номер телефона" },
@@ -192,6 +192,8 @@
     "legal-eyebrow": { it: "Note legali", ru: "Правовая информация" },
     "co-nota": { it: "In alternativa puoi scriverci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.", ru: "Вы также можете написать нам напрямую на <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>." },
     "te-box2": { it: "Puoi anche contattarci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> o dalla pagina <a href=\"contatti.html\">Contatti</a>.", ru: "Вы также можете связаться с нами напрямую по адресу <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> или на странице <a href=\"contatti.html\">Контакты</a>." },
+
+    "te-form-title": { it: "Domanda di adesione", ru: "Заявка на вступление" },
 
     /* --- Placeholder dei campi (attributo placeholder) --- */
     "ph-msg": { it: "Presentati in breve e indica perche desideri iscriverti.", ru: "Расскажите нам о своём интересе к истории и культуре Российской империи." }
