@@ -42,8 +42,62 @@
 
     "contatti-intro": { it: "Scrivici per informazioni, eventi o iscrizioni. Saremo lieti di risponderti.", ru: "По вопросам сотрудничества, участия и мероприятий вы можете связаться с нами через форму обратной связи." },
 
-    "galleria-nota-title": { it: "Le immagini saranno pubblicate prossimamente.", ru: "Фотографии будут опубликованы в ближайшее время." },
-    "galleria-nota-text":  { it: "Stiamo raccogliendo le fotografie dei nostri incontri, delle escursioni e delle iniziative culturali. Presto questa pagina accogliera i ricordi delle nostre attivita.", ru: "Мы собираем фотографии наших встреч, экскурсий и культурных инициатив. Вскоре на этой странице будут представлены памятные моменты нашей деятельности." }
+    /* --- Navigazione --- */
+    "nav-home":         { it: "Home", ru: "Главная" },
+    "nav-storia":       { it: "Storia dell'Impero", ru: "История" },
+    "nav-eventi":       { it: "Eventi e attivita", ru: "Мероприятия" },
+    "nav-attualita":    { it: "Attualita", ru: "Новости" },
+    "nav-feste":        { it: "Feste e ricorrenze", ru: "Праздники" },
+    "nav-galleria":     { it: "Galleria", ru: "Галерея" },
+    "nav-tesseramento": { it: "Tesseramento", ru: "Членство" },
+    "nav-contatti":     { it: "Contatti", ru: "Контакты" },
+    "nav-area":         { it: "Area riservata", ru: "Личный кабинет" },
+
+    /* --- Pulsanti / azioni --- */
+    "btn-scopri":          { it: "Scopri di piu", ru: "Узнать больше" },
+    "btn-diventa":         { it: "Diventa socio", ru: "Стать членом" },
+    "btn-contattaci":      { it: "Contattaci", ru: "Связаться с нами" },
+    "btn-tutti-eventi":    { it: "Tutti gli eventi e le attivita", ru: "Все мероприятия" },
+    "btn-iscriviti":       { it: "Iscriviti all'evento", ru: "Записаться" },
+    "btn-richiedi-info":   { it: "Richiedi informazioni", ru: "Запросить информацию" },
+    "btn-leggi":           { it: "Leggi l'articolo", ru: "Читать статью" },
+    "btn-leggi-tutto":     { it: "Leggi tutto", ru: "Читать далее" },
+    "btn-invia-richiesta": { it: "Invia richiesta", ru: "Отправить заявку" },
+    "btn-invia-messaggio": { it: "Invia messaggio", ru: "Отправить сообщение" },
+    "skip":                { it: "Salta al contenuto", ru: "Перейти к содержанию" },
+
+    /* --- Footer --- */
+    "foot-naviga":     { it: "Naviga", ru: "Навигация" },
+    "foot-contatti-h": { it: "Contatti", ru: "Контакты" },
+    "foot-privacy":    { it: "Privacy Policy", ru: "Политика конфиденциальности" },
+    "foot-cookie":     { it: "Cookie Policy", ru: "Политика cookie" },
+
+    /* --- Moduli --- */
+    "lbl-nome":     { it: "Nome", ru: "Имя" },
+    "lbl-cognome":  { it: "Cognome", ru: "Фамилия" },
+    "lbl-email":    { it: "Email", ru: "Электронная почта" },
+    "lbl-telefono": { it: "Telefono (facoltativo)", ru: "Телефон (необязательно)" },
+    "lbl-messaggio":{ it: "Messaggio", ru: "Сообщение" },
+    "lbl-oggetto":  { it: "Oggetto", ru: "Тема" },
+
+    /* --- Intestazioni di pagina --- */
+    "ph-storia-h1":     { it: "Storia dell'Impero Russo", ru: "История Российской империи" },
+    "ph-storia-lead":   { it: "Articoli, ritratti e approfondimenti dedicati alla storia dell'Impero Russo. Una pagina pensata per la lettura.", ru: "Статьи, портреты и очерки, посвящённые истории Российской империи. Страница, созданная для вдумчивого чтения." },
+    "ph-eventi-lead":   { it: "Conferenze, incontri, escursioni e viaggi del Circolo. Le date sono indicate in chiaro e complete.", ru: "Конференции, встречи, экскурсии и поездки Клуба. Все даты указываются полностью и заблаговременно." },
+    "ph-attualita-lead":{ it: "Estratti dalla stampa e dal web e articoli scritti dal Circolo su temi di attualita legati alla cultura russa.", ru: "Материалы из прессы и сети, а также статьи Клуба на актуальные темы, связанные с русской культурой." },
+    "ph-feste-lead":    { it: "Le ricorrenze religiose e civili dell'Impero Russo, con date, significato e tradizioni.", ru: "Религиозные и гражданские праздники Российской империи: даты, значение и традиции." },
+    "ph-galleria-lead": { it: "Immagini degli eventi del Circolo e delle associazioni collegate. Ogni foto e accompagnata da una breve didascalia.", ru: "Фотографии мероприятий Клуба и дружественных организаций. Каждый снимок сопровождается краткой подписью." },
+    "ph-tess-h1":       { it: "Diventa socio del Circolo", ru: "Станьте членом Клуба" },
+    "ph-tess-lead":     { it: "Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.", ru: "Присоединиться к Клубу просто. Заполните заявку на вступление — мы свяжемся с вами и сообщим все подробности." },
+
+    /* --- Home: finalita --- */
+    "fin-eyebrow":  { it: "Le nostre finalita", ru: "Наши цели" },
+    "fin-title":    { it: "Quattro vie, una sola eredita", ru: "Четыре пути, единое наследие" },
+    "fin-t-storia": { it: "Storia", ru: "История" },
+    "fin-t-spirit": { it: "Spiritualita", ru: "Духовность" },
+    "fin-t-cultura":{ it: "Cultura", ru: "Культура" },
+    "fin-t-dialogo":{ it: "Dialogo", ru: "Диалог" },
+    "socio-eyebrow":{ it: "Tesseramento", ru: "Членство" }
   };
 
   var LANGS = ["it", "ru"];
