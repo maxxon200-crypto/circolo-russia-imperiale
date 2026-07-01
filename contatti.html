@@ -38,8 +38,8 @@
         </nav>
 
         <div class="lang" role="group" aria-label="Lingua / Язык">
-          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
-          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano"><svg class="flag" viewBox="0 0 3 2" width="27" height="18" aria-hidden="true" focusable="false"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect width="1" height="2" x="2" fill="#ce2b37"/></svg></button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский"><svg class="flag" viewBox="0 0 3 2" width="27" height="18" aria-hidden="true" focusable="false"><rect width="3" height="0.667" fill="#fff"/><rect width="3" height="0.667" y="0.667" fill="#0039a6"/><rect width="3" height="0.667" y="1.333" fill="#d52b1e"/></svg></button>
         </div>
       </div>
     </div>
@@ -63,8 +63,8 @@
           <!-- Colonna sinistra: modulo di contatto -->
           <div>
             <div class="sezione-testa reveal">
-              <p class="eyebrow">Scrivici</p>
-              <h2>Modulo di contatto</h2>
+              <p class="eyebrow" data-i18n="co-eyebrow">Scrivici</p>
+              <h2 data-i18n="co-h1">Modulo di contatto</h2>
               <hr class="filetto" aria-hidden="true">
             </div>
 
@@ -94,7 +94,7 @@
                 <label for="messaggio" data-i18n="lbl-messaggio">Messaggio</label>
                 <textarea id="messaggio" name="messaggio" required></textarea>
               </div>
-              <p class="nota">In alternativa puoi scriverci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a>.</p>
+              <p class="nota" data-i18n="co-nota">In alternativa puoi scriverci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a>.</p>
               <div>
                 <button type="submit" class="btn btn--rosso" data-i18n="btn-invia-messaggio">Invia messaggio</button>
               </div>
@@ -104,25 +104,25 @@
           <!-- Colonna destra: recapiti -->
           <aside>
             <div class="sezione-testa reveal">
-              <p class="eyebrow">Recapiti</p>
-              <h2>Dove trovarci</h2>
+              <p class="eyebrow" data-i18n="co-eyebrow2">Recapiti</p>
+              <h2 data-i18n="co-h2">Dove trovarci</h2>
               <hr class="filetto" aria-hidden="true">
             </div>
             <ul class="contatti-lista reveal">
               <li>
-                <span class="et">Email</span>
+                <span class="et" data-i18n="et-email">Email</span>
                 <span class="val"><a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a></span>
               </li>
               <li>
-                <span class="et">Telefono Italia</span>
-                <span class="val">[numero italiano]</span>
+                <span class="et" data-i18n="et-tel-it">Telefono Italia</span>
+                <span class="val" data-i18n="num-it">[numero italiano]</span>
               </li>
               <li>
-                <span class="et">Telefono Russia</span>
-                <span class="val">[numero russo]</span>
+                <span class="et" data-i18n="et-tel-ru">Telefono Russia</span>
+                <span class="val" data-i18n="num-ru">[numero russo]</span>
               </li>
               <li>
-                <span class="et">Facebook</span>
+                <span class="et" data-i18n="et-fb">Facebook</span>
                 <span class="val"><a href="https://www.facebook.com/russia.imperiale" target="_blank" rel="noopener">facebook.com/russia.imperiale</a></span>
               </li>
             </ul>
@@ -139,7 +139,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <span class="stemma-foot"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
-          <p>Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
+          <p data-i18n="foot-brand-a">Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
         </div>
         <div>
           <h4 data-i18n="foot-naviga">Naviga</h4>
@@ -157,15 +157,15 @@
           <h4 data-i18n="foot-contatti-h">Contatti</h4>
           <ul>
             <li><a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a></li>
-            <li>Tel. Italia: [numero italiano]</li>
-            <li>Tel. Russia: [numero russo]</li>
-            <li><a href="https://www.facebook.com/russia.imperiale" target="_blank" rel="noopener">Pagina Facebook</a></li>
+            <li data-i18n="foot-tel-it">Tel. Italia: [numero italiano]</li>
+            <li data-i18n="foot-tel-ru">Tel. Russia: [numero russo]</li>
+            <li><a href="https://www.facebook.com/russia.imperiale" target="_blank" rel="noopener" data-i18n="foot-fb">Pagina Facebook</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
-        <span>Associazione culturale, non a scopo di lucro</span>
+        <span data-i18n="foot-name-a">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
+        <span data-i18n="foot-noprofit">Associazione culturale, non a scopo di lucro</span>
         <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
     </div>

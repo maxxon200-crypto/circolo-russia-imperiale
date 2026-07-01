@@ -38,8 +38,8 @@
         </nav>
 
         <div class="lang" role="group" aria-label="Lingua / Язык">
-          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
-          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano"><svg class="flag" viewBox="0 0 3 2" width="27" height="18" aria-hidden="true" focusable="false"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect width="1" height="2" x="2" fill="#ce2b37"/></svg></button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский"><svg class="flag" viewBox="0 0 3 2" width="27" height="18" aria-hidden="true" focusable="false"><rect width="3" height="0.667" fill="#fff"/><rect width="3" height="0.667" y="0.667" fill="#0039a6"/><rect width="3" height="0.667" y="1.333" fill="#d52b1e"/></svg></button>
         </div>
       </div>
     </div>
@@ -63,16 +63,16 @@
           <!-- Colonna sinistra: come iscriversi + modulo richiesta -->
           <div>
             <div class="sezione-testa reveal">
-              <p class="eyebrow">Come iscriversi</p>
-              <h2>I passi per diventare socio</h2>
+              <p class="eyebrow" data-i18n="te-eyebrow">Come iscriversi</p>
+              <h2 data-i18n="te-h1">I passi per diventare socio</h2>
               <hr class="filetto" aria-hidden="true">
             </div>
 
             <!-- [QUI ANDRANNO I PASSI / LE CONDIZIONI DI ISCRIZIONE] -->
             <ol class="reveal" style="padding-left:1.1rem; line-height:1.8; color:var(--grigio);">
-              <li>Compila il modulo di richiesta qui sotto.</li>
-              <li>Riceverai una risposta con le modalita di adesione e la quota associativa.</li>
-              <li>Perfezioni l'iscrizione e ricevi la tessera del Circolo.</li>
+              <li data-i18n="te-step1">Compila il modulo di richiesta qui sotto.</li>
+              <li data-i18n="te-step2">Riceverai una risposta con le modalita di adesione e la quota associativa.</li>
+              <li data-i18n="te-step3">Perfezioni l'iscrizione e ricevi la tessera del Circolo.</li>
             </ol>
 
             <!-- ===========================================================
@@ -106,7 +106,7 @@
                 <label for="messaggio" data-i18n="lbl-messaggio">Messaggio</label>
                 <textarea id="messaggio" name="messaggio" placeholder="Presentati in breve e indica perche desideri iscriverti."></textarea>
               </div>
-              <p class="nota">Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.</p>
+              <p class="nota" data-i18n="te-nota">Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.</p>
               <div>
                 <button type="submit" class="btn btn--rosso" data-i18n="btn-invia-richiesta">Invia richiesta</button>
               </div>
@@ -116,12 +116,12 @@
           <!-- Colonna destra: nota tesseramento online (in arrivo) + contatti -->
           <aside>
             <div class="box-info reveal">
-              <span class="tag">Prossimamente</span>
-              <p>Il tesseramento online con pagamento della quota sara disponibile in una fase successiva. Per ora l'iscrizione avviene tramite il modulo di richiesta e il contatto diretto con il Circolo.</p>
+              <span class="tag" data-i18n="soon">Prossimamente</span>
+              <p data-i18n="te-box1">Il tesseramento online con pagamento della quota sara disponibile in una fase successiva. Per ora l'iscrizione avviene tramite il modulo di richiesta e il contatto diretto con il Circolo.</p>
             </div>
             <div class="box-info reveal" data-delay="0.1s">
-              <span class="tag">Preferisci scriverci</span>
-              <p>Puoi anche contattarci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a> o dalla pagina <a href="contatti.html" data-i18n="nav-contatti">Contatti</a>.</p>
+              <span class="tag" data-i18n="te-box2-tag">Preferisci scriverci</span>
+              <p data-i18n="te-box2">Puoi anche contattarci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a> o dalla pagina <a href="contatti.html">Contatti</a>.</p>
             </div>
           </aside>
 
@@ -136,7 +136,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <span class="stemma-foot"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
-          <p>Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
+          <p data-i18n="foot-brand-a">Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
         </div>
         <div>
           <h4 data-i18n="foot-naviga">Naviga</h4>
@@ -154,15 +154,15 @@
           <h4 data-i18n="foot-contatti-h">Contatti</h4>
           <ul>
             <li><a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a></li>
-            <li>Tel. Italia: [numero italiano]</li>
-            <li>Tel. Russia: [numero russo]</li>
-            <li><a href="https://www.facebook.com/russia.imperiale" target="_blank" rel="noopener">Pagina Facebook</a></li>
+            <li data-i18n="foot-tel-it">Tel. Italia: [numero italiano]</li>
+            <li data-i18n="foot-tel-ru">Tel. Russia: [numero russo]</li>
+            <li><a href="https://www.facebook.com/russia.imperiale" target="_blank" rel="noopener" data-i18n="foot-fb">Pagina Facebook</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
-        <span>Associazione culturale, non a scopo di lucro</span>
+        <span data-i18n="foot-name-a">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
+        <span data-i18n="foot-noprofit">Associazione culturale, non a scopo di lucro</span>
         <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
     </div>
