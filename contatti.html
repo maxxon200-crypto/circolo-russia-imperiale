@@ -37,9 +37,9 @@
           </ul>
         </nav>
 
-        <div class="lang">
-          <span class="lang-label">Lingua</span>
-          <div id="google_translate_element"></div>
+        <div class="lang" role="group" aria-label="Lingua / Язык">
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
       <div class="wrap">
         <p class="eyebrow">Contatti</p>
         <h1>Contatti</h1>
-        <p class="page-intro">Scrivici per informazioni, eventi o iscrizioni. Saremo lieti di risponderti.</p>
+        <p class="page-intro" data-i18n="contatti-intro">Scrivici per informazioni, eventi o iscrizioni. Saremo lieti di risponderti.</p>
         <div class="divisore" aria-hidden="true"><span class="rombo"></span></div>
       </div>
     </section>
@@ -172,13 +172,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 
-  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false }, 'google_translate_element');
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

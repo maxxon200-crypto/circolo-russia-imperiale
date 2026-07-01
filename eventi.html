@@ -37,9 +37,9 @@
           </ul>
         </nav>
 
-        <div class="lang">
-          <span class="lang-label">Lingua</span>
-          <div id="google_translate_element"></div>
+        <div class="lang" role="group" aria-label="Lingua / Язык">
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
         </div>
       </div>
     </div>
@@ -72,7 +72,6 @@
 
         <div class="griglia griglia--3">
           <article class="card reveal">
-            <div class="card-media" aria-hidden="true">[FOTO: locandina evento]</div>
             <div class="card-body">
               <p class="data">Sabato 12 settembre 2026, ore 18.00</p>
               <h3>[Titolo dell'incontro]</h3>
@@ -82,7 +81,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.1s">
-            <div class="card-media" aria-hidden="true">[FOTO: locandina conferenza]</div>
             <div class="card-body">
               <p class="data">Domenica 4 ottobre 2026, ore 16.30</p>
               <h3>[Titolo della conferenza]</h3>
@@ -92,7 +90,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.2s">
-            <div class="card-media" aria-hidden="true">[FOTO: locandina incontro]</div>
             <div class="card-body">
               <p class="data">Sabato 7 novembre 2026, ore 17.00</p>
               <h3>[Titolo dell'incontro]</h3>
@@ -120,7 +117,6 @@
 
         <div class="griglia griglia--3">
           <article class="card reveal">
-            <div class="card-media" aria-hidden="true">[FOTO: meta del viaggio]</div>
             <div class="card-body">
               <p class="data">Da venerdi 23 a domenica 25 ottobre 2026</p>
               <h3>[Titolo dell'escursione]</h3>
@@ -130,7 +126,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.1s">
-            <div class="card-media" aria-hidden="true">[FOTO: meta del viaggio]</div>
             <div class="card-body">
               <p class="data">Primavera 2027, date in definizione</p>
               <h3>[Titolo del viaggio]</h3>
@@ -140,7 +135,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.2s">
-            <div class="card-media" aria-hidden="true">[FOTO: meta del viaggio]</div>
             <div class="card-body">
               <p class="data">Data da definire</p>
               <h3>[Titolo dell'escursione]</h3>
@@ -192,13 +186,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 
-  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false }, 'google_translate_element');
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

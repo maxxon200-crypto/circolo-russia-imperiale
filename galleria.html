@@ -37,9 +37,9 @@
           </ul>
         </nav>
 
-        <div class="lang">
-          <span class="lang-label">Lingua</span>
-          <div id="google_translate_element"></div>
+        <div class="lang" role="group" aria-label="Lingua / Язык">
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
         </div>
       </div>
     </div>
@@ -58,55 +58,15 @@
 
     <!-- ===================================================================
          GALLERIA
-         COME AGGIUNGERE UNA FOTO: duplica un blocco <figure class="foto">,
-         sostituisci il placeholder con l'immagine reale (un tag <img> con alt
-         descrittivo dentro .ph-img) e scrivi la didascalia in <figcaption>.
-         [QUI ANDRANNO LE FOTO DEGLI EVENTI]
+         Le fotografie degli eventi saranno pubblicate qui non appena
+         disponibili. Nessuna immagine placeholder: solo testo, come da
+         indicazioni di design.
     ==================================================================== -->
     <section class="section">
       <div class="wrap">
-        <div class="galleria-grid reveal">
-
-          <figure class="foto">
-            <div class="ph-img"><img src="assets/img/romanov-2.jpg" alt="Galleria della dinastia Romanov"></div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img"><img src="assets/img/pietro-il-grande.jpg" alt="Pietro il Grande a cavallo"></div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img"><img src="assets/img/monumento-pietro-i.jpg" alt="Monumento a Pietro I"></div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img"><img class="img-top" src="assets/img/peter-der-grosse-1838.jpg" alt="Ritratto di Pietro il Grande"></div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img"><img class="img-top" src="assets/img/romanov-icon.jpg" alt="Icona della Famiglia Imperiale di Nicola II"></div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img"><img src="assets/img/romanov-icon-2.jpg" alt="Dettaglio dell'icona della Famiglia Imperiale"></div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img" aria-hidden="true">[FOTO: associazione collegata]</div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
-          <figure class="foto">
-            <div class="ph-img" aria-hidden="true">[FOTO: escursione]</div>
-            <figcaption>[Didascalia: luogo e data dell'evento]</figcaption>
-          </figure>
-
+        <div class="intro reveal" style="margin-inline:auto; text-align:center;">
+          <p class="lead" data-i18n="galleria-nota-title">Le immagini saranno pubblicate prossimamente.</p>
+          <p data-i18n="galleria-nota-text">Stiamo raccogliendo le fotografie dei nostri incontri, delle escursioni e delle iniziative culturali. Presto questa pagina accoglierà i ricordi delle nostre attività.</p>
         </div>
       </div>
     </section>
@@ -151,13 +111,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 
-  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false }, 'google_translate_element');
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

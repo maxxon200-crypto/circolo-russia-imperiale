@@ -37,9 +37,9 @@
           </ul>
         </nav>
 
-        <div class="lang">
-          <span class="lang-label">Lingua</span>
-          <div id="google_translate_element"></div>
+        <div class="lang" role="group" aria-label="Lingua / Язык">
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
         </div>
       </div>
     </div>
@@ -68,7 +68,6 @@
           <h2 class="gruppo-tit reveal">Feste religiose</h2>
           <div class="griglia griglia--3">
             <article class="card reveal">
-              <div class="card-media" aria-hidden="true">[FOTO: icona / festivita]</div>
               <div class="card-body">
                 <p class="data">[Data nel calendario]</p>
                 <h3>[Nome della festa religiosa]</h3>
@@ -76,7 +75,6 @@
               </div>
             </article>
             <article class="card reveal" data-delay="0.1s">
-              <div class="card-media" aria-hidden="true">[FOTO: icona / festivita]</div>
               <div class="card-body">
                 <p class="data">[Data nel calendario]</p>
                 <h3>[Nome della festa religiosa]</h3>
@@ -84,7 +82,6 @@
               </div>
             </article>
             <article class="card reveal" data-delay="0.2s">
-              <div class="card-media" aria-hidden="true">[FOTO: icona / festivita]</div>
               <div class="card-body">
                 <p class="data">[Data nel calendario]</p>
                 <h3>[Nome della festa religiosa]</h3>
@@ -98,7 +95,6 @@
           <h2 class="gruppo-tit reveal">Feste civili</h2>
           <div class="griglia griglia--3">
             <article class="card reveal">
-              <div class="card-media" aria-hidden="true">[FOTO: ricorrenza civile]</div>
               <div class="card-body">
                 <p class="data">[Data]</p>
                 <h3>[Nome della ricorrenza civile]</h3>
@@ -106,7 +102,6 @@
               </div>
             </article>
             <article class="card reveal" data-delay="0.1s">
-              <div class="card-media" aria-hidden="true">[FOTO: ricorrenza civile]</div>
               <div class="card-body">
                 <p class="data">[Data]</p>
                 <h3>[Nome della ricorrenza civile]</h3>
@@ -114,7 +109,6 @@
               </div>
             </article>
             <article class="card reveal" data-delay="0.2s">
-              <div class="card-media" aria-hidden="true">[FOTO: ricorrenza civile]</div>
               <div class="card-body">
                 <p class="data">[Data]</p>
                 <h3>[Nome della ricorrenza civile]</h3>
@@ -167,13 +161,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 
-  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false }, 'google_translate_element');
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

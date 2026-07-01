@@ -40,9 +40,9 @@
           </ul>
         </nav>
 
-        <div class="lang">
-          <span class="lang-label">Lingua</span>
-          <div id="google_translate_element"></div>
+        <div class="lang" role="group" aria-label="Lingua / Язык">
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
         </div>
       </div>
     </div>
@@ -57,12 +57,12 @@
       </div>
       <div class="wrap">
         <div class="hero-inner">
-          <p class="eyebrow">Circolo Culturale Internazionale</p>
+          <p class="eyebrow" data-i18n="hero-eyebrow">Circolo Culturale Internazionale</p>
           <h1 class="hero-nome">
-            <span class="nome-main">Amici della Russia Imperiale</span>
-            <span class="nome-motto">Terza Roma</span>
+            <span class="nome-main" data-i18n="hero-name">Amici della Russia Imperiale</span>
+            <span class="nome-motto" data-i18n="hero-motto">Terza Roma</span>
           </h1>
-          <p class="hero-sub">Custodiamo la <strong>memoria</strong>, la <strong>cultura</strong> e la <strong>spiritualita</strong> di un Impero che ancora ci parla.</p>
+          <p class="hero-sub" data-i18n="hero-sub">Custodiamo la <strong>memoria</strong>, la <strong>cultura</strong> e la <strong>spiritualita</strong> di un Impero che ancora ci parla.</p>
           <div class="hero-actions">
             <a class="btn btn--lg btn--ghost" href="storia.html">Scopri di piu</a>
             <a class="btn btn--lg btn--rosso" href="tesseramento.html">Diventa socio</a>
@@ -74,20 +74,14 @@
     <!-- ============================ CHI SIAMO ============================ -->
     <section class="section" aria-labelledby="missione-tit">
       <div class="wrap">
-        <div class="missione">
-          <div class="intro reveal">
-            <p class="eyebrow">Chi siamo</p>
-            <h2 id="missione-tit">Custodi di un'eredita che non vogliamo dimenticare</h2>
-            <p class="lead">C'e una bellezza che il tempo non ha spento: quella della Russia imperiale. I suoi palazzi, le sue icone, la sua musica e la sua fede continuano a parlare a chi sa ascoltarli.</p>
-            <p>Il Circolo Culturale Internazionale "Amici della Russia Imperiale - Terza Roma" nasce per custodire questa eredita e farla conoscere. Studiamo la storia della Casa Romanov e dell'Impero Russo, la sua identita e la sua tradizione spirituale ortodossa, con il rigore di chi cerca la verita storica e la dedizione di chi se ne sente custode.</p>
-            <p class="tenue">Un'associazione culturale, apartitica e senza fini di lucro, fondata a Milano nel 2026.</p>
-            <hr class="filetto" aria-hidden="true">
-            <a class="btn btn--rosso" href="storia.html">Scopri di piu</a>
-          </div>
-          <figure class="ritratto reveal" data-delay="0.15s">
-            <div class="ph-img"><img src="assets/img/romanov-2.jpg" alt="Galleria della dinastia Romanov"></div>
-            <figcaption>La grazia di un'epoca, custodita con cura.</figcaption>
-          </figure>
+        <div class="intro reveal">
+          <p class="eyebrow" data-i18n="chi-eyebrow">Chi siamo</p>
+          <h2 id="missione-tit" data-i18n="chi-title">Custodi di un'eredita che non vogliamo dimenticare</h2>
+          <p class="lead" data-i18n="chi-lead">C'e una bellezza che il tempo non ha spento: quella della Russia imperiale. I suoi palazzi, le sue icone, la sua musica e la sua fede continuano a parlare a chi sa ascoltarli.</p>
+          <p data-i18n="chi-p2">Il Circolo Culturale Internazionale "Amici della Russia Imperiale - Terza Roma" nasce per custodire questa eredita e farla conoscere. Studiamo la storia della Casa Romanov e dell'Impero Russo, la sua identita e la sua tradizione spirituale ortodossa, con il rigore di chi cerca la verita storica e la dedizione di chi se ne sente custode.</p>
+          <p class="tenue" data-i18n="chi-p3">Un'associazione culturale, apartitica e senza fini di lucro, fondata a Milano nel 2026.</p>
+          <hr class="filetto" aria-hidden="true">
+          <a class="btn btn--rosso" href="storia.html">Scopri di piu</a>
         </div>
       </div>
     </section>
@@ -107,25 +101,25 @@
           <article class="card card--testo reveal">
             <div class="card-body">
               <h3>Storia</h3>
-              <p class="tenue">Studiare e divulgare la vicenda della Casa Romanov e dell'Impero Russo.</p>
+              <p class="tenue" data-i18n="fin-storia">Studiare e divulgare la vicenda della Casa Romanov e dell'Impero Russo.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.08s">
             <div class="card-body">
               <h3>Spiritualita</h3>
-              <p class="tenue">Custodire e far conoscere la tradizione cristiana ortodossa.</p>
+              <p class="tenue" data-i18n="fin-spirit">Custodire e far conoscere la tradizione cristiana ortodossa.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.16s">
             <div class="card-body">
               <h3>Cultura</h3>
-              <p class="tenue">Promuovere l'identita e l'arte dei popoli eurasiatici.</p>
+              <p class="tenue" data-i18n="fin-cultura">Promuovere l'identita e l'arte dei popoli eurasiatici.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.24s">
             <div class="card-body">
               <h3>Dialogo</h3>
-              <p class="tenue">Coltivare lo scambio culturale tra l'Italia e la Russia.</p>
+              <p class="tenue" data-i18n="fin-dialogo">Coltivare lo scambio culturale tra l'Italia e la Russia.</p>
             </div>
           </article>
         </div>
@@ -137,19 +131,13 @@
     <!-- ============================ LA FONDAZIONE ============================ -->
     <section class="section" aria-labelledby="fondazione-tit">
       <div class="wrap">
-        <div class="due-colonne">
-          <div class="reveal">
-            <p class="eyebrow">La nostra storia</p>
-            <h2 id="fondazione-tit">Milano, 16 giugno 2026</h2>
-            <hr class="filetto" aria-hidden="true">
-            <p>In una data che la tradizione ortodossa dedica a Tutti i Santi che hanno illuminato la Terra Russa, il Circolo e nato ufficialmente a Milano, presso lo Studio Varano &amp; Partners.</p>
-            <p class="tenue">La forma di associazione culturale, apartitica e senza scopo di lucro, ci permette oggi di portare la nostra attivita anche in sedi pubbliche, per promuovere la conoscenza della Casa Imperiale Romanov e della cultura del popolo russo.</p>
-            <p class="firma tenue">Alla fondazione hanno preso parte il Presidente Pietro Veniamin Andreevich Stramezzi, in collegamento da Mosca, la Vicepresidente Maya Bubashvili, il Segretario e Delegato per l'Italia Antonio Imperatore, il Tesoriere Giovanni Trombetta e i Consiglieri Elena Grinko, Irina Khodossevitch, Lali Panchulidze e Oxana Senchenko.</p>
-          </div>
-          <figure class="ritratto ritratto--v reveal" data-delay="0.15s">
-            <div class="ph-img"><img class="img-top" src="assets/img/romanov-icon.jpg" alt="Icona della Famiglia Imperiale di Nicola II"></div>
-            <figcaption>Icona della Famiglia Imperiale.</figcaption>
-          </figure>
+        <div class="intro reveal">
+          <p class="eyebrow" data-i18n="fond-eyebrow">La nostra storia</p>
+          <h2 id="fondazione-tit" data-i18n="fond-title">Milano, 16 giugno 2026</h2>
+          <hr class="filetto" aria-hidden="true">
+          <p data-i18n="fond-p1">In una data che la tradizione ortodossa dedica a Tutti i Santi che hanno illuminato la Terra Russa, il Circolo e nato ufficialmente a Milano, presso lo Studio Varano &amp; Partners.</p>
+          <p class="tenue" data-i18n="fond-p2">La forma di associazione culturale, apartitica e senza scopo di lucro, ci permette oggi di portare la nostra attivita anche in sedi pubbliche, per promuovere la conoscenza della Casa Imperiale Romanov e della cultura del popolo russo.</p>
+          <p class="firma tenue" data-i18n="fond-firma">Alla fondazione hanno preso parte il Presidente Pietro Veniamin Andreevich Stramezzi, in collegamento da Mosca, la Vicepresidente Maya Bubashvili, il Segretario e Delegato per l'Italia Antonio Imperatore, il Tesoriere Giovanni Trombetta e i Consiglieri Elena Grinko, Irina Khodossevitch, Lali Panchulidze e Oxana Senchenko.</p>
         </div>
       </div>
     </section>
@@ -160,22 +148,22 @@
     <section class="section" aria-labelledby="eventi-tit">
       <div class="wrap">
         <div class="sezione-testa reveal">
-          <p class="eyebrow">Eventi e attivita</p>
-          <h2 id="eventi-tit">Incontri che intrecciano storia e presente</h2>
+          <p class="eyebrow" data-i18n="eventi-eyebrow">Eventi e attivita</p>
+          <h2 id="eventi-tit" data-i18n="eventi-title">Incontri che intrecciano storia e presente</h2>
           <hr class="filetto" aria-hidden="true">
         </div>
 
         <div class="griglia griglia--2">
           <article class="card card--testo reveal">
             <div class="card-body">
-              <h3>Una tessera nel segno della memoria</h3>
-              <p class="tenue">Sua Altezza Reale il Principe Emanuele Filiberto di Savoia, Capo della Casa Reale di Savoia, e stato accolto tra i soci onorari del Circolo. Un gesto dal forte valore simbolico, nel nome del dialogo tra due grandi tradizioni dinastiche europee.</p>
+              <h3 data-i18n="ev-card1-title">Una tessera nel segno della memoria</h3>
+              <p class="tenue" data-i18n="ev-card1-text">Sua Altezza Reale il Principe Emanuele Filiberto di Savoia, Capo della Casa Reale di Savoia, e stato accolto tra i soci onorari del Circolo. Un gesto dal forte valore simbolico, nel nome del dialogo tra due grandi tradizioni dinastiche europee.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.1s">
             <div class="card-body">
-              <h3>Prossimi incontri</h3>
-              <p class="tenue">Conferenze, presentazioni e momenti di approfondimento dedicati alla storia e alla spiritualita russa. Le date verranno annunciate qui.</p>
+              <h3 data-i18n="ev-card2-title">Prossimi incontri</h3>
+              <p class="tenue" data-i18n="ev-card2-text">Conferenze, presentazioni e momenti di approfondimento dedicati alla storia e alla spiritualita russa. Le date verranno annunciate qui.</p>
             </div>
           </article>
         </div>
@@ -193,11 +181,11 @@
       <div class="wrap">
         <div class="invito reveal">
           <p class="eyebrow">Tesseramento</p>
-          <h2 id="socio-tit">Unisciti a chi custodisce questa memoria</h2>
-          <p class="tenue">Il Circolo e aperto a quanti desiderano avvicinarsi alla storia e alla cultura della Russia imperiale. Diventare socio significa prendere parte agli incontri, sostenere le nostre attivita e contribuire a mantenere viva un'eredita preziosa.</p>
+          <h2 id="socio-tit" data-i18n="socio-title">Unisciti a chi custodisce questa memoria</h2>
+          <p class="tenue" data-i18n="socio-text">Il Circolo e aperto a quanti desiderano avvicinarsi alla storia e alla cultura della Russia imperiale. Diventare socio significa prendere parte agli incontri, sostenere le nostre attivita e contribuire a mantenere viva un'eredita preziosa.</p>
           <hr class="filetto filetto--center" aria-hidden="true">
           <div class="hero-actions">
-            <a class="btn btn--rosso" href="tesseramento.html">Richiedi l'iscrizione</a>
+            <a class="btn btn--rosso" href="tesseramento.html" data-i18n="socio-btn">Richiedi l'iscrizione</a>
             <a class="btn btn--outline" href="contatti.html">Contattaci</a>
           </div>
         </div>
@@ -245,14 +233,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-
-  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false }, 'google_translate_element');
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script type="text/javascript"> (function (w,d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag); }; if(w.addEventListener){ w.addEventListener("load", loader, false); } else if(w.attachEvent){ w.attachEvent("onload", loader); } else{ w.onload = loader; } })(window, document); </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
