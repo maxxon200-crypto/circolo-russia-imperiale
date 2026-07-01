@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <a class="skip-link" href="#contenuto" data-i18n="skip">Salta al contenuto</a>
 
   <!-- ============================ HEADER ============================ -->
   <header class="site-header">
@@ -28,15 +28,15 @@
 
         <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
           <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="storia.html">Storia dell'Impero</a></li>
-            <li><a href="eventi.html">Eventi e attivita</a></li>
-            <li><a href="attualita.html">Attualita</a></li>
-            <li><a href="feste.html">Feste e ricorrenze</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="tesseramento.html">Tesseramento</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-            <li><a href="area-riservata.html">Area riservata</a></li>
+            <li><a href="index.html" aria-current="page" data-i18n="nav-home">Home</a></li>
+            <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
+            <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
+            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
+            <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
+            <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
+            <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
+            <li><a href="contatti.html" data-i18n="nav-contatti">Contatti</a></li>
+            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </nav>
 
@@ -64,8 +64,8 @@
           </h1>
           <p class="hero-sub" data-i18n="hero-sub">Custodiamo la <strong>memoria</strong>, la <strong>cultura</strong> e la <strong>spiritualita</strong> di un Impero che ancora ci parla.</p>
           <div class="hero-actions">
-            <a class="btn btn--lg btn--ghost" href="storia.html">Scopri di piu</a>
-            <a class="btn btn--lg btn--rosso" href="tesseramento.html">Diventa socio</a>
+            <a class="btn btn--lg btn--ghost" href="storia.html" data-i18n="btn-scopri">Scopri di piu</a>
+            <a class="btn btn--lg btn--rosso" href="tesseramento.html" data-i18n="btn-diventa">Diventa socio</a>
           </div>
         </div>
       </div>
@@ -74,14 +74,20 @@
     <!-- ============================ CHI SIAMO ============================ -->
     <section class="section" aria-labelledby="missione-tit">
       <div class="wrap">
-        <div class="intro reveal">
-          <p class="eyebrow" data-i18n="chi-eyebrow">Chi siamo</p>
-          <h2 id="missione-tit" data-i18n="chi-title">Custodi di un'eredita che non vogliamo dimenticare</h2>
-          <p class="lead" data-i18n="chi-lead">C'e una bellezza che il tempo non ha spento: quella della Russia imperiale. I suoi palazzi, le sue icone, la sua musica e la sua fede continuano a parlare a chi sa ascoltarli.</p>
-          <p data-i18n="chi-p2">Il Circolo Culturale Internazionale "Amici della Russia Imperiale - Terza Roma" nasce per custodire questa eredita e farla conoscere. Studiamo la storia della Casa Romanov e dell'Impero Russo, la sua identita e la sua tradizione spirituale ortodossa, con il rigore di chi cerca la verita storica e la dedizione di chi se ne sente custode.</p>
-          <p class="tenue" data-i18n="chi-p3">Un'associazione culturale, apartitica e senza fini di lucro, fondata a Milano nel 2026.</p>
-          <hr class="filetto" aria-hidden="true">
-          <a class="btn btn--rosso" href="storia.html">Scopri di piu</a>
+        <div class="missione">
+          <div class="intro reveal">
+            <p class="eyebrow" data-i18n="chi-eyebrow">Chi siamo</p>
+            <h2 id="missione-tit" data-i18n="chi-title">Custodi di un'eredita che non vogliamo dimenticare</h2>
+            <p class="lead" data-i18n="chi-lead">C'e una bellezza che il tempo non ha spento: quella della Russia imperiale. I suoi palazzi, le sue icone, la sua musica e la sua fede continuano a parlare a chi sa ascoltarli.</p>
+            <p data-i18n="chi-p2">Il Circolo Culturale Internazionale "Amici della Russia Imperiale - Terza Roma" nasce per custodire questa eredita e farla conoscere. Studiamo la storia della Casa Romanov e dell'Impero Russo, la sua identita e la sua tradizione spirituale ortodossa, con il rigore di chi cerca la verita storica e la dedizione di chi se ne sente custode.</p>
+            <p class="tenue" data-i18n="chi-p3">Un'associazione culturale, apartitica e senza fini di lucro, fondata a Milano nel 2026.</p>
+            <hr class="filetto" aria-hidden="true">
+            <a class="btn btn--rosso" href="storia.html" data-i18n="btn-scopri">Scopri di piu</a>
+          </div>
+          <figure class="ritratto reveal" data-delay="0.15s">
+            <div class="ph-img" aria-hidden="true">[FOTO: ritratto imperiale o veduta del Palazzo d'Inverno, verticale]</div>
+            <figcaption>La grazia di un'epoca, custodita con cura.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -92,33 +98,33 @@
     <section class="section" aria-labelledby="finalita-tit">
       <div class="wrap">
         <div class="sezione-testa reveal">
-          <p class="eyebrow">Le nostre finalita</p>
-          <h2 id="finalita-tit">Quattro vie, una sola eredita</h2>
+          <p class="eyebrow" data-i18n="fin-eyebrow">Le nostre finalita</p>
+          <h2 id="finalita-tit" data-i18n="fin-title">Quattro vie, una sola eredita</h2>
           <hr class="filetto" aria-hidden="true">
         </div>
 
         <div class="griglia griglia--4">
           <article class="card card--testo reveal">
             <div class="card-body">
-              <h3>Storia</h3>
+              <h3 data-i18n="fin-t-storia">Storia</h3>
               <p class="tenue" data-i18n="fin-storia">Studiare e divulgare la vicenda della Casa Romanov e dell'Impero Russo.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.08s">
             <div class="card-body">
-              <h3>Spiritualita</h3>
+              <h3 data-i18n="fin-t-spirit">Spiritualita</h3>
               <p class="tenue" data-i18n="fin-spirit">Custodire e far conoscere la tradizione cristiana ortodossa.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.16s">
             <div class="card-body">
-              <h3>Cultura</h3>
+              <h3 data-i18n="fin-t-cultura">Cultura</h3>
               <p class="tenue" data-i18n="fin-cultura">Promuovere l'identita e l'arte dei popoli eurasiatici.</p>
             </div>
           </article>
           <article class="card card--testo reveal" data-delay="0.24s">
             <div class="card-body">
-              <h3>Dialogo</h3>
+              <h3 data-i18n="fin-t-dialogo">Dialogo</h3>
               <p class="tenue" data-i18n="fin-dialogo">Coltivare lo scambio culturale tra l'Italia e la Russia.</p>
             </div>
           </article>
@@ -131,13 +137,19 @@
     <!-- ============================ LA FONDAZIONE ============================ -->
     <section class="section" aria-labelledby="fondazione-tit">
       <div class="wrap">
-        <div class="intro reveal">
-          <p class="eyebrow" data-i18n="fond-eyebrow">La nostra storia</p>
-          <h2 id="fondazione-tit" data-i18n="fond-title">Milano, 16 giugno 2026</h2>
-          <hr class="filetto" aria-hidden="true">
-          <p data-i18n="fond-p1">In una data che la tradizione ortodossa dedica a Tutti i Santi che hanno illuminato la Terra Russa, il Circolo e nato ufficialmente a Milano, presso lo Studio Varano &amp; Partners.</p>
-          <p class="tenue" data-i18n="fond-p2">La forma di associazione culturale, apartitica e senza scopo di lucro, ci permette oggi di portare la nostra attivita anche in sedi pubbliche, per promuovere la conoscenza della Casa Imperiale Romanov e della cultura del popolo russo.</p>
-          <p class="firma tenue" data-i18n="fond-firma">Alla fondazione hanno preso parte il Presidente Pietro Veniamin Andreevich Stramezzi, in collegamento da Mosca, la Vicepresidente Maya Bubashvili, il Segretario e Delegato per l'Italia Antonio Imperatore, il Tesoriere Giovanni Trombetta e i Consiglieri Elena Grinko, Irina Khodossevitch, Lali Panchulidze e Oxana Senchenko.</p>
+        <div class="due-colonne">
+          <div class="reveal">
+            <p class="eyebrow" data-i18n="fond-eyebrow">La nostra storia</p>
+            <h2 id="fondazione-tit" data-i18n="fond-title">Milano, 16 giugno 2026</h2>
+            <hr class="filetto" aria-hidden="true">
+            <p data-i18n="fond-p1">In una data che la tradizione ortodossa dedica a Tutti i Santi che hanno illuminato la Terra Russa, il Circolo e nato ufficialmente a Milano, presso lo Studio Varano &amp; Partners.</p>
+            <p class="tenue" data-i18n="fond-p2">La forma di associazione culturale, apartitica e senza scopo di lucro, ci permette oggi di portare la nostra attivita anche in sedi pubbliche, per promuovere la conoscenza della Casa Imperiale Romanov e della cultura del popolo russo.</p>
+            <p class="firma tenue" data-i18n="fond-firma">Alla fondazione hanno preso parte il Presidente Pietro Veniamin Andreevich Stramezzi, in collegamento da Mosca, la Vicepresidente Maya Bubashvili, il Segretario e Delegato per l'Italia Antonio Imperatore, il Tesoriere Giovanni Trombetta e i Consiglieri Elena Grinko, Irina Khodossevitch, Lali Panchulidze e Oxana Senchenko.</p>
+          </div>
+          <figure class="ritratto ritratto--v reveal" data-delay="0.15s">
+            <div class="ph-img" aria-hidden="true">[FOTO: icona o ritratto della Famiglia Imperiale, verticale]</div>
+            <figcaption>Icona della Famiglia Imperiale.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -169,7 +181,7 @@
         </div>
 
         <div class="vedi-tutto">
-          <a class="btn btn--outline" href="eventi.html">Tutti gli eventi e le attivita</a>
+          <a class="btn btn--outline" href="eventi.html" data-i18n="btn-tutti-eventi">Tutti gli eventi e le attivita</a>
         </div>
       </div>
     </section>
@@ -180,13 +192,13 @@
     <section class="section" aria-labelledby="socio-tit">
       <div class="wrap">
         <div class="invito reveal">
-          <p class="eyebrow">Tesseramento</p>
+          <p class="eyebrow" data-i18n="socio-eyebrow">Tesseramento</p>
           <h2 id="socio-tit" data-i18n="socio-title">Unisciti a chi custodisce questa memoria</h2>
           <p class="tenue" data-i18n="socio-text">Il Circolo e aperto a quanti desiderano avvicinarsi alla storia e alla cultura della Russia imperiale. Diventare socio significa prendere parte agli incontri, sostenere le nostre attivita e contribuire a mantenere viva un'eredita preziosa.</p>
           <hr class="filetto filetto--center" aria-hidden="true">
           <div class="hero-actions">
             <a class="btn btn--rosso" href="tesseramento.html" data-i18n="socio-btn">Richiedi l'iscrizione</a>
-            <a class="btn btn--outline" href="contatti.html">Contattaci</a>
+            <a class="btn btn--outline" href="contatti.html" data-i18n="btn-contattaci">Contattaci</a>
           </div>
         </div>
       </div>
@@ -203,19 +215,19 @@
           <p>Circolo Culturale Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale apartitica e senza fini di lucro, fondata a Milano nel 2026.</p>
         </div>
         <div>
-          <h4>Naviga</h4>
+          <h4 data-i18n="foot-naviga">Naviga</h4>
           <ul>
-            <li><a href="storia.html">Storia dell'Impero</a></li>
-            <li><a href="eventi.html">Eventi e attivita</a></li>
-            <li><a href="attualita.html">Attualita</a></li>
-            <li><a href="feste.html">Feste e ricorrenze</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="tesseramento.html">Tesseramento</a></li>
-            <li><a href="area-riservata.html">Area riservata</a></li>
+            <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
+            <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
+            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
+            <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
+            <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
+            <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
+            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contatti</h4>
+          <h4 data-i18n="foot-contatti-h">Contatti</h4>
           <ul>
             <li><a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a></li>
             <li>Tel. Italia: [numero italiano]</li>
@@ -227,7 +239,7 @@
       <div class="footer-bottom">
         <span>Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span>Associazione culturale, non a scopo di lucro</span>
-        <span class="footer-legali"><a href="privacy.html">Privacy Policy</a> &middot; <a href="cookie.html">Cookie Policy</a></span>
+        <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
     </div>
   </footer>

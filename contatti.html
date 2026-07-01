@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <a class="skip-link" href="#contenuto" data-i18n="skip">Salta al contenuto</a>
 
   <header class="site-header">
     <div class="wrap">
@@ -25,15 +25,15 @@
         </button>
         <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="storia.html">Storia dell'Impero</a></li>
-            <li><a href="eventi.html">Eventi e attivita</a></li>
-            <li><a href="attualita.html">Attualita</a></li>
-            <li><a href="feste.html">Feste e ricorrenze</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="tesseramento.html">Tesseramento</a></li>
-            <li><a href="contatti.html" aria-current="page">Contatti</a></li>
-            <li><a href="area-riservata.html">Area riservata</a></li>
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
+            <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
+            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
+            <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
+            <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
+            <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
+            <li><a href="contatti.html" aria-current="page" data-i18n="nav-contatti">Contatti</a></li>
+            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </nav>
 
@@ -49,8 +49,8 @@
 
     <section class="page-header">
       <div class="wrap">
-        <p class="eyebrow">Contatti</p>
-        <h1>Contatti</h1>
+        <p class="eyebrow" data-i18n="nav-contatti">Contatti</p>
+        <h1 data-i18n="nav-contatti">Contatti</h1>
         <p class="page-intro" data-i18n="contatti-intro">Scrivici per informazioni, eventi o iscrizioni. Saremo lieti di risponderti.</p>
         <div class="divisore" aria-hidden="true"><span class="rombo"></span></div>
       </div>
@@ -78,25 +78,25 @@
             <form class="form reveal" action="#" method="post">
               <div class="due">
                 <div class="campo">
-                  <label for="nome">Nome</label>
+                  <label for="nome" data-i18n="lbl-nome">Nome</label>
                   <input type="text" id="nome" name="nome" autocomplete="name" required>
                 </div>
                 <div class="campo">
-                  <label for="email">Email</label>
+                  <label for="email" data-i18n="lbl-email">Email</label>
                   <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
               </div>
               <div class="campo">
-                <label for="oggetto">Oggetto</label>
+                <label for="oggetto" data-i18n="lbl-oggetto">Oggetto</label>
                 <input type="text" id="oggetto" name="oggetto">
               </div>
               <div class="campo">
-                <label for="messaggio">Messaggio</label>
+                <label for="messaggio" data-i18n="lbl-messaggio">Messaggio</label>
                 <textarea id="messaggio" name="messaggio" required></textarea>
               </div>
               <p class="nota">In alternativa puoi scriverci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a>.</p>
               <div>
-                <button type="submit" class="btn btn--rosso">Invia messaggio</button>
+                <button type="submit" class="btn btn--rosso" data-i18n="btn-invia-messaggio">Invia messaggio</button>
               </div>
             </form>
           </div>
@@ -142,19 +142,19 @@
           <p>Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
         </div>
         <div>
-          <h4>Naviga</h4>
+          <h4 data-i18n="foot-naviga">Naviga</h4>
           <ul>
-            <li><a href="storia.html">Storia dell'Impero</a></li>
-            <li><a href="eventi.html">Eventi e attivita</a></li>
-            <li><a href="attualita.html">Attualita</a></li>
-            <li><a href="feste.html">Feste e ricorrenze</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-            <li><a href="tesseramento.html">Tesseramento</a></li>
-            <li><a href="area-riservata.html">Area riservata</a></li>
+            <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
+            <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
+            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
+            <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
+            <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
+            <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
+            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contatti</h4>
+          <h4 data-i18n="foot-contatti-h">Contatti</h4>
           <ul>
             <li><a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a></li>
             <li>Tel. Italia: [numero italiano]</li>
@@ -166,7 +166,7 @@
       <div class="footer-bottom">
         <span>Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span>Associazione culturale, non a scopo di lucro</span>
-        <span class="footer-legali"><a href="privacy.html">Privacy Policy</a> &middot; <a href="cookie.html">Cookie Policy</a></span>
+        <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
     </div>
   </footer>
