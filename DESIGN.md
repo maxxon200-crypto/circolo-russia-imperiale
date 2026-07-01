@@ -171,8 +171,8 @@ istituzionale. Il sito è **bilingue IT/RU** con testi russi ufficiali forniti d
   minimo 44px su mobile (padding invisibile).
 - Il cambio lingua avviene via JS (`js/i18n.js`): ogni elemento traducibile ha `data-i18n` e la
   scelta è salvata in `localStorage`. I testi russi sono quelli ufficiali, mai auto-tradotti.
-- Nel testo **russo** i trattini lunghi "—" fanno parte della grammatica e vanno mantenuti;
-  nel testo **italiano** no (vedi §9).
+- Nel testo **russo** i trattini lunghi "—" vengono sostituiti con il trattino breve "-";
+  nel testo **italiano** i trattini lunghi restano vietati (vedi §9).
 
 ---
 

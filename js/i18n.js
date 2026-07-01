@@ -7,56 +7,56 @@
   "use strict";
 
   var DICT = {
-    "hero-eyebrow": { it: "Circolo Culturale Internazionale", ru: "Международная культурная ассоциация" },
+    "hero-eyebrow": { it: "Circolo Culturale Internazionale", ru: "МЕЖДУНАРОДНАЯ КУЛЬТУРНАЯ АССОЦИАЦИЯ" },
     "hero-name":    { it: "Amici della Russia Imperiale", ru: "Друзья Российской Империи" },
     "hero-motto":   { it: "Terza Roma", ru: "Третий Рим" },
-    "hero-sub":     { it: "Custodiamo la <strong>memoria</strong>, la <strong>cultura</strong> e la <strong>spiritualita</strong> di un Impero che ancora ci parla.", ru: "Мы сохраняем историческую память, изучаем культурное наследие и поддерживаем духовную традицию Российской империи." },
+    "hero-sub":     { it: "Custodiamo la <strong>memoria</strong>, la <strong>cultura</strong> e la <strong>spiritualita</strong> di un Impero che ancora ci parla.", ru: "Мы сохраняем историческую память, изучаем культурное наследие и поддерживаем духовную традицию Российской империи, руководствуясь уважением к исторической истине, преемственности национальной культуры и православному духовному наследию." },
 
-    "chi-eyebrow": { it: "Chi siamo", ru: "Кто мы" },
+    "chi-eyebrow": { it: "Chi siamo", ru: "КТО МЫ" },
     "chi-title":   { it: "Custodi di un'eredita che non vogliamo dimenticare", ru: "Хранители исторического наследия, которое не должно быть забыто." },
-    "chi-lead":    { it: "C'e una bellezza che il tempo non ha spento: quella della Russia imperiale. I suoi palazzi, le sue icone, la sua musica e la sua fede continuano a parlare a chi sa ascoltarli.", ru: "Существует красота, неподвластная времени, — красота Российской империи. Её дворцы, иконы, музыка и духовная традиция продолжают говорить с теми, кто способен их слышать и понимать." },
-    "chi-p2":      { it: "Il Circolo Culturale Internazionale \"Amici della Russia Imperiale - Terza Roma\" nasce per custodire questa eredita e farla conoscere. Studiamo la storia della Casa Romanov e dell'Impero Russo, la sua identita e la sua tradizione spirituale ortodossa, con il rigore di chi cerca la verita storica e la dedizione di chi se ne sente custode.", ru: "" },
-    "chi-p3":      { it: "Un'associazione culturale, apartitica e senza fini di lucro, fondata a Milano nel 2026.", ru: "Международная культурная ассоциация «Друзья Российской империи — Третий Рим» создана для сохранения, изучения и популяризации исторического и культурного наследия Российской империи. Наша организация является независимым, неполитическим и некоммерческим культурным объединением, основанным в Милане в 2026 году." },
+    "chi-lead":    { it: "C'e una bellezza che il tempo non ha spento: quella della Russia imperiale. I suoi palazzi, le sue icone, la sua musica e la sua fede continuano a parlare a chi sa ascoltarli.", ru: "Существует красота, неподвластная времени, красота Российской империи. Её дворцы, иконы, музыка и духовная традиция продолжают говорить с теми, кто способен их слышать и понимать." },
+    "chi-p2":      { it: "Il Circolo Culturale Internazionale \"Amici della Russia Imperiale - Terza Roma\" nasce per custodire questa eredita e farla conoscere. Studiamo la storia della Casa Romanov e dell'Impero Russo, la sua identita e la sua tradizione spirituale ortodossa, con il rigore di chi cerca la verita storica e la dedizione di chi se ne sente custode.", ru: "Международная культурная ассоциация «Друзья Российской империи - Третий Рим» создана для сохранения, изучения и популяризации исторического и культурного наследия Российской империи. В центре нашего внимания - история Дома Романовых, государственное устройство империи, её культурное и духовное наследие, а также православная традиция как основа русской цивилизации." },
+    "chi-p3":      { it: "Un'associazione culturale, apartitica e senza fini di lucro, fondata a Milano nel 2026.", ru: "Наша ассоциация является независимым, неполитическим и некоммерческим культурным объединением, основанным в Милане в 2026 году. В нее входят представители различных стран, объединенные общим интересом к истории, культуре и духовному наследию Российской империи." },
 
-    "fin-storia":  { it: "Studiare e divulgare la vicenda della Casa Romanov e dell'Impero Russo.", ru: "Изучение, сохранение и популяризация истории Дома Романовых, Российской империи и её исторического наследия." },
-    "fin-spirit":  { it: "Custodire e far conoscere la tradizione cristiana ortodossa.", ru: "Сохранение и изучение православной духовной традиции как неотъемлемой части исторического и культурного наследия Российской империи." },
-    "fin-cultura": { it: "Promuovere l'identita e l'arte dei popoli eurasiatici.", ru: "Исследование и популяризация культурного многообразия, художественного наследия и самобытности народов исторической России." },
-    "fin-dialogo": { it: "Coltivare lo scambio culturale tra l'Italia e la Russia.", ru: "Развитие культурного, научного и гуманитарного сотрудничества между Италией и Россией посредством просветительских, образовательных и культурных инициатив." },
+    "fin-storia":  { it: "Studiare e divulgare la vicenda della Casa Romanov e dell'Impero Russo.", ru: "Изучение, сохранение и популяризация истории Дома Романовых и Российской империи." },
+    "fin-spirit":  { it: "Custodire e far conoscere la tradizione cristiana ortodossa.", ru: "Сохранение и осмысление православной духовной традиции как основы русской цивилизации." },
+    "fin-cultura": { it: "Promuovere l'identita e l'arte dei popoli eurasiatici.", ru: "Исследование художественного наследия и самобытности народов исторической России." },
+    "fin-dialogo": { it: "Coltivare lo scambio culturale tra l'Italia e la Russia.", ru: "Развитие культурного и гуманитарного сотрудничества между Италией и Россией." },
 
-    "fond-eyebrow": { it: "La nostra storia", ru: "Наша история" },
+    "fond-eyebrow": { it: "La nostra storia", ru: "НАША ИСТОРИЯ" },
     "fond-title":   { it: "Milano, 16 giugno 2026", ru: "Милан, 16 июня 2026 года" },
-    "fond-p1":      { it: "In una data che la tradizione ortodossa dedica a Tutti i Santi che hanno illuminato la Terra Russa, il Circolo e nato ufficialmente a Milano, presso lo Studio Varano &amp; Partners.", ru: "После празднования Православной Церковью памяти Всех святых, в земле Русской просиявших, в Милане, в студии Varano &amp; Partners, состоялось официальное учреждение международной культурной ассоциации «Друзья Российской империи — Третий Рим»." },
-    "fond-p2":      { it: "La forma di associazione culturale, apartitica e senza scopo di lucro, ci permette oggi di portare la nostra attivita anche in sedi pubbliche, per promuovere la conoscenza della Casa Imperiale Romanov e della cultura del popolo russo.", ru: "" },
+    "fond-p1":      { it: "In una data che la tradizione ortodossa dedica a Tutti i Santi che hanno illuminato la Terra Russa, il Circolo e nato ufficialmente a Milano, presso lo Studio Varano &amp; Partners.", ru: "После празднования Православной Церковью памяти Всех святых, в земле Русской просиявших, в Милане, в студии Varano &amp; Partners, состоялось официальное учреждение международной культурной ассоциации «Друзья Российской империи - Третий Рим»." },
+    "fond-p2":      { it: "La forma di associazione culturale, apartitica e senza scopo di lucro, ci permette oggi di portare la nostra attivita anche in sedi pubbliche, per promuovere la conoscenza della Casa Imperiale Romanov e della cultura del popolo russo.", ru: "Создание нашей независимой, неполитической и некоммерческой культурной ассоциации открывает новые возможности для осуществления просветительской, научно-культурной и общественной деятельности, направленной на изучение, сохранение и популяризацию исторического наследия Дома Романовых, культурного достояния Российской империи и духовных традиций русского народа." },
     "fond-firma":   { it: "Alla fondazione hanno preso parte il Presidente Pietro Veniamin Andreevich Stramezzi, in collegamento da Mosca, la Vicepresidente Maya Bubashvili, il Segretario e Delegato per l'Italia Antonio Imperatore, il Tesoriere Giovanni Trombetta e i Consiglieri Elena Grinko, Irina Khodossevitch, Lali Panchulidze e Oxana Senchenko.", ru: "В учредительном собрании приняли участие Президент Пьетро Вениамин Андреевич Страмецци, присоединившийся по видеосвязи из Москвы, Вице-президент Майя Бубашвили, Секретарь и представитель Ассоциации в Италии Антонио Императоре, Казначей Джованни Тромбетта, а также члены Совета Елена Гринько, Ирина Ходосевич, Лали Панчулидзе и Оксана Сенченко." },
 
-    "eventi-eyebrow": { it: "Eventi e attivita", ru: "Мероприятия и деятельность" },
+    "eventi-eyebrow": { it: "Eventi e attivita", ru: "МЕРОПРИЯТИЯ И ДЕЯТЕЛЬНОСТЬ" },
     "eventi-title":   { it: "Incontri che intrecciano storia e presente", ru: "Встречи, в которых историческая память соприкасается с современностью" },
     "ev-card1-title": { it: "Una tessera nel segno della memoria", ru: "Почётное членство" },
-    "ev-card1-text":  { it: "Sua Altezza Reale il Principe Emanuele Filiberto di Savoia, Capo della Casa Reale di Savoia, e stato accolto tra i soci onorari del Circolo. Un gesto dal forte valore simbolico, nel nome del dialogo tra due grandi tradizioni dinastiche europee.", ru: "Его Королевское Высочество принц Эмануэле Филиберто Савойский, глава Королевского дома Савойи, был избран почётным членом ассоциации. Этот акт носит важное символическое значение и способствует развитию диалога между двумя великими династическими традициями." },
+    "ev-card1-text":  { it: "Sua Altezza Reale il Principe Emanuele Filiberto di Savoia, Capo della Casa Reale di Savoia, e stato accolto tra i soci onorari del Circolo. Un gesto dal forte valore simbolico, nel nome del dialogo tra due grandi tradizioni dinastiche europee.", ru: "Его Королевское Высочество принц Эмануэле Филиберто Савойский, глава Королевского дома Савойи, был избран почётным членом международной культурной ассоциации «Друзья Российской империи - Третий Рим». Этот акт носит важное символическое значение и способствует развитию диалога между двумя великими династическими традициями - Домом Савойи и Императорским Домом Романовых." },
     "ev-card2-title": { it: "Prossimi incontri", ru: "Предстоящие мероприятия" },
-    "ev-card2-text":  { it: "Conferenze, presentazioni e momenti di approfondimento dedicati alla storia e alla spiritualita russa. Le date verranno annunciate qui.", ru: "Информация о предстоящих мероприятиях и даты их проведения будут публиковаться на данной странице." },
+    "ev-card2-text":  { it: "Conferenze, presentazioni e momenti di approfondimento dedicati alla storia e alla spiritualita russa. Le date verranno annunciate qui.", ru: "Лекции, научные встречи, презентации и культурные мероприятия, посвящённые истории Российской империи и православной традиции. Даты будут опубликованы здесь." },
 
-    "socio-title": { it: "Unisciti a chi custodisce questa memoria", ru: "Присоединяйтесь к тем, кто сохраняет историческую память" },
-    "socio-text":  { it: "Il Circolo e aperto a quanti desiderano avvicinarsi alla storia e alla cultura della Russia imperiale. Diventare socio significa prendere parte agli incontri, sostenere le nostre attivita e contribuire a mantenere viva un'eredita preziosa.", ru: "Клуб открыт для всех, кто разделяет интерес к истории и культурному наследию Российской империи." },
+    "socio-title": { it: "Unisciti a chi custodisce questa memoria", ru: "Станьте частью ассоциации" },
+    "socio-text":  { it: "Il Circolo e aperto a quanti desiderano avvicinarsi alla storia e alla cultura della Russia imperiale. Diventare socio significa prendere parte agli incontri, sostenere le nostre attivita e contribuire a mantenere viva un'eredita preziosa.", ru: "Ассоциация открыта для всех, кто разделяет интерес к истории и культурному наследию Российской империи. Участие означает доступ к мероприятиям, лекциям и исследовательским инициативам, а также возможность внести вклад в сохранение бесценного исторического наследия." },
     "socio-btn":   { it: "Richiedi l'iscrizione", ru: "Подать заявку" },
 
     "contatti-intro": { it: "Scrivici per informazioni, eventi o iscrizioni. Saremo lieti di risponderti.", ru: "По вопросам сотрудничества, участия и мероприятий вы можете связаться с нами через форму обратной связи." },
 
     /* --- Navigazione --- */
     "nav-home":         { it: "Home", ru: "Главная" },
-    "nav-storia":       { it: "Storia dell'Impero", ru: "История" },
+    "nav-storia":       { it: "Storia dell'Impero", ru: "История Империи" },
     "nav-eventi":       { it: "Eventi e attivita", ru: "Мероприятия" },
-    "nav-attualita":    { it: "Attualita", ru: "Новости" },
-    "nav-feste":        { it: "Feste e ricorrenze", ru: "Праздники" },
+    "nav-attualita":    { it: "Attualita", ru: "Актуальное" },
+    "nav-feste":        { it: "Feste e ricorrenze", ru: "Праздники и памятные даты" },
     "nav-galleria":     { it: "Galleria", ru: "Галерея" },
-    "nav-tesseramento": { it: "Tesseramento", ru: "Членство" },
+    "nav-tesseramento": { it: "Tesseramento", ru: "Вступить в ассоциацию" },
     "nav-contatti":     { it: "Contatti", ru: "Контакты" },
     "nav-area":         { it: "Area riservata", ru: "Личный кабинет" },
 
     /* --- Pulsanti / azioni --- */
     "btn-scopri":          { it: "Scopri di piu", ru: "Узнать больше" },
-    "btn-diventa":         { it: "Diventa socio", ru: "Стать членом" },
-    "btn-contattaci":      { it: "Contattaci", ru: "Связаться с нами" },
+    "btn-diventa":         { it: "Diventa socio", ru: "Вступить в ассоциацию" },
+    "btn-contattaci":      { it: "Contattaci", ru: "Написать нам" },
     "btn-tutti-eventi":    { it: "Tutti gli eventi e le attivita", ru: "Все мероприятия" },
     "btn-iscriviti":       { it: "Iscriviti all'evento", ru: "Записаться" },
     "btn-richiedi-info":   { it: "Richiedi informazioni", ru: "Запросить информацию" },
@@ -70,14 +70,14 @@
     "foot-naviga":     { it: "Naviga", ru: "Навигация" },
     "foot-contatti-h": { it: "Contatti", ru: "Контакты" },
     "foot-privacy":    { it: "Privacy Policy", ru: "Политика конфиденциальности" },
-    "foot-cookie":     { it: "Cookie Policy", ru: "Политика cookie" },
+    "foot-cookie":     { it: "Cookie Policy", ru: "Политика cookies" },
 
     /* --- Moduli --- */
-    "lbl-nome":     { it: "Nome", ru: "Имя" },
+    "lbl-nome":     { it: "Nome", ru: "Имя и фамилия" },
     "lbl-cognome":  { it: "Cognome", ru: "Фамилия" },
     "lbl-email":    { it: "Email", ru: "Электронная почта" },
-    "lbl-telefono": { it: "Telefono (facoltativo)", ru: "Телефон (необязательно)" },
-    "lbl-messaggio":{ it: "Messaggio", ru: "Сообщение" },
+    "lbl-telefono": { it: "Telefono (facoltativo)", ru: "Номер телефона" },
+    "lbl-messaggio":{ it: "Messaggio", ru: "Сообщение (по желанию)" },
     "lbl-oggetto":  { it: "Oggetto", ru: "Тема" },
 
     /* --- Intestazioni di pagina --- */
@@ -87,29 +87,29 @@
     "ph-attualita-lead":{ it: "Estratti dalla stampa e dal web e articoli scritti dal Circolo su temi di attualita legati alla cultura russa.", ru: "Материалы из прессы и сети, а также статьи Клуба на актуальные темы, связанные с русской культурой." },
     "ph-feste-lead":    { it: "Le ricorrenze religiose e civili dell'Impero Russo, con date, significato e tradizioni.", ru: "Религиозные и гражданские праздники Российской империи: даты, значение и традиции." },
     "ph-galleria-lead": { it: "Immagini degli eventi del Circolo e delle associazioni collegate. Ogni foto e accompagnata da una breve didascalia.", ru: "Фотографии мероприятий Клуба и дружественных организаций. Каждый снимок сопровождается краткой подписью." },
-    "ph-tess-h1":       { it: "Diventa socio del Circolo", ru: "Станьте членом Клуба" },
-    "ph-tess-lead":     { it: "Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.", ru: "Присоединиться к Клубу просто. Заполните заявку на вступление — мы свяжемся с вами и сообщим все подробности." },
+    "ph-tess-h1":       { it: "Diventa socio del Circolo", ru: "Станьте частью ассоциации" },
+    "ph-tess-lead":     { it: "Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.", ru: "Ассоциация открыта для всех, кто разделяет любовь к истории, культуре и духовному наследию Российской империи." },
 
     /* --- Home: finalita --- */
-    "fin-eyebrow":  { it: "Le nostre finalita", ru: "Наши цели" },
-    "fin-title":    { it: "Quattro vie, una sola eredita", ru: "Четыре пути, единое наследие" },
+    "fin-eyebrow":  { it: "Le nostre finalita", ru: "НАШИ ЦЕЛИ" },
+    "fin-title":    { it: "Quattro vie, una sola eredita", ru: "Четыре направления - единое наследие" },
     "fin-t-storia": { it: "Storia", ru: "История" },
     "fin-t-spirit": { it: "Spiritualita", ru: "Духовность" },
     "fin-t-cultura":{ it: "Cultura", ru: "Культура" },
     "fin-t-dialogo":{ it: "Dialogo", ru: "Диалог" },
-    "socio-eyebrow":{ it: "Tesseramento", ru: "Членство" },
+    "socio-eyebrow":{ it: "Tesseramento", ru: "ВСТУПИТЬ В АССОЦИАЦИЮ" },
 
     /* --- Contenuti pagine interne --- */
-    "foot-brand-a": { it: "Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.", ru: "Международная ассоциация «Друзья Российской империи — Третий Рим». Культурная ассоциация, посвящённая истории, культуре и традициям Российской империи." },
-    "foot-brand-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale apartitica e senza fini di lucro, fondata a Milano nel 2026.", ru: "Международная культурная ассоциация «Друзья Российской империи — Третий Рим». Независимая некоммерческая культурная ассоциация, основанная в Милане в 2026 году." },
+    "foot-brand-a": { it: "Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим». Независимая, неполитическая и некоммерческая организация, основанная в Милане в 2026 году." },
+    "foot-brand-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale apartitica e senza fini di lucro, fondata a Milano nel 2026.", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим». Независимая, неполитическая и некоммерческая организация, основанная в Милане в 2026 году." },
     "foot-tel-it": { it: "Tel. Italia: [numero italiano]", ru: "Тел. Италия: [итальянский номер]" },
     "foot-tel-ru": { it: "Tel. Russia: [numero russo]", ru: "Тел. Россия: [российский номер]" },
-    "foot-fb": { it: "Pagina Facebook", ru: "Страница в Facebook" },
-    "foot-name-a": { it: "Circolo Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная ассоциация «Друзья Российской империи — Третий Рим»" },
-    "foot-name-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской империи — Третий Рим»" },
-    "foot-noprofit": { it: "Associazione culturale, non a scopo di lucro", ru: "Культурная ассоциация, некоммерческая организация" },
-    "cap-chi": { it: "La grazia di un'epoca, custodita con cura.", ru: "Изящество эпохи, бережно сохранённое." },
-    "cap-fond": { it: "Icona della Famiglia Imperiale.", ru: "Икона Императорской семьи." },
+    "foot-fb": { it: "Pagina Facebook", ru: "Страница Facebook" },
+    "foot-name-a": { it: "Circolo Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим»" },
+    "foot-name-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим»" },
+    "foot-noprofit": { it: "Associazione culturale, non a scopo di lucro", ru: "Некоммерческая организация." },
+    "cap-chi": { it: "La grazia di un'epoca, custodita con cura.", ru: "Облик эпохи, бережно хранимый." },
+    "cap-fond": { it: "Icona della Famiglia Imperiale.", ru: "" },
     "ph-chi": { it: "[FOTO: ritratto imperiale o veduta del Palazzo d'Inverno, verticale]", ru: "[ФОТО: императорский портрет или вид Зимнего дворца, вертикальное]" },
     "ph-fond": { it: "[FOTO: icona o ritratto della Famiglia Imperiale, verticale]", ru: "[ФОТО: икона или портрет Императорской семьи, вертикальное]" },
     "st-autore": { it: "A cura di [Autore]", ru: "Автор: [Автор]" },
@@ -178,11 +178,11 @@
     "num-it": { it: "[numero italiano]", ru: "[итальянский номер]" },
     "num-ru": { it: "[numero russo]", ru: "[российский номер]" },
     "te-eyebrow": { it: "Come iscriversi", ru: "Как вступить" },
-    "te-h1": { it: "I passi per diventare socio", ru: "Шаги для вступления в Клуб" },
-    "te-step1": { it: "Compila il modulo di richiesta qui sotto.", ru: "Заполните форму заявки ниже." },
-    "te-step2": { it: "Riceverai una risposta con le modalita di adesione e la quota associativa.", ru: "Вы получите ответ с условиями вступления и размером членского взноса." },
-    "te-step3": { it: "Perfezioni l'iscrizione e ricevi la tessera del Circolo.", ru: "Завершите вступление и получите членский билет Клуба." },
-    "te-nota": { it: "Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.", ru: "Отправляя форму, вы соглашаетесь на обратную связь со стороны Клуба. Ваши данные не будут переданы третьим лицам." },
+    "te-h1": { it: "I passi per diventare socio", ru: "Шаги для вступления в ассоциацию" },
+    "te-step1": { it: "Compila il modulo di richiesta qui sotto.", ru: "Заполните заявку" },
+    "te-step2": { it: "Riceverai una risposta con le modalita di adesione e la quota associativa.", ru: "Ожидайте подтверждения" },
+    "te-step3": { it: "Perfezioni l'iscrizione e ricevi la tessera del Circolo.", ru: "Добро пожаловать" },
+    "te-nota": { it: "Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.", ru: "Мы ответим вам в течение нескольких дней и сообщим все подробности." },
     "te-box1": { it: "Il tesseramento online con pagamento della quota sara disponibile in una fase successiva. Per ora l'iscrizione avviene tramite il modulo di richiesta e il contatto diretto con il Circolo.", ru: "Онлайн-вступление с оплатой взноса будет доступно позднее. Пока вступление происходит через форму заявки и прямой контакт с Клубом." },
     "te-box2-tag": { it: "Preferisci scriverci", ru: "Предпочитаете написать нам" },
     "area-h1": { it: "Area riservata ai soci", ru: "Личный кабинет для членов Клуба" },
@@ -191,7 +191,10 @@
     "soon": { it: "Prossimamente", ru: "Скоро" },
     "legal-eyebrow": { it: "Note legali", ru: "Правовая информация" },
     "co-nota": { it: "In alternativa puoi scriverci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.", ru: "Вы также можете написать нам напрямую на <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>." },
-    "te-box2": { it: "Puoi anche contattarci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> o dalla pagina <a href=\"contatti.html\">Contatti</a>.", ru: "Вы также можете связаться с нами напрямую по адресу <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> или на странице <a href=\"contatti.html\">Контакты</a>." }
+    "te-box2": { it: "Puoi anche contattarci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> o dalla pagina <a href=\"contatti.html\">Contatti</a>.", ru: "Вы также можете связаться с нами напрямую по адресу <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> или на странице <a href=\"contatti.html\">Контакты</a>." },
+
+    /* --- Placeholder dei campi (attributo placeholder) --- */
+    "ph-msg": { it: "Presentati in breve e indica perche desideri iscriverti.", ru: "Расскажите нам о своём интересе к истории и культуре Российской империи." }
   };
 
   var LANGS = ["it", "ru"];
@@ -205,6 +208,12 @@
       var key = el.getAttribute("data-i18n");
       var entry = DICT[key];
       if (entry && typeof entry[lang] === "string") { el.innerHTML = entry[lang]; }
+    }
+    var phNodes = document.querySelectorAll("[data-i18n-ph]");
+    for (var p = 0; p < phNodes.length; p++) {
+      var phEl = phNodes[p];
+      var phEntry = DICT[phEl.getAttribute("data-i18n-ph")];
+      if (phEntry && typeof phEntry[lang] === "string") { phEl.setAttribute("placeholder", phEntry[lang]); }
     }
     var btns = document.querySelectorAll(".lang-btn");
     for (var j = 0; j < btns.length; j++) {
