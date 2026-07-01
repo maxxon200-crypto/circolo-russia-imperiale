@@ -38,9 +38,9 @@
           </ul>
         </nav>
 
-        <div class="lang">
-          <span class="lang-label">Lingua</span>
-          <div id="google_translate_element"></div>
+        <div class="lang" role="group" aria-label="Lingua / Язык">
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский" title="Русский">🇷🇺</button>
         </div>
       </div>
     </div>
@@ -70,7 +70,6 @@
         <div class="griglia griglia--3">
 
           <article class="card reveal">
-            <div class="card-media"><img class="img-top" src="assets/img/peter-der-grosse-1838.jpg" alt="Ritratto di Pietro il Grande"></div>
             <div class="card-body">
               <p class="data">A cura di [Autore]</p>
               <h3>[Titolo dell'articolo storico]</h3>
@@ -80,7 +79,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.1s">
-            <div class="card-media"><img src="assets/img/pietro-il-grande.jpg" alt="Pietro il Grande a cavallo"></div>
             <div class="card-body">
               <p class="data">A cura di [Autore]</p>
               <h3>[Titolo dell'articolo storico]</h3>
@@ -90,7 +88,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.2s">
-            <div class="card-media"><img src="assets/img/monumento-pietro-i.jpg" alt="Monumento a Pietro I"></div>
             <div class="card-body">
               <p class="data">A cura di [Autore]</p>
               <h3>[Titolo dell'articolo storico]</h3>
@@ -100,7 +97,6 @@
           </article>
 
           <article class="card reveal">
-            <div class="card-media"><img class="img-top" src="assets/img/romanov-icon.jpg" alt="Icona della Famiglia Imperiale di Nicola II"></div>
             <div class="card-body">
               <p class="data">A cura di [Autore]</p>
               <h3>[Titolo dell'articolo storico]</h3>
@@ -110,7 +106,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.1s">
-            <div class="card-media" aria-hidden="true">[FOTO: veduta storica]</div>
             <div class="card-body">
               <p class="data">A cura di [Autore]</p>
               <h3>[Titolo dell'articolo storico]</h3>
@@ -120,7 +115,6 @@
           </article>
 
           <article class="card reveal" data-delay="0.2s">
-            <div class="card-media" aria-hidden="true">[FOTO: documento / cimelio]</div>
             <div class="card-body">
               <p class="data">A cura di [Autore]</p>
               <h3>[Titolo dell'articolo storico]</h3>
@@ -168,18 +162,13 @@
       <div class="footer-bottom">
         <span>Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span>Associazione culturale, non a scopo di lucro</span>
+        <span class="footer-legali"><a href="privacy.html">Privacy Policy</a> &middot; <a href="cookie.html">Cookie Policy</a></span>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 
-  <!-- Traduttore: Google Website Translator (traduzione automatica in tutte le lingue) -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false }, 'google_translate_element');
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

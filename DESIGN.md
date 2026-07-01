@@ -160,11 +160,18 @@ Le sezioni sono separate da `clamp(var(--sp-7), 9vw, var(--sp-8))` (respiro ampi
 
 ---
 
-## 8b. Traduttore multilingua
+## 8b. Selettore lingua (Italiano / Russo)
 
-Selettore di lingua nell'header (voce "Lingua") con il widget **Google Website Translator**,
-stilizzato sui colori del sito (testo crema, bordo `--oro`, niente blocco Google sgargiante).
-Traduce automaticamente in tutte le lingue. Discreto ma visibile.
+Niente traduzione automatica (Google Translate): la qualità non è adatta a un sito
+istituzionale. Il sito è **bilingue IT/RU** con testi russi ufficiali forniti dal cliente.
+- Nell'header, dove c'era il selettore, due **bandiere** come switch: 🇮🇹 e 🇷🇺 (emoji Unicode,
+  zero KB, nessuna immagine esterna).
+- Dimensione ~24px, cliccabili; la bandiera attiva ha un sottile anello in `--oro`. Tap target
+  minimo 44px su mobile (padding invisibile).
+- Il cambio lingua avviene via JS (`js/i18n.js`): ogni elemento traducibile ha `data-i18n` e la
+  scelta è salvata in `localStorage`. I testi russi sono quelli ufficiali, mai auto-tradotti.
+- Nel testo **russo** i trattini lunghi "—" fanno parte della grammatica e vanno mantenuti;
+  nel testo **italiano** no (vedi §9).
 
 ---
 

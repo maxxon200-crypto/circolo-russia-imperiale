@@ -528,40 +528,21 @@ img.img-top { object-position: center top; }
 .hero.has-photo .hero-media .ph-tag { display: none; }
 
 /* =====================================================================
-   SELETTORE LINGUA (Google Translate, stilizzato sui colori del sito)
+   SELETTORE LINGUA — bandiere Italiano / Russo
    ===================================================================== */
-.lang { display: inline-flex; align-items: center; gap: var(--sp-2); flex: none; }
-.lang-label {
-  font-family: var(--font-body); font-weight: 500; font-size: 0.68rem;
-  letter-spacing: 0.14em; text-transform: uppercase; color: var(--oro); white-space: nowrap;
+.lang { display: inline-flex; align-items: center; gap: var(--sp-1); flex: none; }
+.lang-btn {
+  font-size: 22px; line-height: 1;
+  background: none; border: none; cursor: pointer;
+  padding: 11px;                 /* tap target ~44px anche se la bandiera e piccola */
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
-/* Nel footer il selettore va nella sua colonna */
-.footer-lang { margin-top: var(--sp-3); }
-
-/* Addomestica e ristiliza il widget Google Translate */
-#google_translate_element { display: inline-block; line-height: 0; }
-.goog-te-gadget { font-size: 0 !important; line-height: 0 !important; color: transparent !important; }
-.goog-te-gadget > span { display: none !important; }
-.goog-logo-link { display: none !important; }
-.goog-te-gadget .goog-te-combo {
-  margin: 0 !important;
-  font-family: var(--font-body) !important; font-size: 0.78rem !important; font-weight: 500;
-  color: var(--crema); background: transparent;
-  border: 1px solid rgba(197, 160, 89, 0.55); border-radius: var(--radius);
-  padding: 6px 10px; cursor: pointer; max-width: 9.5rem;
-}
-.goog-te-gadget .goog-te-combo:hover { border-color: var(--oro); }
-.goog-te-combo option { color: var(--navy); }
-/* Footer: testo su navy va bene crema, bordo oro */
-.site-footer .goog-te-gadget .goog-te-combo { color: var(--crema); }
-/* Nascondi la barra superiore iniettata da Google e ripristina il layout */
-.goog-te-banner-frame.skiptranslate, iframe.skiptranslate { display: none !important; }
-body { top: 0 !important; }
-
-@media (max-width: 520px) {
-  .lang-label { display: none; }
-  .goog-te-gadget .goog-te-combo { max-width: 7.5rem; }
-}
+.lang-btn:hover { opacity: 0.9; }
+.lang-btn.is-active { opacity: 1; box-shadow: 0 0 0 1.5px var(--oro); }
+.lang-btn:focus-visible { outline: 2px solid var(--oro); outline-offset: 2px; }
 
 /* =====================================================================
    GERARCHIA DI OPACITA E UTILITA TESTUALI
@@ -578,3 +559,13 @@ strong { font-weight: 600; color: var(--navy); }
 /* Card di solo testo (finalita, eventi senza foto) */
 .card--testo .card-body { padding: var(--sp-5) var(--sp-4); }
 .card--testo h3 { margin-bottom: var(--sp-2); }
+
+/* =====================================================================
+   COLONNA DI LETTURA SINGOLA (sezioni testo senza immagine)
+   ===================================================================== */
+.intro { max-width: 62ch; }
+.intro p { color: var(--testo-2); }
+.lead { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.45; color: var(--navy); }
+.intro .lead { color: var(--navy); }
+/* In russo alcuni paragrafi si accorpano: nascondi quelli vuoti */
+[data-i18n]:empty { display: none; margin: 0; }
