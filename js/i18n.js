@@ -78,6 +78,7 @@
     "lbl-email":    { it: "Email", ru: "Электронная почта" },
     "lbl-telefono": { it: "Telefono (facoltativo)", ru: "Номер телефона" },
     "lbl-messaggio":{ it: "Messaggio", ru: "Сообщение (по желанию)" },
+    "lbl-professione": { it: "Professione", ru: "Профессия" },
     "lbl-oggetto":  { it: "Oggetto", ru: "Тема" },
 
     /* --- Intestazioni di pagina --- */
