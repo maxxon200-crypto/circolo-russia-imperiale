@@ -164,9 +164,10 @@ Le sezioni sono separate da `clamp(var(--sp-7), 9vw, var(--sp-8))` (respiro ampi
 
 Niente traduzione automatica (Google Translate): la qualità non è adatta a un sito
 istituzionale. Il sito è **bilingue IT/RU** con testi russi ufficiali forniti dal cliente.
-- Nell'header, dove c'era il selettore, due **bandiere** come switch: 🇮🇹 e 🇷🇺 (emoji Unicode,
-  zero KB, nessuna immagine esterna).
-- Dimensione ~24px, cliccabili; la bandiera attiva ha un sottile anello in `--oro`. Tap target
+- Nell'header, dove c'era il selettore, due **bandiere** come switch: Italia e Russia, disegnate
+  come **SVG inline** (tricolore, zero KB, nessuna immagine esterna). Gli emoji-bandiera non si
+  usano perché su Windows non vengono resi: l'SVG si vede ovunque.
+- Dimensione ~27×18px, cliccabili; la bandiera attiva ha un sottile anello in `--oro`. Tap target
   minimo 44px su mobile (padding invisibile).
 - Il cambio lingua avviene via JS (`js/i18n.js`): ogni elemento traducibile ha `data-i18n` e la
   scelta è salvata in `localStorage`. I testi russi sono quelli ufficiali, mai auto-tradotti.
