@@ -70,6 +70,8 @@ h1, h2, h3, h4 {
   margin: 0 0 0.5em;
   color: var(--navy);
 }
+/* Le righe dei titoli si spezzano in modo bilanciato (niente ultima riga corta) */
+h1, h2 { text-wrap: balance; }
 
 p { margin: 0 0 1.1em; }
 
@@ -114,12 +116,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .filetto { width: 88px; height: 0; border: none; border-top: 1px solid var(--oro); margin: var(--sp-4) 0; }
 .filetto--center { margin-inline: auto; }
 
-/* Intestazione di sezione: eyebrow + titolo Cormorant + filetto con cerchietto */
-.sezione-testa { max-width: 54ch; margin-bottom: clamp(var(--sp-5), 4vw, var(--sp-6)); }
-.sezione-testa h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 600; }
+/* Intestazione di sezione: eyebrow + titolo Cormorant + filetto con cerchietto.
+   Il titolo si distende su tutta la larghezza della sezione (non piu 54ch):
+   meno righe, righe bilanciate, spaziatura uniforme sotto il blocco. */
+.sezione-testa { max-width: none; margin-bottom: clamp(var(--sp-4), 3.5vw, var(--sp-5)); }
+.sezione-testa h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 600; margin-bottom: 0; }
 .sezione-testa .filetto {
   width: 120px; height: 0; border: none; border-top: 1px solid var(--oro);
-  margin-top: var(--sp-3); position: relative;
+  margin: var(--sp-3) 0 0; position: relative;
 }
 .sezione-testa .filetto::before {
   content: ""; position: absolute; left: 0; top: 50%; margin-top: -4px;
@@ -256,12 +260,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    ===================================================================== */
 .missione { display: grid; grid-template-columns: 1fr; gap: clamp(2.2rem, 5vw, 4.5rem); align-items: center; }
 @media (min-width: 880px) { .missione { grid-template-columns: 1.05fr 0.95fr; } }
-.missione .intro { max-width: 56ch; }
-.missione .intro h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 600; }
-.missione .intro p { color: var(--testo-2); font-size: 1.08rem; }
+.missione .intro { max-width: none; }
+/* Titolo proporzionato alla colonna (meta pagina): righe piu lunghe, meno a capo */
+.missione .intro h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 600; }
+.missione .intro p { color: var(--testo-2); font-size: 1.08rem; margin-bottom: 0.9em; }
 .missione .intro .lead {
   font-family: var(--font-display); font-weight: 500; font-size: clamp(1.25rem, 2.2vw, 1.6rem);
-  line-height: 1.45; color: var(--navy); opacity: 1;
+  line-height: 1.45; color: var(--navy); opacity: 1; margin-bottom: 0.8em;
 }
 
 /* Card immagine evocativa (mission) */

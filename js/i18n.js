@@ -48,6 +48,7 @@
     "nav-eventi":       { it: "Eventi e attivita", ru: "Мероприятия" },
     "nav-attualita":    { it: "Attualita", ru: "Актуальное" },
     "nav-feste":        { it: "Feste e ricorrenze", ru: "Праздники и памятные даты" },
+    "nav-chiesa":       { it: "Chiesa Ortodossa Russa", ru: "Русская Православная Церковь" },
     "nav-galleria":     { it: "Galleria", ru: "Галерея" },
     "nav-tesseramento": { it: "Tesseramento", ru: "Вступить в ассоциацию" },
     "nav-contatti":     { it: "Contatti", ru: "Контакты" },
