@@ -203,7 +203,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero .eyebrow { font-size: clamp(0.92rem, 1.7vw, 1.18rem); letter-spacing: 0.24em; }
 .hero .nome-main {
   display: block; font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5.2rem); font-weight: 600;
+  font-size: clamp(2.6rem, 6vw, 4.5rem); font-weight: 600;
   line-height: 1.1; letter-spacing: 0; color: var(--crema);
   max-width: 18ch; margin-inline: auto; text-wrap: balance;
   text-shadow: 0 2px 26px rgba(0, 0, 0, 0.45);
@@ -268,7 +268,9 @@ html[lang="ru"] .hero-sub {
    SEZIONE MISSIONE
    ===================================================================== */
 .missione { display: grid; grid-template-columns: 1fr; gap: clamp(2.2rem, 5vw, 4.5rem); align-items: center; }
-@media (min-width: 880px) { .missione { grid-template-columns: 1.05fr 0.95fr; } }
+@media (min-width: 880px) { .missione { grid-template-columns: 1fr 1fr; } }
+/* La foto di "Chi siamo" e in formato 4:3: cornice coerente, foto piu grande */
+.missione .ritratto .ph-img { aspect-ratio: 4 / 3; }
 .missione .intro { max-width: none; }
 /* Titolo proporzionato alla colonna (meta pagina): righe piu lunghe, meno a capo */
 .missione .intro h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 600; }
@@ -570,6 +572,9 @@ strong { font-weight: 600; color: var(--navy); }
 .firma { font-size: 0.96rem; line-height: 1.7; }
 /* Contenitore verticale per ritratti/icone (es. icona Famiglia Imperiale) */
 .ritratto--v .ph-img { aspect-ratio: 4 / 5; }
+/* Variante senza ritaglio: la cornice si adatta al formato reale della foto */
+.ritratto--intero .ph-img { aspect-ratio: auto; }
+.ritratto--intero .ph-img > img { position: static; width: 100%; height: auto; object-fit: unset; }
 /* Griglia a quattro (Le nostre finalita) */
 @media (min-width: 620px) { .griglia--4 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 980px) { .griglia--4 { grid-template-columns: repeat(4, 1fr); } }
