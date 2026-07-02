@@ -31,8 +31,8 @@
 
     "eventi-eyebrow": { it: "Eventi e attivita", ru: "МЕРОПРИЯТИЯ И ДЕЯТЕЛЬНОСТЬ" },
     "eventi-title":   { it: "Incontri che intrecciano storia e presente", ru: "Встречи, в которых историческая память соприкасается с современностью" },
-    "ev-card1-title": { it: "Una tessera nel segno della memoria", ru: "Почётное участие" },
-    "ev-card1-text":  { it: "Sua Altezza Reale il Principe Emanuele Filiberto di Savoia, Capo della Casa Reale di Savoia, e stato accolto tra i soci onorari del Circolo. Un gesto dal forte valore simbolico, nel nome del dialogo tra due grandi tradizioni dinastiche europee.", ru: "Его Королевское Высочество принц Эмануэле Филиберто Савойский, глава Королевского дома Савойи, был удостоен звания почётного участника международной культурной ассоциации «Друзья Российской империи - Третий Рим». Этот акт носит важное символическое значение и способствует развитию диалога между двумя великими династическими традициями - Домом Савойи и Императорским Домом Романовых." },
+    "ev-card1-title": { it: "Una tessera nel segno della memoria", ru: "Почётный член" },
+    "ev-card1-text":  { it: "Sua Altezza Reale il Principe Emanuele Filiberto di Savoia, Capo della Casa Reale di Savoia, e stato accolto tra i soci onorari del Circolo. Un gesto dal forte valore simbolico, nel nome del dialogo tra due grandi tradizioni dinastiche europee.", ru: "Его Королевское Высочество принц Эмануэле Филиберто Савойский, глава Королевского дома Савойи, был избран почётным членом международной культурной ассоциации «Друзья Российской империи - Третий Рим». Этот акт носит важное символическое значение и способствует развитию диалога между двумя великими династическими традициями - Домом Савойи и Императорским Домом Романовых." },
     "ev-card2-title": { it: "Prossimi incontri", ru: "Предстоящие мероприятия" },
     "ev-card2-text":  { it: "Conferenze, presentazioni e momenti di approfondimento dedicati alla storia e alla spiritualita russa. Le date verranno annunciate qui.", ru: "Лекции, научные встречи, презентации и культурные мероприятия, посвящённые истории Российской империи и православной традиции. Даты будут опубликованы здесь." },
 
