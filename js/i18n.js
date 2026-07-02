@@ -111,9 +111,6 @@
     "foot-name-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим»" },
     "foot-noprofit": { it: "Associazione culturale, non a scopo di lucro", ru: "Некоммерческая организация." },
     "cap-chi": { it: "La grazia di un'epoca, custodita con cura.", ru: "Облик эпохи, бережно хранимый." },
-    "cap-fond": { it: "Icona della Famiglia Imperiale.", ru: "" },
-    "ph-chi": { it: "[FOTO: ritratto imperiale o veduta del Palazzo d'Inverno, verticale]", ru: "[ФОТО: императорский портрет или вид Зимнего дворца, вертикальное]" },
-    "ph-fond": { it: "[FOTO: icona o ritratto della Famiglia Imperiale, verticale]", ru: "[ФОТО: икона или портрет Императорской семьи, вертикальное]" },
     "st-autore": { it: "A cura di [Autore]", ru: "Автор: [Автор]" },
     "st-titolo": { it: "[Titolo dell'articolo storico]", ru: "[Заголовок исторической статьи]" },
     "st-sommario": { it: "[Sommario o primo paragrafo dell'articolo. Sostituire con il testo reale fornito dal Circolo.]", ru: "[Аннотация или первый абзац статьи. Заменить реальным текстом, предоставленным ассоциацией.]" },
@@ -160,15 +157,6 @@
     "at-titolo2": { it: "[Titolo dell'articolo]", ru: "[Заголовок статьи]" },
     "at-sommario": { it: "[Sommario dell'articolo scritto dal Circolo. Sostituire con il testo reale.]", ru: "[Аннотация статьи, написанной ассоциацией. Заменить реальным текстом.]" },
     "at-estratto2": { it: "[Estratto o sommario. Sostituire con il testo reale.]", ru: "[Отрывок или аннотация. Заменить реальным текстом.]" },
-    "ph-ga-1": { it: "[FOTO: evento del Circolo]", ru: "[ФОТО: мероприятие ассоциации]" },
-    "ga-cap": { it: "[Didascalia: luogo e data dell'evento]", ru: "[Подпись: место и дата мероприятия]" },
-    "ph-ga-2": { it: "[FOTO: conferenza]", ru: "[ФОТО: конференция]" },
-    "ph-ga-3": { it: "[FOTO: viaggio]", ru: "[ФОТО: поездка]" },
-    "ph-ga-4": { it: "[FOTO: mostra]", ru: "[ФОТО: выставка]" },
-    "ph-ga-5": { it: "[FOTO: cerimonia]", ru: "[ФОТО: церемония]" },
-    "ph-ga-6": { it: "[FOTO: incontro]", ru: "[ФОТО: встреча]" },
-    "ph-ga-7": { it: "[FOTO: associazione collegata]", ru: "[ФОТО: партнёрская организация]" },
-    "ph-ga-8": { it: "[FOTO: escursione]", ru: "[ФОТО: экскурсия]" },
     "co-eyebrow": { it: "Scrivici", ru: "Напишите нам" },
     "co-h1": { it: "Modulo di contatto", ru: "Форма обратной связи" },
     "co-eyebrow2": { it: "Recapiti", ru: "Контактные данные" },
@@ -196,6 +184,16 @@
     "te-box2": { it: "Puoi anche contattarci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> o dalla pagina <a href=\"contatti.html\">Contatti</a>.", ru: "Вы также можете связаться с нами напрямую по адресу <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> или на странице <a href=\"contatti.html\">Контакты</a>." },
 
     "te-form-title": { it: "Domanda di adesione", ru: "Заявка на вступление" },
+
+    /* --- Galleria: cerimonia Villa Sormani + Chiesa Ortodossa --- */
+    "chiesa-cap": { it: "Icona dei Santi Imperiali Portatori della Passione, l'Imperatore Nicola II e la sua famiglia.", ru: "Икона святых Царственных страстотерпцев Императора Николая II и его семьи." },
+    "ga-ev-eyebrow": { it: "26 giugno 2026", ru: "26 июня 2026 года" },
+    "ga-ev-title": { it: "Cerimonia a Villa Sormani Marzorati Uva di Missaglia", ru: "Церемония на вилле Сормани Марцорати Ува в Миссалье" },
+    "ga-ev-p1": { it: "Il 26 giugno 2026, in occasione della speciale visita dello Ieromonaco Ambrogio Matsegora, Vicario generale della Chiesa Ortodossa Russa del Patriarcato di Mosca in Italia, presso villa Sormani Marzorati Uva di Missaglia, in Brianza, si è svolta una cerimonia nel corso della quale la Metropolia dell'Europa Occidentale ha conferito attestati di benemerenza ad un gruppo di personalità italiane e straniere, cattoliche e ortodosse, per meriti culturali e sociali, fra cui alcuni Soci e Simpatizzanti del nostro Circolo. Altre benemerenze sono state consegnate ai nostri Soci dalla Principessa Silvia Andronik Cantacuzino, Ospite d'Onore della serata. La cerimonia era organizzata dalla Confraternita Cavalleresca Imperiale Russa Ortodossa di San Giovanni di Gerusalemme e di Malta, con l'attiva partecipazione del nostro Circolo.", ru: "26 июня 2026 года в исторической вилле Сормани Марцорати Ува в Миссалье, в Брианца, состоялась торжественная церемония, приуроченная к особому визиту иеромонаха Амвросия Мацегора, генерального викария Русской православной церкви Московского патриархата в Италии. В ознаменование этого события Митрополия Западной Европы удостоила почётных грамот ряд итальянских и иностранных деятелей - как католического, так и православного исповедания, - чья деятельность снискала признание в культурной и общественной сферах. В числе удостоенных были также некоторые члены и друзья нашей ассоциации. Ряд иных знаков отличия был вручён членам нашей ассоциации княгиней Сильвией Андроник Кантакузино, присутствовавшей на церемонии в качестве почётной гостьи вечера. Организация торжества была осуществлена Императорским русским православным рыцарским братством святого Иоанна Иерусалимского и Мальтийского при деятельном и непосредственном участии нашей ассоциации." },
+    "ga-ev-p2": { it: "Lo Ieromonaco padre Ambrogio era accompagnato dal Segretario padre Adriano, Priore della confraternita organizzatrice, e da padre Vasilj, Parroco della comunità ortodossa russa di Saronno. Erano presenti circa un centinaio di persone, fra cui autorità civili, militari e diplomatiche.", ru: "Иеромонаха отца Амвросия сопровождали его секретарь отец Адриан, являющийся приором братства-организатора, а также отец Василий, настоятель русской православной общины в Саронно. На церемонии присутствовало около ста приглашенных, среди которых были представители гражданских властей, военного сословия и дипломатического корпуса." },
+    "ga-ev-p3": { it: "La cerimonia è stata seguita da una visita guidata alla stupenda villa Sormani Marzorati Uva di Missaglia, edificio di origini risalenti all'epoca romana ed oggetto di successive trasformazioni nel corso dei secoli. Il conte Alberto Uva ne è l'attuale proprietario e promotore di iniziative culturali legate alla storia del territorio brianzolo.", ru: "По завершении торжественной части для собравшихся была устроена экскурсия по вилле Сормани Марцорати Ува - выдающемуся памятнику историко-архитектурного наследия, истоки которого восходят к римской эпохе, тогда как его последующий облик формировался на протяжении столетий в ходе последовательных перестроек и преобразований. Ныне вилла принадлежит графу Альберто Ува, который известен как вдохновитель и попечитель культурных инициатив, направленных на сохранение и осмысление исторического наследия Брианцы." },
+    "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
+    "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
     /* --- Placeholder dei campi (attributo placeholder) --- */
     "ph-msg": { it: "Presentati in breve e indica perche desideri iscriverti.", ru: "Расскажите нам о своём интересе к истории и культуре Российской империи." }
