@@ -111,15 +111,6 @@
     "foot-name-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим»" },
     "foot-noprofit": { it: "Associazione culturale, non a scopo di lucro", ru: "Некоммерческая организация." },
     "cap-chi": { it: "La grazia di un'epoca, custodita con cura.", ru: "Облик эпохи, бережно хранимый." },
-    "st-autore": { it: "A cura di [Autore]", ru: "Автор: [Автор]" },
-    "st-titolo": { it: "[Titolo dell'articolo storico]", ru: "[Заголовок исторической статьи]" },
-    "st-sommario": { it: "[Sommario o primo paragrafo dell'articolo. Sostituire con il testo reale fornito dal Circolo.]", ru: "[Аннотация или первый абзац статьи. Заменить реальным текстом, предоставленным ассоциацией.]" },
-    "ph-st-1": { it: "[FOTO: ritratto / dipinto storico]", ru: "[ФОТО: портрет / историческая картина]" },
-    "ph-st-2": { it: "[FOTO: evento storico]", ru: "[ФОТО: историческое событие]" },
-    "ph-st-3": { it: "[FOTO: opera d'arte imperiale]", ru: "[ФОТО: императорское произведение искусства]" },
-    "ph-st-4": { it: "[FOTO: ritratto imperiale]", ru: "[ФОТО: императорский портрет]" },
-    "ph-st-5": { it: "[FOTO: veduta storica]", ru: "[ФОТО: исторический вид]" },
-    "ph-st-6": { it: "[FOTO: documento / cimelio]", ru: "[ФОТО: документ / реликвия]" },
     "ev-eyebrow1": { it: "In programma", ru: "В программе" },
     "ev-h1": { it: "Prossimi eventi", ru: "Ближайшие мероприятия" },
     "ph-ev-1": { it: "[FOTO: locandina evento]", ru: "[ФОТО: афиша мероприятия]" },
@@ -184,6 +175,19 @@
     "te-box2": { it: "Puoi anche contattarci direttamente a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> o dalla pagina <a href=\"contatti.html\">Contatti</a>.", ru: "Вы также можете связаться с нами напрямую по адресу <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a> или на странице <a href=\"contatti.html\">Контакты</a>." },
 
     "te-form-title": { it: "Domanda di adesione", ru: "Заявка на вступление" },
+
+    /* --- Formato rivista: Storia / articolo Messina --- */
+    "cat-storia": { it: "Storia", ru: "История" },
+    "cat-soon": { it: "In preparazione", ru: "Готовится" },
+    "storia-altri": { it: "Altri approfondimenti", ru: "Другие материалы" },
+    "soon-date": { it: "In arrivo", ru: "Скоро" },
+    "soon-title": { it: "Nuovo approfondimento", ru: "Новый материал" },
+    "soon-excerpt": { it: "Articolo in preparazione. Presto disponibile in questa sezione.", ru: "Материал готовится. Скоро появится в этом разделе." },
+    "art-messina-date": { it: "28 dicembre 1908", ru: "28 декабря 1908 года" },
+    "art-messina-title": { it: "Il soccorso dei marinai russi alle vittime del terremoto di Messina (1908)", ru: "Помощь русских моряков жертвам землетрясения в Мессине (1908)" },
+    "art-messina-excerpt": { it: "Estratto in preparazione. Il testo completo dell'articolo sara pubblicato a breve.", ru: "[перевод скоро]" },
+    "art-messina-body": { it: "<p>Testo dell'articolo in preparazione. Sara pubblicato a breve, con il resoconto completo del soccorso portato dai marinai della Marina imperiale russa alle vittime del terremoto che distrusse Messina nel 1908.</p>", ru: "<p class=\"tenue\">[перевод скоро]</p>" },
+    "art-torna-storia": { it: "Torna a Storia dell'Impero", ru: "Вернуться к Истории Империи" },
 
     /* --- Galleria: cerimonia Villa Sormani + Chiesa Ortodossa --- */
     "chiesa-cap": { it: "Icona dei Santi Imperiali Portatori della Passione, l'Imperatore Nicola II e la sua famiglia.", ru: "Икона святых Царственных страстотерпцев Императора Николая II и его семьи." },
