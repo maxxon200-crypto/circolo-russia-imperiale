@@ -764,3 +764,13 @@ strong { font-weight: 600; color: var(--navy); }
   font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 3px;
 }
 .cal-eyebrow { margin-bottom: var(--sp-4); }
+
+/* =====================================================================
+   EVENTI — data in evidenza sulle card
+   ===================================================================== */
+.art-card__evdate {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem;
+  color: var(--oro); line-height: 1.1; margin: 0 0 0.35rem;
+}
+.eventi-gruppo { margin-bottom: clamp(var(--sp-6), 6vw, var(--sp-7)); }
+.eventi-gruppo:last-child { margin-bottom: 0; }
