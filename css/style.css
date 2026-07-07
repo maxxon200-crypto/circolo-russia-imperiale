@@ -4,12 +4,18 @@
    ===================================================================== */
 
 :root {
-  /* ---------- Palette (esatta) ---------- */
-  --navy:    #0B192C;   /* header, footer, testo del corpo */
-  --crema:   #F8F6F0;   /* sfondo della maggior parte del sito */
-  --bianco:  #FFFFFF;   /* card e box con testo/immagini */
-  --cremisi: #9A1720;   /* pulsanti CTA principali e hover */
-  --oro:     #C5A059;   /* divisori, icone, bordi, ornamenti */
+  /* ---------- Palette (esatta, aggiornata: oro brunito + categorie) ---------- */
+  --navy:        #0B192C;   /* header, footer, testo principale del corpo */
+  --crema:       #F8F6F0;   /* sfondo principale delle pagine, pulito (NO beige caldo) */
+  --bianco:      #FFFFFF;   /* card e box con testo/immagini */
+  --cremisi:     #9A1720;   /* CTA principali, categoria "Ricorrenze" */
+  --oro:         #B08D2E;   /* oro brunito/ottone (NO giallo acceso) */
+  --oro-chiaro:  #C9A227;   /* riflessi e accenti dorati tenui */
+  --inchiostro:  #171922;   /* testo scuro su fondo chiaro */
+  --grigio:      #5a5a5a;   /* testo secondario / estratti */
+  --malachite:   #006B59;   /* categoria "Storia dell'Impero" */
+  --lapis:       #26619C;   /* categoria "Attualita" */
+  --linea:       #E2D8C2;   /* bordi sottili delle card */
 
   /* Derivati ammessi (opacità del navy / del chiaro) */
   --cremisi-scuro: #7E121A;
@@ -17,8 +23,7 @@
   --testo-2:  rgba(11, 25, 44, 0.70);   /* descrizioni, arretrano */
   --testo-3:  rgba(11, 25, 44, 0.55);   /* didascalie */
   --su-scuro: rgba(255, 255, 255, 0.82);/* testo su navy */
-  --linea:    rgba(11, 25, 44, 0.10);   /* filetti tenui */
-  --oro-soft: rgba(197, 160, 89, 0.45); /* bordi dorati tenui */
+  --oro-soft: rgba(176, 141, 46, 0.45); /* bordi dorati tenui (brunito) */
 
   /* ---------- Tipografia ---------- */
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -136,7 +141,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-header {
   position: sticky; top: 0; z-index: 100;
   background: var(--navy);
-  border-bottom: 1px solid rgba(197, 160, 89, 0.35);
+  border-bottom: 1px solid rgba(176, 141, 46, 0.35);
   transition: box-shadow 0.3s ease;
 }
 .site-header.scrolled { box-shadow: 0 8px 28px rgba(11, 25, 44, 0.28); }
@@ -155,7 +160,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* Navigazione */
 .nav-toggle {
   display: inline-flex; flex-direction: column; gap: 5px;
-  background: none; border: 1px solid rgba(197, 160, 89, 0.5);
+  background: none; border: 1px solid rgba(176, 141, 46, 0.5);
   border-radius: var(--radius); padding: 0.55rem 0.6rem; cursor: pointer;
 }
 .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--crema); }
@@ -403,7 +408,7 @@ html[lang="ru"] .hero-sub {
 /* =====================================================================
    FOOTER (navy)
    ===================================================================== */
-.site-footer { background: var(--navy); color: var(--su-scuro); font-size: 0.95rem; padding-block: clamp(3rem, 6vw, 4.5rem) 2rem; border-top: 1px solid rgba(197, 160, 89, 0.35); }
+.site-footer { background: var(--navy); color: var(--su-scuro); font-size: 0.95rem; padding-block: clamp(3rem, 6vw, 4.5rem) 2rem; border-top: 1px solid rgba(176, 141, 46, 0.35); }
 .footer-grid { display: grid; gap: 2.2rem; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
 .site-footer h4 { font-family: var(--font-body); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--oro); margin-bottom: 1rem; }
@@ -500,7 +505,7 @@ html[lang="ru"] .hero-sub {
   .nav-toggle { display: inline-flex; }
   .main-nav {
     position: absolute; top: 100%; left: 0; right: 0;
-    background: var(--navy); border-bottom: 1px solid rgba(197, 160, 89, 0.35);
+    background: var(--navy); border-bottom: 1px solid rgba(176, 141, 46, 0.35);
     box-shadow: 0 12px 24px rgba(11, 25, 44, 0.3);
     max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
   }
@@ -623,8 +628,8 @@ strong { font-weight: 600; color: var(--navy); }
 /* Rassegna stampa: elenco sobrio con filetti oro */
 .rassegna { max-width: var(--max-read); margin: clamp(var(--sp-5), 5vw, var(--sp-6)) auto 0; }
 .rassegna h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); }
-.press-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid rgba(197, 160, 89, 0.45); }
-.press-list li { border-bottom: 1px solid rgba(197, 160, 89, 0.45); }
+.press-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid rgba(176, 141, 46, 0.45); }
+.press-list li { border-bottom: 1px solid rgba(176, 141, 46, 0.45); }
 .press-list a {
   display: block; padding: 0.9rem 0.2rem;
   text-decoration: none; color: var(--navy); font-weight: 500; line-height: 1.45;
