@@ -47,6 +47,21 @@
     return;
   }
 
+  /* ---------- 4. Prossima ricorrenza (pagina Feste) ---------- */
+  var cal = document.querySelectorAll(".cal-item[data-md]");
+  if (cal.length) {
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var best = null, bestDiff = Infinity;
+    for (var c = 0; c < cal.length; c++) {
+      var md = cal[c].getAttribute("data-md").split("-"); // MM-DD
+      var next = new Date(today.getFullYear(), +md[0] - 1, +md[1]);
+      if (next < today) { next.setFullYear(today.getFullYear() + 1); }
+      var diff = next - today;
+      if (diff < bestDiff) { bestDiff = diff; best = cal[c]; }
+    }
+    if (best) { best.classList.add("is-next"); }
+  }
+
   var io = new IntersectionObserver(function (entries, obs) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
