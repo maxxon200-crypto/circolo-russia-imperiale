@@ -34,24 +34,32 @@ sgargianti. Per evitarlo: respiro, gerarchia, immagini, e un oro discreto da pal
 
 ```css
 :root {
-  --navy:    #0B192C;  /* Dark Midnight Navy: header, footer, testo principale del corpo */
-  --crema:   #F8F6F0;  /* Alabaster Cream: sfondo della stragrande maggioranza del sito */
-  --bianco:  #FFFFFF;  /* Crisp White: SOLO per card/box con testo e immagini */
-  --cremisi: #9A1720;  /* Crimson Red: pulsanti CTA principali e hover */
-  --oro:     #C5A059;  /* Muted Gold: divisori sottili, icone, bordi tenui */
+  --navy:        #0B192C;  /* header, footer, testo principale del corpo */
+  --crema:       #F8F6F0;  /* sfondo principale delle pagine, pulito (NO beige caldo) */
+  --bianco:      #FFFFFF;  /* card e box che contengono testo/immagini */
+  --cremisi:     #9A1720;  /* CTA principali, categoria "Ricorrenze" */
+  --oro:         #B08D2E;  /* oro brunito/ottone: filetti, eyebrow, dettagli (NO giallo acceso) */
+  --oro-chiaro:  #C9A227;  /* riflessi e accenti dorati tenui */
+  --inchiostro:  #171922;  /* testo scuro su fondo chiaro */
+  --grigio:      #5a5a5a;  /* testo secondario/estratti */
+  --malachite:   #006B59;  /* categoria "Storia dell'Impero" (verde interni Hermitage) */
+  --lapis:       #26619C;  /* categoria "Attualità" (blu lapislazzuli) */
+  --linea:       #E2D8C2;  /* bordi sottili delle card */
 }
 ```
 
 **Regole d'uso rigide:**
-- **Sfondo di quasi tutto il sito:** `--crema`. Caldo, elegante.
+- **Sfondo di quasi tutto il sito:** `--crema`, pulito. Nessun tono sabbia/terracotta di sfondo.
 - **Header e footer:** `--navy`. Anche il **testo del corpo** principale è `--navy` (più
   morbido del nero puro).
 - **Card e box** che contengono testi/immagini: `--bianco` puro, per **sollevarsi** dalla
   crema con un'ombra morbida. Questo "lift" dà profondità ed è centrale.
-- **`--cremisi` SOLO** per i pulsanti d'azione principali ("Diventa socio", "Scopri di più") e
-  i loro hover. Mai come fondo di intere sezioni.
-- **`--oro` con parsimonia:** divisori sottili (rombi/puntini tra le sezioni), piccole icone,
-  filetti attorno o sopra le card, ornamenti. Mai campiture piene d'oro.
+- **`--cremisi` SOLO** per i pulsanti d'azione principali e la categoria "Ricorrenze". Mai come
+  fondo di intere sezioni.
+- **`--oro` sempre brunito (`#B08D2E`), mai giallo acceso.** Con parsimonia: divisori sottili
+  (rombi/puntini), eyebrow, filetti attorno o sopra le card, ornamenti. Mai campiture piene d'oro.
+- **Colori di categoria** (etichette sulle card, formato rivista): Storia = `--malachite`,
+  Ricorrenze = `--cremisi`, Attualità = `--lapis`, Eventi = `--oro`.
 
 Colori derivati ammessi (solo come opacità del navy, vedi §4): testo secondario
 `rgba(11,25,44,0.70)`, didascalie `rgba(11,25,44,0.55)`; su fondo scuro `rgba(255,255,255,0.82)`.
