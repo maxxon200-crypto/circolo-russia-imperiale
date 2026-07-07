@@ -639,3 +639,106 @@ strong { font-weight: 600; color: var(--navy); }
   display: block; font-family: var(--font-body); font-weight: 600; font-size: 0.72rem;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--oro); margin-bottom: 0.2rem;
 }
+
+/* =====================================================================
+   FORMATO RIVISTA — etichetta categoria, card articolo, in evidenza, lettura
+   ===================================================================== */
+
+/* Etichetta categoria colorata (riutilizzabile) */
+.cat {
+  display: inline-block; font-family: var(--font-body); font-weight: 600;
+  font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase;
+  color: #fff; background: var(--oro); padding: 0.32rem 0.7rem; border-radius: 3px;
+}
+.cat--storia     { background: var(--malachite); color: #fff; }
+.cat--ricorrenze { background: var(--cremisi); color: #fff; }
+.cat--attualita  { background: var(--lapis); color: #fff; }
+.cat--eventi     { background: var(--oro); color: var(--inchiostro); }
+.cat--soon       { background: transparent; color: var(--grigio); border: 1px solid var(--linea); }
+
+/* Freccia dei link "Leggi" */
+.art-card__more::after, .art-featured__more::after { content: " \2192"; }
+
+/* Card articolo (componente riutilizzabile) */
+.art-card {
+  display: flex; flex-direction: column; background: var(--bianco);
+  border: 1px solid var(--linea); border-radius: var(--radius); overflow: hidden;
+  text-decoration: none; color: inherit; position: relative;
+  box-shadow: 0 1px 3px rgba(11, 25, 44, 0.05), 0 12px 30px rgba(11, 25, 44, 0.07);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.art-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; z-index: 3;
+  background: var(--oro); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
+}
+.art-card:hover { transform: translateY(-4px); box-shadow: 0 4px 10px rgba(11, 25, 44, 0.08), 0 22px 46px rgba(11, 25, 44, 0.16); }
+.art-card:hover::before { transform: scaleX(1); }
+.art-card__media { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: linear-gradient(160deg, #1a2c44, var(--navy)); }
+.art-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.art-card:hover .art-card__media img { transform: scale(1.04); }
+.art-card__media .cat { position: absolute; top: 0.8rem; left: 0.8rem; z-index: 2; }
+.art-card__ph {
+  position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 1rem;
+  font-family: var(--font-body); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: rgba(255, 255, 255, 0.5);
+}
+.art-card__body { padding: var(--sp-4); display: flex; flex-direction: column; flex: 1; }
+.art-card__date { font-family: var(--font-body); font-size: 0.78rem; color: var(--grigio); margin: 0 0 0.5rem; }
+.art-card__title { font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.16; color: var(--navy); margin: 0 0 0.55rem; }
+.art-card__excerpt {
+  font-family: var(--font-body); font-size: 0.97rem; color: var(--testo-2); line-height: 1.55; margin: 0 0 1.1rem;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.art-card__more { margin-top: auto; font-family: var(--font-body); font-weight: 600; font-size: 0.84rem; color: var(--cremisi); }
+.art-card:hover .art-card__more { color: var(--cremisi-scuro); }
+.art-card--soon { pointer-events: none; }
+
+/* Articolo in evidenza (grande) */
+.art-featured {
+  display: grid; grid-template-columns: 1fr; background: var(--bianco); position: relative;
+  border: 1px solid var(--linea); border-radius: var(--radius); overflow: hidden;
+  text-decoration: none; color: inherit;
+  box-shadow: 0 1px 3px rgba(11, 25, 44, 0.05), 0 16px 40px rgba(11, 25, 44, 0.09);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  margin-bottom: clamp(var(--sp-6), 6vw, var(--sp-7));
+}
+.art-featured::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; z-index: 3;
+  background: var(--oro); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
+}
+.art-featured:hover { transform: translateY(-4px); box-shadow: 0 4px 10px rgba(11, 25, 44, 0.08), 0 26px 54px rgba(11, 25, 44, 0.17); }
+.art-featured:hover::before { transform: scaleX(1); }
+.art-featured__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: linear-gradient(160deg, #1a2c44, var(--navy)); }
+.art-featured__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.art-featured:hover .art-featured__media img { transform: scale(1.03); }
+.art-featured__media .cat { position: absolute; top: 1rem; left: 1rem; z-index: 2; }
+.art-featured__body { padding: clamp(var(--sp-4), 4vw, var(--sp-6)); display: flex; flex-direction: column; justify-content: center; }
+.art-featured__date { font-family: var(--font-body); font-size: 0.82rem; color: var(--grigio); margin: 0 0 0.6rem; }
+.art-featured__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.12; color: var(--navy); margin: 0 0 0.9rem; }
+.art-featured__excerpt { font-family: var(--font-body); font-size: 1.05rem; color: var(--testo-2); line-height: 1.65; margin: 0 0 1.3rem; max-width: 48ch; }
+.art-featured__more { font-family: var(--font-body); font-weight: 600; font-size: 0.92rem; color: var(--cremisi); }
+.art-featured:hover .art-featured__more { color: var(--cremisi-scuro); }
+@media (min-width: 860px) {
+  .art-featured { grid-template-columns: 1.12fr 1fr; align-items: stretch; }
+  .art-featured__media { aspect-ratio: auto; min-height: 360px; }
+}
+
+/* Titoletto "Altri articoli" sopra la griglia */
+.art-altri { margin: 0 0 var(--sp-4); }
+.art-altri .eyebrow { margin: 0; }
+
+/* =====================================================================
+   PAGINA ARTICOLO — colonna di lettura stretta
+   ===================================================================== */
+.articolo { max-width: var(--max-read); margin-inline: auto; }
+.articolo__media { margin-bottom: clamp(var(--sp-4), 4vw, var(--sp-5)); }
+.articolo__media img { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--linea); display: block; }
+.articolo__cat { margin-bottom: 1rem; }
+.articolo__meta { font-family: var(--font-body); font-size: 0.82rem; letter-spacing: 0.05em; color: var(--grigio); margin: 0 0 0.5rem; }
+.articolo h1 { font-size: clamp(1.9rem, 4.2vw, 2.9rem); line-height: 1.1; margin-bottom: 0.7em; }
+.articolo__testo { font-size: 1.12rem; line-height: 1.85; }
+.articolo__testo p { margin-bottom: 1.3em; color: var(--testo); }
+.articolo__testo p.tenue, .articolo__testo .tenue { color: var(--testo-2); }
+.articolo__media--second { margin-top: var(--sp-5); }
+.articolo__torna { display: inline-block; margin-top: var(--sp-6); font-family: var(--font-body); font-weight: 600; font-size: 0.85rem; color: var(--cremisi); }
+.articolo__torna::before { content: "\2190  "; }
