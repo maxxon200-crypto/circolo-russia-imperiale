@@ -23,6 +23,11 @@
     "home-galleria-link": { it: "Apri la galleria", ru: "Открыть галерею" },
     "home-tess-link": { it: "Diventa socio", ru: "Вступить в ассоциацию" },
 
+    /* La nostra storia: sezione home (Passo 2) + articolo fondazione (Passo 3) */
+    "home-fond-eye":  { it: "La nostra storia", ru: "НАША ИСТОРИЯ" },
+    "home-fond-text": { it: "Il 16 giugno 2026, nel giorno dei Santi della Terra Russa, l'associazione nasce ufficialmente a Milano. Una storia che intreccia fede, memoria e appartenenza.", ru: "16 июня 2026 года, в день Всех святых, в земле Русской просиявших, ассоциация была официально основана в Милане. История, соединяющая веру, память и принадлежность." },
+    "home-fond-link": { it: "Leggi la storia", ru: "Читать историю" },
+
     "idx-storia":       { it: "Mille anni di storia della Casa Romanov e dell'Impero Russo.", ru: "Тысячелетняя история Дома Романовых и Российской империи." },
     "idx-feste":        { it: "Il calendario delle memorie che scandiscono l'anno ortodosso e imperiale.", ru: "Календарь памятных дат православного и имперского года." },
     "idx-eventi":       { it: "Incontri, cerimonie e visite dedicati alla cultura russa in Italia.", ru: "Встречи, церемонии и визиты, посвящённые русской культуре в Италии." },
