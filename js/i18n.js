@@ -255,6 +255,33 @@
     "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
+    /* --- Pagine legali interne (Privacy + Cookie), IT/RU --- */
+    "legal-updated": { it: "Ultimo aggiornamento: [DATA]", ru: "Последнее обновление: [ДАТА]" },
+
+    "pp-title": { it: "Informativa sulla Privacy", ru: "Политика конфиденциальности" },
+    "pp-intro": { it: "Ai sensi del Regolamento (UE) 2016/679 (GDPR), questa informativa descrive come vengono trattati i dati personali degli utenti di questo sito.", ru: "В соответствии с Регламентом (ЕС) 2016/679 (GDPR) настоящая политика описывает, каким образом обрабатываются персональные данные пользователей этого сайта." },
+    "pp-h1": { it: "Titolare del trattamento", ru: "Оператор обработки данных" },
+    "pp-p1": { it: "Il titolare del trattamento è [NOME COMPLETO DELL'ASSOCIAZIONE], con sede in [INDIRIZZO COMPLETO]. Per qualsiasi questione relativa ai dati personali è possibile scrivere a russia.imperiale@yandex.com.", ru: "Оператором обработки данных является [ПОЛНОЕ НАЗВАНИЕ АССОЦИАЦИИ], с местонахождением по адресу [ПОЛНЫЙ АДРЕС]. По любым вопросам, связанным с персональными данными, можно написать по адресу russia.imperiale@yandex.com." },
+    "pp-h2": { it: "Quali dati raccogliamo", ru: "Какие данные мы собираем" },
+    "pp-p2": { it: "Questo sito raccoglie esclusivamente i dati che l'utente fornisce volontariamente compilando il modulo di contatto: nome, indirizzo email e contenuto del messaggio. Non raccogliamo altri dati personali e non effettuiamo profilazione.", ru: "Этот сайт собирает исключительно данные, которые пользователь добровольно предоставляет при заполнении контактной формы: имя, адрес электронной почты и текст сообщения. Мы не собираем иные персональные данные и не осуществляем профилирование." },
+    "pp-h3": { it: "Finalità e base giuridica", ru: "Цели и правовое основание" },
+    "pp-p3": { it: "I dati forniti tramite il modulo di contatto sono trattati al solo scopo di rispondere alle richieste dell'utente. La base giuridica è il consenso dell'utente, espresso con l'invio del messaggio.", ru: "Данные, предоставленные через контактную форму, обрабатываются исключительно с целью ответа на обращения пользователя. Правовым основанием является согласие пользователя, выраженное при отправке сообщения." },
+    "pp-h4": { it: "Conservazione dei dati", ru: "Хранение данных" },
+    "pp-p4": { it: "I dati sono conservati per il tempo necessario a gestire la richiesta e adempiere a eventuali obblighi di legge, dopodiché vengono cancellati.", ru: "Данные хранятся в течение времени, необходимого для обработки обращения и выполнения возможных обязательств по закону, после чего удаляются." },
+    "pp-h5": { it: "Comunicazione dei dati", ru: "Передача данных" },
+    "pp-p5": { it: "I dati non sono diffusi né ceduti a terzi. Possono essere trattati unicamente dalle persone autorizzate dell'associazione per rispondere alle richieste.", ru: "Данные не разглашаются и не передаются третьим лицам. Они могут обрабатываться исключительно уполномоченными лицами ассоциации для ответа на обращения." },
+    "pp-h6": { it: "Diritti dell'utente", ru: "Права пользователя" },
+    "pp-p6": { it: "L'utente ha diritto di accedere ai propri dati, chiederne la rettifica o la cancellazione, limitarne o opporsi al trattamento, e proporre reclamo all'Autorità Garante per la protezione dei dati personali. Per esercitare questi diritti può scrivere a russia.imperiale@yandex.com.", ru: "Пользователь имеет право получить доступ к своим данным, потребовать их исправления или удаления, ограничить обработку или возразить против неё, а также подать жалобу в надзорный орган по защите персональных данных. Для реализации этих прав можно написать по адресу russia.imperiale@yandex.com." },
+
+    "cp-title": { it: "Informativa sui Cookie", ru: "Политика использования файлов cookie" },
+    "cp-intro": { it: "Questa informativa spiega come questo sito utilizza i cookie.", ru: "Настоящая политика объясняет, каким образом этот сайт использует файлы cookie." },
+    "cp-h1": { it: "Cosa sono i cookie", ru: "Что такое файлы cookie" },
+    "cp-p1": { it: "I cookie sono piccoli file di testo che i siti salvano sul dispositivo dell'utente per funzionare correttamente o raccogliere informazioni.", ru: "Файлы cookie — это небольшие текстовые файлы, которые сайты сохраняют на устройстве пользователя для корректной работы или сбора информации." },
+    "cp-h2": { it: "Cookie utilizzati da questo sito", ru: "Файлы cookie, используемые этим сайтом" },
+    "cp-p2": { it: "Questo sito utilizza esclusivamente cookie tecnici necessari al suo corretto funzionamento. Non utilizziamo cookie di profilazione né cookie di marketing.", ru: "Этот сайт использует исключительно технические файлы cookie, необходимые для его корректной работы. Мы не используем файлы cookie для профилирования или маркетинга." },
+    "cp-h3": { it: "Gestione dei cookie", ru: "Управление файлами cookie" },
+    "cp-p3": { it: "L'utente può in ogni momento gestire o disattivare i cookie tramite le impostazioni del proprio browser. La disattivazione dei cookie tecnici potrebbe compromettere alcune funzionalità del sito.", ru: "Пользователь может в любой момент управлять файлами cookie или отключить их в настройках своего браузера. Отключение технических файлов cookie может нарушить работу некоторых функций сайта." },
+
     /* --- Placeholder dei campi (attributo placeholder) --- */
     "ph-msg": { it: "Presentati in breve e indica perche desideri iscriverti.", ru: "Расскажите нам о своём интересе к истории и культуре Российской империи." }
   };
