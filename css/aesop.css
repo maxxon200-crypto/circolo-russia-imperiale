@@ -335,3 +335,59 @@ p { margin: 0 0 1.3rem; }
   .idx-row { grid-template-columns: 1fr; gap: 1rem; }
   .idx-arrow { justify-self: start; }
 }
+
+/* =====================================================================
+   Sezioni a due colonne (testo breve grande + foto grande) + oro brunito.
+   Applicato per ora alla sola sezione "Chi siamo" della home.
+   ===================================================================== */
+:root {
+  --oro:      #B08D2E;                 /* oro brunito/ottone, unico accento */
+  --oro-soft: rgba(176, 141, 46, .55); /* filetti e bordi dorati tenui */
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+.split--rev .split__media { order: -1; }      /* foto a sinistra */
+
+.split__text { max-width: 36rem; text-align: left; }
+.split .eyebrow { color: var(--oro); margin-bottom: 1.6rem; }
+.split__lead {
+  font-size: clamp(1.4rem, 1.95vw, 1.78rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--nero);
+  margin: 0 0 2.2rem;
+}
+
+.split__media { margin: 0; }
+.split__media img {
+  width: 100%;
+  height: clamp(340px, 42vw, 580px);
+  object-fit: cover;
+  border: 1px solid var(--oro-soft);
+}
+
+/* freccia dorata dentro i link (l'arrow-glyph è nel testo i18n) */
+.arrow-gold { color: var(--oro); }
+
+/* filetto separatore dorato, sottile */
+.filetto-oro {
+  height: 1px;
+  background: var(--oro-soft);
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+/* la sezione Chi siamo non è più centrata (ora è a due colonne) */
+.chi-home { text-align: left; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 2rem; }
+  .split__media { order: -1; }               /* su mobile: foto sopra, testo sotto */
+  .split--rev .split__media { order: -1; }
+  .split__text { max-width: none; }
+  .split__media img { height: clamp(260px, 60vw, 420px); }
+}

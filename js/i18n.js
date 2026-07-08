@@ -16,7 +16,7 @@
 
     "home-chi-eye":  { it: "Chi siamo", ru: "КТО МЫ" },
     "home-chi-text": { it: "Un sodalizio culturale che custodisce la storia, l'arte e la spiritualità della Russia imperiale. Italiani, russi e discendenti di antiche famiglie dell'Impero, uniti da una stessa eredità.", ru: "Культурное сообщество, хранящее историю, искусство и духовность императорской России. Итальянцы, русские и потомки старинных семей Империи, объединённые общим наследием." },
-    "home-chi-link": { it: "Scopri il Circolo &rarr;", ru: "Узнать больше &rarr;" },
+    "home-chi-link": { it: "Scopri il Circolo <span class=\"arrow-gold\">&rarr;</span>", ru: "Узнать больше <span class=\"arrow-gold\">&rarr;</span>" },
 
     "idx-storia":       { it: "Mille anni di storia della Casa Romanov e dell'Impero Russo.", ru: "Тысячелетняя история Дома Романовых и Российской империи." },
     "idx-feste":        { it: "Il calendario delle memorie che scandiscono l'anno ortodosso e imperiale.", ru: "Календарь памятных дат православного и имперского года." },
