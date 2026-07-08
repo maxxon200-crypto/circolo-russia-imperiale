@@ -18,6 +18,10 @@
     "home-chi-text": { it: "Un sodalizio culturale che custodisce la storia, l'arte e la spiritualità della Russia imperiale. Italiani, russi e discendenti di antiche famiglie dell'Impero, uniti da una stessa eredità.", ru: "Культурное сообщество, хранящее историю, искусство и духовность императорской России. Итальянцы, русские и потомки старинных семей Империи, объединённые общим наследием." },
     "home-chi-link": { it: "Scopri il Circolo", ru: "Узнать больше" },
     "home-storia-link": { it: "Leggi la storia", ru: "Читать историю" },
+    "home-feste-link": { it: "Vedi il calendario", ru: "Открыть календарь" },
+    "home-eventi-link": { it: "Vedi gli eventi", ru: "Смотреть мероприятия" },
+    "home-galleria-link": { it: "Apri la galleria", ru: "Открыть галерею" },
+    "home-tess-link": { it: "Diventa socio", ru: "Вступить в ассоциацию" },
 
     "idx-storia":       { it: "Mille anni di storia della Casa Romanov e dell'Impero Russo.", ru: "Тысячелетняя история Дома Романовых и Российской империи." },
     "idx-feste":        { it: "Il calendario delle memorie che scandiscono l'anno ortodosso e imperiale.", ru: "Календарь памятных дат православного и имперского года." },
