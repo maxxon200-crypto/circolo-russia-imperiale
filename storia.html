@@ -3,30 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Storia dell'Impero Russo - Circolo Internazionale Amici della Russia Imperiale Terza Roma</title>
-  <meta name="description" content="Articoli e approfondimenti sulla storia dell'Impero Russo, a cura del Circolo Internazionale Amici della Russia Imperiale Terza Roma.">
-  <meta name="theme-color" content="#0B192C">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <title>Storia dell'Impero - Amici della Russia Imperiale Terza Roma</title>
+  <meta name="description" content="Articoli e approfondimenti sulla storia della Casa Romanov e dell'Impero Russo.">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
+  <link rel="stylesheet" href="css/aesop.css?v=1">
 </head>
 <body>
   <a class="skip-link" href="#contenuto" data-i18n="skip">Salta al contenuto</a>
 
-  <!-- ============================ HEADER (uguale in tutte le pagine) ============================ -->
+  <!-- ============================ HEADER ============================ -->
   <header class="site-header">
     <div class="wrap">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="Circolo Internazionale Amici della Russia Imperiale Terza Roma, torna alla home">
-          <span class="stemma"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
+          <img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale">
         </a>
+
         <button class="nav-toggle" aria-label="Apri il menu" aria-controls="main-nav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
+
         <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
           <ul>
             <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" aria-current="page" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
             <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
@@ -51,97 +52,72 @@
 
     <section class="page-header">
       <div class="wrap">
-        <p class="eyebrow" data-i18n="nav-storia">Storia dell'Impero</p>
-        <h1 data-i18n="ph-storia-h1">Storia dell'Impero Russo</h1>
-        <p class="page-intro" data-i18n="ph-storia-lead">Articoli, ritratti e approfondimenti dedicati alla storia dell'Impero Russo. Una pagina pensata per la lettura.</p>
-        <div class="divisore" aria-hidden="true"><span class="rombo"></span></div>
+        <p class="eyebrow reveal" data-i18n="nav-storia">Storia dell'Impero</p>
+        <h1 class="reveal" data-i18n="ph-storia-h1">Storia dell'Impero Russo</h1>
+        <p class="page-intro reveal" data-i18n="ph-storia-lead">Articoli, ritratti e approfondimenti dedicati alla storia dell'Impero Russo. Una pagina pensata per la lettura.</p>
+        <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
 
+    <!-- Articolo in evidenza -->
     <section class="section">
       <div class="wrap">
-
-        <!-- Articolo in evidenza -->
-        <a class="art-featured reveal" href="articolo-messina.html">
-          <div class="art-featured__media">
-            <img src="assets/img/terremoto-messina.jpg" alt="I marinai russi soccorrono le vittime del terremoto di Messina del 1908" loading="lazy">
-            <span class="cat cat--storia" data-i18n="cat-storia">Storia</span>
+        <div class="split">
+          <div class="split__text">
+            <p class="eyebrow reveal" data-i18n="art-messina-date">28 dicembre 1908</p>
+            <p class="split__lead reveal" data-i18n="art-messina-title">Il soccorso dei marinai russi alle vittime del terremoto di Messina (1908)</p>
+            <p class="art-item__excerpt reveal" data-i18n="art-messina-excerpt">Estratto in preparazione. Il testo completo dell'articolo sara pubblicato a breve.</p>
+            <p class="reveal"><a class="arrow-link" href="articolo-messina.html" data-i18n="btn-leggi">Leggi l'articolo</a></p>
           </div>
-          <div class="art-featured__body">
-            <p class="art-featured__date" data-i18n="art-messina-date">28 dicembre 1908</p>
-            <h2 class="art-featured__title" data-i18n="art-messina-title">Il soccorso dei marinai russi alle vittime del terremoto di Messina (1908)</h2>
-            <p class="art-featured__excerpt" data-i18n="art-messina-excerpt">Estratto in preparazione. Il testo completo dell'articolo sara pubblicato a breve.</p>
-            <span class="art-featured__more" data-i18n="btn-leggi">Leggi l'articolo</span>
-          </div>
-        </a>
-
-        <!-- Altri approfondimenti -->
-        <div class="art-altri reveal">
-          <p class="eyebrow" data-i18n="storia-altri">Altri approfondimenti</p>
+          <figure class="split__media split__media--natural reveal" data-delay="0.12s">
+            <img src="assets/img/terremoto-messina.jpg" alt="Le rovine di Messina dopo il terremoto del 1908, con i marinai russi tra i soccorritori" loading="lazy">
+          </figure>
         </div>
-        <div class="griglia griglia--3">
+      </div>
+    </section>
 
-          <article class="art-card art-card--soon reveal">
-            <div class="art-card__media">
-              <span class="art-card__ph" data-i18n="soon">Prossimamente</span>
-              <span class="cat cat--soon" data-i18n="cat-soon">In preparazione</span>
-            </div>
-            <div class="art-card__body">
-              <p class="art-card__date" data-i18n="soon-date">In arrivo</p>
-              <h3 class="art-card__title" data-i18n="soon-title">Nuovo approfondimento</h3>
-              <p class="art-card__excerpt" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</p>
-            </div>
-          </article>
-
-          <article class="art-card art-card--soon reveal" data-delay="0.08s">
-            <div class="art-card__media">
-              <span class="art-card__ph" data-i18n="soon">Prossimamente</span>
-              <span class="cat cat--soon" data-i18n="cat-soon">In preparazione</span>
-            </div>
-            <div class="art-card__body">
-              <p class="art-card__date" data-i18n="soon-date">In arrivo</p>
-              <h3 class="art-card__title" data-i18n="soon-title">Nuovo approfondimento</h3>
-              <p class="art-card__excerpt" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</p>
-            </div>
-          </article>
-
-          <article class="art-card art-card--soon reveal" data-delay="0.16s">
-            <div class="art-card__media">
-              <span class="art-card__ph" data-i18n="soon">Prossimamente</span>
-              <span class="cat cat--soon" data-i18n="cat-soon">In preparazione</span>
-            </div>
-            <div class="art-card__body">
-              <p class="art-card__date" data-i18n="soon-date">In arrivo</p>
-              <h3 class="art-card__title" data-i18n="soon-title">Nuovo approfondimento</h3>
-              <p class="art-card__excerpt" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</p>
-            </div>
-          </article>
-
+    <!-- Altri articoli -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="sez-titolo reveal" data-i18n="storia-altri">Altri approfondimenti</h2>
+        <div class="art-lista">
+        <div class="art-item art-item--soon reveal">
+          <span>
+            <span class="art-item__date" data-i18n="soon-date">In arrivo</span>
+            <span class="art-item__title" style="display:block" data-i18n="soon-title">Nuovo approfondimento</span>
+            <span class="art-item__excerpt" style="display:block; margin-bottom:0" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</span>
+          </span>
+        </div>
+        <div class="art-item art-item--soon reveal">
+          <span>
+            <span class="art-item__date" data-i18n="soon-date">In arrivo</span>
+            <span class="art-item__title" style="display:block" data-i18n="soon-title">Nuovo approfondimento</span>
+            <span class="art-item__excerpt" style="display:block; margin-bottom:0" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</span>
+          </span>
+        </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ============================ FOOTER (uguale in tutte le pagine) ============================ -->
+  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <span class="stemma-foot"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
-          <p data-i18n="foot-brand-a">Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
+          <span class="eyebrow" style="color:rgba(246,246,244,.5)" data-i18n="foot-name-b">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
+          <p data-i18n="foot-brand-b">Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.</p>
         </div>
         <div>
           <h4 data-i18n="foot-naviga">Naviga</h4>
           <ul>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
-            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
             <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
-            <li><a href="chiesa-ortodossa.html" data-i18n="nav-chiesa">Chiesa Ortodossa Russa</a></li>
             <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
             <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
-            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </div>
         <div>
@@ -155,7 +131,6 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="foot-name-a">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span data-i18n="foot-noprofit">Associazione culturale, non a scopo di lucro</span>
         <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
@@ -164,6 +139,5 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-
 </body>
 </html>

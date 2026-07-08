@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tesseramento - Circolo Internazionale Amici della Russia Imperiale Terza Roma</title>
-  <meta name="description" content="Come diventare socio del Circolo Internazionale Amici della Russia Imperiale Terza Roma. Richiesta di iscrizione e informazioni.">
-  <meta name="theme-color" content="#0B192C">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <title>Tesseramento - Amici della Russia Imperiale Terza Roma</title>
+  <meta name="description" content="Come diventare socio del Circolo Internazionale Amici della Russia Imperiale Terza Roma.">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
+  <link rel="stylesheet" href="css/aesop.css?v=1">
 </head>
 <body>
   <a class="skip-link" href="#contenuto" data-i18n="skip">Salta al contenuto</a>
 
+  <!-- ============================ HEADER ============================ -->
   <header class="site-header">
     <div class="wrap">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="Circolo Internazionale Amici della Russia Imperiale Terza Roma, torna alla home">
-          <span class="stemma"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
+          <img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale">
         </a>
+
         <button class="nav-toggle" aria-label="Apri il menu" aria-controls="main-nav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
+
         <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
           <ul>
             <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
             <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
@@ -50,27 +52,19 @@
 
     <section class="page-header">
       <div class="wrap">
-        <p class="eyebrow" data-i18n="nav-tesseramento">Tesseramento</p>
-        <h1 data-i18n="ph-tess-h1">Diventa socio del Circolo</h1>
-        <p class="page-intro" data-i18n="ph-tess-lead">Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.</p>
-        <div class="divisore" aria-hidden="true"><span class="rombo"></span></div>
+        <p class="eyebrow reveal" data-i18n="nav-tesseramento">Tesseramento</p>
+        <h1 class="reveal" data-i18n="ph-tess-h1">Diventa socio del Circolo</h1>
+        <p class="page-intro reveal" data-i18n="ph-tess-lead">Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.</p>
+        <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="due-colonne">
-
-          <!-- Colonna sinistra: come iscriversi + modulo richiesta -->
+        <div class="split split--top">
           <div>
-            <div class="sezione-testa reveal">
-              <p class="eyebrow" data-i18n="te-eyebrow">Come iscriversi</p>
-              <h2 data-i18n="te-h1">I passi per diventare socio</h2>
-              <hr class="filetto" aria-hidden="true">
-            </div>
-
-            <!-- [QUI ANDRANNO I PASSI / LE CONDIZIONI DI ISCRIZIONE] -->
-            <ol class="reveal" style="padding-left:1.1rem; line-height:1.8; color:var(--grigio);">
+            <h2 class="sez-titolo reveal" data-i18n="te-h1">I passi per diventare socio</h2>
+            <ol class="passi reveal">
               <li data-i18n="te-step1">Compila il modulo di richiesta qui sotto.</li>
               <li data-i18n="te-step2">Riceverai una risposta con le modalita di adesione e la quota associativa.</li>
               <li data-i18n="te-step3">Perfezioni l'iscrizione e ricevi la tessera del Circolo.</li>
@@ -80,12 +74,9 @@
                  MODULO DI RICHIESTA ISCRIZIONE
                  Per attivare l'invio: collegare un servizio modulo (es. Formspree,
                  Getform) impostando l'attributo action, oppure un backend proprio.
-                 In assenza di servizio, i contatti restano via email/telefono.
             ============================================================ -->
-            <div class="sezione-testa reveal" style="margin-top:2.8rem; margin-bottom:0;">
-              <h2 data-i18n="te-form-title">Domanda di adesione</h2>
-            </div>
-            <form class="form reveal" action="#" method="post" style="margin-top:2rem;">
+            <h2 class="sez-titolo reveal" data-i18n="te-form-title">Domanda di adesione</h2>
+            <form class="form reveal" action="#" method="post">
               <div class="due">
                 <div class="campo">
                   <label for="nome" data-i18n="lbl-nome">Nome</label>
@@ -112,16 +103,13 @@
               </div>
               <div class="campo">
                 <label for="messaggio" data-i18n="lbl-messaggio">Messaggio</label>
-                <textarea id="messaggio" name="messaggio" data-i18n-ph="ph-msg" placeholder="Presentati in breve e indica perche desideri iscriverti."></textarea>
+                <textarea id="messaggio" name="messaggio" data-i18n-ph="ph-msg"></textarea>
               </div>
               <p class="nota" data-i18n="te-nota">Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.</p>
-              <div>
-                <button type="submit" class="btn btn--rosso" data-i18n="btn-invia-richiesta">Invia richiesta</button>
-              </div>
+              <p><button type="submit" class="btn btn--primary" data-i18n="btn-invia-richiesta">Invia richiesta</button></p>
             </form>
           </div>
 
-          <!-- Colonna destra: nota tesseramento online (in arrivo) + contatti -->
           <aside>
             <div class="box-info reveal">
               <span class="tag" data-i18n="soon">Prossimamente</span>
@@ -132,31 +120,29 @@
               <p data-i18n="te-box2">Puoi anche contattarci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a> o dalla pagina <a href="contatti.html">Contatti</a>.</p>
             </div>
           </aside>
-
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <span class="stemma-foot"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
-          <p data-i18n="foot-brand-a">Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
+          <span class="eyebrow" style="color:rgba(246,246,244,.5)" data-i18n="foot-name-b">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
+          <p data-i18n="foot-brand-b">Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.</p>
         </div>
         <div>
           <h4 data-i18n="foot-naviga">Naviga</h4>
           <ul>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
-            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
             <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
-            <li><a href="chiesa-ortodossa.html" data-i18n="nav-chiesa">Chiesa Ortodossa Russa</a></li>
             <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
             <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
-            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </div>
         <div>
@@ -170,7 +156,6 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="foot-name-a">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span data-i18n="foot-noprofit">Associazione culturale, non a scopo di lucro</span>
         <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
@@ -179,6 +164,5 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-
 </body>
 </html>

@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Area riservata - Circolo Internazionale Amici della Russia Imperiale Terza Roma</title>
-  <meta name="description" content="Area riservata ai soci del Circolo Internazionale Amici della Russia Imperiale Terza Roma. Prossimamente.">
-  <meta name="theme-color" content="#0B192C">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <title>Area riservata - Amici della Russia Imperiale Terza Roma</title>
+  <meta name="description" content="L'area riservata ai soci del Circolo Internazionale Amici della Russia Imperiale Terza Roma.">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
+  <link rel="stylesheet" href="css/aesop.css?v=1">
 </head>
 <body>
   <a class="skip-link" href="#contenuto" data-i18n="skip">Salta al contenuto</a>
 
+  <!-- ============================ HEADER ============================ -->
   <header class="site-header">
     <div class="wrap">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="Circolo Internazionale Amici della Russia Imperiale Terza Roma, torna alla home">
-          <span class="stemma"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
+          <img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale">
         </a>
+
         <button class="nav-toggle" aria-label="Apri il menu" aria-controls="main-nav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
+
         <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
           <ul>
             <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
             <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
@@ -50,50 +52,46 @@
 
     <section class="page-header">
       <div class="wrap">
-        <p class="eyebrow" data-i18n="nav-area">Area riservata</p>
-        <h1 data-i18n="area-h1">Area riservata ai soci</h1>
-        <div class="divisore" aria-hidden="true"><span class="rombo"></span></div>
+        <p class="eyebrow reveal" data-i18n="nav-area">Area riservata</p>
+        <h1 class="reveal" data-i18n="area-h1">Area riservata ai soci</h1>
+        <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
 
-    <!-- ===================================================================
-         AREA RISERVATA: per ora solo segnaposto elegante "prossimamente".
-         Nessun login implementato in questa fase (vedi DESIGN.md, sezione 11).
-    ==================================================================== -->
+    <!-- Area riservata: segnaposto elegante, nessun login in questa fase -->
     <section class="section">
       <div class="wrap">
         <div class="prossimamente reveal">
-          <p class="sigillo" data-i18n="soon">Prossimamente</p>
+          <span class="tag-soon" data-i18n="soon">Prossimamente</span>
           <h2 data-i18n="area-h2">Uno spazio dedicato ai soci</h2>
           <p data-i18n="area-p">L'area riservata, con i contenuti e i servizi per i soci, sara disponibile in una fase successiva. Nel frattempo puoi conoscere il Circolo e richiedere l'iscrizione.</p>
-          <div class="hero-actions" style="justify-content:center; margin-top:2rem;">
-            <a class="btn btn--rosso" href="tesseramento.html" data-i18n="btn-diventa">Diventa socio</a>
-            <a class="btn btn--outline" href="contatti.html" data-i18n="btn-contattaci">Contattaci</a>
-          </div>
+          <p style="margin-top:2.4rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a class="btn btn--primary" href="tesseramento.html" data-i18n="btn-diventa">Diventa socio</a>
+            <a class="btn btn--ghost" href="contatti.html" data-i18n="btn-contattaci">Contattaci</a>
+          </p>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <span class="stemma-foot"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
-          <p data-i18n="foot-brand-a">Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
+          <span class="eyebrow" style="color:rgba(246,246,244,.5)" data-i18n="foot-name-b">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
+          <p data-i18n="foot-brand-b">Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.</p>
         </div>
         <div>
           <h4 data-i18n="foot-naviga">Naviga</h4>
           <ul>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
-            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
             <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
-            <li><a href="chiesa-ortodossa.html" data-i18n="nav-chiesa">Chiesa Ortodossa Russa</a></li>
             <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
             <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
-            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </div>
         <div>
@@ -107,7 +105,6 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="foot-name-a">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span data-i18n="foot-noprofit">Associazione culturale, non a scopo di lucro</span>
         <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
@@ -116,6 +113,5 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-
 </body>
 </html>

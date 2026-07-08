@@ -148,14 +148,14 @@ interne in **formato articolo** (colonna 700px, interlinea generosa, sottotitoli
 Il redesign procede **una sezione alla volta**, con screenshot e conferma prima di propagare.
 
 - [x] Sistema di design (`css/aesop.css`), font Manrope auto-ospitato, DESIGN.md
-- [x] HOME (hero + "Chi siamo" breve + indice sezioni)
-- [x] Pagina "Il Circolo" (articolo completo, IT + RU)
-- [ ] Storia dell'Impero · Feste e ricorrenze · Eventi · Galleria
-- [ ] Attualità · Chiesa Ortodossa · Tesseramento · Contatti · Area riservata
-- [ ] Pagine legali (Privacy, Cookie)
+- [x] HOME (hero Cormorant + sezioni a due colonne con foto + bottoni + CTA)
+- [x] Pagina "Il Circolo" · "La nostra storia" (fondazione)
+- [x] Storia dell'Impero · Feste e ricorrenze · Eventi · Galleria
+- [x] Attualità · Chiesa Ortodossa · Tesseramento · Contatti · Area riservata
+- [x] Tutte le pagine articolo (Messina, Borodino, Martirio, San Nicola, 2 eventi)
+- [x] Pagine legali interne (Privacy, Cookie) + banner cookie informativo
 
-Finché una pagina non è migrata, resta su `css/style.css` (vecchio stile); le pagine nuove
-usano `css/aesop.css`.
+**Tutto il sito è su `css/aesop.css`; il vecchio `css/style.css` è stato eliminato.**
 
 ---
 

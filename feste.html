@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feste e ricorrenze - Circolo Internazionale Amici della Russia Imperiale Terza Roma</title>
-  <meta name="description" content="Feste e ricorrenze religiose e civili dell'Impero Russo, a cura del Circolo Internazionale Amici della Russia Imperiale Terza Roma.">
-  <meta name="theme-color" content="#0B192C">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <title>Feste e ricorrenze - Amici della Russia Imperiale Terza Roma</title>
+  <meta name="description" content="Il calendario delle feste e ricorrenze della tradizione ortodossa e imperiale russa.">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
+  <link rel="stylesheet" href="css/aesop.css?v=1">
 </head>
 <body>
   <a class="skip-link" href="#contenuto" data-i18n="skip">Salta al contenuto</a>
 
+  <!-- ============================ HEADER ============================ -->
   <header class="site-header">
     <div class="wrap">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="Circolo Internazionale Amici della Russia Imperiale Terza Roma, torna alla home">
-          <span class="stemma"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
+          <img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale">
         </a>
+
         <button class="nav-toggle" aria-label="Apri il menu" aria-controls="main-nav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
+
         <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
           <ul>
             <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
             <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
@@ -50,118 +52,112 @@
 
     <section class="page-header">
       <div class="wrap">
-        <p class="eyebrow" data-i18n="nav-feste">Feste e ricorrenze</p>
-        <h1 data-i18n="nav-feste">Feste e ricorrenze</h1>
-        <p class="page-intro" data-i18n="ph-feste-lead">Le ricorrenze religiose e civili dell'Impero Russo, con date, significato e tradizioni.</p>
-        <div class="divisore" aria-hidden="true"><span class="rombo"></span></div>
+        <p class="eyebrow reveal" data-i18n="nav-feste">Feste e ricorrenze</p>
+        <h1 class="reveal" data-i18n="nav-feste">Feste e ricorrenze</h1>
+        <p class="page-intro reveal" data-i18n="ph-feste-lead">Le ricorrenze religiose e civili dell'Impero Russo, con date, significato e tradizioni.</p>
+        <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
 
+    <!-- Calendario delle ricorrenze fisse -->
     <section class="section">
       <div class="wrap">
-
-        <p class="eyebrow cal-eyebrow" data-i18n="cal-eyebrow-title">Calendario delle ricorrenze</p>
-        <ul class="calendario reveal">
-          <li class="cal-item" data-md="07-17">
-            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            <span class="cal-date" data-i18n="cal-mar-date">17 luglio</span>
-            <span class="cal-name" data-i18n="cal-mar-name">Martirio della Santa Famiglia Imperiale</span>
-            <span class="cal-desc" data-i18n="cal-mar-desc">Santa Famiglia Imperiale</span>
-          </li>
-          <li class="cal-item" data-md="09-07">
-            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            <span class="cal-date" data-i18n="cal-bor-date">7 settembre</span>
-            <span class="cal-name" data-i18n="cal-bor-name">Borodino (1812)</span>
-            <span class="cal-desc" data-i18n="cal-bor-desc">Battaglia del 1812</span>
-          </li>
-          <li class="cal-item" data-md="12-19">
-            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            <span class="cal-date" data-i18n="cal-nic-date">19 dicembre</span>
-            <span class="cal-name" data-i18n="cal-nic-name">San Nicola</span>
-            <span class="cal-desc" data-i18n="cal-nic-desc">Venerazione in Russia</span>
-          </li>
-        </ul>
-
-        <a class="art-featured reveal" href="articolo-borodino.html">
-          <div class="art-featured__media">
-            <img src="assets/img/borodino-1.webp" alt="Dipinto della battaglia di Borodino del 1812" loading="lazy">
-            <span class="cat cat--ricorrenze" data-i18n="cat-ricorrenze">Ricorrenze</span>
+        <h2 class="sez-titolo reveal" data-i18n="cal-eyebrow-title">Calendario delle ricorrenze</h2>
+        <div class="calendario reveal">
+          <div class="cal-item" data-md="07-17">
+            <p class="cal-data" data-i18n="cal-mar-date">17 luglio</p>
+            <div>
+              <p class="cal-nome" data-i18n="cal-mar-name">Martirio della Santa Famiglia Imperiale</p>
+              <p class="cal-desc" data-i18n="cal-mar-desc">Santa Famiglia Imperiale</p>
+              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+            </div>
           </div>
-          <div class="art-featured__body">
-            <p class="art-featured__date" data-i18n="bor-date">7 settembre 1812</p>
-            <h2 class="art-featured__title" data-i18n="bor-title">Borodino</h2>
-            <p class="art-featured__excerpt" data-i18n="bor-excerpt">La ricorrenza della battaglia di Borodino del 1812. Testo completo in arrivo.</p>
-            <span class="art-featured__more" data-i18n="btn-leggi">Leggi l'articolo</span>
+          <div class="cal-item" data-md="09-07">
+            <p class="cal-data" data-i18n="cal-bor-date">7 settembre</p>
+            <div>
+              <p class="cal-nome" data-i18n="cal-bor-name">Borodino (1812)</p>
+              <p class="cal-desc" data-i18n="cal-bor-desc">Battaglia del 1812</p>
+              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+            </div>
           </div>
-        </a>
-
-        <div class="art-altri reveal">
-          <p class="eyebrow" data-i18n="fe-altri">Altre ricorrenze</p>
+          <div class="cal-item" data-md="12-19">
+            <p class="cal-data" data-i18n="cal-nic-date">19 dicembre</p>
+            <div>
+              <p class="cal-nome" data-i18n="cal-nic-name">San Nicola</p>
+              <p class="cal-desc" data-i18n="cal-nic-desc">Venerazione in Russia</p>
+              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+            </div>
+          </div>
         </div>
-        <div class="griglia griglia--3">
 
-          <a class="art-card reveal" href="articolo-martirio.html">
-            <div class="art-card__media">
-              <img src="assets/img/martirio-romanov.jpg" alt="Icona dei Santi Martiri della Famiglia Imperiale Romanov" loading="lazy">
-              <span class="cat cat--ricorrenze" data-i18n="cat-ricorrenze">Ricorrenze</span>
-            </div>
-            <div class="art-card__body">
-              <p class="art-card__date" data-i18n="mar-date">17 luglio</p>
-              <h3 class="art-card__title" data-i18n="mar-title">Martirio della Santa Famiglia Imperiale</h3>
-              <p class="art-card__excerpt" data-i18n="mar-excerpt">Il ricordo del martirio della Santa Famiglia Imperiale. Testo completo in arrivo.</p>
-              <span class="art-card__more" data-i18n="btn-leggi">Leggi l'articolo</span>
-            </div>
-          </a>
+        <!-- Articolo in evidenza: Borodino -->
+        <div class="split">
+          <div class="split__text">
+            <p class="eyebrow reveal" data-i18n="bor-date">7 settembre 1812</p>
+            <p class="split__lead reveal" data-i18n="bor-title">Borodino</p>
+            <p class="art-item__excerpt reveal" data-i18n="bor-excerpt">La ricorrenza della battaglia di Borodino del 1812. Testo completo in arrivo.</p>
+            <p class="reveal"><a class="arrow-link" href="articolo-borodino.html" data-i18n="btn-leggi">Leggi l'articolo</a></p>
+          </div>
+          <figure class="split__media split__media--natural reveal" data-delay="0.12s">
+            <img src="assets/img/borodino-1.webp" alt="La Battaglia di Borodino in una stampa d'epoca" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
 
-          <a class="art-card reveal" href="articolo-san-nicola.html" data-delay="0.08s">
-            <div class="art-card__media">
-              <img src="assets/img/san-nicola.webp" alt="Icona di San Nicola, molto venerato in Russia" loading="lazy">
-              <span class="cat cat--ricorrenze" data-i18n="cat-ricorrenze">Ricorrenze</span>
-            </div>
-            <div class="art-card__body">
-              <p class="art-card__date" data-i18n="nic-date">19 dicembre</p>
-              <h3 class="art-card__title" data-i18n="nic-title">San Nicola</h3>
-              <p class="art-card__excerpt" data-i18n="nic-excerpt">La venerazione di San Nicola in Russia. Testo completo in arrivo.</p>
-              <span class="art-card__more" data-i18n="btn-leggi">Leggi l'articolo</span>
-            </div>
-          </a>
-
-          <article class="art-card art-card--soon reveal" data-delay="0.16s">
-            <div class="art-card__media">
-              <span class="art-card__ph" data-i18n="soon">Prossimamente</span>
-              <span class="cat cat--soon" data-i18n="cat-soon">In preparazione</span>
-            </div>
-            <div class="art-card__body">
-              <p class="art-card__date" data-i18n="soon-date">In arrivo</p>
-              <h3 class="art-card__title" data-i18n="soon-title">Nuovo approfondimento</h3>
-              <p class="art-card__excerpt" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</p>
-            </div>
-          </article>
-
+    <!-- Altre ricorrenze -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="sez-titolo reveal" data-i18n="fe-altri">Altre ricorrenze</h2>
+        <div class="art-lista">
+        <a class="art-item reveal" href="articolo-martirio.html">
+          <figure class="art-item__media"><img src="assets/img/martirio-romanov.jpg" alt="Icona dei Santi Martiri Imperiali, la famiglia dell'Imperatore Nicola II" loading="lazy"></figure>
+          <span>
+            <span class="art-item__date" data-i18n="mar-date">17 luglio</span>
+            <span class="art-item__title" style="display:block" data-i18n="mar-title">Martirio della Santa Famiglia Imperiale</span>
+            <span class="art-item__excerpt" style="display:block" data-i18n="mar-excerpt">Il ricordo del martirio della Santa Famiglia Imperiale. Testo completo in arrivo.</span>
+            <span class="arrow-link" data-i18n="btn-leggi">Leggi l'articolo</span>
+          </span>
+        </a>
+        <a class="art-item reveal" href="articolo-san-nicola.html">
+          <figure class="art-item__media"><img src="assets/img/san-nicola.webp" alt="Icona di San Nicola Taumaturgo" loading="lazy"></figure>
+          <span>
+            <span class="art-item__date" data-i18n="nic-date">19 dicembre</span>
+            <span class="art-item__title" style="display:block" data-i18n="nic-title">San Nicola</span>
+            <span class="art-item__excerpt" style="display:block" data-i18n="nic-excerpt">La venerazione di San Nicola in Russia. Testo completo in arrivo.</span>
+            <span class="arrow-link" data-i18n="btn-leggi">Leggi l'articolo</span>
+          </span>
+        </a>
+        <div class="art-item art-item--soon reveal">
+          <span>
+            <span class="art-item__date" data-i18n="soon-date">In arrivo</span>
+            <span class="art-item__title" style="display:block" data-i18n="soon-title">Nuovo approfondimento</span>
+            <span class="art-item__excerpt" style="display:block; margin-bottom:0" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</span>
+          </span>
+        </div>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <span class="stemma-foot"><img class="logo-img" src="assets/img/logo.jpg" alt="Logo del Circolo Amici della Russia Imperiale"></span>
-          <p data-i18n="foot-brand-a">Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.</p>
+          <span class="eyebrow" style="color:rgba(246,246,244,.5)" data-i18n="foot-name-b">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
+          <p data-i18n="foot-brand-b">Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.</p>
         </div>
         <div>
           <h4 data-i18n="foot-naviga">Naviga</h4>
           <ul>
+            <li><a href="il-circolo.html" data-i18n="nav-circolo">Il Circolo</a></li>
             <li><a href="storia.html" data-i18n="nav-storia">Storia dell'Impero</a></li>
             <li><a href="eventi.html" data-i18n="nav-eventi">Eventi e attivita</a></li>
-            <li><a href="attualita.html" data-i18n="nav-attualita">Attualita</a></li>
             <li><a href="feste.html" data-i18n="nav-feste">Feste e ricorrenze</a></li>
-            <li><a href="chiesa-ortodossa.html" data-i18n="nav-chiesa">Chiesa Ortodossa Russa</a></li>
             <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
             <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
-            <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </div>
         <div>
@@ -175,7 +171,6 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="foot-name-a">Circolo Internazionale Amici della Russia Imperiale - Terza Roma</span>
         <span data-i18n="foot-noprofit">Associazione culturale, non a scopo di lucro</span>
         <span class="footer-legali"><a href="privacy.html" data-i18n="foot-privacy">Privacy Policy</a> &middot; <a href="cookie.html" data-i18n="foot-cookie">Cookie Policy</a></span>
       </div>
@@ -184,6 +179,5 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-
 </body>
 </html>

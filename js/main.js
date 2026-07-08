@@ -8,6 +8,25 @@
   // Segnala che il JS e attivo: solo ora gli elementi .reveal partono nascosti.
   document.documentElement.classList.add("js");
 
+  /* ---------- 0. Banner cookie (informativo: solo cookie tecnici) ---------- */
+  var cbOk = false;
+  try { cbOk = localStorage.getItem("cookieOk") === "1"; } catch (e) {}
+  if (!cbOk) {
+    var cb = document.createElement("div");
+    cb.className = "cookie-banner";
+    cb.setAttribute("role", "region");
+    cb.setAttribute("aria-label", "Informativa cookie");
+    cb.innerHTML =
+      '<p class="cb-text"><span data-i18n="cb-text">Questo sito utilizza solo cookie tecnici necessari al suo funzionamento.</span> ' +
+      '<a href="cookie.html" data-i18n="cb-link">Leggi la Cookie Policy</a></p>' +
+      '<button type="button" class="cb-btn" data-i18n="cb-btn">Ho capito</button>';
+    document.body.appendChild(cb);
+    cb.querySelector(".cb-btn").addEventListener("click", function () {
+      try { localStorage.setItem("cookieOk", "1"); } catch (e) {}
+      if (cb.parentNode) { cb.parentNode.removeChild(cb); }
+    });
+  }
+
   /* ---------- 1. Menu mobile ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("main-nav");
@@ -37,17 +56,7 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  /* ---------- 3. Rivelazioni allo scroll ---------- */
-  var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var items = document.querySelectorAll(".reveal");
-
-  if (prefersReduced || !("IntersectionObserver" in window)) {
-    // Nessun movimento: mostra subito tutto
-    items.forEach(function (el) { el.classList.add("is-visible"); });
-    return;
-  }
-
-  /* ---------- 4. Prossima ricorrenza (pagina Feste) ---------- */
+  /* ---------- 3. Prossima ricorrenza (pagina Feste) ---------- */
   var cal = document.querySelectorAll(".cal-item[data-md]");
   if (cal.length) {
     var today = new Date(); today.setHours(0, 0, 0, 0);
@@ -60,6 +69,16 @@
       if (diff < bestDiff) { bestDiff = diff; best = cal[c]; }
     }
     if (best) { best.classList.add("is-next"); }
+  }
+
+  /* ---------- 4. Rivelazioni allo scroll ---------- */
+  var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var items = document.querySelectorAll(".reveal");
+
+  if (prefersReduced || !("IntersectionObserver" in window)) {
+    // Nessun movimento: mostra subito tutto
+    items.forEach(function (el) { el.classList.add("is-visible"); });
+    return;
   }
 
   var io = new IntersectionObserver(function (entries, obs) {

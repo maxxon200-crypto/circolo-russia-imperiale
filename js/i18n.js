@@ -255,6 +255,11 @@
     "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
+    /* --- Banner cookie (informativo) --- */
+    "cb-text": { it: "Questo sito utilizza solo cookie tecnici necessari al suo funzionamento.", ru: "Этот сайт использует только технические файлы cookie, необходимые для его работы." },
+    "cb-link": { it: "Leggi la Cookie Policy", ru: "Политика cookie" },
+    "cb-btn":  { it: "Ho capito", ru: "Понятно" },
+
     /* --- Pagine legali interne (Privacy + Cookie), IT/RU --- */
     "legal-updated": { it: "Ultimo aggiornamento: [DATA]", ru: "Последнее обновление: [ДАТА]" },
 
