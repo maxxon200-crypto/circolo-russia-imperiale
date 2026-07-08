@@ -120,7 +120,7 @@ p { margin: 0 0 1.3rem; }
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .2em;
-  color: var(--grigio);
+  color: var(--oro);
   margin: 0 0 1.5rem;
 }
 .lead {
@@ -289,13 +289,31 @@ p { margin: 0 0 1.3rem; }
 .articolo { max-width: var(--read); margin: 0 auto; padding-bottom: var(--sez); }
 .articolo > * { margin-left: auto; margin-right: auto; }
 .articolo h2 {
-  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
-  font-weight: 500;
-  line-height: 1.3;
-  margin: clamp(3rem, 6vw, 4.5rem) 0 1.1rem;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 600;
+  line-height: 1.28;
+  margin: clamp(3rem, 6vw, 4.5rem) 0 1.2rem;
 }
 .articolo h2:first-child { margin-top: 0; }
-.articolo p { color: var(--nero-morbido); }
+.articolo p {
+  color: var(--nero-morbido);
+  font-size: 1.1875rem;
+  line-height: 1.85;
+}
+
+/* foto grande in cima all'articolo, bordo oro */
+.page-header .filetto-oro { margin: clamp(1.8rem, 3vw, 2.4rem) 0 0; }
+.articolo-foto {
+  max-width: 940px;
+  margin: 0 auto clamp(3rem, 6vw, 4.5rem);
+  padding: 0 var(--pad);
+}
+.articolo-foto img {
+  width: 100%;
+  height: clamp(300px, 40vw, 520px);
+  object-fit: cover;
+  border: 1px solid var(--oro-soft);
+}
 .articolo .torna { margin-top: clamp(3rem, 6vw, 4.5rem); }
 
 /* ---------- Footer ---------- */
