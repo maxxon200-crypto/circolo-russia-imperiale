@@ -314,6 +314,11 @@ p { margin: 0 0 1.3rem; }
   object-fit: cover;
   border: 1px solid var(--oro-soft);
 }
+/* Variante "foto intera" per gli articoli: proporzioni naturali, mai tagliata */
+.articolo-foto--natural img {
+  height: auto;
+  object-fit: unset;
+}
 .articolo .torna { margin-top: clamp(3rem, 6vw, 4.5rem); }
 .articolo .legale-update {
   margin-top: clamp(3rem, 6vw, 4.5rem);
@@ -427,6 +432,15 @@ p { margin: 0 0 1.3rem; }
   height: clamp(340px, 42vw, 580px);
   object-fit: cover;
   border: 1px solid var(--oro-soft);
+}
+
+/* Variante "foto intera": MAI tagliata (persone, gruppi, icone).
+   Il contenitore segue le proporzioni naturali dell'immagine;
+   l'eventuale differenza di altezza è assorbita dallo spazio bianco
+   (la griglia centra verticalmente), mai dal ritaglio. */
+.split__media--natural img {
+  height: auto;
+  object-fit: unset;
 }
 
 /* freccia dorata dopo i link freccia dentro le sezioni a due colonne */
