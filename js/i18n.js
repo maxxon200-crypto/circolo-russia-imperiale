@@ -7,6 +7,35 @@
   "use strict";
 
   var DICT = {
+    /* ============ Redesign Aesop: HOME + pagina "Il Circolo" ============ */
+    "nav-circolo": { it: "Il Circolo", ru: "Ассоциация" },
+
+    "hero-nome":  { it: "Circolo Internazionale Amici della Russia Imperiale", ru: "Международная ассоциация «Друзья Российской Империи»" },
+    "hero-terza": { it: "Terza Roma", ru: "Третий Рим" },
+    "hero-frase": { it: "Custodire la memoria e la bellezza della Russia imperiale.", ru: "Хранить память и красоту императорской России." },
+
+    "home-chi-eye":  { it: "Chi siamo", ru: "КТО МЫ" },
+    "home-chi-text": { it: "Un sodalizio culturale che custodisce la storia, l'arte e la spiritualità della Russia imperiale. Italiani, russi e discendenti di antiche famiglie dell'Impero, uniti da una stessa eredità.", ru: "Культурное сообщество, хранящее историю, искусство и духовность императорской России. Итальянцы, русские и потомки старинных семей Империи, объединённые общим наследием." },
+    "home-chi-link": { it: "Scopri il Circolo &rarr;", ru: "Узнать больше &rarr;" },
+
+    "idx-storia":       { it: "Mille anni di storia della Casa Romanov e dell'Impero Russo.", ru: "Тысячелетняя история Дома Романовых и Российской империи." },
+    "idx-feste":        { it: "Il calendario delle memorie che scandiscono l'anno ortodosso e imperiale.", ru: "Календарь памятных дат православного и имперского года." },
+    "idx-eventi":       { it: "Incontri, cerimonie e visite dedicati alla cultura russa in Italia.", ru: "Встречи, церемонии и визиты, посвящённые русской культуре в Италии." },
+    "idx-galleria":     { it: "Immagini delle nostre cerimonie e dei luoghi della memoria.", ru: "Изображения наших церемоний и мест памяти." },
+    "idx-tesseramento": { it: "Avvicinarsi al Circolo e prendere parte alla sua vita culturale.", ru: "Присоединиться к ассоциации и участвовать в её культурной жизни." },
+
+    "circ-eyebrow": { it: "Amici della Russia Imperiale", ru: "Друзья Российской Империи" },
+    "circ-title":   { it: "Il Circolo", ru: "Ассоциация" },
+    "circ-h1":      { it: "Chi siamo", ru: "Кто мы" },
+    "circ-p1":      { it: "Il Circolo Internazionale Amici della Russia Imperiale - Terza Roma è un sodalizio culturale, apartitico e senza fini di lucro. Ne fanno parte italiani, russi e appartenenti ad altre nazionalità un tempo presenti nell'Impero Russo, insieme a soci svizzeri, francesi e tedeschi discendenti da antiche famiglie russe.", ru: "Международная ассоциация «Друзья Российской Империи — Третий Рим» — это культурное, внепартийное и некоммерческое сообщество. В неё входят итальянцы, русские и представители других национальностей, некогда населявших Российскую империю, а также швейцарцы, французы и немцы, происходящие из старинных русских семей." },
+    "circ-h2":      { it: "La nostra identità", ru: "Наша идентичность" },
+    "circ-p2":      { it: "Il Circolo ha un'identità monarchica e ortodossa, con due riferimenti imprescindibili. Il primo è la Chiesa Ortodossa del Patriarcato di Mosca; il Circolo non pone tuttavia discriminazioni all'ingresso di soci appartenenti ad altre Chiese cristiane. Il secondo è la Casa Imperiale Romanov, nella linea di successione dei Vladimirovič, che il Circolo riconosce come legittima, oggi rappresentata dalla Granduchessa Marija Vladimirovna e dal figlio, il Granduca Giorgio Mihailovič.", ru: "Ассоциация имеет монархическую и православную идентичность с двумя неотъемлемыми ориентирами. Первый — Православная Церковь Московского Патриархата; при этом Ассоциация не ограничивает вступление членов, принадлежащих к другим христианским Церквям. Второй — Императорский Дом Романовых, в линии престолонаследия Владимировичей, которую Ассоциация признаёт законной и которую сегодня представляют Великая Княгиня Мария Владимировна и её сын, Великий Князь Георгий Михайлович." },
+    "circ-h3":      { it: "La nostra storia", ru: "Наша история" },
+    "circ-p3":      { it: "Il Circolo è stato fondato nel 2020 a Milano e costituito in Ente del Terzo Settore con Personalità Giuridica nel 2026. È presieduto dal Conte Pëtr Stramezzi, con la Vice-Presidente Maya Bubashvili, il Delegato per l'Italia Barone Antonio Imperatore e la Vice Delegata Dott.ssa Elena Grinko Maruotti.", ru: "Ассоциация была основана в 2020 году в Милане и получила статус юридического лица как организация третьего сектора в 2026 году. Её возглавляет граф Пётр Страмецци, вице-президент — Майя Бубашвили, представитель в Италии — барон Антонио Императоре, заместитель представителя — доктор Елена Гринько Маруотти." },
+    "circ-h4":      { it: "Le nostre attività", ru: "Наша деятельность" },
+    "circ-p4":      { it: "Il Circolo promuove in Italia eventi culturali dedicati alla cultura, all'arte, alla storia e alla spiritualità russa. Partecipa a cerimonie religiose ed eventi, organizza incontri e visite culturali in luoghi legati alla storia russa e alla spiritualità ortodossa. Realizza iniziative in partnership con l'Associazione Aristocrazia Europea, l'Unione della Nobiltà Bizantina e la Confraternita Cavalleresca Imperiale Russa Ortodossa di San Giovanni di Gerusalemme e di Malta.", ru: "Ассоциация проводит в Италии культурные мероприятия, посвящённые культуре, искусству, истории и духовности России. Участвует в религиозных церемониях и мероприятиях, организует встречи и культурные визиты в места, связанные с русской историей и православной духовностью. Реализует инициативы в партнёрстве с Ассоциацией Европейской Аристократии, Союзом Византийского Дворянства и Императорским Православным Рыцарским Братством святого Иоанна Иерусалимского и Мальтийского." },
+    "circ-torna":   { it: "Torna alla home", ru: "На главную" },
+
     "hero-eyebrow": { it: "Circolo Culturale Internazionale", ru: "МЕЖДУНАРОДНАЯ КУЛЬТУРНАЯ АССОЦИАЦИЯ" },
     "hero-name":    { it: "Amici della Russia Imperiale", ru: "Друзья Российской Империи" },
     "hero-motto":   { it: "Terza Roma", ru: "Третий Рим" },
@@ -101,7 +130,7 @@
 
     /* --- Contenuti pagine interne --- */
     "foot-brand-a": { it: "Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим». Независимая, неполитическая и некоммерческая организация, основанная в Милане в 2026 году." },
-    "foot-brand-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale apartitica e senza fini di lucro, fondata a Milano nel 2026.", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим». Независимая, неполитическая и некоммерческая организация, основанная в Милане в 2026 году." },
+    "foot-brand-b": { it: "Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.", ru: "Культурное, внепартийное и некоммерческое сообщество, основанное в Милане в 2020 году." },
     "foot-tel-it": { it: "Tel. Italia: [numero italiano]", ru: "Тел. Италия: [итальянский номер]" },
     "foot-tel-ru": { it: "Tel. Russia: [numero russo]", ru: "Тел. Россия: [российский номер]" },
     "foot-fb": { it: "Pagina Facebook", ru: "Страница Facebook" },

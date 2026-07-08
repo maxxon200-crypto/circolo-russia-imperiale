@@ -2,241 +2,155 @@
 
 > **Come usare questo file:** è la guida assoluta del sito. All'inizio di ogni sessione:
 > *"Leggi DESIGN.md e usalo come guida assoluta per ogni decisione di UI. Non deviare dai
-> token senza chiedermelo."* È l'ancora che tiene il sito fedele alla sua anima.
+> token senza chiedermelo."*
 
 ---
 
-## 0. L'anima del sito (la cosa più importante)
+## 0. Filosofia (la regola madre) — ispirazione Aesop
 
-Questo non è un sito che elenca informazioni: è un sito che trasmette **emozione**. Chi arriva
-deve PROVARE qualcosa, il fascino, la nostalgia e la bellezza della Russia imperiale, prima
-ancora di leggere. Deve sembrare **scritto a mano, con amore e cura**, non generato.
+Calma e raffinatezza attraverso il **vuoto** e la **disciplina**, non attraverso le decorazioni.
+Pochissimo testo nella home. Tantissimo spazio bianco. **Un solo font. Due colori.**
+Nessun ornamento, nessun oro, nessuna terracotta, nessun fregio.
+
+**La bellezza sta in ciò che si toglie. Se un elemento non è necessario, si rimuove.**
 
 Principi guida:
-- **Una sezione, un'idea.** Si introduce un pensiero alla volta, con molto spazio attorno per
-  respirare. Niente muri di contenuto.
-- **Immagini grandi ed evocative.** Le foto storiche sono protagoniste, non riempitivi.
-- **Testi che parlano al cuore**, non schede tecniche. Frasi evocative, calde, in italiano curato.
-- **Eleganza e profondità.** Card bianche che galleggiano su crema, oro usato come un gioiello,
-  tipografia che emoziona.
+- **Una sezione, una idea.** Molto respiro attorno a ogni elemento.
+- **La home è breve.** Descrizioni brevi e accattivanti; ogni sezione ha una freccia "→"
+  che porta alla pagina dedicata dove vive il **testo lungo** in formato articolo.
+- **Il colore viene solo dalle fotografie storiche**, mai dall'interfaccia.
+- **Gerarchia solo con dimensione, peso e spazio** dello stesso font.
 
 ---
 
-## 1. La trappola da evitare
+## 1. Font (uno solo: Manrope)
 
-Il rischio è il "volantino": tante informazioni stipate, fondi piatti, testi freddi, decori
-sgargianti. Per evitarlo: respiro, gerarchia, immagini, e un oro discreto da palazzo imperiale
-(pensa alle sale dell'Hermitage), mai folkloristico.
-
----
-
-## 2. Palette (valori esatti, sostituiscono tutto)
+Un solo font in tutto il sito: **Manrope** (auto-ospitato in `assets/fonts/`, supporta il
+cirillico per il russo). Nessun altro font: rimossi Cormorant, Playfair, Inter.
 
 ```css
-:root {
-  --navy:        #0B192C;  /* header, footer, testo principale del corpo */
-  --crema:       #F8F6F0;  /* sfondo principale delle pagine, pulito (NO beige caldo) */
-  --bianco:      #FFFFFF;  /* card e box che contengono testo/immagini */
-  --cremisi:     #9A1720;  /* CTA principali, categoria "Ricorrenze" */
-  --oro:         #B08D2E;  /* oro brunito/ottone: filetti, eyebrow, dettagli (NO giallo acceso) */
-  --oro-chiaro:  #C9A227;  /* riflessi e accenti dorati tenui */
-  --inchiostro:  #171922;  /* testo scuro su fondo chiaro */
-  --grigio:      #5a5a5a;  /* testo secondario/estratti */
-  --malachite:   #006B59;  /* categoria "Storia dell'Impero" (verde interni Hermitage) */
-  --lapis:       #26619C;  /* categoria "Attualità" (blu lapislazzuli) */
-  --linea:       #E2D8C2;  /* bordi sottili delle card */
-}
+--font: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 ```
 
-**Regole d'uso rigide:**
-- **Sfondo di quasi tutto il sito:** `--crema`, pulito. Nessun tono sabbia/terracotta di sfondo.
-- **Header e footer:** `--navy`. Anche il **testo del corpo** principale è `--navy` (più
-  morbido del nero puro).
-- **Card e box** che contengono testi/immagini: `--bianco` puro, per **sollevarsi** dalla
-  crema con un'ombra morbida. Questo "lift" dà profondità ed è centrale.
-- **`--cremisi` SOLO** per i pulsanti d'azione principali e la categoria "Ricorrenze". Mai come
-  fondo di intere sezioni.
-- **`--oro` sempre brunito (`#B08D2E`), mai giallo acceso.** Con parsimonia: divisori sottili
-  (rombi/puntini), eyebrow, filetti attorno o sopra le card, ornamenti. Mai campiture piene d'oro.
-- **Colori di categoria** (etichette sulle card, formato rivista): Storia = `--malachite`,
-  Ricorrenze = `--cremisi`, Attualità = `--lapis`, Eventi = `--oro`.
-
-Colori derivati ammessi (solo come opacità del navy, vedi §4): testo secondario
-`rgba(11,25,44,0.70)`, didascalie `rgba(11,25,44,0.55)`; su fondo scuro `rgba(255,255,255,0.82)`.
-
----
-
-## 3. Tipografia (esatta)
-
-```css
-:root {
-  /* Titoli, nome del Circolo, frasi evocative. La voce elegante ed emotiva. */
-  --font-display: "Cormorant Garamond", Georgia, serif;   /* pesi 500-600 */
-  /* Testo, descrizioni, menu, etichette, pulsanti. La voce chiara e leggibile. */
-  --font-body:    "Inter", system-ui, sans-serif;          /* pesi 400-500 */
-}
-```
-Nessun altro font. **Cormorant** porta l'emozione (grande, arioso); **Inter** porta la
-chiarezza.
-
-| Ruolo | Font | Dimensione | Note |
+| Ruolo | Peso | Dimensione | Note |
 |---|---|---|---|
-| Hero / nome | Cormorant 500-600 | `clamp(2.4rem, 5.5vw, 4rem)` | centrato, equilibrato, color crema |
-| Titolo sezione | Cormorant 500-600 | `clamp(2rem, 4.5vw, 3.2rem)` | colpisce per primo |
-| Frase evocativa | Cormorant 500 | `clamp(1.3rem, 2.4vw, 1.8rem)` | per i passaggi al cuore |
-| Corpo / descrizioni | Inter 400 | `1.05rem` | navy a opacità ridotta, line-height 1.75 |
-| Eyebrow/etichetta | Inter 500 | `0.78rem` | MAIUSCOLO, letter-spacing 0.18em, color oro |
-| Pulsanti | Inter 500 | `0.9rem` | maiuscolo leggero, lettere spaziate |
+| Titolo hero / nome | 400 | `clamp(1.9rem, 4.4vw, 3.35rem)` | grande, mai grassetto pesante, `letter-spacing` leggero |
+| Titolo pagina (h1) | 400 | `clamp(2rem, 4.6vw, 3.1rem)` | |
+| Titolo di sezione (h2) | 500 | `clamp(1.3rem, 2.6vw, 1.7rem)` | |
+| Frase / lead | 300 | `clamp(1.25rem, 2.6vw, 1.7rem)` | interlinea 1.55 |
+| Corpo | 400 | `1.0625rem` | interlinea **1.8**, righe non troppo larghe (colonna 700px) |
+| Occhiello / etichetta | 500 | `0.72rem` | **MAIUSCOLO**, `letter-spacing 0.2em`, colore grigio |
+| Link freccia | 500 | `0.82rem` | maiuscolo, `letter-spacing 0.16em`, filetto sotto |
+
+Regola: **mai grassetto pesante** (700+). La gerarchia nasce da dimensione, peso 300-500 e
+soprattutto **spazio**.
 
 ---
 
-## 4. Gerarchia del testo con l'opacità
+## 2. Palette (monocromatica fredda — NO beige, NO oro)
 
-L'occhio deve cadere PRIMA sui titoli (emozione), POI sulle descrizioni (informazione).
-- **Titoli:** opacità 100%, colore pieno (`--navy`, o `--bianco`/`--crema` su fondo scuro).
-- **Descrizioni / testi secondari:** Inter, `--navy` a **opacità 65-75%** (`rgba(11,25,44,0.70)`),
-  così "arretrano" rispetto ai titoli. Mai sotto il livello leggibile (AA).
-- **Eyebrow / etichette:** piccole, Inter maiuscolo spaziato, `--oro` o navy a bassa opacità.
+```css
+:root {
+  --nero:   #1A1A1A;   /* testo e fondali scuri, nero morbido */
+  --bianco: #F6F6F4;   /* sfondo principale: off-white FREDDO neutro (non beige caldo) */
+  --grigio: #6E6E6E;   /* testo secondario, didascalie */
+  --linea:  #DEDEDA;   /* righe e bordi sottilissimi */
+}
+```
 
----
+Due colori: **fondo off-white freddo + testo nero morbido**. Il grigio solo per i secondari.
+**Nessun accento colorato, nessun oro, nessuna terracotta, nessun beige.** L'unico colore del
+sito arriva dalle **fotografie storiche**.
 
-## 5. Profondità e ombre
-
-- **Card** (su crema): fondo `--bianco`, ombra a due livelli:
-  `box-shadow: 0 1px 3px rgba(11,25,44,.06), 0 14px 36px rgba(11,25,44,.10);`
-  Hover: ombra più profonda e sollevamento di 3-4px, transizione morbida.
-- **Filetto superiore card** in `--oro` sottilissimo, come dettaglio prezioso.
-- **Header:** leggera ombra sotto quando si scorre (classe `.scrolled`).
-- **Pulsanti:** lieve ombra a riposo, più marcata all'hover.
-- Ombre sempre nei toni del navy, raffinate, mai pesanti.
+Il footer usa lo stesso sistema invertito: fondo `--nero`, testo off-white a opacità ridotta.
 
 ---
 
-## 6. Rifiniture oro (sottili, mai ingombranti)
+## 3. Spazio (l'anima del sistema)
 
-**Principio:** "Meno è più. L'oro accompagna, non domina. Ogni dettaglio ha uno scopo, ogni
-spazio ha un respiro." L'oro non occupa mai spazio da solo: incornicia e accompagna il testo,
-in silenzio. Niente volute, niente foglie barocche, niente ornamenti d'angolo. Solo linee
-sottili, cornici fini, piccoli rombi/cerchietti.
-
-- **Cornici card/box:** un bordo sottile **1px `--oro`** attorno alle card e ai box importanti,
-  angoli leggermente arrotondati, come la cornice di un documento prezioso. Niente decori
-  dentro o sopra: solo la linea di contorno fine.
-- **Divisori di sezione:** una linea orizzontale sottile **1px `--oro`** con un piccolo
-  **rombo o cerchietto vuoto** in `--oro` all'inizio o al centro. Discreto.
-- **Eyebrow:** Inter maiuscolo spaziato, `--oro`, piccole e raffinate, sopra i titoli.
-- **Filetti:** sempre 1px, sempre `--oro`, per sottolineare un titolo o separare blocchi.
-- **Su mobile** restano sottili e leggibili: la leggibilità prima di tutto.
+- **Respiro verticale ampio** tra le sezioni: `--sez: clamp(5rem, 12vw, 10rem)`.
+- **Margini laterali generosi:** `--pad: clamp(1.5rem, 6vw, 5rem)`; il contenuto non tocca i bordi.
+- Larghezza massima contenuto `1200px`; **colonna di lettura articoli `700px`**; blocchi brevi
+  centrati a `760px`.
+- Griglie pulite, allineamenti precisi, molto vuoto attorno a ogni elemento.
 
 ---
 
-## 7. Struttura emotiva delle sezioni
+## 4. Movimento (minimo)
 
-- **HERO:** grande immagine storica a tutta larghezza come **sfondo** (placeholder etichettato),
-  velatura `--navy` semi-trasparente per la leggibilità. Nome completo in Cormorant, centrato
-  ed equilibrato, color crema/bianco, con **"TERZA ROMA"** e un filetto oro come sigillo. Sotto,
-  una **frase evocativa** (non descrittiva), poi i due pulsanti grandi. Deve emozionare in 2 secondi.
-- **Sezioni (mission, eventi, storia, galleria, tesseramento):** ognuna su `--crema`, introdotta
-  da eyebrow + grande titolo Cormorant + divisore dorato, contenuto in **card bianche sollevate**.
-  Una sezione = un'idea, molto respiro verticale (almeno 6rem).
-- **"Diventa socio":** invito caldo, con cornice/ornamento dorato e il solo bottone `--cremisi`.
-  Non una fascia rossa piena.
-- **Header:** solo il **logo** a sinistra (cliccabile, torna alla home) e il menu a destra.
+- Solo **dissolvenze morbide e lente** allo scroll (`.reveal` → `.is-visible`, ~1s,
+  `cubic-bezier(.22,.61,.36,1)`).
+- Hover: sottilissimi cambi di **opacità** (link ~0.55), la freccia dell'indice trasla di 6px.
+- Nessun sollevamento, nessuna ombra vistosa, nessun filetto colorato.
+- Rispetta sempre `prefers-reduced-motion`.
 
 ---
 
-## 8. Layout e spaziatura
+## 5. Struttura dei contenuti
 
-- Contenuto centrato, larghezza max `1140px`; colonna di lettura `720px` per i testi lunghi.
-- Border-radius contenuto (`6px`), elegante e non gonfio.
-- Mobile-first: tutto si impila con eleganza fino a 320px.
+**Regola generale:** la home contiene solo testi brevi; il testo lungo vive nelle pagine
+interne in **formato articolo** (colonna 700px, interlinea generosa, sottotitoli in Manrope 500).
 
-**Scala di spaziatura armonica** (usala in modo coerente in tutto il sito):
-
-| Token | Valore | Uso |
-|---|---|---|
-| `--sp-1` | 4px | micro-dettagli |
-| `--sp-2` | 8px | spazi interni piccoli |
-| `--sp-3` | 16px | padding standard |
-| `--sp-4` | 24px | tra elementi correlati |
-| `--sp-5` | 32px | tra sezioni |
-| `--sp-6` | 48px | tra blocchi principali |
-| `--sp-7` | 64px | tra sezioni importanti |
-| `--sp-8` | 96px | tra macro-sezioni (respiro ampio) |
-
-Le sezioni sono separate da `clamp(var(--sp-7), 9vw, var(--sp-8))` (respiro ampio).
+- **HERO:** immagine imperiale a tutta larghezza come sfondo, velatura scura leggera
+  (`linear-gradient` ~38→60% su nero) per la leggibilità. Nome del Circolo + una frase breve.
+  Niente pulsanti.
+- **Home · Chi siamo (breve):** occhiello + una descrizione breve + link freccia "→ Scopri il
+  Circolo" verso la pagina `il-circolo.html`.
+- **Home · indice sezioni:** un elenco pulito (occhiello + una riga descrittiva + freccia),
+  separato da filetti `--linea` sottilissimi, verso Storia, Feste, Eventi, Galleria, Tesseramento.
+- **Pagina "Il Circolo":** articolo lungo diviso in sezioni (Chi siamo, La nostra identità,
+  La nostra storia, Le nostre attività).
+- **Header:** logo a sinistra, menu essenziale, selettore lingua a destra. Fondo off-white,
+  filetto inferiore `--linea`. Su mobile il menu collassa nell'hamburger.
+- **Footer:** fondo `--nero`, testo off-white tenue, tre colonne (brand, naviga, contatti).
 
 ---
 
-## 8b. Selettore lingua (Italiano / Russo)
+## 6. Bilinguismo IT / RU
 
-Niente traduzione automatica (Google Translate): la qualità non è adatta a un sito
-istituzionale. Il sito è **bilingue IT/RU** con testi russi ufficiali forniti dal cliente.
-- Nell'header, dove c'era il selettore, due **bandiere** come switch: Italia e Russia, disegnate
-  come **SVG inline** (tricolore, zero KB, nessuna immagine esterna). Gli emoji-bandiera non si
-  usano perché su Windows non vengono resi: l'SVG si vede ovunque.
-- Dimensione ~27×18px, cliccabili; la bandiera attiva ha un sottile anello in `--oro`. Tap target
-  minimo 44px su mobile (padding invisibile).
-- Il cambio lingua avviene via JS (`js/i18n.js`): ogni elemento traducibile ha `data-i18n` e la
-  scelta è salvata in `localStorage`. I testi russi sono quelli ufficiali, mai auto-tradotti.
-- Nel testo **russo** i trattini lunghi "—" vengono sostituiti con il trattino breve "-";
-  nel testo **italiano** i trattini lunghi restano vietati (vedi §9).
+- Selettore a **bandiere** (SVG inline IT/RU) nell'header; scelta salvata in `localStorage`.
+- Testi tradotti via `js/i18n.js` (dizionario `data-i18n`), **mai traduzione automatica**.
+- Le traduzioni russe esistenti restano **intatte**.
+- **"клуб" non si usa mai** in russo: sempre **"ассоциация"** (femminile), con la declinazione
+  corretta secondo il caso (e i pronomi/verbi concordati al femminile: "она", "неё", "была", "Её").
+- **Trattini:** nei testi **italiani** niente trattini lunghi "—" (usa "-", virgole, due punti);
+  nei testi **russi** i trattini lunghi "—" **restano**.
 
 ---
 
-## 9. Voce e microcopy
+## 7. Contatti (dati reali del cliente)
 
-Tono di chi ama questo mondo e lo racconta con cura. Frasi evocative, calde, mai marketese.
-- **Sì:** "Dove la memoria di un Impero diventa incontro e bellezza."
-- **No:** "La soluzione ideale per i tuoi interessi culturali."
-- Pulsanti in voce attiva: "Diventa socio", "Scopri di più", "Leggi la storia".
-- **REGOLA TRATTINI:** nei testi visibili mai il trattino lungo "—". Usa punti, virgole, due
-  punti. (Le variabili CSS tipo `--oro` restano: sono codice.)
+- Email: **russia.imperiale@yandex.com**
+- Telefono: `[numero italiano]` e `[numero russo]` (placeholder, da fornire)
+- Facebook: **https://www.facebook.com/russia.imperiale**
 
 ---
 
-## 10. Pavimento di qualità (non negoziabile)
+## 8. Pavimento di qualità (non negoziabile)
 
-- Responsive fino a 320px, impilamento elegante.
-- Immagini ottimizzate (placeholder etichettati finché non arrivano quelle vere).
-- **Accessibilità AA:** attenzione al testo a bassa opacità (mai sotto il leggibile), focus
-  tastiera visibile, `alt` descrittivi, navigazione da tastiera.
-- SEO in italiano: title e meta per ogni pagina; struttura semantica.
-- Pulsanti grandi, buon padding, presenza.
-
----
-
-## 11. La firma (l'elemento da ricordare)
-
-> **La soglia imperiale.** L'hero è una grande **immagine storica** come sfondo, con velatura
-> navy; sopra, il nome del Circolo in **Cormorant** color crema, chiuso dal sigillo dorato
-> **"Terza Roma"**, e una **frase che parla al cuore**. Da lì in poi, tutto è crema e respiro:
-> card bianche che galleggiano, titoli Cormorant che emozionano, descrizioni che arretrano in
-> opacità, e l'oro che compare solo come un gioiello (fregi, filetti, ornamenti d'angolo).
+- Responsive perfetto fino a 320px: tutto in colonna, stessa calma e stesso spazio.
+- Contrasto **AA**; testo secondario mai sotto il livello leggibile.
+- Immagini `object-fit: cover`, proporzioni mantenute, `alt` descrittivi in italiano.
+- Focus tastiera visibile, navigazione da tastiera, struttura semantica.
+- **Il sistema Aesop si applica OVUNQUE:** nessuna pagina deve restare col vecchio stile
+  (oro, beige, Cormorant/Inter).
 
 ---
 
-## 12. Checklist anti-piattezza (prima di consegnare)
+## 9. Stato del rifacimento (avanzamento)
 
-- [ ] L'hero emoziona in 2 secondi (foto evocativa, nome Cormorant, frase al cuore)?
-- [ ] Ogni sezione introduce UNA idea con molto respiro attorno?
-- [ ] La palette usa i valori esatti (navy, crema, bianco, cremisi, oro)?
-- [ ] I titoli sono Cormorant a piena opacità e le descrizioni Inter arretrate (65-75%)?
-- [ ] Le card bianche galleggiano sulla crema con ombra morbida e filetto oro?
-- [ ] L'oro è solo dettaglio (fregi, filetti, ornamenti), mai campitura?
-- [ ] Il cremisi è solo nei pulsanti d'azione, mai fondo di sezione?
-- [ ] Gli ornamenti dorati sono SVG eleganti e si semplificano su mobile?
-- [ ] I testi parlano al cuore, senza trattini lunghi e senza marketese?
-- [ ] Tutto leggibile e bello sul telefono, contrasto AA?
+Il redesign procede **una sezione alla volta**, con screenshot e conferma prima di propagare.
 
----
+- [x] Sistema di design (`css/aesop.css`), font Manrope auto-ospitato, DESIGN.md
+- [x] HOME (hero + "Chi siamo" breve + indice sezioni)
+- [x] Pagina "Il Circolo" (articolo completo, IT + RU)
+- [ ] Storia dell'Impero · Feste e ricorrenze · Eventi · Galleria
+- [ ] Attualità · Chiesa Ortodossa · Tesseramento · Contatti · Area riservata
+- [ ] Pagine legali (Privacy, Cookie)
 
-## 13. Funzioni avanzate (fase 2, fuori dal design)
-
-Login soci, blog con moderazione, tesseramento con pagamento e gestione contenuti non si
-realizzano con un sito statico: sono fase 2 (piattaforma). Qui le pagine "Area riservata" e
-"Tesseramento" restano segnaposto eleganti ("prossimamente") finché non si sceglie la tecnologia.
+Finché una pagina non è migrata, resta su `css/style.css` (vecchio stile); le pagine nuove
+usano `css/aesop.css`.
 
 ---
 
-*La struttura resta; l'anima la portano le immagini storiche vere e i testi scritti con cura.*
+*La struttura resta; la forza la portano le fotografie storiche vere e la disciplina del vuoto.*
