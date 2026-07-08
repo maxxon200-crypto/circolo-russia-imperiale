@@ -89,7 +89,7 @@
     "nav-area":         { it: "Area riservata", ru: "Личный кабинет" },
 
     /* --- Pulsanti / azioni --- */
-    "btn-scopri":          { it: "Scopri di piu", ru: "Узнать больше" },
+    "btn-scopri":          { it: "Scopri di più", ru: "Узнать больше" },
     "btn-diventa":         { it: "Diventa socio", ru: "Вступить в ассоциацию" },
     "btn-contattaci":      { it: "Contattaci", ru: "Написать нам" },
     "btn-tutti-eventi":    { it: "Tutti gli eventi e le attivita", ru: "Все мероприятия" },

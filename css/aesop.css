@@ -424,3 +424,46 @@ p { margin: 0 0 1.3rem; }
   .split__text { max-width: none; }
   .split__media img { height: clamp(260px, 60vw, 420px); }
 }
+
+/* =====================================================================
+   Bottoni di azione (hero + CTA "Diventa socio" in fondo). Stile pulito.
+   ===================================================================== */
+.btn {
+  display: inline-block;
+  font-family: var(--font);
+  font-size: .82rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  padding: 1.05rem 2.3rem;
+  border: 1px solid transparent;
+  text-shadow: none;
+  cursor: pointer;
+  transition: opacity .3s ease, background-color .3s ease, color .3s ease;
+}
+.btn--primary { background: var(--nero); color: var(--bianco); border-color: var(--oro); }
+.btn--primary:hover { opacity: .82; }
+.btn--ghost { background: transparent; border-color: var(--nero); color: var(--nero); }
+.btn--ghost:hover { opacity: .6; }
+
+/* hero (fondo scuro): il ghost diventa chiaro */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.8rem; }
+.hero .btn--ghost { color: #F6F6F4; border-color: rgba(246, 246, 244, .6); }
+.hero .btn--ghost:hover { opacity: 1; background: rgba(246, 246, 244, .12); }
+
+/* CTA "Diventa socio" in fondo alla home */
+.cta-socio { text-align: center; }
+.cta-socio .filetto-oro { max-width: 120px; margin-left: auto; margin-right: auto; }
+.cta-socio .eyebrow { color: var(--oro); }
+.cta-frase {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 400;
+  line-height: 1.32;
+  max-width: 22ch;
+  margin: 0 auto 2.6rem;
+}
+
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { text-align: center; }
+}
