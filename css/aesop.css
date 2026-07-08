@@ -155,33 +155,41 @@ p { margin: 0 0 1.3rem; }
   min-height: 76px;
 }
 .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
-.logo-img { height: 44px; width: auto; }
+.logo-img {
+  height: 48px; width: 48px;
+  border-radius: 50%;
+  border: 1.5px solid var(--oro);   /* cornice oro brunito attorno al logo */
+  object-fit: cover;
+  background: #fff;
+}
 
 .main-nav { margin-left: auto; }
 .main-nav ul {
   list-style: none; margin: 0; padding: 0;
   display: flex; flex-wrap: wrap; align-items: center;
-  gap: 0.4rem 1.35rem;
+  gap: 0.4rem 1.3rem;
 }
 .main-nav a {
-  font-size: .78rem;
+  font-size: .8rem;
   letter-spacing: .015em;
-  color: var(--nero);
-  opacity: .68;
-  transition: opacity .3s ease;
+  color: var(--nero);               /* nero morbido, ben leggibile */
+  opacity: .9;
+  font-weight: 500;
+  transition: opacity .3s ease, color .3s ease;
 }
-.main-nav a:hover,
-.main-nav a[aria-current="page"] { opacity: 1; }
+.main-nav a:hover { opacity: 1; }
+.main-nav a[aria-current="page"] { opacity: 1; font-weight: 700; color: var(--oro); }
 
-.lang { display: inline-flex; align-items: center; gap: .5rem; flex: 0 0 auto; }
+.lang { display: inline-flex; align-items: center; gap: .55rem; flex: 0 0 auto; }
 .lang-btn {
-  background: none; border: 0; padding: 6px; cursor: pointer;
-  line-height: 0; border-radius: 2px; opacity: .5;
+  background: none; border: 0; padding: 4px; cursor: pointer;
+  line-height: 0; opacity: .6;
   transition: opacity .3s ease;
 }
-.lang-btn:hover { opacity: .85; }
+.lang-btn:hover { opacity: .9; }
 .lang-btn.is-active { opacity: 1; }
-.flag { display: block; border: 1px solid rgba(26,26,26,.12); }
+.flag { display: block; width: 34px; height: 23px; border: 1px solid var(--oro); }
+.lang-btn.is-active .flag { box-shadow: 0 0 0 2px rgba(176, 141, 46, .4); }
 
 .nav-toggle {
   display: none;
@@ -228,16 +236,18 @@ p { margin: 0 0 1.3rem; }
   letter-spacing: .01em;
 }
 .hero-terza {
-  margin-top: 1.35rem;
-  font-size: .44em;
+  margin-top: 1.15rem;
+  font-size: .38em;                /* sigillo equilibrato, non enorme */
   font-weight: 700;
-  letter-spacing: .32em;
-  text-indent: .32em;              /* compensa il letter-spacing per restare centrato */
+  letter-spacing: .3em;
+  text-indent: .3em;               /* compensa il letter-spacing per restare centrato */
   text-transform: uppercase;
   color: #C9A227;                  /* oro chiaro: piu contrasto sulla foto */
-  background: rgba(11,11,11,.34);  /* velatura scura localizzata */
-  padding: .32em 1.05em .3em;
-  text-shadow: 0 1px 4px rgba(0,0,0,.9);
+  /* nessun riquadro: solo ombra morbida e sfumata per il contrasto */
+  text-shadow:
+    0 0 26px rgba(0,0,0,.65),
+    0 0 12px rgba(0,0,0,.8),
+    0 1px 3px rgba(0,0,0,.9);
 }
 .hero-sub {
   margin: 2rem auto 0;
@@ -283,14 +293,16 @@ p { margin: 0 0 1.3rem; }
 .idx-row:hover .idx-arrow { transform: translateX(6px); }
 
 /* ---------- Articolo (colonna di lettura) ---------- */
-.page-header { padding-top: clamp(2.4rem, 5vw, 3.6rem); padding-bottom: 0; }
-.page-header .wrap { max-width: var(--read); }
+/* Intestazioni pagine interne: centrate, ordinate, simmetriche */
+.page-header { padding-top: clamp(2.4rem, 5vw, 3.6rem); padding-bottom: 0; text-align: center; }
+.page-header .wrap { max-width: 880px; }
 .page-header--wide .wrap { max-width: var(--max); }
 .page-header h1 {
-  font-size: clamp(2rem, 4.6vw, 3.1rem);
-  font-weight: 400; line-height: 1.12;
+  font-size: clamp(1.85rem, 3.8vw, 2.6rem);
+  font-weight: 400; line-height: 1.14;
   margin-top: .3rem;
 }
+.page-header .page-intro { margin-left: auto; margin-right: auto; }
 /* prima sezione dopo l'intestazione: piu vicina, niente vuoto enorme */
 .page-header + .section { padding-top: clamp(2rem, 4vw, 3rem); }
 .articolo { max-width: var(--read); margin: 0 auto; padding-bottom: var(--sez); }
@@ -309,7 +321,7 @@ p { margin: 0 0 1.3rem; }
 }
 
 /* foto grande in cima all'articolo, bordo oro */
-.page-header .filetto-oro { margin: clamp(1.2rem, 2.5vw, 1.8rem) 0 0; }
+.page-header .filetto-oro { max-width: 92px; margin: clamp(1.2rem, 2.5vw, 1.8rem) auto 0; }
 .articolo-foto {
   max-width: 940px;
   margin: 0 auto clamp(3rem, 6vw, 4.5rem);
