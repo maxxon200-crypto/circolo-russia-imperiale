@@ -130,12 +130,13 @@ interne in **formato articolo** (colonna 700px, interlinea generosa, sottotitoli
 
 - Responsive perfetto fino a 320px: tutto in colonna, stessa calma e stesso spazio.
 - Contrasto **AA**; testo secondario mai sotto il livello leggibile.
-- **REGOLA FOTO (fondamentale):** qualsiasi foto con **persone o soggetti importanti ai bordi**
-  (ritratti, foto di gruppo, icone) **non va MAI tagliata**: si usa la variante
-  `.split__media--natural` / `.articolo-foto--natural` (proporzioni naturali, niente
-  `object-fit: cover`). Lo spazio in eccesso si assorbe con il bianco (centratura verticale),
-  mai col ritaglio. `object-fit: cover` è ammesso SOLO per sfondi/panorami dove il taglio non
-  elimina soggetti (es. architettura ampia, hero).
+- **REGOLA FOTO (fondamentale):** le immagini di contenuto **non vanno MAI deformate né
+  tagliate**. Default ovunque: `width: 100%; height: auto` (le proporzioni naturali si
+  mantengono su ogni schermo, mobile compreso). **Mai altezze fisse** in px/clamp sulle foto di
+  contenuto, **mai `object-fit: fill`** (stira) e **mai `object-fit: unset`** (equivale a
+  `fill`). `object-fit: cover` è ammesso SOLO per sfondi/panorami dove il taglio non elimina
+  soggetti (hero) e per il logo quadrato nell'header. Per persone/gruppi/ritratti/icone:
+  sempre proporzioni naturali.
 - Immagini con `alt` descrittivi in italiano.
 - Focus tastiera visibile, navigazione da tastiera, struttura semantica.
 - **Il sistema Aesop si applica OVUNQUE:** nessuna pagina deve restare col vecchio stile

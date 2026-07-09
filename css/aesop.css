@@ -97,7 +97,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }  /* mai deformata: l'altezza segue le proporzioni */
 a { color: inherit; text-decoration: none; }
 h1, h2, h3, h4 { font-weight: 400; letter-spacing: 0.005em; margin: 0; }
 p { margin: 0 0 1.3rem; }
@@ -327,17 +327,14 @@ p { margin: 0 0 1.3rem; }
   margin: 0 auto clamp(3rem, 6vw, 4.5rem);
   padding: 0 var(--pad);
 }
+/* Foto degli articoli: sempre proporzioni naturali (mai deformata ne tagliata) */
 .articolo-foto img {
   width: 100%;
-  height: clamp(300px, 40vw, 520px);
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border: 1px solid var(--oro-soft);
 }
-/* Variante "foto intera" per gli articoli: proporzioni naturali, mai tagliata */
-.articolo-foto--natural img {
-  height: auto;
-  object-fit: unset;
-}
+.articolo-foto--natural img { height: auto; object-fit: contain; }
 .articolo .torna { margin-top: clamp(3rem, 6vw, 4.5rem); }
 .articolo .legale-update {
   margin-top: clamp(3rem, 6vw, 4.5rem);
@@ -445,22 +442,16 @@ p { margin: 0 0 1.3rem; }
   margin: 0 0 2.2rem;
 }
 
+/* Foto delle sezioni a due colonne: sempre proporzioni naturali,
+   mai deformate ne tagliate (persone, gruppi, icone, ritratti). */
 .split__media { margin: 0; }
 .split__media img {
   width: 100%;
-  height: clamp(340px, 42vw, 580px);
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border: 1px solid var(--oro-soft);
 }
-
-/* Variante "foto intera": MAI tagliata (persone, gruppi, icone).
-   Il contenitore segue le proporzioni naturali dell'immagine;
-   l'eventuale differenza di altezza è assorbita dallo spazio bianco
-   (la griglia centra verticalmente), mai dal ritaglio. */
-.split__media--natural img {
-  height: auto;
-  object-fit: unset;
-}
+.split__media--natural img { height: auto; object-fit: contain; }
 
 /* freccia dorata dopo i link freccia dentro le sezioni a due colonne */
 .arrow-gold { color: var(--oro); }
@@ -481,7 +472,7 @@ p { margin: 0 0 1.3rem; }
   .split__media { order: -1; }               /* su mobile: foto sopra, testo sotto */
   .split--rev .split__media { order: -1; }
   .split__text { max-width: none; }
-  .split__media img { height: clamp(260px, 60vw, 420px); }
+  /* nessuna altezza forzata: le foto restano a proporzioni naturali su mobile */
 }
 
 /* =====================================================================
