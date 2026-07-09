@@ -307,6 +307,14 @@ p { margin: 0 0 1.3rem; }
 .page-header + .section { padding-top: clamp(2rem, 4vw, 3rem); }
 .articolo { max-width: var(--read); margin: 0 auto; padding-bottom: var(--sez); }
 .articolo > * { margin-left: auto; margin-right: auto; }
+/* Articolo a tutta pagina (non dentro un .wrap): padding laterale sempre,
+   cosi su mobile il testo non tocca mai i bordi. La max-width e aumentata dei
+   margini in modo da NON restringere la colonna di lettura sul desktop (~700px). */
+main > .articolo {
+  max-width: calc(var(--read) + var(--pad) + var(--pad));
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
 .articolo h2 {
   font-size: clamp(1.5rem, 2.8vw, 2rem);
   font-weight: 600;
