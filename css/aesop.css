@@ -708,3 +708,23 @@ main > .articolo {
 @media (max-width: 480px) {
   .foto-colonne { columns: 1; }
 }
+
+/* =====================================================================
+   Pagina Partnership: blocco in evidenza (con foto) + elenco partner
+   ===================================================================== */
+.partner-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; line-height: 1.2; margin: 0 0 .7rem; }
+.partner-featured .eyebrow { margin: 0 0 1.4rem; }
+.partner-desc { font-size: 1.12rem; line-height: 1.7; color: var(--nero-morbido); margin: 0 0 1.8rem; }
+.partner-links { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.7rem; margin: 0; }
+.partner-links__label {
+  font-size: .82rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .16em; color: var(--grigio);
+}
+
+.partner-lista { border-top: 1px solid var(--linea); }
+.partner {
+  padding: clamp(1.8rem, 3.5vw, 2.6rem) 0;
+  border-bottom: 1px solid var(--linea);
+}
+.partner h3 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); font-weight: 500; margin: 0 0 .6rem; }
+.partner p { color: var(--grigio); margin: 0 0 1rem; max-width: 62ch; }

@@ -255,18 +255,23 @@
     "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
-    /* --- Attualità: articolo "Tra due culture" (Oxana Senchenko) --- */
-    "tdc-eyebrow": { it: "Attualità", ru: "Актуальное" },
+    /* --- Partnership --- */
+    "nav-partnership": { it: "Partnership", ru: "Партнёры" },
+    "part-h1":    { it: "Partnership", ru: "Партнёрство" },
+    "part-intro": { it: "Le realtà e i progetti culturali vicini al Circolo.", ru: "Организации и культурные проекты, близкие ассоциации." },
+    "part-altri": { it: "Altre realtà partner", ru: "Другие партнёры" },
+
     "tdc-title":   { it: "Tra due culture", ru: "Между двух культур" },
     "tdc-sub":     { it: "Un progetto di Oxana Senchenko Pasqualino di Marineo", ru: "Проект Оксаны Сенченко Паскуалино ди Маринео" },
-    "tdc-excerpt": { it: "\"Tra due culture\" racconta una storia spesso poco conosciuta: quella del dialogo tra Italia e Russia.", ru: "«Между двух культур» рассказывает историю, часто малоизвестную, — историю диалога между Италией и Россией." },
-    "tdc-p1": { it: "\"Tra due culture\" racconta una storia spesso poco conosciuta: quella del dialogo tra Italia e Russia. Nei secoli, artisti, architetti, musicisti, scrittori e intellettuali hanno attraversato i confini, contribuendo a creare un patrimonio culturale condiviso. Eppure questi intrecci sono raramente al centro del racconto: il progetto cerca di riportarli alla luce, mostrando come le due culture siano molto più vicine di quanto comunemente si creda.", ru: "«Между двух культур» рассказывает историю, часто малоизвестную, — историю диалога между Италией и Россией. На протяжении веков художники, архитекторы, музыканты, писатели и мыслители пересекали границы, создавая общее культурное наследие. Однако эти связи редко оказываются в центре внимания: проект стремится вернуть их к свету, показывая, что две культуры гораздо ближе друг к другу, чем принято считать." },
-    "tdc-p2": { it: "Il racconto si sofferma sulle figure che hanno lasciato un'impronta significativa nella storia culturale russa: dagli architetti italiani, come Aristotele Fioravanti, Bartolomeo Rastrelli e Giacomo Quarenghi, ai protagonisti degli scambi letterari, artistici e musicali che hanno arricchito il dialogo tra i due Paesi. Ogni racconto nasce da un'attenta ricerca ed è proposto con un linguaggio chiaro e accessibile, nel rispetto del rigore storico.", ru: "Особое внимание уделяется фигурам, оставившим значимый след в русской культурной истории: от итальянских архитекторов, таких как Аристотель Фиораванти, Бартоломео Растрелли и Джакомо Кваренги, до участников литературных, художественных и музыкальных обменов, обогативших диалог между двумя странами. Каждый рассказ рождается из тщательного исследования и излагается ясным и доступным языком, с уважением к исторической точности." },
-    "tdc-p3": { it: "Il progetto si rivolge a chi desidera conoscere la Russia attraverso la sua cultura, andando oltre gli stereotipi e le semplificazioni. Si trovano storie poco note, curiosità documentate, biografie, opere d'arte e testimonianze che raccontano secoli di relazioni tra Italia e Russia, facendo emergere un patrimonio comune spesso dimenticato.", ru: "Проект обращён к тем, кто хочет узнать Россию через её культуру, выходя за пределы стереотипов и упрощений. Здесь можно найти малоизвестные истории, документированные любопытные факты, биографии, произведения искусства и свидетельства, рассказывающие о веках отношений между Италией и Россией и раскрывающие общее, часто забытое наследие." },
-    "tdc-bio-title": { it: "L'autrice", ru: "Об авторе" },
-    "tdc-bio": { it: "Oxana Senchenko Pasqualino di Marineo è nata a Mosca ma da oltre trent'anni vive in Italia, portando con sé la cultura russa nella quale è nata e si è formata. È laureata in Lettere italiane all'Università di Mosca ed è arrivata in Italia per insegnare russo all'Università di Verona. Nel corso degli anni ha lavorato come interprete, traduttrice, addetta commerciale, responsabile ufficio stampa e giornalista: un percorso che le ha permesso di conoscere profondamente entrambe le realtà culturali.", ru: "Оксана Сенченко Паскуалино ди Маринео родилась в Москве, но уже более тридцати лет живёт в Италии, храня в себе русскую культуру, в которой родилась и сформировалась. Она окончила факультет итальянской филологии Московского университета и приехала в Италию преподавать русский язык в Университете Вероны. За годы работала переводчиком, коммерческим представителем, руководителем пресс-службы и журналистом — путь, позволивший ей глубоко узнать обе культурные реальности." },
-    "tdc-social": { it: "Segui \"Tra due culture\" su Instagram e Facebook.", ru: "Следите за «Между двух культур» в Instagram и Facebook." },
-    "tdc-torna": { it: "Torna all'Attualità", ru: "Вернуться в «Актуальное»" },
+    "part-tdc-desc": { it: "Un progetto di divulgazione culturale dedicato al dialogo tra Italia e Russia: artisti, architetti e intellettuali che nei secoli hanno intrecciato le due culture, raccontati con rigore storico e senza stereotipi. Ideato da Oxana Senchenko, nata a Mosca e da oltre trent'anni in Italia.", ru: "Проект культурного просвещения, посвящённый диалогу между Италией и Россией: художники, архитекторы и мыслители, на протяжении веков связывавшие две культуры, представленные с исторической точностью и без стереотипов. Создан Оксаной Сенченко, родившейся в Москве и уже более тридцати лет живущей в Италии." },
+    "part-social": { it: "Segui il progetto", ru: "Следить за проектом" },
+
+    "part-desc-soon": { it: "Descrizione in arrivo.", ru: "Описание скоро." },
+    "part-scopri":    { it: "Scopri di più", ru: "Подробнее" },
+    "part-p1-name": { it: "Associazione Aristocrazia Europea", ru: "Ассоциация Европейской Аристократии" },
+    "part-p2-name": { it: "Santa Rus", ru: "Святая Русь" },
+    "part-p3-name": { it: "Ordine Giovannita", ru: "Орден иоаннитов" },
+    "part-p4-name": { it: "Ordine del Drago", ru: "Орден Дракона" },
 
     /* --- Banner cookie (informativo) --- */
     "cb-text": { it: "Questo sito utilizza solo cookie tecnici necessari al suo funzionamento.", ru: "Этот сайт использует только технические файлы cookie, необходимые для его работы." },
