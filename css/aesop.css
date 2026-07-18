@@ -728,3 +728,27 @@ main > .articolo {
 }
 .partner h3 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); font-weight: 500; margin: 0 0 .6rem; }
 .partner p { color: var(--grigio); margin: 0 0 1rem; max-width: 62ch; }
+
+/* =====================================================================
+   Segnaposto foto (immagine non ancora fornita) + preghiera (testo liturgico)
+   ===================================================================== */
+.ph-foto {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  width: 100%; min-height: 170px; padding: 1.4rem;
+  border: 1px dashed var(--oro-soft);
+  background: rgba(176, 141, 46, .06);
+  color: var(--grigio); font-size: .82rem; line-height: 1.5; letter-spacing: .02em;
+}
+.articolo-foto .ph-foto { min-height: clamp(240px, 34vw, 360px); }
+
+/* preghiera: citazione liturgica, rientrata con filetto oro a lato */
+.preghiera {
+  margin: clamp(2rem, 4vw, 3rem) 0;
+  padding: .3rem 0 .3rem clamp(1.2rem, 3vw, 1.8rem);
+  border-left: 2px solid var(--oro);
+  font-style: italic;
+  color: var(--nero-morbido);
+}
+.preghiera p { margin: 0 0 1rem; }
+.preghiera p:last-child { margin-bottom: 0; }
+.preghiera .preghiera-amen { font-style: normal; font-weight: 600; letter-spacing: .04em; }

@@ -7,6 +7,23 @@
   "use strict";
 
   var DICT = {
+    /* ============ San Sergio di Radonež (18 luglio) — IT/RU (EN nell'oggetto EN) ============ */
+    "ss-title":     { it: "San Sergio di Radonež", ru: "Преподобный Сергий Радонежский" },
+    "ss-sub":       { it: "18 luglio", ru: "18 июля" },
+    "ss-cal-name":  { it: "San Sergio di Radonež", ru: "Преподобный Сергий Радонежский" },
+    "ss-cal-desc":  { it: "Ritrovamento delle reliquie", ru: "Обретение мощей" },
+    "ss-excerpt":   { it: "Il 18 luglio la Chiesa celebra il ritrovamento delle venerabili reliquie di san Sergio, igumeno di Radonež.", ru: "18 июля Церковь празднует обретение честных мощей преподобного Сергия, игумена Радонежского." },
+    "ss-p1":        { it: "Il 18 luglio la Chiesa celebra il ritrovamento delle venerabili reliquie di san Sergio, igumeno di Radonež.", ru: "18 июля Церковь празднует обретение честных мощей преподобного Сергия, игумена Радонежского." },
+    "ss-p2":        { it: "San Sergio di Radonež è uno dei santi russi più venerati. Fondatore della Lavra della Santissima Trinità e di San Sergio, fu maestro e guida spirituale di molte decine di santi russi. Divenne igumeno e intercessore di tutta la Terra Russa, esempio di mitezza e umiltà per monaci e laici. Fu lui a benedire il santo principe Dimitrij Donskoj prima della battaglia di Kulikovo.", ru: "Преподобный Сергий Радонежский — один из самых почитаемых русских святых. Основатель Троице-Сергиевой Лавры, он был наставником и духовным руководителем многих десятков русских святых. Он стал игуменом и заступником всей Русской земли, примером кротости и смирения для монахов и мирян. Именно он благословил святого князя Димитрия Донского перед Куликовской битвой." },
+    "ss-p3":        { it: "A san Sergio si rivolgono preghiere per ricevere aiuto nello studio e nella vita monastica, per vincere le passioni, specialmente la superbia, per crescere nella fede e per proteggere la Patria dalle invasioni straniere.", ru: "К преподобному Сергию обращаются с молитвами о помощи в учении и в монашеской жизни, о победе над страстями, особенно над гордостью, о возрастании в вере и о защите Отечества от иноземных нашествий." },
+    "ss-pray-label":{ it: "Preghiera", ru: "Молитва" },
+    "ss-pray-1":    { it: "O venerabile e teoforo padre nostro Sergio!", ru: "О священная главо, преподобне и богоносне отче наш Сергие!" },
+    "ss-pray-2":    { it: "Volgi misericordiosamente il tuo sguardo su di noi, tuoi servi, e innalza noi, attaccati alle cose della terra, verso le altezze celesti. Rafforza la nostra debolezza e confermaci nella fede, affinché possiamo sperare senza esitazione di ricevere ogni bene dalla misericordia del Signore Dio per mezzo delle tue preghiere.", ru: "Милостивно призри на нас, рабов твоих, и возведи нас, привязанных к земному, к небесным высотам. Укрепи нашу немощь и утверди нас в вере, чтобы мы могли несомненно надеяться получить всякое благо от милости Господа Бога твоими молитвами." },
+    "ss-pray-3":    { it: "Ottieni con la tua intercessione ogni dono necessario e salutare per ciascuno di noi e, con le tue potenti preghiere, concedi a tutti noi, nel giorno del Giudizio tremendo, di essere liberati dalla parte sinistra, di essere annoverati tra coloro che stanno alla destra e di ascoltare la voce beata del Signore Cristo:", ru: "Испроси твоим ходатайством всякий необходимый и спасительный дар каждому из нас и твоими сильными молитвами сподоби всех нас в день Страшного Суда быть избавленными от левой стороны, причтёнными к стоящим справа и услышать блаженный глас Господа Христа:" },
+    "ss-pray-quote":{ it: "\"Venite, benedetti del Padre mio, ricevete in eredità il Regno preparato per voi fin dalla fondazione del mondo\".", ru: "«Приидите, благословенные Отца Моего, наследуйте Царство, уготованное вам от создания мира»." },
+    "ss-pray-amen": { it: "Amen.", ru: "Аминь." },
+    "ss-ph":        { it: "[FOTO: San Sergio di Radonež, da inserire]", ru: "[ФОТО: преподобный Сергий Радонежский, будет добавлено]" },
+
     /* ============ Redesign Aesop: HOME + pagina "Il Circolo" ============ */
     "nav-circolo": { it: "Il Circolo", ru: "Ассоциация" },
 
@@ -309,7 +326,115 @@
     "ph-msg": { it: "Presentati in breve e indica perche desideri iscriverti.", ru: "Расскажите нам о своём интересе к истории и культуре Российской империи." }
   };
 
-  var LANGS = ["it", "ru"];
+  /* ===================================================================
+     INGLESE (EN): traduzioni scritte a mano. NIENTE traduzione automatica.
+     Dove la stringa inglese manca, si mostra "[English version coming soon]"
+     finche il cliente non fornisce la traduzione ufficiale.
+     =================================================================== */
+  var EN_PLACEHOLDER = "[English version coming soon]";
+  var EN = {
+    "skip": "Skip to content",
+    "soon": "Coming soon",
+
+    "nav-home": "Home",
+    "nav-circolo": "The Circle",
+    "nav-storia": "History of the Empire",
+    "nav-eventi": "Events and activities",
+    "nav-attualita": "News",
+    "nav-feste": "Feasts and commemorations",
+    "nav-chiesa": "Russian Orthodox Church",
+    "nav-galleria": "Gallery",
+    "nav-partnership": "Partnership",
+    "nav-tesseramento": "Membership",
+    "nav-contatti": "Contacts",
+    "nav-area": "Members' area",
+
+    "btn-diventa": "Become a member",
+    "btn-scopri": "Discover more",
+    "btn-leggi": "Read the article",
+    "btn-leggi-tutto": "Read more",
+    "btn-contattaci": "Contact us",
+    "btn-invia-richiesta": "Send request",
+    "btn-invia-messaggio": "Send message",
+    "socio-btn": "Request membership",
+    "home-chi-link": "Discover the Circle",
+    "home-storia-link": "Read the history",
+    "home-feste-link": "See the calendar",
+    "home-eventi-link": "See the events",
+    "home-galleria-link": "Open the gallery",
+    "home-tess-link": "Become a member",
+    "home-fond-link": "Read the story",
+    "home-chi-eye": "About us",
+    "home-fond-eye": "Our history",
+
+    "foot-naviga": "Navigate",
+    "foot-contatti-h": "Contacts",
+    "foot-privacy": "Privacy Policy",
+    "foot-cookie": "Cookie Policy",
+    "foot-noprofit": "Cultural association, non-profit",
+    "foot-fb": "Facebook page",
+
+    "cb-text": "This website uses only technical cookies necessary for its operation.",
+    "cb-link": "Read the Cookie Policy",
+    "cb-btn": "Got it",
+
+    "lbl-nome": "First name",
+    "lbl-cognome": "Surname",
+    "lbl-email": "Email",
+    "lbl-telefono": "Phone (optional)",
+    "lbl-professione": "Profession",
+    "lbl-messaggio": "Message",
+    "lbl-oggetto": "Subject",
+    "et-email": "Email",
+    "et-tel-it": "Italy phone",
+    "et-tel-ru": "Russia phone",
+    "et-fb": "Facebook",
+    "ph-msg": "Introduce yourself briefly and tell us why you would like to join.",
+
+    "part-h1": "Partnership",
+    "part-intro": "The cultural organisations and projects close to the Circle.",
+    "part-altri": "Other partners",
+    "part-social": "Follow the project",
+    "part-scopri": "Discover more",
+    "part-desc-soon": "Description coming soon.",
+
+    "cal-prossima": "Next commemoration",
+    "fe-altri": "Other commemorations",
+    "storia-altri": "More articles",
+    "ev-prossimi": "Upcoming events",
+    "ev-passati": "Past events",
+
+    "hero-nome": "International Circle of Friends of Imperial Russia",
+    "hero-terza": "Third Rome",
+
+    /* --- San Sergio di Radonež (EN fornito dal cliente) --- */
+    "ss-title": "Saint Sergius of Radonezh",
+    "ss-sub": "18 July",
+    "ss-cal-name": "Saint Sergius of Radonezh",
+    "ss-cal-desc": "Uncovering of the relics",
+    "ss-excerpt": "On 18 July the Church celebrates the uncovering of the venerable relics of Saint Sergius, hegumen of Radonezh.",
+    "ss-p1": "On 18 July the Church celebrates the uncovering of the venerable relics of Saint Sergius, hegumen of Radonezh.",
+    "ss-p2": "Saint Sergius of Radonezh is one of the most venerated Russian saints. Founder of the Trinity Lavra of Saint Sergius, he was the teacher and spiritual guide of many dozens of Russian saints. He became hegumen and intercessor of all the Russian Land, an example of meekness and humility for monks and laypeople alike. It was he who blessed the holy prince Dmitry Donskoy before the Battle of Kulikovo.",
+    "ss-p3": "The faithful turn to Saint Sergius in prayer for help in study and in monastic life, for victory over the passions, especially pride, for growth in faith, and for the protection of the homeland from foreign invasion.",
+    "ss-pray-label": "Prayer",
+    "ss-pray-1": "O venerable and God-bearing father Sergius!",
+    "ss-pray-2": "Look mercifully upon us, your servants, and raise us, bound to earthly things, toward the heights of heaven. Strengthen our weakness and confirm us in faith, that we may hope without doubt to receive every good thing from the mercy of the Lord God through your prayers.",
+    "ss-pray-3": "Obtain by your intercession every needful and saving gift for each of us, and by your powerful prayers grant that all of us, on the day of the dread Judgment, may be delivered from the left hand, numbered among those who stand at the right, and hear the blessed voice of the Lord Christ:",
+    "ss-pray-quote": "“Come, you who are blessed by my Father, inherit the Kingdom prepared for you from the foundation of the world.”",
+    "ss-pray-amen": "Amen.",
+    "ss-ph": "[PHOTO: Saint Sergius of Radonezh, to be added]",
+    "art-torna-feste": "Back to Feasts and commemorations"
+  };
+
+  var LANGS = ["it", "ru", "en"];
+
+  function value(key, lang) {
+    if (lang === "en") {
+      return (typeof EN[key] === "string") ? EN[key] : EN_PLACEHOLDER;
+    }
+    var e = DICT[key];
+    return (e && typeof e[lang] === "string") ? e[lang] : null;
+  }
 
   function apply(lang) {
     if (LANGS.indexOf(lang) < 0) { lang = "it"; }
@@ -317,15 +442,14 @@
     var nodes = document.querySelectorAll("[data-i18n]");
     for (var i = 0; i < nodes.length; i++) {
       var el = nodes[i];
-      var key = el.getAttribute("data-i18n");
-      var entry = DICT[key];
-      if (entry && typeof entry[lang] === "string") { el.innerHTML = entry[lang]; }
+      var val = value(el.getAttribute("data-i18n"), lang);
+      if (typeof val === "string") { el.innerHTML = val; }
     }
     var phNodes = document.querySelectorAll("[data-i18n-ph]");
     for (var p = 0; p < phNodes.length; p++) {
       var phEl = phNodes[p];
-      var phEntry = DICT[phEl.getAttribute("data-i18n-ph")];
-      if (phEntry && typeof phEntry[lang] === "string") { phEl.setAttribute("placeholder", phEntry[lang]); }
+      var phVal = value(phEl.getAttribute("data-i18n-ph"), lang);
+      if (typeof phVal === "string") { phEl.setAttribute("placeholder", phVal); }
     }
     var btns = document.querySelectorAll(".lang-btn");
     for (var j = 0; j < btns.length; j++) {
