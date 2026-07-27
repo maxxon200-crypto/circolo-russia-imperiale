@@ -61,99 +61,304 @@
       </div>
     </section>
 
-    <!-- Calendario delle ricorrenze fisse -->
+    <!-- ===== Calendario in cima: indice delle date, con la prossima evidenziata ===== -->
     <section class="section">
       <div class="wrap">
-        <h2 class="sez-titolo reveal" data-i18n="cal-eyebrow-title">Calendario delle ricorrenze</h2>
-        <div class="calendario reveal">
-          <div class="cal-item" data-md="07-17">
-            <p class="cal-data" data-i18n="cal-mar-date">17 luglio</p>
-            <div>
-              <p class="cal-nome" data-i18n="cal-mar-name">Martirio della Santa Famiglia Imperiale</p>
-              <p class="cal-desc" data-i18n="cal-mar-desc">Santa Famiglia Imperiale</p>
-              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            </div>
-          </div>
-          <div class="cal-item" data-md="07-18">
-            <p class="cal-data" data-i18n="ss-sub">18 luglio</p>
-            <div>
-              <p class="cal-nome" data-i18n="ss-cal-name">San Sergio di Radonež</p>
-              <p class="cal-desc" data-i18n="ss-cal-desc">Ritrovamento delle reliquie</p>
-              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            </div>
-          </div>
-          <div class="cal-item" data-md="09-07">
-            <p class="cal-data" data-i18n="cal-bor-date">7 settembre</p>
-            <div>
-              <p class="cal-nome" data-i18n="cal-bor-name">Borodino (1812)</p>
-              <p class="cal-desc" data-i18n="cal-bor-desc">Battaglia del 1812</p>
-              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            </div>
-          </div>
-          <div class="cal-item" data-md="12-19">
-            <p class="cal-data" data-i18n="cal-nic-date">19 dicembre</p>
-            <div>
-              <p class="cal-nome" data-i18n="cal-nic-name">San Nicola</p>
-              <p class="cal-desc" data-i18n="cal-nic-desc">Venerazione in Russia</p>
-              <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Articolo in evidenza: Borodino -->
-        <div class="split">
-          <div class="split__text">
-            <p class="eyebrow reveal" data-i18n="bor-date">7 settembre 1812</p>
-            <p class="split__lead reveal" data-i18n="bor-title">Borodino</p>
-            <p class="art-item__excerpt reveal" data-i18n="bor-excerpt">La ricorrenza della battaglia di Borodino del 1812. Testo completo in arrivo.</p>
-            <p class="reveal"><a class="arrow-link" href="articolo-borodino.html" data-i18n="btn-leggi">Leggi l'articolo</a></p>
-          </div>
-          <figure class="split__media split__media--natural reveal" data-delay="0.12s">
-            <img src="assets/img/borodino-1.webp" alt="La Battaglia di Borodino in una stampa d'epoca" loading="lazy">
-          </figure>
+        <h2 class="sez-titolo reveal" data-i18n="fs-cal-h">Calendario delle ricorrenze</h2>
+        <div class="fs-cal reveal">
+          <a class="fs-cal-row" href="#fs-capo"><span class="fs-cal-d" data-i18n="fs-capo-d">1 gennaio</span><span class="fs-cal-n" data-i18n="fs-capo-n">Capodanno</span></a>
+          <a class="fs-cal-row" href="#fs-nat"><span class="fs-cal-d" data-i18n="fs-nat-d">25 dicembre / 7 gennaio</span><span class="fs-cal-n" data-i18n="fs-nat-n">Natività di Cristo</span></a>
+          <a class="fs-cal-row" href="#fs-teo"><span class="fs-cal-d" data-i18n="fs-teo-d">6 / 19 gennaio</span><span class="fs-cal-n" data-i18n="fs-teo-n">Santa Teofania e Battesimo del Signore</span></a>
+          <a class="fs-cal-row" href="#fs-pres"><span class="fs-cal-d" data-i18n="fs-pres-d">2 / 15 febbraio</span><span class="fs-cal-n" data-i18n="fs-pres-n">Presentazione di Gesù al Tempio</span></a>
+          <a class="fs-cal-row" href="#fs-dif"><span class="fs-cal-d" data-i18n="fs-dif-d">23 febbraio</span><span class="fs-cal-n" data-i18n="fs-dif-n">Giorno dei Difensori della Patria</span></a>
+          <a class="fs-cal-row" href="#fs-donna"><span class="fs-cal-d" data-i18n="fs-donna-d">8 marzo</span><span class="fs-cal-n" data-i18n="fs-donna-n">Giornata Internazionale della Donna</span></a>
+          <a class="fs-cal-row" href="#fs-annu"><span class="fs-cal-d" data-i18n="fs-annu-d">25 marzo / 7 aprile</span><span class="fs-cal-n" data-i18n="fs-annu-n">Santa Annunciazione</span></a>
+          <a class="fs-cal-row" href="#fs-lav"><span class="fs-cal-d" data-i18n="fs-lav-d">1 maggio</span><span class="fs-cal-n" data-i18n="fs-lav-n">Festa della Primavera e del Lavoro</span></a>
+          <a class="fs-cal-row" href="#fs-vitt"><span class="fs-cal-d" data-i18n="fs-vitt-d">9 maggio</span><span class="fs-cal-n" data-i18n="fs-vitt-n">Giorno della Vittoria</span></a>
+          <a class="fs-cal-row" href="#fs-russia"><span class="fs-cal-d" data-i18n="fs-russia-d">12 giugno</span><span class="fs-cal-n" data-i18n="fs-russia-n">Giornata della Russia</span></a>
+          <a class="fs-cal-row" href="#fs-pp"><span class="fs-cal-d" data-i18n="fs-pp-d">12 luglio</span><span class="fs-cal-n" data-i18n="fs-pp-n">Santi Pietro e Paolo</span></a>
+          <a class="fs-cal-row" href="#fs-mar"><span class="fs-cal-d" data-i18n="fs-mar-d">17 luglio</span><span class="fs-cal-n" data-i18n="fs-mar-n">Martirio della Santa Famiglia Imperiale Romanov</span></a>
+          <a class="fs-cal-row" href="#fs-serg"><span class="fs-cal-d" data-i18n="fs-serg-d">18 luglio</span><span class="fs-cal-n" data-i18n="fs-serg-n">San Sergio di Radonež</span></a>
+          <a class="fs-cal-row" href="#fs-trasf"><span class="fs-cal-d" data-i18n="fs-trasf-d">6 / 19 agosto</span><span class="fs-cal-n" data-i18n="fs-trasf-n">Santa Trasfigurazione</span></a>
+          <a class="fs-cal-row" href="#fs-dorm"><span class="fs-cal-d" data-i18n="fs-dorm-d">15 / 28 agosto</span><span class="fs-cal-n" data-i18n="fs-dorm-n">Dormizione della Madre di Dio</span></a>
+          <a class="fs-cal-row" href="#fs-bor"><span class="fs-cal-d" data-i18n="fs-bor-d">7 settembre</span><span class="fs-cal-n" data-i18n="fs-bor-n">Battaglia di Borodino</span></a>
+          <a class="fs-cal-row" href="#fs-natbg"><span class="fs-cal-d" data-i18n="fs-natbg-d">8 / 21 settembre</span><span class="fs-cal-n" data-i18n="fs-natbg-n">Natività della Madre di Dio</span></a>
+          <a class="fs-cal-row" href="#fs-croce"><span class="fs-cal-d" data-i18n="fs-croce-d">14 / 27 settembre</span><span class="fs-cal-n" data-i18n="fs-croce-n">Esaltazione della Santa Croce</span></a>
+          <a class="fs-cal-row" href="#fs-fond"><span class="fs-cal-d" data-i18n="fs-fond-d">2 novembre</span><span class="fs-cal-n" data-i18n="fs-fond-n">Fondazione dell'Impero Russo</span></a>
+          <a class="fs-cal-row" href="#fs-unita"><span class="fs-cal-d" data-i18n="fs-unita-d">4 novembre</span><span class="fs-cal-n" data-i18n="fs-unita-n">Giorno dell'Unità Nazionale</span></a>
+          <a class="fs-cal-row" href="#fs-ingr"><span class="fs-cal-d" data-i18n="fs-ingr-d">21 novembre / 4 dicembre</span><span class="fs-cal-n" data-i18n="fs-ingr-n">Ingresso al Tempio della Madre di Dio</span></a>
+          <a class="fs-cal-row" href="#fs-nic"><span class="fs-cal-d" data-i18n="fs-nic-d">4 / 19 dicembre</span><span class="fs-cal-n" data-i18n="fs-nic-n">San Nicola</span></a>
         </div>
       </div>
     </section>
 
-    <!-- Altre ricorrenze -->
+    <!-- ===== Elenco: RICORRENZE RELIGIOSE ===== -->
     <section class="section">
       <div class="wrap">
-        <h2 class="sez-titolo reveal" data-i18n="fe-altri">Altre ricorrenze</h2>
-        <div class="art-lista">
-        <a class="art-item reveal" href="articolo-san-sergio.html">
-          <figure class="art-item__media"><span class="ph-foto" data-i18n="ss-ph">[FOTO: San Sergio di Radonež, da inserire]</span></figure>
-          <span>
-            <span class="art-item__date" data-i18n="ss-sub">18 luglio</span>
-            <span class="art-item__title" style="display:block" data-i18n="ss-title">San Sergio di Radonež</span>
-            <span class="art-item__excerpt" style="display:block" data-i18n="ss-excerpt">Il 18 luglio la Chiesa celebra il ritrovamento delle venerabili reliquie di san Sergio, igumeno di Radonež.</span>
-            <span class="arrow-link" data-i18n="btn-leggi">Leggi l'articolo</span>
-          </span>
-        </a>
-        <a class="art-item reveal" href="articolo-martirio.html">
-          <figure class="art-item__media"><img src="assets/img/martirio-romanov.jpg" alt="Icona dei Santi Martiri Imperiali, la famiglia dell'Imperatore Nicola II" loading="lazy"></figure>
-          <span>
-            <span class="art-item__date" data-i18n="mar-date">17 luglio</span>
-            <span class="art-item__title" style="display:block" data-i18n="mar-title">Martirio della Santa Famiglia Imperiale</span>
-            <span class="art-item__excerpt" style="display:block" data-i18n="mar-excerpt">Il ricordo del martirio della Santa Famiglia Imperiale. Testo completo in arrivo.</span>
-            <span class="arrow-link" data-i18n="btn-leggi">Leggi l'articolo</span>
-          </span>
-        </a>
-        <a class="art-item reveal" href="articolo-san-nicola.html">
-          <figure class="art-item__media"><img src="assets/img/san-nicola.webp" alt="Icona di San Nicola Taumaturgo" loading="lazy"></figure>
-          <span>
-            <span class="art-item__date" data-i18n="nic-date">19 dicembre</span>
-            <span class="art-item__title" style="display:block" data-i18n="nic-title">San Nicola</span>
-            <span class="art-item__excerpt" style="display:block" data-i18n="nic-excerpt">La venerazione di San Nicola in Russia. Testo completo in arrivo.</span>
-            <span class="arrow-link" data-i18n="btn-leggi">Leggi l'articolo</span>
-          </span>
-        </a>
-        <div class="art-item art-item--soon reveal">
-          <span>
-            <span class="art-item__date" data-i18n="soon-date">In arrivo</span>
-            <span class="art-item__title" style="display:block" data-i18n="soon-title">Nuovo approfondimento</span>
-            <span class="art-item__excerpt" style="display:block; margin-bottom:0" data-i18n="soon-excerpt">Articolo in preparazione. Presto disponibile in questa sezione.</span>
-          </span>
+        <h2 class="sez-titolo reveal" data-i18n="fs-h-rel">Ricorrenze religiose</h2>
+        <div class="fs-lista">
+        <article class="fs-voce reveal" data-md="01-07" id="fs-nat">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Natività di Cristo]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-nat-d">25 dicembre / 7 gennaio</p>
+            <h3 class="fs-nome" data-i18n="fs-nat-n">Natività di Cristo</h3>
+            <p class="fs-desc" data-i18n="fs-nat-t">La Natività di Cristo è, dopo la Pasqua, la festa più solenne dell'anno liturgico. È preceduta da quaranta giorni di digiuno e culmina nella veglia notturna. In Russia la ricorrenza unisce la liturgia alle tradizioni domestiche: la cena della vigilia, i canti natalizi e le visite tra le famiglie. La festa apre il tempo delle Sviatki, i dodici giorni santi fino alla Teofania.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="01-19" id="fs-teo">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Santa Teofania e Battesimo del Signore]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-teo-d">6 / 19 gennaio</p>
+            <h3 class="fs-nome" data-i18n="fs-teo-n">Santa Teofania e Battesimo del Signore</h3>
+            <p class="fs-desc" data-i18n="fs-teo-t">La festa ricorda il Battesimo di Cristo nel Giordano e la manifestazione della Santissima Trinità. Il rito centrale è la grande benedizione delle acque, celebrata in chiesa e presso fiumi e sorgenti. In Russia è tradizione immergersi nelle acque benedette, spesso attraverso un'apertura a forma di croce nel ghiaccio. L'acqua benedetta viene conservata dai fedeli durante tutto l'anno.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="02-15" id="fs-pres">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Presentazione di Gesù al Tempio]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-pres-d">2 / 15 febbraio</p>
+            <h3 class="fs-nome" data-i18n="fs-pres-n">Presentazione di Gesù al Tempio</h3>
+            <p class="fs-desc" data-i18n="fs-pres-t">Quaranta giorni dopo la Natività, la Chiesa ricorda la presentazione del Bambino Gesù al Tempio di Gerusalemme e l'incontro con il giusto Simeone. Il nome slavo della festa, Sretenie, significa proprio incontro: quello fra l'Antico e il Nuovo Testamento. È una delle dodici grandi feste del calendario ortodosso. In questo giorno si benedicono le candele.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="04-07" id="fs-annu">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Santa Annunciazione]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-annu-d">25 marzo / 7 aprile</p>
+            <h3 class="fs-nome" data-i18n="fs-annu-n">Santa Annunciazione</h3>
+            <p class="fs-desc" data-i18n="fs-annu-t">La festa celebra l'annuncio dell'arcangelo Gabriele alla Vergine Maria e l'inizio dell'Incarnazione. Cade sempre durante la Quaresima e, per la sua importanza, consente un'attenuazione del digiuno. In Russia si è mantenuta l'antica usanza di liberare gli uccelli dalle gabbie, segno della libertà donata all'uomo. È una delle dodici grandi feste dell'anno liturgico.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" id="fs-orto">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Festa dell'Ortodossia]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-orto-d">Festa mobile, prima domenica di Quaresima</p>
+            <h3 class="fs-nome" data-i18n="fs-orto-n">Festa dell'Ortodossia</h3>
+            <p class="fs-desc" data-i18n="fs-orto-t">La prima domenica di Quaresima commemora il ristabilimento della venerazione delle sante icone, sancito nell'843 dopo la lunga crisi iconoclasta. La liturgia proclama solennemente la fede dei sette Concili ecumenici. In molte chiese i fedeli portano in processione le icone di famiglia. È la festa dell'identità stessa della Chiesa ortodossa.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" id="fs-palme">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Domenica delle Palme]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-palme-d">Festa mobile, domenica prima della Pasqua</p>
+            <h3 class="fs-nome" data-i18n="fs-palme-n">Domenica delle Palme</h3>
+            <p class="fs-desc" data-i18n="fs-palme-t">La festa ricorda l'ingresso di Cristo a Gerusalemme, accolto dalla folla con rami di palma. Nella tradizione russa, dove le palme non crescono, si benedicono rami di salice fioriti: da qui il nome popolare di Verbnoe voskresene, domenica del salice. I rami benedetti vengono conservati in casa presso le icone. La festa apre la Settimana Santa.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" id="fs-pasqua">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Pasqua Ortodossa]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-pasqua-d">Festa mobile, secondo il calendario ortodosso</p>
+            <h3 class="fs-nome" data-i18n="fs-pasqua-n">Pasqua Ortodossa</h3>
+            <p class="fs-desc" data-i18n="fs-pasqua-t">La Resurrezione di Cristo è la festa delle feste, il centro di tutto l'anno liturgico. La celebrazione culmina nella veglia notturna, quando il sacerdote annuncia Cristo è risorto e l'assemblea risponde Veramente è risorto. Si benedicono il kulic, la pascha di ricotta e le uova dipinte. La gioia pasquale si prolunga per quaranta giorni.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" id="fs-asc">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Ascensione del Signore]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-asc-d">Festa mobile, quaranta giorni dopo la Pasqua</p>
+            <h3 class="fs-nome" data-i18n="fs-asc-n">Ascensione del Signore</h3>
+            <p class="fs-desc" data-i18n="fs-asc-t">Quaranta giorni dopo la Resurrezione la Chiesa celebra l'ascensione di Cristo al cielo, alla presenza degli apostoli sul monte degli Ulivi. La festa chiude il tempo pasquale e prepara alla Pentecoste. La liturgia sottolinea che la natura umana, assunta da Cristo, è portata alla destra del Padre. È una delle dodici grandi feste dell'anno.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" id="fs-pent">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Pentecoste]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-pent-d">Festa mobile, cinquanta giorni dopo la Pasqua</p>
+            <h3 class="fs-nome" data-i18n="fs-pent-n">Pentecoste</h3>
+            <p class="fs-desc" data-i18n="fs-pent-t">Cinquanta giorni dopo la Pasqua si celebra la discesa dello Spirito Santo sugli apostoli e la nascita della Chiesa. In Russia la festa è chiamata Giorno della Santissima Trinità: le chiese e le case si adornano di rami di betulla e di erbe fresche, segno della vita nuova. I fedeli assistono in ginocchio alle preghiere solenni del vespro.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="07-12" id="fs-pp">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Santi Pietro e Paolo]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-pp-d">12 luglio</p>
+            <h3 class="fs-nome" data-i18n="fs-pp-n">Santi Pietro e Paolo</h3>
+            <p class="fs-desc" data-i18n="fs-pp-t">La Chiesa venera i due sommi apostoli, Pietro la roccia della fede e Paolo l'apostolo delle genti. La festa è preceduta dal digiuno detto appunto dei Santi Apostoli, di durata variabile. Innumerevoli chiese russe sono loro dedicate, a cominciare dalla cattedrale della fortezza di San Pietroburgo, dove riposano gli imperatori della Casa Romanov.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="07-17" id="fs-mar">
+          <figure class="fs-media"><img src="assets/img/martirio-romanov.jpg" alt="Martirio della Santa Famiglia Imperiale Romanov" loading="lazy"></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-mar-d">17 luglio</p>
+            <h3 class="fs-nome" data-i18n="fs-mar-n">Martirio della Santa Famiglia Imperiale Romanov</h3>
+            <p class="fs-desc" data-i18n="fs-mar-t">Nella notte fra il 16 e il 17 luglio 1918, a Ekaterinburg, furono uccisi l'Imperatore Nicola II, l'Imperatrice Aleksandra, il Granduca Aleksej e le Granduchesse Olga, Tatiana, Maria e Anastasia, insieme ai fedeli che vollero seguirli. La Chiesa Ortodossa Russa li venera come Santi Portatori della Passione, esempio di mitezza e di fede nella prova.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="07-18" id="fs-serg">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: San Sergio di Radonež]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-serg-d">18 luglio</p>
+            <h3 class="fs-nome" data-i18n="fs-serg-n">San Sergio di Radonež</h3>
+            <p class="fs-desc" data-i18n="fs-serg-t">Il 18 luglio la Chiesa celebra il ritrovamento delle venerabili reliquie di san Sergio, igumeno di Radonež. Fondatore della Lavra della Santissima Trinità, fu maestro e guida spirituale di molte decine di santi russi e intercessore di tutta la Terra Russa. Benedisse il principe Dimitrij Donskoj prima della battaglia di Kulikovo. È esempio di mitezza e umiltà.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="08-19" id="fs-trasf">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Santa Trasfigurazione]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-trasf-d">6 / 19 agosto</p>
+            <h3 class="fs-nome" data-i18n="fs-trasf-n">Santa Trasfigurazione</h3>
+            <p class="fs-desc" data-i18n="fs-trasf-t">La festa ricorda la trasfigurazione di Cristo sul monte Tabor davanti a Pietro, Giacomo e Giovanni. La luce increata del Tabor è al centro della spiritualità ortodossa. In Russia la ricorrenza è detta popolarmente Salvatore delle mele, perché in questo giorno si benedicono i frutti del nuovo raccolto. È una delle dodici grandi feste.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="08-28" id="fs-dorm">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Dormizione della Madre di Dio]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-dorm-d">15 / 28 agosto</p>
+            <h3 class="fs-nome" data-i18n="fs-dorm-n">Dormizione della Madre di Dio</h3>
+            <p class="fs-desc" data-i18n="fs-dorm-t">La festa celebra il transito della Madre di Dio, addormentatasi nel Signore e accolta in cielo. È preceduta da un breve digiuno e conclude l'anno liturgico ortodosso. Alla Dormizione sono dedicate le cattedrali principali di Mosca e di Vladimir, cuore spirituale della Russia antica. La liturgia canta la morte come passaggio alla vita.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="09-21" id="fs-natbg">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Natività della Madre di Dio]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-natbg-d">8 / 21 settembre</p>
+            <h3 class="fs-nome" data-i18n="fs-natbg-n">Natività della Madre di Dio</h3>
+            <p class="fs-desc" data-i18n="fs-natbg-t">È la prima delle dodici grandi feste dell'anno liturgico ortodosso, che comincia in settembre. Si ricorda la nascita della Vergine Maria dai giusti Gioacchino e Anna, dopo lunghi anni di attesa. La festa apre il ciclo dell'Incarnazione e annuncia la salvezza. In Russia molte chiese e monasteri antichi portano il suo nome.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="09-27" id="fs-croce">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Esaltazione della Santa Croce]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-croce-d">14 / 27 settembre</p>
+            <h3 class="fs-nome" data-i18n="fs-croce-n">Esaltazione della Santa Croce</h3>
+            <p class="fs-desc" data-i18n="fs-croce-t">La festa ricorda il ritrovamento della Croce di Cristo a Gerusalemme da parte di sant'Elena e la sua solenne elevazione davanti al popolo. È giorno di digiuno rigoroso, pur essendo una delle dodici grandi feste. Al centro della chiesa viene esposta la croce ornata di fiori, che i fedeli venerano prostrandosi.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="12-04" id="fs-ingr">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Ingresso al Tempio della Madre di Dio]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-ingr-d">21 novembre / 4 dicembre</p>
+            <h3 class="fs-nome" data-i18n="fs-ingr-n">Ingresso al Tempio della Madre di Dio</h3>
+            <p class="fs-desc" data-i18n="fs-ingr-t">La festa ricorda la presentazione al Tempio di Gerusalemme della Vergine Maria bambina, condotta dai genitori Gioacchino e Anna. La tradizione narra che rimase nel Tempio, nutrita dalla preghiera, fino alla giovinezza. La ricorrenza cade all'inizio del digiuno della Natività e prepara al Natale. È una delle dodici grandi feste.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="12-19" id="fs-nic">
+          <figure class="fs-media"><img src="assets/img/san-nicola.webp" alt="San Nicola" loading="lazy"></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-nic-d">4 / 19 dicembre</p>
+            <h3 class="fs-nome" data-i18n="fs-nic-n">San Nicola</h3>
+            <p class="fs-desc" data-i18n="fs-nic-t">San Nicola, vescovo di Mira, è il santo più amato del popolo russo, protettore dei viaggiatori, dei marinai e dei bambini. La sua icona è presente in quasi ogni casa e in ogni chiesa. La festa invernale ne ricorda la morte, mentre in maggio si celebra la traslazione delle reliquie a Bari, meta di pellegrinaggio anche per i fedeli russi.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
         </div>
+        <p class="fs-nota reveal" data-i18n="fs-nota">Nota sulle date.</p>
+      </div>
+    </section>
+
+    <!-- ===== Elenco: RICORRENZE CIVILI ===== -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="sez-titolo reveal" data-i18n="fs-h-civ">Ricorrenze civili</h2>
+        <div class="fs-lista">
+        <article class="fs-voce reveal" data-md="01-01" id="fs-capo">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Capodanno]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-capo-d">1 gennaio</p>
+            <h3 class="fs-nome" data-i18n="fs-capo-n">Capodanno</h3>
+            <p class="fs-desc" data-i18n="fs-capo-t">Il Capodanno è la festa civile più sentita in Russia, celebrata in famiglia con l'abete addobbato e lo scambio dei doni. La sua importanza attuale nasce nel periodo sovietico, quando assorbì molte usanze natalizie. Fu Pietro il Grande, nel 1700, a spostare l'inizio dell'anno al primo gennaio secondo l'uso europeo. Le celebrazioni proseguono per diversi giorni.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="02-23" id="fs-dif">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Giorno dei Difensori della Patria]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-dif-d">23 febbraio</p>
+            <h3 class="fs-nome" data-i18n="fs-dif-n">Giorno dei Difensori della Patria</h3>
+            <p class="fs-desc" data-i18n="fs-dif-t">La giornata è dedicata a quanti hanno servito e servono nelle forze armate, e per estensione a tutti gli uomini. Si depongono corone ai monumenti ai caduti e si rende onore ai veterani. La ricorrenza fu istituita nel 1918 e mantenuta nella Federazione Russa come festa nazionale. È una delle date civili più partecipate dell'anno.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="03-08" id="fs-donna">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Giornata Internazionale della Donna]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-donna-d">8 marzo</p>
+            <h3 class="fs-nome" data-i18n="fs-donna-n">Giornata Internazionale della Donna</h3>
+            <p class="fs-desc" data-i18n="fs-donna-t">In Russia l'8 marzo è una festa nazionale molto sentita, dedicata alle donne di ogni età. È tradizione offrire fiori, in particolare mimose e tulipani, a madri, mogli, figlie e colleghe. La giornata ha perduto il carattere rivendicativo delle origini per assumere un tono familiare e affettuoso. Gli uffici e le scuole restano chiusi.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="05-01" id="fs-lav">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Festa della Primavera e del Lavoro]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-lav-d">1 maggio</p>
+            <h3 class="fs-nome" data-i18n="fs-lav-n">Festa della Primavera e del Lavoro</h3>
+            <p class="fs-desc" data-i18n="fs-lav-t">Il primo maggio segna in Russia l'inizio della bella stagione e la festa del lavoro. Alle grandi manifestazioni del passato si sono sostituite celebrazioni più raccolte: gite fuori porta, apertura delle case di campagna e cura degli orti. La ricorrenza conserva il carattere di festa popolare e di ritrovo familiare.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="05-09" id="fs-vitt">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Giorno della Vittoria]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-vitt-d">9 maggio</p>
+            <h3 class="fs-nome" data-i18n="fs-vitt-n">Giorno della Vittoria</h3>
+            <p class="fs-desc" data-i18n="fs-vitt-t">È la ricorrenza civile più solenne dell'anno, in memoria della vittoria del 1945 e degli enormi sacrifici sostenuti dal popolo. Si tengono parate, deposizioni di corone e il minuto di silenzio; le famiglie portano i ritratti dei propri caduti. Il nastro di San Giorgio è il segno distintivo della giornata. La memoria è trasmessa di generazione in generazione.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="06-12" id="fs-russia">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Giornata della Russia]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-russia-d">12 giugno</p>
+            <h3 class="fs-nome" data-i18n="fs-russia-n">Giornata della Russia</h3>
+            <p class="fs-desc" data-i18n="fs-russia-t">La giornata celebra la Russia nella sua storia, nella sua cultura e nella sua unità. Si tengono concerti, cerimonie ufficiali e la consegna dei premi di Stato al Cremlino. La data, istituita nel 1992, è oggi intesa come festa dell'identità nazionale e del legame fra i popoli che compongono il Paese.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" id="fs-gloria">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Giornata della Gloria Militare]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-gloria-d">Data mobile, prima domenica di settembre</p>
+            <h3 class="fs-nome" data-i18n="fs-gloria-n">Giornata della Gloria Militare</h3>
+            <p class="fs-desc" data-i18n="fs-gloria-t">La giornata onora le vittorie e le imprese delle armi russe nel corso dei secoli. Le date della gloria militare, fissate per legge, ricordano i momenti decisivi della difesa del Paese, da Kulikovo a Borodino fino al Novecento. Si tengono cerimonie ai monumenti, rievocazioni storiche e onori ai reparti.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="09-07" id="fs-bor">
+          <figure class="fs-media"><img src="assets/img/borodino-1.webp" alt="Battaglia di Borodino" loading="lazy"></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-bor-d">7 settembre</p>
+            <h3 class="fs-nome" data-i18n="fs-bor-n">Battaglia di Borodino</h3>
+            <p class="fs-desc" data-i18n="fs-bor-t">Il 7 settembre 1812 si combatté presso il villaggio di Borodino, a ovest di Mosca, la battaglia più sanguinosa della campagna di Napoleone in Russia. L'esercito russo, guidato dal feldmaresciallo Kutuzov, resistette per un'intera giornata a costo di perdite gravissime. Lo scontro segnò l'inizio della ritirata francese ed è celebrato come simbolo di sacrificio e fermezza.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="11-02" id="fs-fond">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Fondazione dell'Impero Russo]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-fond-d">2 novembre</p>
+            <h3 class="fs-nome" data-i18n="fs-fond-n">Fondazione dell'Impero Russo</h3>
+            <p class="fs-desc" data-i18n="fs-fond-t">Il 2 novembre 1721, al termine della guerra del Nord, il Senato conferì a Pietro I il titolo di Imperatore di tutte le Russie e la Moscovia assunse il nome di Impero Russo. L'atto sanciva l'ingresso della Russia fra le grandi potenze europee. La data segna l'inizio dei due secoli imperiali che il Circolo studia e custodisce.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
+        <article class="fs-voce reveal" data-md="11-04" id="fs-unita">
+          <figure class="fs-media"><span class="ph-foto">[FOTO: Giorno dell'Unità Nazionale]</span></figure>
+          <div class="fs-testo">
+            <p class="fs-data" data-i18n="fs-unita-d">4 novembre</p>
+            <h3 class="fs-nome" data-i18n="fs-unita-n">Giorno dell'Unità Nazionale</h3>
+            <p class="fs-desc" data-i18n="fs-unita-t">La ricorrenza ricorda la liberazione di Mosca nel 1612, quando la milizia popolare guidata da Kuzma Minin e dal principe Dmitrij Požarskij pose fine al Torbido. La data coincide con la festa dell'icona della Madre di Dio di Kazan, invocata dalle truppe. È celebrata come giorno dell'unità del popolo al di sopra delle divisioni.</p>
+            <span class="cal-badge" data-i18n="cal-prossima">Prossima ricorrenza</span>
+          </div>
+        </article>
         </div>
       </div>
     </section>

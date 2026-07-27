@@ -57,7 +57,7 @@
   }
 
   /* ---------- 3. Prossima ricorrenza (pagina Feste) ---------- */
-  var cal = document.querySelectorAll(".cal-item[data-md]");
+  var cal = document.querySelectorAll(".cal-item[data-md], .fs-voce[data-md]");
   if (cal.length) {
     var today = new Date(); today.setHours(0, 0, 0, 0);
     var best = null, bestDiff = Infinity;
@@ -68,7 +68,14 @@
       var diff = next - today;
       if (diff < bestDiff) { bestDiff = diff; best = cal[c]; }
     }
-    if (best) { best.classList.add("is-next"); }
+    if (best) {
+      best.classList.add("is-next");
+      // evidenzia anche la riga corrispondente nel calendario indice
+      if (best.id) {
+        var row = document.querySelector('.fs-cal-row[href="#' + best.id + '"]');
+        if (row) { row.classList.add("is-next"); }
+      }
+    }
   }
 
   /* ---------- 4. Rivelazioni allo scroll ---------- */

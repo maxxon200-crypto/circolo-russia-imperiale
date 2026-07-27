@@ -788,3 +788,52 @@ main > .articolo {
   color: var(--grigio);
   font-size: 1.12rem;
 }
+
+/* =====================================================================
+   Blocco 3 — Feste e ricorrenze: calendario indice + elenco voci
+   ===================================================================== */
+.fs-cal { border-top: 1px solid var(--linea); }
+.fs-cal-row {
+  display: grid; grid-template-columns: minmax(160px, 230px) 1fr;
+  gap: 1rem 1.5rem; padding: .85rem 0;
+  border-bottom: 1px solid var(--linea);
+  transition: opacity .3s ease;
+}
+.fs-cal-row:hover { opacity: .6; }
+.fs-cal-d { font-weight: 600; font-size: .95rem; }
+.fs-cal-n { color: var(--grigio); font-size: .95rem; }
+.fs-cal-row.is-next { border-left: 2px solid var(--oro); padding-left: 1rem; }
+.fs-cal-row.is-next .fs-cal-d,
+.fs-cal-row.is-next .fs-cal-n { color: var(--oro); font-weight: 600; }
+
+.fs-lista { border-top: 1px solid var(--linea); }
+.fs-voce {
+  display: grid; grid-template-columns: minmax(200px, 290px) 1fr;
+  gap: clamp(1.4rem, 3.5vw, 3rem);
+  align-items: start;
+  padding: clamp(1.8rem, 3.5vw, 2.6rem) 0;
+  border-bottom: 1px solid var(--linea);
+  scroll-margin-top: 100px;
+}
+.fs-media { margin: 0; }
+.fs-media img { width: 100%; height: auto; border: 1px solid var(--oro-soft); }
+.fs-media .ph-foto { min-height: 150px; }
+.fs-data {
+  font-size: .8rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .16em; color: var(--oro); margin: 0 0 .5rem;
+}
+.fs-nome { font-size: clamp(1.2rem, 2.1vw, 1.5rem); font-weight: 500; line-height: 1.3; margin: 0 0 .8rem; }
+.fs-desc { color: var(--nero-morbido); margin: 0; line-height: 1.75; }
+.fs-voce .cal-badge { display: none; margin-top: .9rem; }
+.fs-voce.is-next { border-left: 2px solid var(--oro); padding-left: clamp(1rem, 2vw, 1.5rem); }
+.fs-voce.is-next .cal-badge { display: block; }
+.fs-nota {
+  max-width: var(--read); margin: clamp(2rem, 4vw, 3rem) 0 0;
+  font-size: .95rem; color: var(--grigio); line-height: 1.7;
+  padding-left: 1rem; border-left: 1px solid var(--oro-soft);
+}
+
+@media (max-width: 760px) {
+  .fs-cal-row { grid-template-columns: 1fr; gap: .2rem; }
+  .fs-voce { grid-template-columns: 1fr; gap: 1.2rem; }
+}
