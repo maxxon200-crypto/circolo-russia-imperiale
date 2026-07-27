@@ -139,10 +139,10 @@
     /* --- Intestazioni di pagina --- */
     "ph-storia-h1":     { it: "Storia dell'Impero Russo", ru: "История Российской империи" },
     "ph-storia-lead":   { it: "Articoli, ritratti e approfondimenti dedicati alla storia dell'Impero Russo. Una pagina pensata per la lettura.", ru: "Статьи, портреты и очерки, посвящённые истории Российской империи. Страница, созданная для вдумчивого чтения." },
-    "ph-eventi-lead":   { it: "Conferenze, incontri, escursioni e viaggi del Circolo. Le date sono indicate in chiaro e complete.", ru: "Конференции, встречи, экскурсии и поездки ассоциации. Все даты указываются полностью и заблаговременно." },
+    "ph-eventi-lead":   { it: "Conferenze, incontri, escursioni e viaggi del Circolo. Qui trovi i prossimi appuntamenti e gli inviti.", ru: "Конференции, встречи, экскурсии и поездки ассоциации. Здесь публикуются предстоящие мероприятия и приглашения." },
     "ph-attualita-lead":{ it: "Estratti dalla stampa e dal web e articoli scritti dal Circolo su temi di attualita legati alla cultura russa.", ru: "Материалы из прессы и сети, а также статьи ассоциации на актуальные темы, связанные с русской культурой." },
     "ph-feste-lead":    { it: "Le ricorrenze religiose e civili dell'Impero Russo, con date, significato e tradizioni.", ru: "Религиозные и гражданские праздники Российской империи: даты, значение и традиции." },
-    "ph-galleria-lead": { it: "Immagini degli eventi del Circolo e delle associazioni collegate. Ogni foto e accompagnata da una breve didascalia.", ru: "Фотографии мероприятий ассоциации и дружественных организаций. Каждый снимок сопровождается краткой подписью." },
+    "ph-galleria-lead": { it: "L'archivio degli eventi gia svolti dal Circolo, con fotografie, racconto e rassegna stampa.", ru: "Архив уже состоявшихся мероприятий ассоциации: фотографии, описание и публикации в прессе." },
     "ph-tess-h1":       { it: "Diventa socio del Circolo", ru: "Станьте частью ассоциации" },
     "ph-tess-lead":     { it: "Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.", ru: "Ассоциация открыта для всех, кто разделяет любовь к истории, культуре и духовному наследию Российской империи." },
 
@@ -272,6 +272,14 @@
     "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
+    /* --- Blocco 2: Eventi (solo futuri) e Galleria (archivio eventi passati) --- */
+    "ev-nessuno":     { it: "Le prossime date verranno pubblicate qui.", ru: "Ближайшие даты будут опубликованы здесь." },
+    "ev-prossimi-h":  { it: "Prossimi appuntamenti", ru: "Предстоящие мероприятия" },
+    "ga-archivio-h":  { it: "Eventi passati", ru: "Прошедшие мероприятия" },
+    "ga-foto-sub":    { it: "Fotografie della cerimonia", ru: "Фотографии церемонии" },
+    "ga-press-sub":   { it: "Rassegna stampa", ru: "Публикации в прессе" },
+    "ga-video-link":  { it: "Guarda il video della cerimonia", ru: "Смотреть видео церемонии" },
+
     /* --- Partnership --- */
     "nav-partnership": { it: "Partnership", ru: "Партнёры" },
     "part-h1":    { it: "Partnership", ru: "Партнёрство" },
@@ -360,8 +368,14 @@
     "ph-storia-lead": "Articles, portraits and studies devoted to the history of the Russian Empire. A page conceived for reading.",
     "ph-attualita-lead": "Extracts from the press and the web, and articles written by the Circle on current themes connected with Russian culture.",
     "ph-feste-lead": "The religious and civil commemorations of the Russian Empire, with dates, meaning and traditions.",
-    "ph-eventi-lead": "Conferences, gatherings, excursions and journeys of the Circle. Dates are given in full.",
-    "ph-galleria-lead": "Images of the events of the Circle and of the associated organisations. Each photograph is accompanied by a brief caption.",
+    "ph-eventi-lead": "Conferences, gatherings, excursions and journeys of the Circle. Here you will find the forthcoming appointments and invitations.",
+    "ph-galleria-lead": "The archive of events already held by the Circle, with photographs, accounts and press coverage.",
+    "ev-nessuno": "Upcoming dates will be published here.",
+    "ev-prossimi-h": "Forthcoming appointments",
+    "ga-archivio-h": "Past events",
+    "ga-foto-sub": "Photographs of the ceremony",
+    "ga-press-sub": "Press review",
+    "ga-video-link": "Watch the video of the ceremony",
     "ph-tess-h1": "Become a member of the Circle",
     "ph-tess-lead": "Drawing near to the Circle is simple. Complete the membership request: we shall contact you with all the information.",
     "art-messina-date": "28 December 1908",

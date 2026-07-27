@@ -56,53 +56,58 @@
       <div class="wrap">
         <p class="eyebrow reveal" data-i18n="nav-galleria">Galleria</p>
         <h1 class="reveal" data-i18n="nav-galleria">Galleria</h1>
-        <p class="page-intro reveal" data-i18n="ph-galleria-lead">Immagini degli eventi del Circolo e delle associazioni collegate. Ogni foto e accompagnata da una breve didascalia.</p>
+        <p class="page-intro reveal" data-i18n="ph-galleria-lead">L'archivio degli eventi gia svolti dal Circolo, con fotografie, racconto e rassegna stampa.</p>
         <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
 
-    <!-- Fotografie della cerimonia -->
+    <!-- ============================================================
+         ARCHIVIO DEGLI EVENTI PASSATI.
+         Ogni evento gia svolto e una scheda .ev-arch con:
+         foto, data, titolo, testo descrittivo ed eventuali link
+         (video, rassegna stampa). Gli eventi FUTURI stanno in Eventi.
+    ============================================================ -->
     <section class="section">
       <div class="wrap">
-        <div class="foto-colonne reveal">
-          <figure><img src="assets/img/cerimonia-1.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 1" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-2.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 2" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-3.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 3" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-4.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 4" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-5.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 5" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-6.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 6" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-7.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 7" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-8.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 8" loading="lazy"></figure>
-          <figure><img src="assets/img/cerimonia-9.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 9" loading="lazy"></figure>
-        </div>
-      </div>
-    </section>
+        <h2 class="sez-titolo reveal" data-i18n="ga-archivio-h">Eventi passati</h2>
 
-    <!-- Racconto dell'evento -->
-    <section class="section">
-      <div class="wrap">
-        <article class="articolo" style="margin-left:0; padding-bottom:0;">
-          <p class="eyebrow reveal" data-i18n="ga-ev-eyebrow">26 giugno 2026</p>
-          <h2 class="reveal" style="margin-top:0" data-i18n="ga-ev-title">Cerimonia a Villa Sormani Marzorati Uva di Missaglia</h2>
-          <p class="reveal" data-i18n="ga-ev-p1">Il 26 giugno 2026, in occasione della speciale visita dello Ieromonaco Ambrogio Matsegora, Vicario generale della Chiesa Ortodossa Russa del Patriarcato di Mosca in Italia, presso villa Sormani Marzorati Uva di Missaglia, in Brianza, si è svolta una cerimonia nel corso della quale la Metropolia dell'Europa Occidentale ha conferito attestati di benemerenza ad un gruppo di personalità italiane e straniere, cattoliche e ortodosse, per meriti culturali e sociali, fra cui alcuni Soci e Simpatizzanti del nostro Circolo. Altre benemerenze sono state consegnate ai nostri Soci dalla Principessa Silvia Andronik Cantacuzino, Ospite d'Onore della serata. La cerimonia era organizzata dalla Confraternita Cavalleresca Imperiale Russa Ortodossa di San Giovanni di Gerusalemme e di Malta, con l'attiva partecipazione del nostro Circolo.</p>
-          <p class="reveal" data-i18n="ga-ev-p2">Lo Ieromonaco padre Ambrogio era accompagnato dal Segretario padre Adriano, Priore della confraternita organizzatrice, e da padre Vasilj, Parroco della comunità ortodossa russa di Saronno. Erano presenti circa un centinaio di persone, fra cui autorità civili, militari e diplomatiche.</p>
-          <p class="reveal" data-i18n="ga-ev-p3">La cerimonia è stata seguita da una visita guidata alla stupenda villa Sormani Marzorati Uva di Missaglia, edificio di origini risalenti all'epoca romana ed oggetto di successive trasformazioni nel corso dei secoli. Il conte Alberto Uva ne è l'attuale proprietario e promotore di iniziative culturali legate alla storia del territorio brianzolo.</p>
+        <!-- Evento: Cerimonia a Villa Sormani Marzorati Uva, 26 giugno 2026 -->
+        <article class="ev-arch reveal">
+          <figure class="ev-arch__media">
+            <img src="assets/img/benemerenze-giovanniti.jpg" alt="La cerimonia di benemerenza a Villa Sormani Marzorati Uva di Missaglia" loading="lazy">
+          </figure>
+          <p class="ev-arch__data" data-i18n="ga-ev-eyebrow">26 giugno 2026</p>
+          <h3 class="ev-arch__title" data-i18n="ga-ev-title">Cerimonia a Villa Sormani Marzorati Uva di Missaglia</h3>
+          <div class="ev-arch__testo">
+            <p data-i18n="ga-ev-p1">Il 26 giugno 2026, in occasione della speciale visita dello Ieromonaco Ambrogio Matsegora, Vicario generale della Chiesa Ortodossa Russa del Patriarcato di Mosca in Italia, presso villa Sormani Marzorati Uva di Missaglia, in Brianza, si e svolta una cerimonia nel corso della quale la Metropolia dell'Europa Occidentale ha conferito attestati di benemerenza ad un gruppo di personalita italiane e straniere.</p>
+            <p data-i18n="ga-ev-p2">Lo Ieromonaco padre Ambrogio era accompagnato dal Segretario padre Adriano, Priore della confraternita organizzatrice, e da padre Vasilj, Parroco della comunita ortodossa russa di Saronno. Erano presenti circa un centinaio di persone, fra cui autorita civili, militari e diplomatiche.</p>
+            <p data-i18n="ga-ev-p3">La cerimonia e stata seguita da una visita guidata alla stupenda villa Sormani Marzorati Uva di Missaglia, edificio di origini risalenti all'epoca romana ed oggetto di successive trasformazioni nel corso dei secoli.</p>
+          </div>
+
+          <p class="ev-arch__sub" data-i18n="ga-foto-sub">Fotografie della cerimonia</p>
+          <div class="foto-colonne">
+            <figure><img src="assets/img/cerimonia-1.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 1" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-2.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 2" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-3.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 3" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-4.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 4" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-5.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 5" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-6.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 6" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-7.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 7" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-8.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 8" loading="lazy"></figure>
+            <figure><img src="assets/img/cerimonia-9.jpg" alt="Cerimonia a Villa Sormani Marzorati Uva di Missaglia, 26 giugno 2026 - fotografia 9" loading="lazy"></figure>
+          </div>
+
+          <p class="ev-arch__sub" data-i18n="ga-press-sub">Rassegna stampa</p>
+          <ul class="press-list">
+            <li><a href="https://www.ticinolive.ch/2026/06/30/la-metropolia-ortodossa-russa-premia-i-benemeriti-della-cultura-e-della-solidarieta/" target="_blank" rel="noopener"><span class="fonte">Ticinolive</span>La Metropolia ortodossa russa premia i benemeriti della cultura e della solidarieta</a></li>
+            <li><a href="https://www.notiziarioaraldico.info/2026063024043/giovanniti-ortodossi-cerimonia-di-benemerenza-a-missaglia/" target="_blank" rel="noopener"><span class="fonte">Notiziario Araldico</span>Giovanniti ortodossi: cerimonia di benemerenza a Missaglia</a></li>
+            <li><a href="https://www.mondooggi.com/russia-italia-fede/" target="_blank" rel="noopener"><span class="fonte">Mondo Oggi</span>Russia, Italia, fede</a></li>
+            <li><a href="https://www.ilgraffio.net/2026/06/27/il-ritorno-della-aristocrazia-europea-in-una-villa-segreta-tra-simboli-e-tradizioni/" target="_blank" rel="noopener"><span class="fonte">Il Graffio</span>Il ritorno dell'aristocrazia europea in una villa segreta, tra simboli e tradizioni</a></li>
+            <li><a href="https://cavalierenews.it/il-ritorno-dellaristocrazia-europea-in-una-villa-segreta-alle-porte-di-milano-tra-simboli-e-tradizione/" target="_blank" rel="noopener"><span class="fonte">Cavaliere News</span>Il ritorno dell'aristocrazia europea in una villa segreta alle porte di Milano</a></li>
+            <li><a href="https://youtu.be/8OCcM1sXTaQ" target="_blank" rel="noopener"><span class="fonte">YouTube</span><span data-i18n="ga-press-video">Video della cerimonia</span></a></li>
+          </ul>
         </article>
-      </div>
-    </section>
 
-    <!-- Rassegna stampa -->
-    <section class="section">
-      <div class="wrap">
-        <h2 class="sez-titolo reveal" data-i18n="ga-press-title">Rassegna stampa</h2>
-        <ul class="press-list reveal">
-          <li><a href="https://www.ticinolive.ch/2026/06/30/la-metropolia-ortodossa-russa-premia-i-benemeriti-della-cultura-e-della-solidarieta/" target="_blank" rel="noopener"><span class="fonte">ticinolive.ch</span>La Metropolia ortodossa russa premia i benemeriti della cultura e della solidarietà</a></li>
-          <li><a href="https://www.notiziarioaraldico.info/2026063024043/giovanniti-ortodossi-cerimonia-di-benemerenza-a-missaglia/" target="_blank" rel="noopener"><span class="fonte">notiziarioaraldico.info</span>Giovanniti ortodossi: cerimonia di benemerenza a Missaglia</a></li>
-          <li><a href="https://www.mondooggi.com/russia-italia-fede/" target="_blank" rel="noopener"><span class="fonte">mondooggi.com</span>Russia, Italia, fede</a></li>
-          <li><a href="https://www.ilgraffio.net/2026/06/27/il-ritorno-della-aristocrazia-europea-in-una-villa-segreta-tra-simboli-e-tradizioni/" target="_blank" rel="noopener"><span class="fonte">ilgraffio.net</span>Il ritorno dell'aristocrazia europea in una villa segreta, tra simboli e tradizioni</a></li>
-          <li><a href="https://cavalierenews.it/il-ritorno-dellaristocrazia-europea-in-una-villa-segreta-alle-porte-di-milano-tra-simboli-e-tradizione/" target="_blank" rel="noopener"><span class="fonte">cavalierenews.it</span>Il ritorno dell'aristocrazia europea in una villa segreta alle porte di Milano, tra simboli e tradizione</a></li>
-          <li><a href="https://youtu.be/8OCcM1sXTaQ" target="_blank" rel="noopener"><span class="fonte">YouTube</span><span data-i18n="ga-press-video">Video della cerimonia</span></a></li>
-        </ul>
       </div>
     </section>
 
