@@ -837,3 +837,20 @@ main > .articolo {
   .fs-cal-row { grid-template-columns: 1fr; gap: .2rem; }
   .fs-voce { grid-template-columns: 1fr; gap: 1.2rem; }
 }
+
+/* =====================================================================
+   Blocco 4 — Modulo cartaceo (download PDF) + quote associative
+   ===================================================================== */
+.te-pdf { max-width: 34rem; }
+.te-pdf .btn { margin-bottom: 1.3rem; }
+.te-pdf__nota { font-size: .98rem; color: var(--grigio); line-height: 1.7; margin: 0; }
+.te-pdf__nota a { border-bottom: 1px solid var(--oro); }
+
+/* elenco sobrio delle quote: nome a sinistra, importo a destra */
+.quote { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linea); max-width: 30rem; }
+.quote li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--linea);
+}
+.quote__n { color: var(--nero-morbido); }
+.quote__v { font-weight: 600; white-space: nowrap; color: var(--oro); }
