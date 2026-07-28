@@ -71,6 +71,7 @@
   --grigio: #6E6E6E;   /* testo secondario, didascalie */
   --linea:  #DEDEDA;   /* righe e bordi sottilissimi */
   --nero-morbido: #2B2B2B; /* corpo dei testi lunghi */
+  --blu-notte: #0B1F3A;    /* fondo scuro: footer, bottoni primari (sostituisce il nero) */
 
   --font: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-hero: "Cormorant Garamond", Georgia, serif;   /* SOLO titolo hero */
@@ -352,8 +353,8 @@ main > .articolo {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--nero);
-  color: rgba(246,246,244,.72);
+  background: var(--blu-notte);
+  color: #DCD6C6;
   margin-top: var(--sez);
   font-size: .85rem;
   line-height: 1.9;
@@ -368,21 +369,24 @@ main > .articolo {
 .footer-logo { height: 40px; width: auto; filter: brightness(0) invert(1); opacity: .85; }
 .site-footer h4 {
   font-size: .72rem; text-transform: uppercase; letter-spacing: .2em;
-  color: rgba(246,246,244,.5); font-weight: 500; margin: 0 0 1.1rem;
+  color: var(--oro); font-weight: 600; margin: 0 0 1.1rem;
 }
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li { margin-bottom: .35rem; }
-.site-footer a { color: rgba(246,246,244,.72); transition: color .3s ease; }
-.site-footer a:hover { color: #F6F6F4; }
+.site-footer a { color: #DCD6C6; transition: color .3s ease; }
+.site-footer a:hover { color: #E8D9AE; }
+/* nome dell'associazione nel footer: testo secondario */
+.site-footer .footer-brand .eyebrow { color: #9FB3CC !important; }
 .footer-bottom {
-  border-top: 1px solid rgba(246,246,244,.14);
+  border-top: 1px solid rgba(176, 141, 46, 0.25);
   margin-top: clamp(3rem, 6vw, 5rem);
   padding-top: 2rem;
   display: flex; flex-wrap: wrap; gap: .4rem 1.5rem;
-  font-size: .78rem; color: rgba(246,246,244,.5);
+  font-size: .78rem; color: #9FB3CC;
 }
 .footer-bottom .footer-legali { margin-left: auto; }
-.footer-bottom a { color: rgba(246,246,244,.6); }
+.footer-bottom a { color: #9FB3CC; }
+.footer-bottom a:hover { color: #E8D9AE; }
 
 /* ---------- Rivelazioni allo scroll (morbide e lente) ---------- */
 .js .reveal {
@@ -499,15 +503,35 @@ main > .articolo {
   cursor: pointer;
   transition: opacity .3s ease, background-color .3s ease, color .3s ease;
 }
-.btn--primary { background: var(--nero); color: var(--bianco); border-color: var(--oro); }
-.btn--primary:hover { opacity: .82; }
+/* Bottone primario su fondo chiaro: blu notte con bordo oro (niente nero) */
+.btn--primary {
+  background: var(--blu-notte);
+  color: #F2EEE4;
+  border: 1px solid var(--oro);
+}
+.btn--primary:hover { background: #12294B; }
 .btn--ghost { background: transparent; border-color: var(--nero); color: var(--nero); }
 .btn--ghost:hover { opacity: .6; }
 
 /* hero (fondo scuro): il ghost diventa chiaro */
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.8rem; }
-.hero .btn--ghost { color: #F6F6F4; border-color: rgba(246, 246, 244, .6); }
-.hero .btn--ghost:hover { opacity: 1; background: rgba(246, 246, 244, .12); }
+/* Hero: bottoni trasparenti sopra la fotografia */
+.hero .btn--primary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #B08D2E;
+  color: #E8D9AE;
+}
+.hero .btn--primary:hover { background: rgba(176, 141, 46, 0.18); color: #F4E9C8; }
+.hero .btn--ghost {
+  background: transparent;
+  border: 1px solid rgba(242, 238, 228, 0.4);
+  color: #F2EEE4;
+}
+.hero .btn--ghost:hover {
+  opacity: 1;
+  border-color: rgba(242, 238, 228, 0.75);
+  background: rgba(255, 255, 255, 0.06);
+}
 
 /* CTA "Diventa socio" in fondo alla home */
 .cta-socio { text-align: center; }
@@ -690,7 +714,7 @@ main > .articolo {
 .cb-btn {
   font-family: var(--font);
   font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .14em;
-  background: var(--nero); color: var(--bianco);
+  background: var(--blu-notte); color: #F2EEE4;
   border: 1px solid var(--oro);
   padding: .65rem 1.5rem;
   cursor: pointer;
