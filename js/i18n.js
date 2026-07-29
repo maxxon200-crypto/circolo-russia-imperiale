@@ -374,6 +374,14 @@
     "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
+    /* --- Punto 4: consenso privacy, validazione e stati di invio del modulo --- */
+    "te-privacy":     { it: "Ho letto e accetto la <a href=\"privacy.html\">Privacy Policy</a>.", ru: "Я прочитал(а) и принимаю <a href=\"privacy.html\">Политику конфиденциальности</a>." },
+    "te-invio":       { it: "Invio in corso...", ru: "Отправка..." },
+    "err-obbligo":    { it: "Questo campo e obbligatorio.", ru: "Это поле обязательно для заполнения." },
+    "err-email":      { it: "Inserisci un indirizzo email valido.", ru: "Введите действительный адрес электронной почты." },
+    "err-privacy":    { it: "Per proseguire e necessario accettare la Privacy Policy.", ru: "Для продолжения необходимо принять Политику конфиденциальности." },
+    "err-invio":      { it: "Non siamo riusciti a inviare la richiesta. Riprova piu tardi oppure scrivici a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.", ru: "Не удалось отправить заявку. Попробуйте позже или напишите нам на <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>." },
+
     /* --- Punto 1: pagina di ringraziamento dopo l'invio della richiesta --- */
     "gr-eyebrow": { it: "Tesseramento", ru: "ВСТУПЛЕНИЕ В АССОЦИАЦИЮ" },
     "gr-title":   { it: "Grazie per la tua richiesta", ru: "Спасибо за вашу заявку" },
@@ -588,6 +596,12 @@
     "ph-feste-lead": "The religious and civil commemorations of the Russian Empire, with dates, meaning and traditions.",
     "ph-eventi-lead": "Conferences, gatherings, excursions and journeys of the Circle. Here you will find the forthcoming appointments and invitations.",
     "ph-galleria-lead": "The archive of events already held by the Circle, with photographs, accounts and press coverage.",
+    "te-privacy": "I have read and accept the <a href=\"privacy.html\">Privacy Policy</a>.",
+    "te-invio": "Sending...",
+    "err-obbligo": "This field is required.",
+    "err-email": "Please enter a valid email address.",
+    "err-privacy": "To proceed you must accept the Privacy Policy.",
+    "err-invio": "We could not send your request. Please try again later or write to us at <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.",
     "gr-eyebrow": "Membership",
     "gr-title": "Thank you for your request",
     "gr-text": "We have received your membership request. We will send you an email with all the information. See you soon.",
@@ -861,6 +875,13 @@
       })(btns[i]);
     }
   }
+
+  /* Espone la lettura del dizionario nella lingua attiva:
+     serve ai messaggi del modulo di adesione (js/iscrizione.js). */
+  window.i18nText = function (chiave) {
+    var lang = document.documentElement.lang || "it";
+    return value(chiave, lang);
+  };
 
   if (document.readyState !== "loading") { init(); }
   else { document.addEventListener("DOMContentLoaded", init); }

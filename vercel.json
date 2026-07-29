@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/iscrizione.js": {
+      "includeFiles": "assets/doc/**"
+    }
+  }
+}

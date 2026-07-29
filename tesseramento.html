@@ -69,11 +69,13 @@
           <div>
             <!-- ===========================================================
                  MODULO DI RICHIESTA ISCRIZIONE
-                 Per attivare l'invio: collegare un servizio modulo (es. Formspree,
-                 Getform) impostando l'attributo action, oppure un backend proprio.
+                 Invia i dati alla funzione serverless Vercel /api/iscrizione,
+                 che manda la email di conferma al richiedente e la notifica
+                 al Circolo, poi reindirizza a grazie.html.
+                 Richiede la variabile d'ambiente RESEND_API_KEY su Vercel.
             ============================================================ -->
             <h2 class="sez-titolo reveal" data-i18n="te-form-title">Domanda di adesione</h2>
-            <form class="form reveal" action="#" method="post">
+            <form class="form reveal" id="form-iscrizione" action="/api/iscrizione" method="post" novalidate>
               <div class="due">
                 <div class="campo">
                   <label for="nome" data-i18n="lbl-nome">Nome</label>
@@ -103,7 +105,12 @@
                 <textarea id="messaggio" name="messaggio" data-i18n-ph="ph-msg"></textarea>
               </div>
               <p class="nota" data-i18n="te-nota">Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.</p>
+              <div class="consenso">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy" data-i18n="te-privacy">Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>.</label>
+              </div>
               <p><button type="submit" class="btn btn--primary" data-i18n="btn-invia-richiesta">Invia richiesta</button></p>
+              <div class="form-errore" role="alert" tabindex="-1" hidden></div>
             </form>
           </div>
 
@@ -197,5 +204,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
+  <script src="js/iscrizione.js"></script>
 </body>
 </html>
