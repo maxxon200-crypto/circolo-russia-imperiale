@@ -7,6 +7,9 @@
   "use strict";
 
   var DICT = {
+    "num-ro": { it: "<a href=\"tel:+40731316456\">+40 731 316 456</a>", ru: "<a href=\"tel:+40731316456\">+40 731 316 456</a>" },
+    "et-tel-ro": { it: "Romania", ru: "Румыния" },
+    "foot-tel-ro": { it: "Romania: <a href=\"tel:+40731316456\">+40 731 316 456</a>", ru: "Румыния: <a href=\"tel:+40731316456\">+40 731 316 456</a>" },
     /* ===== Blocco 5: eventi passati in Galleria ===== */
     "gl1-data": { it: "17 luglio 2026", ru: "17 июля 2026 года" },
     "gl1-title": { it: "Divina Liturgia in memoria del Martirio della Santa Famiglia Imperiale", ru: "Божественная литургия в память о мученичестве Святой Царской Семьи" },
@@ -260,8 +263,8 @@
     /* --- Contenuti pagine interne --- */
     "foot-brand-a": { it: "Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим». Независимая, неполитическая и некоммерческая организация, основанная в Милане в 2026 году." },
     "foot-brand-b": { it: "Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.", ru: "Культурное, внепартийное и некоммерческое сообщество, основанное в Милане в 2020 году." },
-    "foot-tel-it": { it: "Tel. Italia: [numero italiano]", ru: "Тел. Италия: [итальянский номер]" },
-    "foot-tel-ru": { it: "Tel. Russia: [numero russo]", ru: "Тел. Россия: [российский номер]" },
+    "foot-tel-it": { it: "Italia: <a href=\"tel:+393355460464\">+39 335 546 0464</a>", ru: "Италия: <a href=\"tel:+393355460464\">+39 335 546 0464</a>" },
+    "foot-tel-ru": { it: "Russia: <a href=\"tel:+79990052206\">+7 999 005 22 06</a>", ru: "Россия: <a href=\"tel:+79990052206\">+7 999 005 22 06</a>" },
     "foot-fb": { it: "Pagina Facebook", ru: "Страница Facebook" },
     "foot-name-a": { it: "Circolo Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим»" },
     "foot-name-b": { it: "Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим»" },
@@ -280,11 +283,11 @@
     "co-eyebrow2": { it: "Recapiti", ru: "Контактные данные" },
     "co-h2": { it: "Dove trovarci", ru: "Как нас найти" },
     "et-email": { it: "Email", ru: "Электронная почта" },
-    "et-tel-it": { it: "Telefono Italia", ru: "Телефон в Италии" },
-    "et-tel-ru": { it: "Telefono Russia", ru: "Телефон в России" },
+    "et-tel-it": { it: "Italia", ru: "Италия" },
+    "et-tel-ru": { it: "Russia", ru: "Россия" },
     "et-fb": { it: "Facebook", ru: "Facebook" },
-    "num-it": { it: "[numero italiano]", ru: "[итальянский номер]" },
-    "num-ru": { it: "[numero russo]", ru: "[российский номер]" },
+    "num-it": { it: "<a href=\"tel:+393355460464\">+39 335 546 0464</a>", ru: "<a href=\"tel:+393355460464\">+39 335 546 0464</a>" },
+    "num-ru": { it: "<a href=\"tel:+79990052206\">+7 999 005 22 06</a>", ru: "<a href=\"tel:+79990052206\">+7 999 005 22 06</a>" },
     "te-eyebrow": { it: "Come iscriversi", ru: "Как вступить" },
     "te-h1": { it: "I passi per diventare socio", ru: "Шаги для вступления в ассоциацию" },
     "te-step1": { it: "Compila il modulo di richiesta qui sotto.", ru: "Заполните заявку" },
@@ -469,6 +472,9 @@
      =================================================================== */
   var EN_PLACEHOLDER = "[English version coming soon]";
   var EN = {
+    "num-ro": "<a href=\"tel:+40731316456\">+40 731 316 456</a>",
+    "et-tel-ro": "Romania",
+    "foot-tel-ro": "Romania: <a href=\"tel:+40731316456\">+40 731 316 456</a>",
     "gl1-data": "17 July 2026",
     "gl1-title": "Divine Liturgy in memory of the Martyrdom of the Holy Imperial Family",
     "gl1-p1": "On 17 July 2026, at the Orthodox Church of Saints Sergius, Seraphim and Vincent the Martyr in Milan, the Divine Liturgy was celebrated in memory of the martyrdom of the Imperial Family: Emperor Nicholas II, Empress Alexandra, Tsarevich Alexei and the Grand Duchesses Olga, Tatiana, Maria and Anastasia, killed during the Bolshevik revolution.",
@@ -698,15 +704,15 @@
     "co-h1": "Contact form",
     "co-h2": "Where to find us",
     "co-nota": "Alternatively you may write to us directly at <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.",
-    "num-it": "[Italian number]",
-    "num-ru": "[Russian number]",
+    "num-it": "<a href=\"tel:+393355460464\">+39 335 546 0464</a>",
+    "num-ru": "<a href=\"tel:+79990052206\">+7 999 005 22 06</a>",
     "area-h1": "Members' area",
     "area-h2": "A space dedicated to members",
     "area-p": "The members' area, with content and services for members, will be available at a later stage. In the meantime you may learn about the Circle and request membership.",
     "foot-brand-b": "A cultural fellowship, non-partisan and non-profit, founded in Milan in 2020.",
     "foot-name-b": "International Circle of Friends of Imperial Russia - Third Rome",
-    "foot-tel-it": "Tel. Italy: [Italian number]",
-    "foot-tel-ru": "Tel. Russia: [Russian number]",
+    "foot-tel-it": "Italy: <a href=\"tel:+393355460464\">+39 335 546 0464</a>",
+    "foot-tel-ru": "Russia: <a href=\"tel:+79990052206\">+7 999 005 22 06</a>",
     "legal-eyebrow": "Legal notices",
     "legal-updated": "Last updated: [DATE]",
     "pp-title": "Privacy Policy",
@@ -790,8 +796,8 @@
     "lbl-messaggio": "Message",
     "lbl-oggetto": "Subject",
     "et-email": "Email",
-    "et-tel-it": "Italy phone",
-    "et-tel-ru": "Russia phone",
+    "et-tel-it": "Italy",
+    "et-tel-ru": "Russia",
     "et-fb": "Facebook",
     "ph-msg": "Introduce yourself briefly and tell us why you would like to join.",
 

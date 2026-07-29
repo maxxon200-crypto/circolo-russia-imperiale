@@ -911,3 +911,11 @@ main > .articolo {
 .form-errore a { border-bottom: 1px solid var(--oro); }
 
 .btn[disabled] { opacity: .65; cursor: default; }
+
+/* Numeri di telefono: area toccabile comoda su mobile */
+.site-footer li a[href^="tel:"],
+.contatti-lista a[href^="tel:"] { display: inline-block; padding: .25rem 0; }
+@media (max-width: 760px) {
+  .site-footer li a[href^="tel:"],
+  .contatti-lista a[href^="tel:"] { padding: .45rem 0; }
+}
