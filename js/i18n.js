@@ -374,6 +374,12 @@
     "ga-press-title": { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-press-video": { it: "Video della cerimonia", ru: "Видео церемонии" },
 
+    /* --- Punto 1: pagina di ringraziamento dopo l'invio della richiesta --- */
+    "gr-eyebrow": { it: "Tesseramento", ru: "ВСТУПЛЕНИЕ В АССОЦИАЦИЮ" },
+    "gr-title":   { it: "Grazie per la tua richiesta", ru: "Спасибо за вашу заявку" },
+    "gr-text":    { it: "Abbiamo ricevuto la tua richiesta di adesione. Ti invieremo una email con tutte le informazioni. A presto.", ru: "Мы получили вашу заявку на вступление. Мы отправим вам письмо со всей информацией. До скорой встречи." },
+    "gr-home":    { it: "Torna alla home", ru: "Вернуться на главную" },
+
     /* --- Blocco 4: modulo cartaceo di iscrizione + quote associative --- */
     "te-pdf-h":    { it: "Modulo di iscrizione", ru: "Бланк заявления" },
     "te-pdf-btn":  { it: "Scarica il modulo di iscrizione (PDF)", ru: "Скачать бланк заявления (PDF)" },
@@ -582,6 +588,10 @@
     "ph-feste-lead": "The religious and civil commemorations of the Russian Empire, with dates, meaning and traditions.",
     "ph-eventi-lead": "Conferences, gatherings, excursions and journeys of the Circle. Here you will find the forthcoming appointments and invitations.",
     "ph-galleria-lead": "The archive of events already held by the Circle, with photographs, accounts and press coverage.",
+    "gr-eyebrow": "Membership",
+    "gr-title": "Thank you for your request",
+    "gr-text": "We have received your membership request. We will send you an email with all the information. See you soon.",
+    "gr-home": "Back to home",
     "te-pdf-h": "Membership form",
     "te-pdf-btn": "Download the membership form (PDF)",
     "te-pdf-nota": "The form should be printed, completed, signed and delivered or sent to the Circle. For information write to <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.",

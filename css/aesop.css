@@ -878,3 +878,10 @@ main > .articolo {
 }
 .quote__n { color: var(--nero-morbido); }
 .quote__v { font-weight: 600; white-space: nowrap; color: var(--oro); }
+
+/* freccia dopo i link freccia anche fuori dalle sezioni a due colonne */
+.arrow-link--fr::after { content: "\00A0\2192"; color: var(--oro); font-size: 1.15em; }
+
+/* pagina di ringraziamento: blocco centrato e arioso */
+.grazie { text-align: center; max-width: 640px; margin: 0 auto; padding-bottom: var(--sez); }
+.grazie__testo { font-size: clamp(1.1rem, 1.8vw, 1.28rem); line-height: 1.75; color: var(--nero-morbido); margin: 0 auto 2.6rem; }
