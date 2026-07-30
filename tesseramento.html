@@ -69,13 +69,16 @@
           <div>
             <!-- ===========================================================
                  MODULO DI RICHIESTA ISCRIZIONE
-                 Invia i dati alla funzione serverless Vercel /api/iscrizione,
-                 che manda la email di conferma al richiedente e la notifica
-                 al Circolo, poi reindirizza a grazie.html.
-                 Richiede la variabile d'ambiente RESEND_API_KEY su Vercel.
+                 L'invio e gestito da js/moduli.js con Web3Forms: nessun
+                 backend e nessuna funzione serverless, percio funziona
+                 identico su Vercel e su GitHub Pages.
+                 Volutamente SENZA attributi action e method: il browser non
+                 deve mai navigare verso la risposta del server.
+                 A invio riuscito si va a grazie.html.
+                 La chiave di accesso sta in cima a js/moduli.js.
             ============================================================ -->
             <h2 class="sez-titolo reveal" data-i18n="te-form-title">Domanda di adesione</h2>
-            <form class="form reveal" id="form-iscrizione" action="/api/iscrizione" method="post" novalidate>
+            <form class="form reveal" id="form-iscrizione" novalidate>
               <div class="due">
                 <div class="campo">
                   <label for="nome" data-i18n="lbl-nome">Nome</label>
@@ -104,6 +107,9 @@
                 <label for="messaggio" data-i18n="lbl-messaggio">Messaggio</label>
                 <textarea id="messaggio" name="messaggio" data-i18n-ph="ph-msg"></textarea>
               </div>
+              <!-- Campo esca antispam di Web3Forms: nascosto alle persone,
+                   i bot automatici lo compilano e l'invio viene scartato. -->
+              <input type="checkbox" name="botcheck" class="esca" tabindex="-1" autocomplete="off" aria-hidden="true">
               <p class="nota" data-i18n="te-nota">Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.</p>
               <div class="consenso">
                 <input type="checkbox" id="privacy" name="privacy" required>
@@ -205,6 +211,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-  <script src="js/iscrizione.js"></script>
+  <script src="js/moduli.js"></script>
 </body>
 </html>

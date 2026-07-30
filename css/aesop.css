@@ -889,7 +889,9 @@ main > .articolo {
 /* =====================================================================
    Modulo: consenso privacy, messaggi di errore, stato di invio
    ===================================================================== */
-.consenso { display: flex; align-items: flex-start; gap: .7rem; margin: 0 0 1.4rem; }
+.consenso { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .7rem; margin: 0 0 1.4rem; }
+/* Il messaggio di errore va a capo, sotto la casella, non di fianco. */
+.consenso .campo-errore { flex: 0 0 100%; margin-top: 0; }
 .consenso input[type="checkbox"] {
   width: 18px; height: 18px; margin: .28rem 0 0; flex: 0 0 auto;
   accent-color: var(--blu-notte); cursor: pointer;
@@ -911,6 +913,9 @@ main > .articolo {
 .form-errore a { border-bottom: 1px solid var(--oro); }
 
 .btn[disabled] { opacity: .65; cursor: default; }
+
+/* Campo esca antispam: invisibile e non raggiungibile da tastiera. */
+.esca { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
 /* Numeri di telefono: area toccabile comoda su mobile */
 .site-footer li a[href^="tel:"],

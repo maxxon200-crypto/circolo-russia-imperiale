@@ -1,9 +1,12 @@
 /**
  * Modello della TESSERA DIGITALE del socio.
  *
- * Genera l'HTML della tessera con i dati del socio. Il modulo e usato dalla
- * funzione serverless /api/iscrizione.js, che allega la tessera alla email di
- * conferma SOLO quando INVIA_TESSERA_AUTOMATICAMENTE e true.
+ * Genera l'HTML della tessera con i dati del socio.
+ *
+ * NON e collegato al sito: l'invio automatico della tessera resta disattivato,
+ * perche la tessera parte dal Circolo dopo l'approvazione della domanda e il
+ * versamento della quota. Il modello e conservato qui, pronto all'uso, per
+ * quando si decidera di attivare l'invio.
  *
  * Palette e tipografia coerenti col sito:
  *   blu notte #0B1F3A, testo #F2EEE4, oro brunito #B08D2E, font Manrope.

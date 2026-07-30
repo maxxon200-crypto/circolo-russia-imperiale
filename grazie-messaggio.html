@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatti - Amici della Russia Imperiale Terza Roma</title>
-  <meta name="description" content="Contatta il Circolo Internazionale Amici della Russia Imperiale Terza Roma.">
+  <title>Grazie per il tuo messaggio - Amici della Russia Imperiale Terza Roma</title>
+  <meta name="description" content="Grazie per il messaggio inviato al Circolo Internazionale Amici della Russia Imperiale Terza Roma.">
+  <meta name="robots" content="noindex">
   <meta name="theme-color" content="#1A1A1A">
   <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
   <link rel="stylesheet" href="css/aesop.css?v=1">
@@ -36,7 +37,7 @@
             <li><a href="galleria.html" data-i18n="nav-galleria">Galleria</a></li>
             <li><a href="partnership.html" data-i18n="nav-partnership">Partnership</a></li>
             <li><a href="tesseramento.html" data-i18n="nav-tesseramento">Tesseramento</a></li>
-            <li><a href="contatti.html" aria-current="page" data-i18n="nav-contatti">Contatti</a></li>
+            <li><a href="contatti.html" data-i18n="nav-contatti">Contatti</a></li>
             <li><a href="area-riservata.html" data-i18n="nav-area">Area riservata</a></li>
           </ul>
         </nav>
@@ -55,84 +56,16 @@
     <section class="page-header">
       <div class="wrap">
         <p class="eyebrow reveal" data-i18n="nav-contatti">Contatti</p>
-        <h1 class="reveal" data-i18n="nav-contatti">Contatti</h1>
-        <p class="page-intro reveal" data-i18n="contatti-intro">Scrivici per informazioni, eventi o iscrizioni. Saremo lieti di risponderti.</p>
+        <h1 class="reveal" data-i18n="grm-title">Grazie per il tuo messaggio</h1>
         <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="split split--top">
-          <div>
-            <h2 class="sez-titolo reveal" data-i18n="co-h1">Modulo di contatto</h2>
-            <!-- ===========================================================
-                 MODULO DI CONTATTO
-                 L'invio e gestito da js/moduli.js con Web3Forms: nessun
-                 backend e nessuna funzione serverless, percio funziona
-                 identico su Vercel e su GitHub Pages.
-                 Volutamente SENZA attributi action e method: il browser non
-                 deve mai navigare verso la risposta del server, altrimenti
-                 al posto della pagina compare il codice tecnico.
-                 La chiave di accesso sta in cima a js/moduli.js.
-            ============================================================ -->
-            <form class="form reveal" id="form-contatti" novalidate>
-              <div class="due">
-                <div class="campo">
-                  <label for="nome" data-i18n="lbl-nome">Nome</label>
-                  <input type="text" id="nome" name="nome" autocomplete="name" required>
-                </div>
-                <div class="campo">
-                  <label for="email" data-i18n="lbl-email">Email</label>
-                  <input type="email" id="email" name="email" autocomplete="email" required>
-                </div>
-              </div>
-              <div class="campo">
-                <label for="telefono" data-i18n="lbl-telefono">Telefono (facoltativo)</label>
-                <input type="tel" id="telefono" name="telefono" autocomplete="tel">
-              </div>
-              <div class="campo">
-                <label for="messaggio" data-i18n="lbl-messaggio-obb">Messaggio</label>
-                <textarea id="messaggio" name="messaggio" required></textarea>
-              </div>
-              <!-- Campo esca antispam di Web3Forms: nascosto alle persone,
-                   i bot automatici lo compilano e l'invio viene scartato. -->
-              <input type="checkbox" name="botcheck" class="esca" tabindex="-1" autocomplete="off" aria-hidden="true">
-              <p class="nota" data-i18n="co-nota">In alternativa puoi scriverci direttamente a <a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a>.</p>
-              <div class="consenso">
-                <input type="checkbox" id="privacy" name="privacy" required>
-                <label for="privacy" data-i18n="te-privacy">Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>.</label>
-              </div>
-              <p><button type="submit" class="btn btn--primary" data-i18n="btn-invia-messaggio">Invia messaggio</button></p>
-              <div class="form-errore" role="alert" tabindex="-1" hidden></div>
-            </form>
-          </div>
-
-          <aside>
-            <h2 class="sez-titolo reveal" data-i18n="co-h2">Dove trovarci</h2>
-            <ul class="contatti-lista reveal">
-              <li>
-                <span class="et" data-i18n="et-email">Email</span>
-                <span class="val"><a href="mailto:russia.imperiale@yandex.com">russia.imperiale@yandex.com</a></span>
-              </li>
-              <li>
-                <span class="et" data-i18n="et-tel-it">Italia</span>
-                <span class="val" data-i18n="num-it"><a href="tel:+393355460464">+39 335 546 0464</a></span>
-              </li>
-              <li>
-                <span class="et" data-i18n="et-tel-ru">Russia</span>
-                <span class="val" data-i18n="num-ru"><a href="tel:+79990052206">+7 999 005 22 06</a></span>
-              </li>
-              <li>
-                <span class="et" data-i18n="et-tel-ro">Romania</span>
-                <span class="val" data-i18n="num-ro"><a href="tel:+40731316456">+40 731 316 456</a></span>
-              </li>
-              <li>
-                <span class="et" data-i18n="et-fb">Facebook</span>
-                <span class="val"><a href="https://www.facebook.com/russia.imperiale" target="_blank" rel="noopener">facebook.com/russia.imperiale</a></span>
-              </li>
-            </ul>
-          </aside>
+        <div class="grazie">
+          <p class="grazie__testo reveal" data-i18n="grm-text">Abbiamo ricevuto il tuo messaggio. Ti risponderemo al piu presto.</p>
+          <p class="reveal"><a class="arrow-link arrow-link--fr" href="index.html" data-i18n="gr-home">Torna alla home</a></p>
         </div>
       </div>
     </section>
@@ -179,6 +112,5 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-  <script src="js/moduli.js"></script>
 </body>
 </html>

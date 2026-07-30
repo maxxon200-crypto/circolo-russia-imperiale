@@ -238,6 +238,8 @@
     "lbl-email":    { it: "Email", ru: "Электронная почта" },
     "lbl-telefono": { it: "Telefono (facoltativo)", ru: "Номер телефона" },
     "lbl-messaggio":{ it: "Messaggio", ru: "Сообщение (по желанию)" },
+    /* Variante per il modulo Contatti, dove il messaggio e obbligatorio. */
+    "lbl-messaggio-obb": { it: "Messaggio", ru: "Сообщение" },
     "lbl-professione": { it: "Professione", ru: "Профессия" },
     "lbl-oggetto":  { it: "Oggetto", ru: "Тема" },
 
@@ -384,6 +386,11 @@
     "err-email":      { it: "Inserisci un indirizzo email valido.", ru: "Введите действительный адрес электронной почты." },
     "err-privacy":    { it: "Per proseguire e necessario accettare la Privacy Policy.", ru: "Для продолжения необходимо принять Политику конфиденциальности." },
     "err-invio":      { it: "Non siamo riusciti a inviare la richiesta. Riprova piu tardi oppure scrivici a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.", ru: "Не удалось отправить заявку. Попробуйте позже или напишите нам на <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>." },
+    "err-invio-msg":  { it: "Non siamo riusciti a inviare il messaggio. Riprova piu tardi oppure scrivici a <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.", ru: "Не удалось отправить сообщение. Попробуйте позже или напишите нам на <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>." },
+
+    /* --- Pagina di ringraziamento dopo l'invio del modulo di contatto --- */
+    "grm-title":  { it: "Grazie per il tuo messaggio", ru: "Спасибо за ваше сообщение" },
+    "grm-text":   { it: "Abbiamo ricevuto il tuo messaggio. Ti risponderemo al piu presto.", ru: "Мы получили ваше сообщение. Мы ответим вам в ближайшее время." },
 
     /* --- Punto 1: pagina di ringraziamento dopo l'invio della richiesta --- */
     "gr-eyebrow": { it: "Tesseramento", ru: "ВСТУПЛЕНИЕ В АССОЦИАЦИЮ" },
@@ -608,6 +615,9 @@
     "err-email": "Please enter a valid email address.",
     "err-privacy": "To proceed you must accept the Privacy Policy.",
     "err-invio": "We could not send your request. Please try again later or write to us at <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.",
+    "err-invio-msg": "We could not send your message. Please try again later or write to us at <a href=\"mailto:russia.imperiale@yandex.com\">russia.imperiale@yandex.com</a>.",
+    "grm-title": "Thank you for your message",
+    "grm-text": "We have received your message. We will reply as soon as possible.",
     "gr-eyebrow": "Membership",
     "gr-title": "Thank you for your request",
     "gr-text": "We have received your membership request. We will send you an email with all the information. See you soon.",
@@ -794,6 +804,7 @@
     "lbl-telefono": "Phone (optional)",
     "lbl-professione": "Profession",
     "lbl-messaggio": "Message",
+    "lbl-messaggio-obb": "Message",
     "lbl-oggetto": "Subject",
     "et-email": "Email",
     "et-tel-it": "Italy",
@@ -883,7 +894,7 @@
   }
 
   /* Espone la lettura del dizionario nella lingua attiva:
-     serve ai messaggi del modulo di adesione (js/iscrizione.js). */
+     serve ai messaggi dei moduli Contatti e Tesseramento (js/moduli.js). */
   window.i18nText = function (chiave) {
     var lang = document.documentElement.lang || "it";
     return value(chiave, lang);
