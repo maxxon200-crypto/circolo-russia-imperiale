@@ -15,20 +15,20 @@
   /* ===================================================================
      ▼▼▼  CHIAVE DI ACCESSO WEB3FORMS  ▼▼▼
 
-     Chiave attiva, collegata alla casella russia.imperiale@yandex.com.
      Vale per entrambi i moduli del sito: e l'unico punto da toccare.
 
-     Questa chiave e PUBBLICA per progettazione: Web3Forms la dichiara
-     tale e va usata nel codice della pagina. Non e una password e non
-     apre nulla: dice soltanto a quale casella consegnare il messaggio.
+     ATTENZIONE, la casella di arrivo NON si decide qui.
+     Web3Forms consegna sempre all'indirizzo associato a questa chiave nel
+     suo pannello. Cambiare la chiave nel codice non cambia il destinatario:
+     per farlo si va su https://web3forms.com, si entra nella dashboard e si
+     imposta l'indirizzo di destinazione del modulo (oppure si genera una
+     chiave nuova partendo dall'indirizzo giusto e la si incolla qui sotto).
 
-     Per sostituirla (nuovo account o cambio di casella):
-       1. vai su https://web3forms.com
-       2. inserisci l'indirizzo di posta desiderato
-       3. conferma il link che arriva per email
-       4. incolla qui sotto la nuova Access Key, fra le virgolette.
+     Questa chiave e PUBBLICA per progettazione: Web3Forms la dichiara tale
+     e va usata nel codice della pagina. Non e una password e non apre
+     nulla: identifica soltanto il modulo a cui consegnare.
      =================================================================== */
-  const WEB3FORMS_KEY = "eb031fce-dd9c-4524-84a9-d1006364ac49";
+  const WEB3FORMS_KEY = "1424a093-6ce9-4e09-b553-b5ac72fa868e";
 
   /* =================================================================== */
 
