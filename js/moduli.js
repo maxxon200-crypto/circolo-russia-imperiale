@@ -13,24 +13,22 @@
   "use strict";
 
   /* ===================================================================
-     ▼▼▼  CHIAVE DI ACCESSO WEB3FORMS: UNICO VALORE DA INSERIRE  ▼▼▼
+     ▼▼▼  CHIAVE DI ACCESSO WEB3FORMS  ▼▼▼
 
-     Come ottenerla:
+     Chiave attiva, collegata alla casella russia.imperiale@yandex.com.
+     Vale per entrambi i moduli del sito: e l'unico punto da toccare.
+
+     Questa chiave e PUBBLICA per progettazione: Web3Forms la dichiara
+     tale e va usata nel codice della pagina. Non e una password e non
+     apre nulla: dice soltanto a quale casella consegnare il messaggio.
+
+     Per sostituirla (nuovo account o cambio di casella):
        1. vai su https://web3forms.com
-       2. inserisci l'indirizzo russia.imperiale@yandex.com
-       3. riceverai per email una "Access Key" (un codice tipo
-          1a2b3c4d-5e6f-7890-abcd-ef1234567890)
-       4. incollala qui sotto al posto di [INSERIRE LA CHIAVE QUI],
-          lasciando le virgolette.
-
-     Esempio a chiave inserita:
-       const WEB3FORMS_KEY = "1a2b3c4d-5e6f-7890-abcd-ef1234567890";
-
-     Non serve nient'altro: la chiave Web3Forms e pubblica per
-     progettazione (sta nel codice della pagina) e serve solo a indicare
-     a quale casella consegnare il messaggio.
+       2. inserisci l'indirizzo di posta desiderato
+       3. conferma il link che arriva per email
+       4. incolla qui sotto la nuova Access Key, fra le virgolette.
      =================================================================== */
-  const WEB3FORMS_KEY = "[INSERIRE LA CHIAVE QUI]";
+  const WEB3FORMS_KEY = "eb031fce-dd9c-4524-84a9-d1006364ac49";
 
   /* =================================================================== */
 
