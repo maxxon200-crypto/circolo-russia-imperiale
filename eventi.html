@@ -64,13 +64,24 @@
     <!-- ============================================================
          SOLO EVENTI FUTURI (inviti, locandine, prossimi appuntamenti).
          Gli eventi gia svolti stanno nella pagina Galleria (archivio).
-         Per aggiungere un evento futuro: sostituire il blocco .ev-vuoto
-         con una riga .art-item (data + titolo + descrizione + link).
+         Per aggiungere un evento futuro: inserire una scheda .event-feature.
     ============================================================ -->
     <section class="section">
       <div class="wrap">
         <h2 class="sez-titolo reveal" data-i18n="ev-prossimi-h">Prossimi appuntamenti</h2>
-        <p class="ev-vuoto reveal" data-i18n="ev-nessuno">Le prossime date verranno pubblicate qui.</p>
+        <article class="event-feature">
+          <figure class="event-feature__media reveal">
+            <a href="assets/WhatsApp%20Image%202026-09-07%20at%2014.59.13.jpeg" target="_blank" rel="noopener">
+              <img src="assets/WhatsApp%20Image%202026-09-07%20at%2014.59.13.jpeg" alt="Locandina della conferenza sulla Guerra Patriottica del 1812, 13 settembre 2026" loading="lazy">
+            </a>
+          </figure>
+          <div class="event-feature__text">
+            <p class="event-feature__date reveal" data-i18n="ev-1812-date">13 settembre 2026</p>
+            <h3 class="event-feature__title reveal" data-i18n="ev-1812-title">La Guerra Patriottica del 1812</h3>
+            <p class="event-feature__details reveal" data-i18n="ev-1812-details">Conferenza a Milano, domenica alle ore 15.00, presso la Chiesa Ortodossa dei Santi Sergio, Serafino e Vincenzo Martire.</p>
+            <p class="reveal"><a class="arrow-link" href="assets/WhatsApp%20Image%202026-09-07%20at%2014.59.13.jpeg" target="_blank" rel="noopener" data-i18n="ev-poster-link">Apri la locandina</a></p>
+          </div>
+        </article>
       </div>
     </section>
 

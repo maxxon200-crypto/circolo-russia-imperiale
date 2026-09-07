@@ -813,6 +813,39 @@ main > .articolo {
   font-size: 1.12rem;
 }
 
+/* prossimo evento: locandina intera e data in primo piano */
+.event-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, 440px) 1fr;
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: center;
+  border-top: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+  padding: clamp(2rem, 5vw, 4rem) 0;
+}
+.event-feature__media { margin: 0; }
+.event-feature__media img { width: 100%; height: auto; display: block; border: 1px solid var(--oro-soft); }
+.event-feature__date {
+  margin: 0 0 1.2rem;
+  color: var(--oro);
+  font-size: clamp(2.5rem, 5.6vw, 5.4rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+.event-feature__title {
+  margin: 0 0 1.2rem;
+  font-size: clamp(1.55rem, 3vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.event-feature__details { max-width: 38rem; color: var(--grigio); margin: 0 0 1.8rem; }
+
+@media (max-width: 760px) {
+  .event-feature { grid-template-columns: 1fr; }
+  .event-feature__media { max-width: 440px; }
+}
+
 /* =====================================================================
    Blocco 3 — Feste e ricorrenze: calendario indice + elenco voci
    ===================================================================== */
