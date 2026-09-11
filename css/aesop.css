@@ -380,6 +380,48 @@ main > .articolo {
   color: var(--grigio);
 }
 
+/* Apertura della storia Romanov: testo centrato e icona compatta a destra. */
+.romanov-article-hero {
+  padding: clamp(3rem, 7vw, 6rem) 0 clamp(2.5rem, 5vw, 4.5rem);
+}
+.romanov-article-hero .split {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+}
+.romanov-article-hero .romanov-article-hero__text {
+  max-width: 44rem;
+  justify-self: center;
+  text-align: center;
+}
+.romanov-article-hero h1 {
+  margin: .3rem 0 1.3rem;
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.romanov-article-hero .page-intro {
+  max-width: 38rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.romanov-article-hero .filetto-oro {
+  width: 92px;
+  margin: clamp(1.2rem, 2.5vw, 1.8rem) auto 0;
+}
+.romanov-article-hero__media {
+  width: 100%;
+  max-width: 360px;
+  justify-self: end;
+}
+
+@media (max-width: 900px) {
+  .romanov-article-hero .split { grid-template-columns: 1fr; }
+  .romanov-article-hero .romanov-article-hero__media {
+    max-width: 250px;
+    justify-self: center;
+    order: 0;
+  }
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--blu-notte);
