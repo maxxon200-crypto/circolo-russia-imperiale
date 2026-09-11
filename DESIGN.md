@@ -52,7 +52,7 @@ soprattutto **spazio**.
 ```css
 :root {
   --nero:   #1A1A1A;   /* testo e fondali scuri, nero morbido */
-  --bianco: #F6F6F4;   /* sfondo principale: off-white FREDDO neutro (non beige caldo) */
+  --bianco: #FAFAFA;   /* sfondo principale: off-white FREDDO neutro (non beige caldo) */
   --grigio: #6E6E6E;   /* testo secondario, didascalie */
   --linea:  #DEDEDA;   /* righe e bordi sottilissimi */
 }

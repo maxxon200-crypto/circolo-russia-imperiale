@@ -67,7 +67,7 @@
 /* ---------- Token ---------- */
 :root {
   --nero:   #1A1A1A;   /* testo e fondali scuri, nero morbido */
-  --bianco: #F6F6F4;   /* sfondo principale: off-white freddo neutro */
+  --bianco: #FAFAFA;   /* sfondo principale: off-white freddo neutro */
   --grigio: #6E6E6E;   /* testo secondario, didascalie */
   --linea:  #DEDEDA;   /* righe e bordi sottilissimi */
   --nero-morbido: #2B2B2B; /* corpo dei testi lunghi */
@@ -345,6 +345,35 @@ main > .articolo {
 }
 .articolo-foto--natural img { height: auto; object-fit: contain; }
 .articolo .torna { margin-top: clamp(3rem, 6vw, 4.5rem); }
+.articolo-foto figcaption,
+.foto-colonne figcaption {
+  margin-top: .65rem;
+  color: var(--grigio);
+  font-size: .82rem;
+  line-height: 1.55;
+}
+.romanov-rulers {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--linea);
+}
+.romanov-rulers li {
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--linea);
+  color: var(--nero-morbido);
+  line-height: 1.65;
+}
+.romanov-rulers strong { font-weight: 600; }
+.articolo-correlato {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--linea);
+}
+.articolo-correlato .eyebrow { margin-bottom: .8rem; }
+.articolo-gallery { padding-top: 0; }
+.articolo-gallery .wrap { max-width: 1040px; }
+.articolo-nav-finale { padding-bottom: var(--sez); }
 .articolo .legale-update {
   margin-top: clamp(3rem, 6vw, 4.5rem);
   font-size: .95rem;
