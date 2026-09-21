@@ -3,6 +3,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "circolo-russia-imperiale.vercel.app"
+        }
+      ],
+      "destination": "https://www.amicidellarussiaimperiale-terzaroma.it/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
