@@ -37,7 +37,7 @@
 /* ---------- Cormorant Garamond: SOLO per il titolo dell'hero ---------- */
 @font-face {
   font-family: "Cormorant Garamond";
-  font-style: medium;
+  font-style: normal;
   font-weight: 500 700;
   font-display: swap;
   src: url("../assets/fonts/cormorant-cyrillic.woff2") format("woff2");
@@ -45,7 +45,7 @@
 }
 @font-face {
   font-family: "Cormorant Garamond";
-  font-style: medium;
+  font-style: normal;
   font-weight: 500 700;
   font-display: swap;
   src: url("../assets/fonts/cormorant-latinext.woff2") format("woff2");
@@ -207,16 +207,21 @@ p { margin: 0 0 1.3rem; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
+  isolation: isolate;
   min-height: 84vh;
   display: flex; align-items: center; justify-content: center;
   text-align: center;
   color: #F6F6F4;
   overflow: hidden;
 }
-.hero-img {
+.hero-picture {
   position: absolute; inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+.hero-img {
   width: 100%; height: 100%;
-  object-fit: cover; z-index: -2;
+  object-fit: cover;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
@@ -294,6 +299,27 @@ p { margin: 0 0 1.3rem; }
 .idx-row:hover .idx-arrow { transform: translateX(6px); }
 
 /* ---------- Articolo (colonna di lettura) ---------- */
+/* Percorso gerarchico per articoli ed eventi: visibile, discreto e navigabile. */
+.breadcrumbs {
+  padding-top: 1rem;
+  color: var(--grigio);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li { display: inline-flex; align-items: center; gap: .35rem; }
+.breadcrumbs li + li::before { content: "›"; color: var(--grigio); }
+.breadcrumbs a { border-bottom: 1px solid transparent; }
+.breadcrumbs a:hover { border-bottom-color: currentColor; }
+.breadcrumbs [aria-current="page"] { color: var(--nero-morbido); }
+
 /* Intestazioni pagine interne: centrate, ordinate, simmetriche */
 .page-header { padding-top: clamp(2.4rem, 5vw, 3.6rem); padding-bottom: 0; text-align: center; }
 .page-header .wrap { max-width: 880px; }
@@ -328,6 +354,13 @@ main > .articolo {
   font-size: 1.1875rem;
   line-height: 1.85;
 }
+.prosa h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1.2rem;
+}
+.prosa p { color: var(--nero-morbido); font-size: 1.08rem; line-height: 1.8; }
 
 /* foto grande in cima all'articolo, bordo oro */
 .page-header .filetto-oro { max-width: 92px; margin: clamp(1.2rem, 2.5vw, 1.8rem) auto 0; }
@@ -503,7 +536,7 @@ main > .articolo {
    Applicato per ora alla sola sezione "Chi siamo" della home.
    ===================================================================== */
 :root {
-  --oro:      #B08D2E;                 /* oro brunito/ottone, unico accento */
+  --oro:      #8A6E20;                 /* oro brunito accessibile su off-white */
   --oro-soft: rgba(176, 141, 46, .55); /* filetti e bordi dorati tenui */
 }
 
