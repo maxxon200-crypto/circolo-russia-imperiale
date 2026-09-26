@@ -255,15 +255,15 @@ p { margin: 0 0 1.3rem; }
     linear-gradient(180deg, rgba(13,13,13,.50) 0%, rgba(13,13,13,.74) 100%);
 }
 .hero-inner {
-  position: relative;
+  position: absolute;
   /* Keep the title crisp above the controlled flag crop.  The flag remains
      visible in the same image plane without washing out the lettering. */
   z-index: 4;
+  top: clamp(3.5rem, 9vh, 6.5rem);
+  left: 50%;
+  width: min(900px, calc(100% - (2 * var(--pad))));
   max-width: 900px;
-  /* Keep the group in the open sky, lifted clear of the facade without
-     returning it to the very top of the image. */
-  padding: clamp(4rem, 8vh, 6rem) var(--pad) clamp(5.5rem, 11vh, 8rem);
-  transform: translateY(clamp(-3rem, -5vh, -1.25rem));
+  transform: translateX(-50%);
   text-shadow: 0 2px 5px rgba(0,0,0,.38);
 }
 .hero-nome {
@@ -315,7 +315,7 @@ p { margin: 0 0 1.3rem; }
     clip-path: polygon(37% 6%, 49% 6%, 49% 42%, 37% 42%);
   }
   .hero-inner {
-    padding: 4.25rem var(--pad) 7.5rem;
+    top: clamp(3rem, 8vh, 5.25rem);
   }
   .hero-nome { font-size: clamp(2.8rem, 6.2vw, 4rem); }
 }
@@ -326,8 +326,7 @@ p { margin: 0 0 1.3rem; }
     clip-path: polygon(20% 7%, 43% 7%, 43% 40%, 20% 40%);
   }
   .hero-inner {
-    padding: 3rem var(--pad) 8rem;
-    transform: translateY(-1.25rem);
+    top: clamp(2.25rem, 8vh, 4rem);
   }
   .hero-nome {
     font-size: clamp(2.15rem, 9.2vw, 3rem);
