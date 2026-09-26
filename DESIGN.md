@@ -120,7 +120,7 @@ interne in **formato articolo** (colonna 700px, interlinea generosa, sottotitoli
 
 ## 7. Contatti (dati reali del cliente)
 
-- Email: **russia.imperiale@yandex.com**
+- Email: **info@amicidellarussia.it**
 - Telefono: `[numero italiano]` e `[numero russo]` (placeholder, da fornire)
 - Facebook: **https://www.facebook.com/russia.imperiale**
 

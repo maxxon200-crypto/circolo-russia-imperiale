@@ -33,7 +33,7 @@
   /* =================================================================== */
 
   var ENDPOINT = "https://api.web3forms.com/submit";
-  var EMAIL_CIRCOLO = "russia.imperiale@yandex.com";
+  var EMAIL_CIRCOLO = "info@amicidellarussia.it";
 
   /* Nome della lingua attiva, per indicarla nel corpo della email. */
   var NOMI_LINGUA = { it: "Italiano", ru: "Russo", en: "Inglese" };
