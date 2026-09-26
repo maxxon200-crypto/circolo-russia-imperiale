@@ -223,7 +223,8 @@ p { margin: 0 0 1.3rem; }
 .hero-flag {
   width: 100%; height: 100%;
   object-fit: cover;
-  object-position: center top;
+  /* The palace axis sits left of the bitmap's geometric centre. */
+  object-position: 43% 0;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
@@ -240,7 +241,7 @@ p { margin: 0 0 1.3rem; }
   opacity: .26;
   /* Masked duplicate of the original hero: only the flag and its pole
      cross the title plane; no separate illustration is introduced. */
-  clip-path: polygon(39% 7%, 48% 7%, 48% 42%, 39% 42%);
+  clip-path: polygon(43% 7%, 57% 7%, 57% 42%, 43% 42%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 16%, #000 84%, transparent 100%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 16%, #000 84%, transparent 100%);
 }
@@ -260,14 +261,19 @@ p { margin: 0 0 1.3rem; }
      visible in the same image plane without washing out the lettering. */
   z-index: 4;
   top: clamp(3.5rem, 9vh, 6.5rem);
-  left: 50%;
+  left: 0;
+  right: 0;
   width: min(900px, calc(100% - (2 * var(--pad))));
   max-width: 900px;
-  transform: translateX(-50%);
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
   text-shadow: 0 2px 5px rgba(0,0,0,.38);
 }
 .hero-nome {
   display: flex; flex-direction: column; align-items: center;
+  width: 100%;
+  text-align: center;
   font-family: var(--font-hero);
   font-weight: 600;
   font-size: clamp(2.4rem, 5.5vw, 4.4rem);
@@ -290,11 +296,13 @@ p { margin: 0 0 1.3rem; }
   font-weight: 600;
 }
 .hero-terza {
+  display: block;
+  width: 100%;
   margin-top: 1.15rem;
   font-size: .38em;                /* sigillo equilibrato, non enorme */
   font-weight: 700;
   letter-spacing: .3em;
-  text-indent: .3em;               /* compensa il letter-spacing per restare centrato */
+  text-indent: 0;
   text-transform: uppercase;
   color: #C9A227;                  /* oro chiaro: piu contrasto sulla foto */
   /* A short shadow preserves contrast without a blurred/opaque duplicate. */
@@ -302,6 +310,7 @@ p { margin: 0 0 1.3rem; }
 }
 .hero-sub {
   margin: 2rem auto 0;
+  width: min(100%, 34ch);
   max-width: 34ch;
   font-weight: 300;
   font-size: clamp(1rem, 1.7vw, 1.2rem);
@@ -312,7 +321,7 @@ p { margin: 0 0 1.3rem; }
 @media (min-width: 641px) and (max-width: 1080px) {
   .hero { min-height: 80vh; }
   .hero-flag-picture {
-    clip-path: polygon(37% 6%, 49% 6%, 49% 42%, 37% 42%);
+    clip-path: polygon(42% 6%, 58% 6%, 58% 42%, 42% 42%);
   }
   .hero-inner {
     top: clamp(3rem, 8vh, 5.25rem);
@@ -323,8 +332,11 @@ p { margin: 0 0 1.3rem; }
 @media (max-width: 640px) {
   .hero { min-height: 82svh; }
   .hero-flag-picture {
-    clip-path: polygon(20% 7%, 43% 7%, 43% 40%, 20% 40%);
+    display: none;
   }
+  /* The portrait crop needs its own focal point to keep the palace straight
+     and centred beneath the text on narrow screens. */
+  .hero-img { object-position: 24% 0; }
   .hero-inner {
     top: clamp(2.25rem, 8vh, 4rem);
   }
@@ -691,7 +703,19 @@ main > .articolo {
 .btn--ghost:hover { opacity: .6; }
 
 /* hero (fondo scuro): il ghost diventa chiaro */
-.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.8rem; }
+.hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(100%, 32rem);
+  margin: 2.8rem auto 0;
+}
+.hero-actions .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 /* Hero: bottoni trasparenti sopra la fotografia */
 .hero .btn--primary {
   background: rgba(255, 255, 255, 0.06);
@@ -722,8 +746,13 @@ main > .articolo {
   margin: 0 auto 2.6rem;
 }
 
-@media (max-width: 480px) {
-  .hero-actions { flex-direction: column; align-items: stretch; }
+@media (max-width: 640px) {
+  .hero-actions {
+    grid-template-columns: 1fr;
+    gap: .75rem;
+    width: min(100%, 22rem);
+    margin-top: 1.75rem;
+  }
   .hero-actions .btn { text-align: center; }
 }
 
