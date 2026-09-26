@@ -273,7 +273,7 @@
 
     /* --- Contenuti pagine interne --- */
     "foot-brand-a": { it: "Circolo Internazionale Amici della Russia Imperiale Terza Roma. Associazione culturale dedicata alla storia, alla cultura e alle tradizioni dell'Impero Russo.", ru: "Международная культурная ассоциация «Друзья Российской Империи - Третий Рим». Независимая, неполитическая и некоммерческая организация, основанная в Милане в 2026 году." },
-    "foot-brand-b": { it: "Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2020.", ru: "Культурное, внепартийное и некоммерческое сообщество, основанное в Милане в 2020 году." },
+    "foot-brand-b": { it: "Sodalizio culturale apartitico e senza fini di lucro, fondato a Milano nel 2026.", ru: "Культурное, внепартийное и некоммерческое сообщество, основанное в Милане в 2026 году." },
     "foot-tel-it": { it: "Italia: <a href=\"tel:+393355460464\">+39 335 546 0464</a>", ru: "Италия: <a href=\"tel:+393355460464\">+39 335 546 0464</a>" },
     "foot-tel-ru": { it: "Russia: <a href=\"tel:+79990052206\">+7 999 005 22 06</a>", ru: "Россия: <a href=\"tel:+79990052206\">+7 999 005 22 06</a>" },
     "foot-fb": { it: "Pagina Facebook", ru: "Страница Facebook" },
@@ -966,7 +966,7 @@
     "area-h1": "Members' area",
     "area-h2": "A space dedicated to members",
     "area-p": "The members' area, with content and services for members, will be available at a later stage. In the meantime you may learn about the Circle and request membership.",
-    "foot-brand-b": "A cultural fellowship, non-partisan and non-profit, founded in Milan in 2020.",
+    "foot-brand-b": "A cultural fellowship, non-partisan and non-profit, founded in Milan in 2026.",
     "foot-name-b": "International Circle of Friends of Imperial Russia - Third Rome",
     "foot-tel-it": "Italy: <a href=\"tel:+393355460464\">+39 335 546 0464</a>",
     "foot-tel-ru": "Russia: <a href=\"tel:+79990052206\">+7 999 005 22 06</a>",

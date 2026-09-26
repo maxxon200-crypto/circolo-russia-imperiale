@@ -260,9 +260,9 @@ p { margin: 0 0 1.3rem; }
      visible in the same image plane without washing out the lettering. */
   z-index: 4;
   max-width: 900px;
-  /* Lower the group toward the architectural silhouette instead of leaving
-     it floating across the empty upper sky. */
-  padding: clamp(5rem, 11vh, 7.5rem) var(--pad) clamp(3rem, 6vh, 5rem);
+  /* Keep the group in the open sky, lifted clear of the facade without
+     returning it to the very top of the image. */
+  padding: clamp(4rem, 8vh, 6rem) var(--pad) clamp(5.5rem, 11vh, 8rem);
   text-shadow: 0 2px 5px rgba(0,0,0,.38);
 }
 .hero-nome {
@@ -314,7 +314,7 @@ p { margin: 0 0 1.3rem; }
     clip-path: polygon(37% 6%, 49% 6%, 49% 42%, 37% 42%);
   }
   .hero-inner {
-    padding: 5.5rem var(--pad) 5rem;
+    padding: 4.25rem var(--pad) 7.5rem;
   }
   .hero-nome { font-size: clamp(2.8rem, 6.2vw, 4rem); }
 }
@@ -325,7 +325,7 @@ p { margin: 0 0 1.3rem; }
     clip-path: polygon(20% 7%, 43% 7%, 43% 40%, 20% 40%);
   }
   .hero-inner {
-    padding: 4rem var(--pad) 7rem;
+    padding: 3rem var(--pad) 8rem;
   }
   .hero-nome {
     font-size: clamp(2.15rem, 9.2vw, 3rem);
