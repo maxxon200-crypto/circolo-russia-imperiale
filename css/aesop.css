@@ -263,6 +263,7 @@ p { margin: 0 0 1.3rem; }
   /* Keep the group in the open sky, lifted clear of the facade without
      returning it to the very top of the image. */
   padding: clamp(4rem, 8vh, 6rem) var(--pad) clamp(5.5rem, 11vh, 8rem);
+  transform: translateY(clamp(-3rem, -5vh, -1.25rem));
   text-shadow: 0 2px 5px rgba(0,0,0,.38);
 }
 .hero-nome {
@@ -326,6 +327,7 @@ p { margin: 0 0 1.3rem; }
   }
   .hero-inner {
     padding: 3rem var(--pad) 8rem;
+    transform: translateY(-1.25rem);
   }
   .hero-nome {
     font-size: clamp(2.15rem, 9.2vw, 3rem);
