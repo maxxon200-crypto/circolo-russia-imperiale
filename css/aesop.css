@@ -237,7 +237,7 @@ p { margin: 0 0 1.3rem; }
   z-index: 3;
   overflow: hidden;
   pointer-events: none;
-  opacity: .38;
+  opacity: .26;
   /* Masked duplicate of the original hero: only the flag and its pole
      cross the title plane; no separate illustration is introduced. */
   clip-path: polygon(39% 7%, 48% 7%, 48% 42%, 39% 42%);
@@ -256,12 +256,14 @@ p { margin: 0 0 1.3rem; }
 }
 .hero-inner {
   position: relative;
-  z-index: 2;
+  /* Keep the title crisp above the controlled flag crop.  The flag remains
+     visible in the same image plane without washing out the lettering. */
+  z-index: 4;
   max-width: 900px;
-  /* More breathing room below keeps the title on the sky without colliding
-     with the header or relying on absolute positioning. */
-  padding: clamp(3rem, 7vh, 5rem) var(--pad) clamp(7.5rem, 16vh, 11rem);
-  text-shadow: 0 1px 18px rgba(0,0,0,.48);
+  /* Lower the group toward the architectural silhouette instead of leaving
+     it floating across the empty upper sky. */
+  padding: clamp(5rem, 11vh, 7.5rem) var(--pad) clamp(3rem, 6vh, 5rem);
+  text-shadow: 0 2px 5px rgba(0,0,0,.38);
 }
 .hero-nome {
   display: flex; flex-direction: column; align-items: center;
@@ -294,11 +296,8 @@ p { margin: 0 0 1.3rem; }
   text-indent: .3em;               /* compensa il letter-spacing per restare centrato */
   text-transform: uppercase;
   color: #C9A227;                  /* oro chiaro: piu contrasto sulla foto */
-  /* nessun riquadro: solo ombra morbida e sfumata per il contrasto */
-  text-shadow:
-    0 0 26px rgba(0,0,0,.65),
-    0 0 12px rgba(0,0,0,.8),
-    0 1px 3px rgba(0,0,0,.9);
+  /* A short shadow preserves contrast without a blurred/opaque duplicate. */
+  text-shadow: 0 1px 4px rgba(0,0,0,.58);
 }
 .hero-sub {
   margin: 2rem auto 0;
@@ -315,7 +314,7 @@ p { margin: 0 0 1.3rem; }
     clip-path: polygon(37% 6%, 49% 6%, 49% 42%, 37% 42%);
   }
   .hero-inner {
-    padding: 3.5rem var(--pad) 10rem;
+    padding: 5.5rem var(--pad) 5rem;
   }
   .hero-nome { font-size: clamp(2.8rem, 6.2vw, 4rem); }
 }
@@ -326,7 +325,7 @@ p { margin: 0 0 1.3rem; }
     clip-path: polygon(20% 7%, 43% 7%, 43% 40%, 20% 40%);
   }
   .hero-inner {
-    padding: 2.75rem var(--pad) 10.75rem;
+    padding: 4rem var(--pad) 7rem;
   }
   .hero-nome {
     font-size: clamp(2.15rem, 9.2vw, 3rem);
