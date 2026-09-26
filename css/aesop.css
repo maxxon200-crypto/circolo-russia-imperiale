@@ -221,10 +221,16 @@ p { margin: 0 0 1.3rem; }
 }
 .hero-img,
 .hero-flag {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  /* The palace axis sits left of the bitmap's geometric centre. */
-  object-position: 43% 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  max-width: none;
+  /* Keep the source undistorted and slightly overscan very wide screens. */
+  height: max(100%, 36vw);
+  /* Pin the palace's measured axis (x = 615/1280) to the viewport centre.
+     Unlike object-position, this stays centred when the hero aspect ratio changes. */
+  transform: translateX(-48.046875%);
 }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
@@ -334,9 +340,6 @@ p { margin: 0 0 1.3rem; }
   .hero-flag-picture {
     display: none;
   }
-  /* The portrait crop needs its own focal point to keep the palace straight
-     and centred beneath the text on narrow screens. */
-  .hero-img { object-position: 24% 0; }
   .hero-inner {
     top: clamp(2.25rem, 8vh, 4rem);
   }
@@ -347,6 +350,21 @@ p { margin: 0 0 1.3rem; }
   .hero-intro { font-size: clamp(1rem, 4.6vw, 1.35rem); }
   .hero-sub { margin-top: 1.45rem; line-height: 1.55; }
   .hero-actions { margin-top: 1.8rem; }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+  /* The portrait source has its architectural axis at x = 327/768. */
+  .hero-img,
+  .hero-flag {
+    height: max(100%, 156.6vw);
+    transform: translateX(-42.578125%);
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  /* Keep the complete title/CTA block visible on short landscape phones. */
+  .hero { min-height: 34rem; }
+  .hero-inner { top: 2rem; }
 }
 
 /* ---------- Sezione generica ---------- */
@@ -754,6 +772,13 @@ main > .articolo {
     margin-top: 1.75rem;
   }
   .hero-actions .btn { text-align: center; }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .hero-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 32rem);
+  }
 }
 
 /* =====================================================================
