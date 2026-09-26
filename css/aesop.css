@@ -230,7 +230,10 @@ p { margin: 0 0 1.3rem; }
     linear-gradient(180deg, rgba(13,13,13,.50) 0%, rgba(13,13,13,.74) 100%);
 }
 .hero-inner {
-  max-width: 900px; padding: var(--sez) var(--pad);
+  max-width: 900px;
+  /* Un poco più di respiro sotto il gruppo sposta il titolo verso l'alto
+     senza ricorrere a margini negativi o posizionamento assoluto. */
+  padding: calc(var(--sez) * .72) var(--pad) calc(var(--sez) * 1.28);
   text-shadow: 0 1px 26px rgba(0,0,0,.45);
 }
 .hero-nome {
@@ -240,6 +243,21 @@ p { margin: 0 0 1.3rem; }
   font-size: clamp(2.4rem, 5.5vw, 4.4rem);
   line-height: 1.12;
   letter-spacing: .01em;
+}
+.hero-intro {
+  display: block;
+  max-width: 100%;
+  margin-bottom: .22em;
+  font-size: clamp(1.15rem, 2.2vw, 1.8rem);
+  font-weight: 500;
+  letter-spacing: .045em;
+  line-height: 1.15;
+}
+.hero-name {
+  display: block;
+  max-width: 100%;
+  font-size: 1em;
+  font-weight: 600;
 }
 .hero-terza {
   margin-top: 1.15rem;

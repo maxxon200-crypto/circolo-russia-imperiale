@@ -132,7 +132,9 @@
     /* ============ Redesign Aesop: HOME + pagina "Il Circolo" ============ */
     "nav-circolo": { it: "Il Circolo", ru: "Ассоциация" },
 
-    "hero-nome":  { it: "Circolo Internazionale Amici della Russia Imperiale", ru: "Международная ассоциация «Друзья Российской Империи»" },
+    "hero-intro":  { it: "Circolo Internazionale", ru: "Международная ассоциация" },
+    "hero-name":   { it: "Amici della Russia Imperiale", ru: "Друзья Российской Империи" },
+    "hero-nome":   { it: "Circolo Internazionale Amici della Russia Imperiale", ru: "Международная ассоциация «Друзья Российской Империи»" },
     "hero-terza": { it: "Terza Roma", ru: "Третий Рим" },
     "hero-frase": { it: "Custodire la memoria e la bellezza della Russia imperiale", ru: "Хранить память и красоту императорской России" },
 
@@ -298,6 +300,22 @@
     "mosca-2026-watch": { it: "Guarda il video", ru: "Смотреть видео" },
     "mosca-2026-back": { it: "Torna ad Attualità", ru: "Вернуться к разделу «Актуальное»" },
     "mosca-chiesa-link": { it: "Approfondisci la tradizione ortodossa russa", ru: "Подробнее о русской православной традиции" },
+
+    /* ===== Articolo editoriale: Convegno Guerra Patriottica 1812 ===== */
+    "ed-1812-label": { it: "Convegno / Milano / 13 settembre 2026", ru: "Конференция / Милан / 13 сентября 2026 года" },
+    "ed-1812-date": { it: "13 settembre 2026", ru: "13 сентября 2026 года" },
+    "ed-1812-title": { it: "Convegno a Milano: la Guerra Patriottica del 1812", ru: "Конференция в Милане: Отечественная война 1812 года" },
+    "ed-1812-excerpt": { it: "Il convegno sulla Guerra Patriottica del 1812 ha riunito a Milano contributi storici, militari e spirituali dedicati alla memoria di quella guerra e della battaglia di Borodino.", ru: "На конференции в Милане, посвящённой Отечественной войне 1812 года, прозвучали исторические, военные и духовные выступления о памяти этой войны и Бородинской битвы." },
+    "ed-1812-image-alt": { it: "Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano", ru: "Участники и гости конференции об Отечественной войне 1812 года в Милане" },
+    "ed-1812-read-label": { it: "Leggi il resoconto del convegno sulla Guerra Patriottica del 1812", ru: "Читать отчёт о конференции об Отечественной войне 1812 года" },
+    "ed-1812-p1": { it: "Domenica 13 settembre, nella Chiesa Ortodossa Russa dei Santi Sergio, Serafino e Vincenzo Martire a Milano, si è svolto il convegno «La Guerra Patriottica del 1812: punto di riferimento per la spiritualità e la cultura della Russia moderna». Era presente un folto pubblico e, come invitati d’onore, il Console russo Danis Bashirov e la sua gentile Signora.", ru: "В воскресенье 13 сентября в Русском православном храме святых Сергия, Серафима и мученика Викентия в Милане состоялась конференция «Отечественная война 1812 года: ориентир для духовности и культуры современной России». На ней присутствовала многочисленная публика, а почётными гостями были консул России Данис Баширов и его сопровождающая." },
+    "ed-1812-p2": { it: "Il dott. Bashirov ha aperto il convegno ricordando l’importanza della Guerra Patriottica del 1812 come momento chiave per il popolo russo e per l’intera Europa: con la vittoria russa, l’Europa ritrovò l’unità per respingere l’oppressione napoleonica. Ha poi richiamato il sacrificio russo che, 130 anni dopo, avrebbe permesso la liberazione dell’Europa dagli invasori tedeschi.", ru: "Доктор Баширов открыл конференцию, напомнив о значении Отечественной войны 1812 года как ключевого момента для русского народа и всей Европы: благодаря русской победе Европа вновь обрела единство, чтобы изгнать наполеоновское угнетение. Он также напомнил о жертве русского народа, которая 130 лет спустя позволила освободить Европу от немецких захватчиков." },
+    "ed-1812-p3": { it: "Lo ieromonaco Silouan Yaroslavtsev, rettore della Chiesa di Milano, ha evidenziato il significato spirituale della Guerra Patriottica del 1812 e della battaglia di Borodino, il cui ricordo è vivo nella memoria di ogni russo e di ogni fedele ortodosso.", ru: "Иеромонах Силуан Ярославцев, настоятель миланского храма, подчеркнул духовное значение Отечественной войны 1812 года и Бородинской битвы, память о которых жива в сердце каждого русского и каждого православного верующего." },
+    "ed-1812-p4": { it: "Il dott. Adriano Frinchi, diacono della Chiesa Ortodossa Russa di Santa Caterina Martire a Roma, ha tracciato il profilo di quattro sacerdoti ortodossi che fornirono, ciascuno in modo diverso, un importante supporto ai civili e ai soldati impegnati in quella guerra, che generò molte vittime e sofferenze sia fra la popolazione sia nell’esercito dello Zar.", ru: "Доктор Адриано Фринчи, диакон Русской православной церкви святой великомученицы Екатерины в Риме, представил биографии четырёх православных священников, каждый из которых по-своему оказывал важную поддержку мирным жителям и солдатам во время войны, принесшей много жертв и страданий как населению, так и армии императора." },
+    "ed-1812-p5": { it: "Il prof. Mikhail Talalay, storico dell’Accademia Russa delle Scienze, collegato da remoto, ha raccontato la curiosa storia di una via milanese, via Moscova, che in realtà dovrebbe chiamarsi via Borodino: un esempio di manipolazione propagandistica dell’informazione, evidentemente già nota e praticata ai tempi del Regno d’Italia napoleonico.", ru: "Профессор Михаил Талалай, историк Российской академии наук, выступивший по видеосвязи, рассказал необычную историю одной миланской улицы — улицы Москвы, которая, по его словам, на самом деле должна была бы называться улицей Бородино. Это пример пропагандистского искажения информации, очевидно известного и применявшегося уже во времена наполеоновского Итальянского королевства." },
+    "ed-1812-p6": { it: "Infine il dott. Antonio Imperatore, delegato per l’Italia del Circolo Amici della Russia Imperiale - Terza Roma, ha delineato il quadro storico-militare della guerra del 1812 e della battaglia di Borodino, passando poi all’esame della figura del principe Pëtr Ivanovič Bagration, eroe della Guerra Patriottica. Il generale Bagration fu gravemente ferito a Borodino mentre, alla testa dei suoi uomini, guidava l’assalto contro i francesi e morì pochi giorni dopo.", ru: "В завершение доктор Антонио Императоре, делегат ассоциации «Друзья Российской Империи — Третий Рим» в Италии, представил историко-военную картину войны 1812 года и Бородинской битвы, а затем остановился на личности князя Петра Ивановича Багратиона, героя Отечественной войны. Генерал Багратион был тяжело ранен под Бородино, когда во главе своих солдат вёл атаку против французов, и скончался несколько дней спустя." },
+    "ed-1812-p7": { it: "Il dott. Marco Baratto, storico italiano ed esperto di storia militare, ha seguito il convegno da remoto.", ru: "Доктор Марко Баратто, итальянский историк и специалист по военной истории, участвовал в конференции дистанционно." },
+    "ed-1812-back": { it: "Torna ad Attualità", ru: "Вернуться к разделу «Актуальное»" },
     "co-eyebrow": { it: "Scrivici", ru: "Напишите нам" },
     "co-h1": { it: "Modulo di contatto", ru: "Форма обратной связи" },
     "co-eyebrow2": { it: "Recapiti", ru: "Контактные данные" },
@@ -518,6 +536,7 @@
     "ev-1812-venue": { it: "Chiesa Ortodossa dei Santi Sergio, Serafino e Vincenzo Martire - Patriarcato di Mosca", ru: "Православный храм святых Сергия, Серафима и мученика Викентия — Московский патриархат" },
     "ev-1812-address": { it: "Via Giorgio Giulini 1, Milano (M1 Cairoli)", ru: "Via Giorgio Giulini 1, Милан (M1 Cairoli)" },
     "ev-1812-details": { it: "Conferenza a Milano, domenica alle ore 15.00, presso la Chiesa Ortodossa dei Santi Sergio, Serafino e Vincenzo Martire.", ru: "Конференция в Милане в воскресенье в 15:00, в православном храме святых Сергия, Серафима и мученика Викентия." },
+    "ev-1812-report-link": { it: "Leggi il resoconto del convegno", ru: "Читать отчёт о конференции" },
     "ev-poster-link":  { it: "Apri la locandina", ru: "Открыть афишу" },
     "ev-details-link": { it: "Dettagli dell'evento", ru: "Подробнее о мероприятии" },
     "ev-archive-link": { it: "Consulta l'archivio degli eventi", ru: "Посмотреть архив мероприятий" },
@@ -525,6 +544,9 @@
     "ga-foto-sub":    { it: "Fotografie della cerimonia", ru: "Фотографии церемонии" },
     "ga-press-sub":   { it: "Rassegna stampa", ru: "Публикации в прессе" },
     "ga-video-link":  { it: "Guarda il video della cerimonia", ru: "Смотреть видео церемонии" },
+    "ga-1812-data": { it: "13 settembre 2026", ru: "13 сентября 2026 года" },
+    "ga-1812-title": { it: "Convegno sulla Guerra Patriottica del 1812", ru: "Конференция об Отечественной войне 1812 года" },
+    "ga-1812-caption": { it: "Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano", ru: "Участники и гости конференции об Отечественной войне 1812 года в Милане" },
 
     /* --- Chiesa Ortodossa Russa --- */
     "chiesa-h2": { it: "Tradizione spirituale e vita culturale", ru: "Духовная традиция и культурная жизнь" },
@@ -759,6 +781,7 @@
     "ev-1812-venue": "Orthodox Church of Saints Sergius, Seraphim and Vincent the Martyr - Moscow Patriarchate",
     "ev-1812-address": "Via Giorgio Giulini 1, Milan (M1 Cairoli)",
     "ev-1812-details": "Conference in Milan on Sunday at 3.00 pm, at the Orthodox Church of Saints Sergius, Seraphim and Vincent the Martyr.",
+    "ev-1812-report-link": "Read the conference report",
     "ev-poster-link": "Open the poster",
     "ev-details-link": "Event details",
     "ev-archive-link": "View the event archive",
@@ -766,6 +789,9 @@
     "ga-foto-sub": "Photographs of the ceremony",
     "ga-press-sub": "Press review",
     "ga-video-link": "Watch the video of the ceremony",
+    "ga-1812-data": "13 September 2026",
+    "ga-1812-title": "Conference on the Patriotic War of 1812",
+    "ga-1812-caption": "Speakers and guests at the conference on the Patriotic War of 1812 in Milan",
     "chiesa-h2": "Spiritual tradition and cultural life",
     "chiesa-p1": "The Orthodox Church of the Moscow Patriarchate is one of the Circle's spiritual points of reference. The association takes part in celebrations and initiatives connected with the Russian Orthodox tradition.",
     "chiesa-feste-link": "Learn about Orthodox feasts and commemorations",
@@ -976,6 +1002,20 @@
     "mosca-2026-watch": "Watch the video",
     "mosca-2026-back": "Back to News",
     "mosca-chiesa-link": "Learn about the Russian Orthodox tradition",
+    "ed-1812-label": "Conference / Milan / 13 September 2026",
+    "ed-1812-date": "13 September 2026",
+    "ed-1812-title": "Conference in Milan: the Patriotic War of 1812",
+    "ed-1812-excerpt": "The conference on the Patriotic War of 1812 brought historical, military and spiritual contributions to Milan, dedicated to the memory of the war and the Battle of Borodino.",
+    "ed-1812-image-alt": "Speakers and guests at the conference on the Patriotic War of 1812 in Milan",
+    "ed-1812-read-label": "Read the report on the conference about the Patriotic War of 1812",
+    "ed-1812-p1": "On Sunday 13 September, the conference “The Patriotic War of 1812: a reference point for the spirituality and culture of modern Russia” took place at the Russian Orthodox Church of Saints Sergius, Seraphim and Vincent the Martyr in Milan. A large audience attended; the guests of honour were Russian Consul Danis Bashirov and his accompanying guest.",
+    "ed-1812-p2": "Dr Bashirov opened the conference by recalling the importance of the Patriotic War of 1812 as a defining moment for the Russian people and for Europe as a whole: with the Russian victory, Europe regained the unity needed to cast off Napoleonic oppression. He then recalled the Russian sacrifice which, 130 years later, would enable the liberation of Europe from the German invaders.",
+    "ed-1812-p3": "Hieromonk Silouan Yaroslavtsev, rector of the Milan church, highlighted the spiritual meaning of the Patriotic War of 1812 and the Battle of Borodino, whose memory remains alive in the heart of every Russian and every Orthodox believer.",
+    "ed-1812-p4": "Dr Adriano Frinchi, deacon of the Russian Orthodox Church of Saint Catherine the Martyr in Rome, outlined the stories of four Orthodox priests who, each in a different way, gave important support to civilians and soldiers during the war, which brought many victims and much suffering both to the population and to the Tsar’s army.",
+    "ed-1812-p5": "Professor Mikhail Talalay, a historian of the Russian Academy of Sciences, joining remotely, told the curious story of a Milan street, Via Moscova, which in fact ought to be called Via Borodino: an example of propagandistic manipulation of information, evidently already known and practised in the days of Napoleon’s Kingdom of Italy.",
+    "ed-1812-p6": "Finally, Dr Antonio Imperatore, the Circle’s delegate for Italy, outlined the historical and military framework of the 1812 war and the Battle of Borodino, then turning to Prince Pëtr Ivanovič Bagration, a hero of the Patriotic War. General Bagration was gravely wounded at Borodino while leading his men in an assault against the French and died a few days later.",
+    "ed-1812-p7": "Dr Marco Baratto, an Italian historian and specialist in military history, followed the conference remotely.",
+    "ed-1812-back": "Back to News",
     "skip": "Skip to content",
     "soon": "Coming soon",
 
@@ -1048,6 +1088,8 @@
     "ev-prossimi": "Upcoming events",
     "ev-passati": "Past events",
 
+    "hero-intro": "International Circle",
+    "hero-name": "Friends of Imperial Russia",
     "hero-nome": "International Circle of Friends of Imperial Russia",
     "hero-terza": "Third Rome",
 
@@ -1071,6 +1113,14 @@
   };
 
   var LANGS = ["it", "ru", "en"];
+
+  /* Registro leggibile dagli strumenti di QA: i contenuti restano nella
+     stessa architettura i18n, ma possono essere verificati fuori dal browser. */
+  window.CIRCOLO_TRANSLATIONS = { it: {}, ru: {}, en: EN };
+  Object.keys(DICT).forEach(function (key) {
+    if (DICT[key] && typeof DICT[key].it === "string") { window.CIRCOLO_TRANSLATIONS.it[key] = DICT[key].it; }
+    if (DICT[key] && typeof DICT[key].ru === "string") { window.CIRCOLO_TRANSLATIONS.ru[key] = DICT[key].ru; }
+  });
 
   function value(key, lang) {
     if (lang === "en") {
@@ -1098,11 +1148,28 @@
       var phVal = value(phEl.getAttribute("data-i18n-ph"), lang);
       if (typeof phVal === "string") { phEl.setAttribute("placeholder", phVal); }
     }
+    var attrNodes = document.querySelectorAll("[data-i18n-attr]");
+    for (var a = 0; a < attrNodes.length; a++) {
+      var attrEl = attrNodes[a];
+      var specs = attrEl.getAttribute("data-i18n-attr").split(",");
+      for (var q = 0; q < specs.length; q++) {
+        var pair = specs[q].split(":");
+        if (pair.length < 2) { continue; }
+        var attrVal = value(pair.slice(1).join(":"), lang);
+        if (typeof attrVal === "string") { attrEl.setAttribute(pair[0].trim(), attrVal); }
+      }
+    }
     var btns = document.querySelectorAll(".lang-btn");
     for (var j = 0; j < btns.length; j++) {
       var active = btns[j].getAttribute("data-lang") === lang;
       btns[j].classList.toggle("is-active", active);
       btns[j].setAttribute("aria-pressed", active ? "true" : "false");
+    }
+    var routeNodes = document.querySelectorAll("a[data-route-it], a[data-route-en], a[data-route-ru]");
+    for (var r = 0; r < routeNodes.length; r++) {
+      var routeEl = routeNodes[r];
+      var localizedRoute = routeEl.getAttribute("data-route-" + lang);
+      if (localizedRoute) { routeEl.setAttribute("href", localizedRoute); }
     }
     try { localStorage.setItem("lang", lang); } catch (e) {}
   }
@@ -1112,13 +1179,20 @@
     for (var s = 0; s < sourceNodes.length; s++) {
       sourceNodes[s]._i18nItalian = sourceNodes[s].innerHTML;
     }
-    var saved = "it";
-    try { saved = localStorage.getItem("lang") || "it"; } catch (e) {}
+    var saved = document.documentElement.getAttribute("data-default-lang") || "it";
+    if (!document.documentElement.getAttribute("data-default-lang")) {
+      try { saved = localStorage.getItem("lang") || "it"; } catch (e) {}
+    }
     apply(saved);
     var btns = document.querySelectorAll(".lang-btn");
     for (var i = 0; i < btns.length; i++) {
       (function (b) {
-        b.addEventListener("click", function () { apply(b.getAttribute("data-lang")); });
+        b.addEventListener("click", function () {
+          var nextLang = b.getAttribute("data-lang");
+          var route = b.getAttribute("data-route-" + nextLang);
+          if (route) { window.location.href = route; return; }
+          apply(nextLang);
+        });
       })(btns[i]);
     }
   }
