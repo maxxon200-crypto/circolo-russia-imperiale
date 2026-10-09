@@ -1072,7 +1072,8 @@ main > .articolo {
 }
 .event-feature__details { max-width: 38rem; color: var(--grigio); margin: 0 0 1.8rem; }
 
-@media (max-width: 760px) {
+/* Portrait tablets also need enough room for event dates and descriptions. */
+@media (max-width: 960px) {
   .event-feature { grid-template-columns: 1fr; }
   .event-feature__media { max-width: 440px; }
 }

@@ -12,6 +12,23 @@
 })(typeof self !== "undefined" ? self : this, function () {
   return [
     {
+      id: "evento-liberiamo-la-patria",
+      type: "event",
+      asset: "assets/img/liberiamo_la_patria.jpg",
+      date: "2026-10-18",
+      routes: { it: "evento-liberiamo-la-patria-milano-2026.html" },
+      keys: {
+        title: "ev-patria-title",
+        date: "ev-patria-date",
+        time: "ev-patria-time",
+        venue: "ev-patria-venue",
+        address: "ev-patria-address",
+        details: "ev-patria-details",
+        imageAlt: "ev-patria-image-alt",
+        detailsLabel: "ev-patria-details-label"
+      }
+    },
+    {
       id: "guerra-patriottica-1812",
       type: "article",
       asset: "assets/img/guerra-patriottica-1812-convegno-13-settembre-2026.webp",
