@@ -85,23 +85,37 @@
 
     <!-- ============================================================
          ARCHIVIO DEGLI EVENTI PASSATI (dal piu recente).
-         Ogni evento e una scheda .ev-arch: foto, data, titolo, testo
+         Ogni evento e una scheda .ev-arch: data, titolo, foto, testo
          ed eventuali link (video, rassegna stampa).
+         Le animazioni riguardano i blocchi brevi, non l'intera scheda fotografica.
          Gli eventi FUTURI stanno nella pagina Eventi e attivita.
     ============================================================ -->
     <section class="section">
       <div class="wrap">
         <h2 class="sez-titolo reveal" data-i18n="ga-archivio-h">Eventi passati</h2>
 
-        <!-- ===== Evento: Divina Liturgia, 17 luglio 2026 ===== -->
-        <article class="ev-arch reveal">
-          <figure class="ev-arch__media">
-            <a href="evento-liturgia-famiglia-imperiale-milano-2026.html" aria-label="Dettagli della Divina Liturgia del 17 luglio 2026">
-              <img src="assets/img/liturgia-17-luglio-2026.jpg" alt="Divina Liturgia del 17 luglio 2026 a Milano: l'icona dei Santi Martiri Imperiali e la celebrazione" width="1564" height="1564" fetchpriority="high">
+        <!-- ===== Convegno sulla Guerra Patriottica del 1812 ===== -->
+        <article class="ev-arch" data-editorial-record="galleria-guerra-patriottica-1812">
+          <p class="ev-arch__data reveal"><time datetime="2026-09-13" data-i18n="ga-1812-data">13 settembre 2026</time></p>
+          <h3 class="ev-arch__title reveal"><a data-route-it="articolo-guerra-patriottica-1812.html" data-route-en="article-patriotic-war-1812.html" data-route-ru="article-otechestvennaya-voina-1812.html" href="articolo-guerra-patriottica-1812.html" data-i18n="ga-1812-title">Convegno sulla Guerra Patriottica del 1812</a></h3>
+          <figure class="ev-arch__media reveal">
+            <a data-route-it="articolo-guerra-patriottica-1812.html" data-route-en="article-patriotic-war-1812.html" data-route-ru="article-otechestvennaya-voina-1812.html" href="articolo-guerra-patriottica-1812.html" aria-label="Leggi il resoconto del convegno sulla Guerra Patriottica del 1812" data-i18n-attr="aria-label:ed-1812-read-label">
+              <img src="assets/img/guerra-patriottica-1812-convegno-13-settembre-2026.webp" alt="Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano" data-i18n-attr="alt:ga-1812-caption" width="1180" height="896" fetchpriority="high" decoding="async">
             </a>
           </figure>
-          <p class="ev-arch__data"><time datetime="2026-07-17" data-i18n="gl1-data">17 luglio 2026</time></p>
-          <h3 class="ev-arch__title"><a href="evento-liturgia-famiglia-imperiale-milano-2026.html" data-i18n="gl1-title">Divina Liturgia in memoria del Martirio della Santa Famiglia Imperiale</a></h3>
+          <div class="ev-arch__testo"><p data-i18n="ga-1812-caption">Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano</p></div>
+          <p class="ev-arch__links"><a class="arrow-link" data-route-it="articolo-guerra-patriottica-1812.html" data-route-en="article-patriotic-war-1812.html" data-route-ru="article-otechestvennaya-voina-1812.html" href="articolo-guerra-patriottica-1812.html" data-i18n="mosca-2026-read">Leggi l'articolo</a></p>
+        </article>
+
+        <!-- ===== Evento: Divina Liturgia, 17 luglio 2026 ===== -->
+        <article class="ev-arch">
+          <p class="ev-arch__data reveal"><time datetime="2026-07-17" data-i18n="gl1-data">17 luglio 2026</time></p>
+          <h3 class="ev-arch__title reveal"><a href="evento-liturgia-famiglia-imperiale-milano-2026.html" data-i18n="gl1-title">Divina Liturgia in memoria del Martirio della Santa Famiglia Imperiale</a></h3>
+          <figure class="ev-arch__media reveal">
+            <a href="evento-liturgia-famiglia-imperiale-milano-2026.html" aria-label="Dettagli della Divina Liturgia del 17 luglio 2026">
+              <img src="assets/img/liturgia-17-luglio-2026.jpg" alt="Divina Liturgia del 17 luglio 2026 a Milano: l'icona dei Santi Martiri Imperiali e la celebrazione" width="1564" height="1564" loading="lazy" decoding="async">
+            </a>
+          </figure>
           <div class="ev-arch__testo">
             <p data-i18n="gl1-p1">Il 17 luglio 2026, nella Chiesa Ortodossa dei Santi Sergio, Serafino e Vincenzo Martire a Milano, e stata celebrata la Divina Liturgia in memoria del Martirio della Famiglia Imperiale.</p>
             <p data-i18n="gl1-p2">Durante la predica, il rettore della Chiesa, padre Siluan, ha sottolineato la profonda fede cristiana dell'Imperatore Nicola.</p>
@@ -111,14 +125,14 @@
         </article>
 
         <!-- ===== Evento: Cerimonia a Villa Sormani, 26 giugno 2026 ===== -->
-        <article class="ev-arch reveal">
-          <figure class="ev-arch__media">
+        <article class="ev-arch">
+          <p class="ev-arch__data reveal"><time datetime="2026-06-26" data-i18n="gl2-data">26 giugno 2026</time></p>
+          <h3 class="ev-arch__title reveal"><a href="evento-cerimonia-villa-sormani-missaglia-2026.html" data-i18n="gl2-title">Cerimonia a Villa Sormani Marzorati Uva di Missaglia</a></h3>
+          <figure class="ev-arch__media reveal">
             <a href="evento-cerimonia-villa-sormani-missaglia-2026.html" aria-label="Dettagli della cerimonia a Villa Sormani di Missaglia">
               <img src="assets/img/benemerenze-giovanniti.jpg" alt="La cerimonia di benemerenza a Villa Sormani Marzorati Uva di Missaglia" width="992" height="805" loading="lazy" decoding="async">
             </a>
           </figure>
-          <p class="ev-arch__data"><time datetime="2026-06-26" data-i18n="gl2-data">26 giugno 2026</time></p>
-          <h3 class="ev-arch__title"><a href="evento-cerimonia-villa-sormani-missaglia-2026.html" data-i18n="gl2-title">Cerimonia a Villa Sormani Marzorati Uva di Missaglia</a></h3>
           <div class="ev-arch__testo">
             <p data-i18n="gl2-p1">Il 26 giugno 2026 si e svolta una cerimonia presso Villa Sormani Marzorati Uva di Missaglia.</p>
             <p data-i18n="gl2-p2">Padre Ambrogio era accompagnato dal segretario padre Adriano e da padre Vasilij.</p>
@@ -150,17 +164,46 @@
           <p class="ev-arch__links"><a class="arrow-link" href="evento-cerimonia-villa-sormani-missaglia-2026.html" data-i18n="ev-details-link">Dettagli dell'evento</a></p>
         </article>
 
-        <!-- ===== Convegno sulla Guerra Patriottica del 1812 ===== -->
-        <article class="ev-arch reveal" data-editorial-record="galleria-guerra-patriottica-1812">
-          <figure class="ev-arch__media">
-            <a data-route-it="articolo-guerra-patriottica-1812.html" data-route-en="article-patriotic-war-1812.html" data-route-ru="article-otechestvennaya-voina-1812.html" href="articolo-guerra-patriottica-1812.html" aria-label="Leggi il resoconto del convegno sulla Guerra Patriottica del 1812" data-i18n-attr="aria-label:ed-1812-read-label">
-              <img src="assets/img/guerra-patriottica-1812-convegno-13-settembre-2026.webp" alt="Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano" data-i18n-attr="alt:ga-1812-caption" width="1180" height="896" loading="lazy" decoding="async">
-            </a>
-          </figure>
-          <p class="ev-arch__data" data-i18n="ga-1812-data">13 settembre 2026</p>
-          <h3 class="ev-arch__title"><a data-route-it="articolo-guerra-patriottica-1812.html" data-route-en="article-patriotic-war-1812.html" data-route-ru="article-otechestvennaya-voina-1812.html" href="articolo-guerra-patriottica-1812.html" data-i18n="ga-1812-title">Convegno sulla Guerra Patriottica del 1812</a></h3>
-          <div class="ev-arch__testo"><p data-i18n="ga-1812-caption">Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano</p></div>
-          <p class="ev-arch__links"><a class="arrow-link" data-route-it="articolo-guerra-patriottica-1812.html" data-route-en="article-patriotic-war-1812.html" data-route-ru="article-otechestvennaya-voina-1812.html" href="articolo-guerra-patriottica-1812.html" data-i18n="mosca-2026-read">Leggi l'articolo</a></p>
+        <!-- ===== Incontro con il Principe Emanuele Filiberto, 9 giugno 2026 ===== -->
+        <article class="ev-arch" id="incontro-emanuele-filiberto-2026" data-editorial-record="galleria-emanuele-filiberto">
+          <p class="ev-arch__data reveal"><time datetime="2026-06-09" data-i18n="ga-filiberto-date">9 giugno 2026</time></p>
+          <h3 class="ev-arch__title reveal" data-i18n="ga-filiberto-title">Incontro con Sua Altezza Reale il Principe Emanuele Filiberto di Savoia</h3>
+          <div class="ev-arch__testo">
+            <p data-i18n="ga-filiberto-p1">Il 9 giugno a Milano, presso la Libreria Rizzoli nella Galleria Vittorio Emanuele, il nostro Delegato per l’Italia, Barone Antonio Imperatore di Pellizzara, Garescio e Bulfara, ha incontrato Sua Altezza Reale Emanuele Filiberto di Savoia, Principe di Piemonte e di Venezia, in occasione della presentazione del libro “La Regina di Maggio”, di cui Sua Altezza Reale è l’autore. Con l’occasione, il Barone Antonio Imperatore ha consegnato a Sua Altezza la tessera n. 36 di Socio Onorario del Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma.</p>
+          </div>
+          <p class="ev-arch__sub" data-i18n="ga-filiberto-photos">Fotografie dell’incontro</p>
+          <div class="foto-colonne">
+            <figure><a href="assets/1.9.jpg"><img src="assets/1.9.jpg" alt="Il Principe Emanuele Filiberto e il Barone Antonio Imperatore alla presentazione di La Regina di Maggio, Milano, 9 giugno 2026" data-i18n-attr="alt:ga-filiberto-photo-1" width="3024" height="4032" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/2.9.jpg"><img src="assets/2.9.jpg" alt="Il Principe Emanuele Filiberto e il Barone Antonio Imperatore con il libro La Regina di Maggio alla Libreria Rizzoli" data-i18n-attr="alt:ga-filiberto-photo-2" width="1537" height="2048" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/3.9.jpg"><img src="assets/3.9.jpg" alt="Il Principe Emanuele Filiberto firma una copia di La Regina di Maggio il 9 giugno 2026" data-i18n-attr="alt:ga-filiberto-photo-3" width="1537" height="2048" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/4.9.jpg"><img src="assets/4.9.jpg" alt="Il Principe Emanuele Filiberto e il Barone Antonio Imperatore durante l’incontro alla Libreria Rizzoli" data-i18n-attr="alt:ga-filiberto-photo-4" width="1537" height="2048" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/5.9.jpg"><img src="assets/5.9.jpg" alt="Un momento di dialogo tra il Principe Emanuele Filiberto e il Barone Antonio Imperatore a Milano" data-i18n-attr="alt:ga-filiberto-photo-5" width="3024" height="4032" loading="lazy" decoding="async"></a></figure>
+          </div>
+        </article>
+
+        <!-- ===== Visita pastorale di Vladyka Mark, 20 febbraio 2026 ===== -->
+        <article class="ev-arch" id="visita-pastorale-mark-2026" data-editorial-record="galleria-visita-pastorale-mark">
+          <p class="ev-arch__data reveal"><time datetime="2026-02-20" data-i18n="ga-mark-date">20 febbraio 2026</time></p>
+          <h3 class="ev-arch__title reveal" data-i18n="ga-mark-title">Visita pastorale a Milano di Sua Eminenza Reverendissima Vladyka Mark, Metropolita di Rjazan e Michajlovsk, Arcivescovo dell’Europa occidentale della Santa Chiesa Russa Ortodossa (Patriarcato di Mosca)</h3>
+          <div class="ev-arch__testo">
+            <p data-i18n="ga-mark-p1">Il 20 febbraio 2026 Sua Eminenza Mark, in visita pastorale a Milano, insieme ad altri Sacerdoti della Chiesa Ortodossa Russa del Patriarcato di Mosca, è stato accolto ufficialmente alla Pinacoteca di Brera dal Prof. Giacomo Maria Prati, esperto di Arte e Dirigente del Ministero della Cultura, oltre che da una folta delegazione delle Associazioni Aristocrazia Europea e Circolo Culturale Internazionale Amici della Russia Imperiale - Terza Roma.</p>
+            <p data-i18n="ga-mark-p2">Erano presenti Sua Eccellenza il Molto Reverendo Ieromonaco Ambrogio (Vicario Ortodosso d’Italia), gli Archimandriti Padre Siluan e Padre Ambrogio (Rettori delle due Chiese di Milano del Patriarcato di Mosca), il Diacono Padre Adriano Frinchi (Priore della Confraternita di San Giovanni di Gerusalemme di tradizione russa ortodossa), accompagnato da Donna Nastassya Ivanova Frinchi.</p>
+            <p data-i18n="ga-mark-p3">Aristocrazia Europea era rappresentata dal Presidente il Conte Cesare Vernarecci di Fossombrone dei principi d’Anjou d’Auvergne, dalle Loro Altezze Imperiali i Principi don Roberto e donna Laura Spreti Malmesi Griffo Focas di Cefalonia, dal Barone Roberto Jonghi Lavarini, dalla Contessa Mandilosani Lali Panchulidze Aznauri.</p>
+            <p data-i18n="ga-mark-p4">Il Circolo Culturale internazionale Amici della Russia Imperiale - Terza Roma era rappresentato dal Presidente Conte Pietro Veniamin Andrejevich Stramezzi, dal Delegato per l’Italia Barone Antonio Imperatore di Pellizzara, Garescio e Bulfara, dalla Vice Delegata Donna Elena Grinko Maruotti.</p>
+            <p data-i18n="ga-mark-p5">La visita è stata dedicata alle più importanti opere di arte religiosa custodite nella Pinacoteca, da Piero della Francesca a Raffaello, da Giovanni Bellini a Tintoretto e Bramante, da Andrea Mantegna a Caravaggio, ed altri.</p>
+            <p data-i18n="ga-mark-p6">Dopo la visita, insieme ad un folto gruppo di fedeli ortodossi e di aderenti alle due Associazioni Aristocrazia Europea e Circolo Culturale internazionale Amici della Russia Imperiale Terza Roma, il Metropolita Mark e tutti i convitati hanno partecipato ad un’agape fraterna in un vicino ristorante, come momento di comunione spirituale e di incontro fra le comunità italiana e russa. Durante la cena, la Delegazione religiosa e le Associazioni si sono reciprocamente scambiate attestati di benemerenza.</p>
+            <p data-i18n="ga-mark-p7">Il giorno successivo, il Metropolita ha celebrato la Divina Liturgia nella Chiesa dei Santi Sergio, Serafino e Vincenzo di Milano.</p>
+          </div>
+          <p class="ev-arch__sub" data-i18n="ga-mark-photos">Fotografie della visita e della Divina Liturgia del giorno successivo</p>
+          <div class="foto-colonne">
+            <figure><a href="assets/1.jpeg"><img src="assets/1.jpeg" alt="Locandina della Divina Liturgia celebrata da Vladyka Mark a Milano il 21 febbraio 2026" data-i18n-attr="alt:ga-mark-photo-1" width="1499" height="1984" loading="lazy" decoding="async"></a><figcaption data-i18n="ga-mark-photo-1">Locandina della Divina Liturgia celebrata da Vladyka Mark a Milano il 21 febbraio 2026</figcaption></figure>
+            <figure><a href="assets/2.jpg"><img src="assets/2.jpg" alt="Vladyka Mark con il clero e le delegazioni alla Pinacoteca di Brera durante la visita del 20 febbraio 2026" data-i18n-attr="alt:ga-mark-photo-2" width="1564" height="1564" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/3.JPG"><img src="assets/3.JPG" alt="Vladyka Mark durante la Divina Liturgia nella chiesa ortodossa di Milano il 21 febbraio 2026" data-i18n-attr="alt:ga-mark-photo-3" width="900" height="1600" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/4.JPG"><img src="assets/4.JPG" alt="La celebrazione della Divina Liturgia con Vladyka Mark e il clero a Milano" data-i18n-attr="alt:ga-mark-photo-4" width="1600" height="900" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/5.JPG"><img src="assets/5.JPG" alt="Vladyka Mark con il clero nella Chiesa dei Santi Sergio, Serafino e Vincenzo di Milano" data-i18n-attr="alt:ga-mark-photo-5" width="1600" height="900" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/6.JPG"><img src="assets/6.JPG" alt="Foto di gruppo di Vladyka Mark, del clero e dei fedeli all’esterno della chiesa di Milano" data-i18n-attr="alt:ga-mark-photo-6" width="1600" height="900" loading="lazy" decoding="async"></a></figure>
+            <figure><a href="assets/7.JPG"><img src="assets/7.JPG" alt="Vladyka Mark incontra i fedeli durante la visita pastorale a Milano" data-i18n-attr="alt:ga-mark-photo-7" width="1536" height="1536" loading="lazy" decoding="async"></a></figure>
+          </div>
         </article>
 
       </div>

@@ -65,6 +65,34 @@
       }
     },
     {
+      id: "galleria-emanuele-filiberto",
+      type: "gallery",
+      asset: "assets/1.9.jpg",
+      date: "2026-06-09",
+      routes: { it: "galleria.html#incontro-emanuele-filiberto-2026" },
+      keys: {
+        date: "ga-filiberto-date",
+        title: "ga-filiberto-title",
+        body: ["ga-filiberto-p1"],
+        photos: "ga-filiberto-photos",
+        imageAlt: ["ga-filiberto-photo-1", "ga-filiberto-photo-2", "ga-filiberto-photo-3", "ga-filiberto-photo-4", "ga-filiberto-photo-5"]
+      }
+    },
+    {
+      id: "galleria-visita-pastorale-mark",
+      type: "gallery",
+      asset: "assets/1.jpeg",
+      date: "2026-02-20",
+      routes: { it: "galleria.html#visita-pastorale-mark-2026" },
+      keys: {
+        date: "ga-mark-date",
+        title: "ga-mark-title",
+        body: ["ga-mark-p1", "ga-mark-p2", "ga-mark-p3", "ga-mark-p4", "ga-mark-p5", "ga-mark-p6", "ga-mark-p7"],
+        photos: "ga-mark-photos",
+        imageAlt: ["ga-mark-photo-1", "ga-mark-photo-2", "ga-mark-photo-3", "ga-mark-photo-4", "ga-mark-photo-5", "ga-mark-photo-6", "ga-mark-photo-7"]
+      }
+    },
+    {
       id: "galleria-guerra-patriottica-1812",
       type: "gallery",
       asset: "assets/img/guerra-patriottica-1812-convegno-13-settembre-2026.webp",
