@@ -7,6 +7,20 @@
   "use strict";
 
   var DICT = {
+    "at-russofobia-date": { it: "15 marzo 2022", ru: "15 марта 2022 года" },
+    "at-russofobia-title": { it: "Una russofobia che viene da lontano", ru: "Русофобия с давними корнями" },
+    "at-russofobia-excerpt": { it: "Un articolo di Antonio de Felip sulle radici storiche della russofobia, pubblicato su Ricognizioni.", ru: "Статья Антонио де Фелипа об исторических корнях русофобии, опубликованная на сайте Ricognizioni." },
+    "at-russofobia-image-alt": { it: "Caricatura storica con un orso che rappresenta la Russia di fronte alle altre potenze", ru: "Историческая карикатура: медведь, олицетворяющий Россию, перед другими державами" },
+    "at-russofobia-read": { it: "Leggi su Ricognizioni", ru: "Читать на сайте Ricognizioni" },
+    "at-russofobia-read-aria": { it: "Leggi Una russofobia che viene da lontano su Ricognizioni (si apre in una nuova scheda)", ru: "Читать статью «Русофобия с давними корнями» на сайте Ricognizioni (открывается в новой вкладке)" },
+    "at-terzaroma-source": { it: "Documento / Antonio de Felip", ru: "Документ / Антонио де Фелип" },
+    "at-terzaroma-title": { it: "Mosca terza Roma", ru: "Москва — Третий Рим" },
+    "at-terzaroma-excerpt": { it: "Un testo di Antonio de Felip sulla tradizione di Mosca come Terza Roma e sui suoi significati storici, religiosi e culturali.", ru: "Текст Антонио де Фелипа о традиции Москвы как Третьего Рима и её историческом, религиозном и культурном значении." },
+    "at-terzaroma-image-alt": { it: "Raffigurazione religiosa di Mosca come Terza Roma", ru: "Религиозное изображение Москвы как Третьего Рима" },
+    "at-terzaroma-read": { it: "Scarica il documento (Word, italiano)", ru: "Скачать документ (Word, на итальянском)" },
+    "at-terzaroma-read-aria": { it: "Scarica Mosca terza Roma di Antonio de Felip, documento Word in italiano", ru: "Скачать текст Антонио де Фелипа «Москва — Третий Рим», документ Word на итальянском языке" },
+    "foot-youtube": { it: "Canale YouTube", ru: "Канал YouTube" },
+    "ed-1812-video": { it: "Guarda il video del convegno", ru: "Смотреть видео конференции" },
     "num-ro": { it: "<a href=\"tel:+40731316456\">+40 731 316 456</a>", ru: "<a href=\"tel:+40731316456\">+40 731 316 456</a>" },
     "et-tel-ro": { it: "Romania", ru: "Румыния" },
     "foot-tel-ro": { it: "Romania: <a href=\"tel:+40731316456\">+40 731 316 456</a>", ru: "Румыния: <a href=\"tel:+40731316456\">+40 731 316 456</a>" },
@@ -657,6 +671,20 @@
      =================================================================== */
   var EN_PLACEHOLDER = "[English version coming soon]";
   var EN = {
+    "at-russofobia-date": "15 March 2022",
+    "at-russofobia-title": "A Russophobia with Deep Roots",
+    "at-russofobia-excerpt": "An article by Antonio de Felip on the historical roots of Russophobia, published on Ricognizioni.",
+    "at-russofobia-image-alt": "Historical caricature of a bear representing Russia facing the other powers",
+    "at-russofobia-read": "Read on Ricognizioni",
+    "at-russofobia-read-aria": "Read A Russophobia with Deep Roots on Ricognizioni (opens in a new tab)",
+    "at-terzaroma-source": "Document / Antonio de Felip",
+    "at-terzaroma-title": "Moscow, the Third Rome",
+    "at-terzaroma-excerpt": "A text by Antonio de Felip on the tradition of Moscow as the Third Rome and its historical, religious and cultural significance.",
+    "at-terzaroma-image-alt": "Religious depiction of Moscow as the Third Rome",
+    "at-terzaroma-read": "Download the document (Word, Italian)",
+    "at-terzaroma-read-aria": "Download Moscow, the Third Rome by Antonio de Felip, a Word document in Italian",
+    "foot-youtube": "YouTube channel",
+    "ed-1812-video": "Watch the conference video",
     "ga-filiberto-date": "9 June 2026",
     "ga-filiberto-title": "Meeting with His Royal Highness Prince Emanuele Filiberto of Savoy",
     "ga-filiberto-p1": "On 9 June in Milan, at the Rizzoli bookshop in the Galleria Vittorio Emanuele, our Delegate for Italy, Baron Antonio Imperatore di Pellizzara, Garescio e Bulfara, met His Royal Highness Emanuele Filiberto of Savoy, Prince of Piedmont and Venice, on the occasion of the presentation of his book “La Regina di Maggio” (“The Queen of May”). During the meeting, Baron Antonio Imperatore presented His Highness with honorary membership card no. 36 of the International Cultural Association Friends of Imperial Russia - Third Rome.",

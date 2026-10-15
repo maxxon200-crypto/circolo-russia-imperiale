@@ -12,6 +12,36 @@
 })(typeof self !== "undefined" ? self : this, function () {
   return [
     {
+      id: "una-russofobia-che-viene-da-lontano",
+      type: "external",
+      asset: "assets/img/una-russofobia-che-viene-da-lontano.jpg",
+      date: "2022-03-15",
+      url: "https://www.ricognizioni.it/una-russofobia-che-viene-da-lontano/",
+      keys: {
+        title: "at-russofobia-title",
+        date: "at-russofobia-date",
+        excerpt: "at-russofobia-excerpt",
+        imageAlt: "at-russofobia-image-alt",
+        readLabel: "at-russofobia-read",
+        readAria: "at-russofobia-read-aria"
+      }
+    },
+    {
+      id: "mosca-terza-roma",
+      type: "document",
+      asset: "assets/Mosca terza Roma (1).jpg",
+      document: "assets/Mosca terza Roma.docx",
+      documentLanguage: "it",
+      keys: {
+        label: "at-terzaroma-source",
+        title: "at-terzaroma-title",
+        excerpt: "at-terzaroma-excerpt",
+        imageAlt: "at-terzaroma-image-alt",
+        readLabel: "at-terzaroma-read",
+        readAria: "at-terzaroma-read-aria"
+      }
+    },
+    {
       id: "evento-liberiamo-la-patria",
       type: "event",
       asset: "assets/img/liberiamo_la_patria.jpg",
@@ -46,7 +76,8 @@
         imageAlt: "ed-1812-image-alt",
         readLabel: "ed-1812-read-label",
         body: ["ed-1812-p1", "ed-1812-p2", "ed-1812-p3", "ed-1812-p4", "ed-1812-p5", "ed-1812-p6", "ed-1812-p7"],
-        back: "ed-1812-back"
+        back: "ed-1812-back",
+        videoLabel: "ed-1812-video"
       }
     },
     {
