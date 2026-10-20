@@ -12,6 +12,36 @@
 })(typeof self !== "undefined" ? self : this, function () {
   return [
     {
+      id: "galleria-pozzolo-stramezzi",
+      type: "gallery",
+      asset: "assets/img/incontro-milano-18-ottobre-2026/6cfa9382-a6fe-4230-ab07-a01f960da18f.jpg",
+      date: "2026-10-18",
+      routes: { it: "galleria.html#incontro-pozzolo-stramezzi-2026" },
+      keys: {
+        date: "ga-pozzolo-date",
+        title: "ga-pozzolo-title",
+        body: ["ga-pozzolo-p1", "ga-pozzolo-p2"],
+        photos: "ga-pozzolo-photos",
+        imageAlt: ["ga-pozzolo-photo-1", "ga-pozzolo-photo-2", "ga-pozzolo-photo-3", "ga-pozzolo-photo-4", "ga-pozzolo-photo-5", "ga-pozzolo-photo-6"]
+      }
+    },
+    {
+      id: "galleria-maslenitsa-2025",
+      type: "gallery",
+      asset: "assets/img/galleria.2mar2025.jpg",
+      date: "2025-03-02",
+      routes: { it: "galleria.html#maslenitsa-milano-2025" },
+      keys: {
+        date: "ga-maslenitsa-date",
+        title: "ga-maslenitsa-title",
+        body: ["ga-maslenitsa-p1", "ga-maslenitsa-p2", "ga-maslenitsa-p3", "ga-maslenitsa-p4", "ga-maslenitsa-p5", "ga-maslenitsa-p6", "ga-maslenitsa-p7", "ga-maslenitsa-p8", "ga-maslenitsa-p9"],
+        imageAlt: ["ga-maslenitsa-image-alt"],
+        caption: "ga-maslenitsa-caption",
+        signoff: "ga-maslenitsa-signoff",
+        links: ["ga-maslenitsa-links", "ga-maslenitsa-anthem", "ga-maslenitsa-festival", "ga-maslenitsa-pinterest", "ga-maslenitsa-troubetzkoy", "ga-maslenitsa-restaurant"]
+      }
+    },
+    {
       id: "una-russofobia-che-viene-da-lontano",
       type: "external",
       asset: "assets/img/una-russofobia-che-viene-da-lontano.jpg",
