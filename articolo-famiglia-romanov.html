@@ -30,7 +30,9 @@
   <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="css/aesop.css?v=2">
-  <script type="application/ld+json">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="describedby" type="text/plain" href="/llms.txt">
+  <script type="application/ld+json" id="semantic-data">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -47,8 +49,12 @@
         },
         "articleSection": "Storia dell'Impero Russo",
         "inLanguage": "it-IT",
-        "mainEntityOfPage": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html",
-        "isPartOf": { "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website" },
+        "mainEntityOfPage": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html#webpage"
+        },
+        "isPartOf": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website"
+        },
         "publisher": {
           "@type": "Organization",
           "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization",
@@ -60,15 +66,80 @@
             "height": 320
           }
         },
-        "breadcrumb": { "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html#breadcrumb" }
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Storia e cultura della Russia imperiale"
+          },
+          {
+            "@type": "Thing",
+            "name": "Dinastia Romanov e Casa Imperiale"
+          }
+        ]
       },
       {
         "@type": "BreadcrumbList",
         "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.amicidellarussiaimperiale-terzaroma.it/" },
-          { "@type": "ListItem", "position": 2, "name": "Storia dell'Impero Russo", "item": "https://www.amicidellarussiaimperiale-terzaroma.it/storia.html" },
-          { "@type": "ListItem", "position": 3, "name": "Breve storia della dinastia Romanov" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Storia dell'Impero Russo",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/storia.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Breve storia della dinastia Romanov",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html#webpage",
+        "url": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html",
+        "name": "Breve storia della dinastia Romanov",
+        "description": "Dalle origini della dinastia Romanov alla fine dell'Impero Russo e alla successione contemporanea.",
+        "inLanguage": "it-IT",
+        "isPartOf": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website"
+        },
+        "publisher": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Storia e cultura della Russia imperiale"
+          },
+          {
+            "@type": "Thing",
+            "name": "Dinastia Romanov e Casa Imperiale"
+          }
+        ],
+        "mainEntity": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html#article"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.amicidellarussiaimperiale-terzaroma.it/assets/img/martirio-romanov.jpg"
+        },
+        "breadcrumb": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html#breadcrumb"
+        },
+        "relatedLink": [
+          "https://www.amicidellarussiaimperiale-terzaroma.it/",
+          "https://www.amicidellarussiaimperiale-terzaroma.it/storia.html",
+          "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov-oggi.html",
+          "https://www.amicidellarussiaimperiale-terzaroma.it/feste.html#fs-mar",
+          "https://www.amicidellarussiaimperiale-terzaroma.it/storia.html#famiglia-romanov"
         ]
       }
     ]

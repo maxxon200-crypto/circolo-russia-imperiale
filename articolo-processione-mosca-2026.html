@@ -30,7 +30,9 @@
   <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="css/aesop.css?v=2">
-  <script type="application/ld+json">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="describedby" type="text/plain" href="/llms.txt">
+  <script type="application/ld+json" id="semantic-data">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -47,8 +49,12 @@
         },
         "articleSection": "Attualità",
         "inLanguage": "it-IT",
-        "mainEntityOfPage": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html",
-        "isPartOf": { "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website" },
+        "mainEntityOfPage": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html#webpage"
+        },
+        "isPartOf": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website"
+        },
         "publisher": {
           "@type": "Organization",
           "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization",
@@ -60,15 +66,66 @@
             "height": 320
           }
         },
-        "breadcrumb": { "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html#breadcrumb" }
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Tradizione ortodossa russa"
+          }
+        ]
       },
       {
         "@type": "BreadcrumbList",
         "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.amicidellarussiaimperiale-terzaroma.it/" },
-          { "@type": "ListItem", "position": 2, "name": "Attualità", "item": "https://www.amicidellarussiaimperiale-terzaroma.it/attualita.html" },
-          { "@type": "ListItem", "position": 3, "name": "Processione della Croce a Mosca: oltre 100.000 fedeli in cammino" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Attualita",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/attualita.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Processione della Croce a Mosca: oltre 100.000 fedeli in cammino",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html#webpage",
+        "url": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html",
+        "name": "Processione della Croce a Mosca: oltre 100.000 fedeli in cammino",
+        "description": "La Processione della Croce del 6 settembre 2026 a Mosca, con oltre 100.000 fedeli e la partecipazione di una delegazione del Circolo.",
+        "inLanguage": "it-IT",
+        "isPartOf": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website"
+        },
+        "publisher": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Tradizione ortodossa russa"
+          }
+        ],
+        "mainEntity": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html#article"
+        },
+        "breadcrumb": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html#breadcrumb"
+        },
+        "relatedLink": [
+          "https://www.amicidellarussiaimperiale-terzaroma.it/",
+          "https://www.amicidellarussiaimperiale-terzaroma.it/attualita.html",
+          "https://www.amicidellarussiaimperiale-terzaroma.it/chiesa-ortodossa.html"
         ]
       }
     ]

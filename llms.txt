@@ -1,0 +1,56 @@
+# Circolo Internazionale Amici della Russia Imperiale - Terza Roma
+
+> Official website of a non-partisan, non-profit cultural association founded in Milan in 2026, dedicated to the history, art and spirituality of Imperial Russia, the Romanov dynasty, and cultural exchange between Italy and Russia.
+
+Italian name: Circolo Internazionale Amici della Russia Imperiale - Terza Roma. English: International Circle of Friends of Imperial Russia - Third Rome. Russian: Международная ассоциация друзей Российской Империи - Третий Рим.
+
+Canonical website: https://www.amicidellarussiaimperiale-terzaroma.it/. The association describes its own identity and viewpoints on the About page; it is not the Russian Orthodox Church or the Imperial House itself. Event dates refer to the actual event, not the publication date. Past activities are collected in the Gallery.
+
+Italian is the default source language. English and Russian translations are available through the language selector. Most translations share one URL and use JavaScript; only the three 1812 conference reports below have separate language URLs. HTML pages contain the original Italian content without JavaScript (the English/Russian report URLs contain their own source language).
+
+The links below point to public HTML sources, except the explicitly labelled original Word document. This is a content guide, not an indexing directive or a permission grant. robots.txt and page-level robots tags define crawl/indexing guidance.
+
+## Il Circolo
+
+- [Circolo Internazionale Amici della Russia Imperiale Terza Roma](https://www.amicidellarussiaimperiale-terzaroma.it/): Associazione culturale apartitica e senza fini di lucro, fondata a Milano nel 2026. Storia russa, dinastia Romanov, tradizione ortodossa ed eventi.
+- [Il Circolo](https://www.amicidellarussiaimperiale-terzaroma.it/il-circolo.html): Chi siamo, i riferimenti culturali e spirituali e le attività promosse in Italia da Amici della Russia Imperiale – Terza Roma.
+- [Milano, 16 giugno 2026](https://www.amicidellarussiaimperiale-terzaroma.it/la-nostra-storia.html): La nascita ufficiale a Milano del Circolo culturale Amici della Russia Imperiale – Terza Roma e le persone che vi hanno preso parte.
+- [Contatti](https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html): Contatti ufficiali, email, numeri telefonici e modulo per contattare il Circolo culturale Amici della Russia Imperiale – Terza Roma.
+- [Diventa socio del Circolo](https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html): Come richiedere l’iscrizione, scaricare il modulo e conoscere le quote associative di Amici della Russia Imperiale – Terza Roma.
+- [Partnership](https://www.amicidellarussiaimperiale-terzaroma.it/partnership.html): I progetti e le realtà culturali che collaborano con Amici della Russia Imperiale – Terza Roma.
+
+## Storia e spiritualità
+
+- [Storia dell'Impero Russo](https://www.amicidellarussiaimperiale-terzaroma.it/storia.html): Articoli e approfondimenti sulla dinastia Romanov, la storia dell'Impero Russo e la sua eredità culturale.
+- [Breve storia della dinastia Romanov](https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov.html): Dalle origini della dinastia Romanov alla fine dell'Impero Russo e alla successione contemporanea.
+- [La famiglia imperiale Romanov oggi](https://www.amicidellarussiaimperiale-terzaroma.it/articolo-famiglia-romanov-oggi.html): La continuità della Casa Imperiale Romanov dopo la Rivoluzione e i suoi rappresentanti contemporanei.
+- [Chiesa Ortodossa Russa](https://www.amicidellarussiaimperiale-terzaroma.it/chiesa-ortodossa.html): La tradizione spirituale ortodossa russa e il suo legame con le attività culturali di Amici della Russia Imperiale – Terza Roma.
+- [Feste e ricorrenze](https://www.amicidellarussiaimperiale-terzaroma.it/feste.html): Calendario delle principali feste ortodosse e ricorrenze legate alla storia dell'Impero Russo e della Casa Romanov.
+
+## Eventi e galleria
+
+- [Eventi e attivita](https://www.amicidellarussiaimperiale-terzaroma.it/eventi.html): Conferenze, incontri, cerimonie e visite dedicate alla storia e alla cultura russa promosse dal Circolo in Italia.
+- [Conferenza “Liberiamo la patria”](https://www.amicidellarussiaimperiale-terzaroma.it/evento-liberiamo-la-patria-milano-2026.html): Conferenza “Liberiamo la patria”, domenica 18 ottobre 2026 alle 18:00, presso Villa Litta Modignani, Viale Affori 21, a Milano.
+- [La Guerra Patriottica del 1812: punto di riferimento per la spiritualità e la cultura della Russia moderna](https://www.amicidellarussiaimperiale-terzaroma.it/evento-guerra-patriottica-1812-milano-2026.html): Conferenza sulla Guerra Patriottica del 1812, domenica 13 settembre 2026 alle 15:00, presso la Chiesa Ortodossa di Via Giorgio Giulini 1 a Milano.
+- [Galleria](https://www.amicidellarussiaimperiale-terzaroma.it/galleria.html): Fotografie e resoconti delle cerimonie, delle visite e degli eventi culturali organizzati o partecipati dal Circolo.
+- [Divina Liturgia in memoria del Martirio della Santa Famiglia Imperiale](https://www.amicidellarussiaimperiale-terzaroma.it/evento-liturgia-famiglia-imperiale-milano-2026.html): Resoconto della Divina Liturgia celebrata il 17 luglio 2026 nella Chiesa Ortodossa dei Santi Sergio, Serafino e Vincenzo Martire a Milano.
+- [Cerimonia a Villa Sormani Marzorati Uva di Missaglia](https://www.amicidellarussiaimperiale-terzaroma.it/evento-cerimonia-villa-sormani-missaglia-2026.html): La cerimonia del 26 giugno 2026 a Villa Sormani Marzorati Uva di Missaglia, con la partecipazione attiva del Circolo.
+
+## Attualità e approfondimenti
+
+- [Attualita](https://www.amicidellarussiaimperiale-terzaroma.it/attualita.html): Articoli e notizie del Circolo su iniziative culturali, vita religiosa e temi di attualità legati alla Russia.
+- [Processione della Croce a Mosca: oltre 100.000 fedeli in cammino](https://www.amicidellarussiaimperiale-terzaroma.it/articolo-processione-mosca-2026.html): La Processione della Croce del 6 settembre 2026 a Mosca, con oltre 100.000 fedeli e la partecipazione di una delegazione del Circolo.
+- [Convegno a Milano: la Guerra Patriottica del 1812](https://www.amicidellarussiaimperiale-terzaroma.it/articolo-guerra-patriottica-1812.html): Resoconto del convegno del 13 settembre 2026 sulla Guerra Patriottica del 1812, con contributi storici, militari e spirituali.
+- [Mosca terza Roma - documento Word originale in italiano](https://www.amicidellarussiaimperiale-terzaroma.it/assets/Mosca%20terza%20Roma.docx): Fonte originale scaricabile, collegata dalla pagina Attualità.
+
+## English and Russian articles
+
+- [Conference in Milan: the Patriotic War of 1812](https://www.amicidellarussiaimperiale-terzaroma.it/article-patriotic-war-1812.html): Report on the 13 September 2026 conference on the Patriotic War of 1812, with historical, military and spiritual contributions.
+- [Конференция в Милане: Отечественная война 1812 года](https://www.amicidellarussiaimperiale-terzaroma.it/article-otechestvennaya-voina-1812.html): Отчёт о конференции 13 сентября 2026 года об Отечественной войне 1812 года с историческими, военными и духовными выступлениями.
+
+## Optional
+
+- [Informativa sulla Privacy](https://www.amicidellarussiaimperiale-terzaroma.it/privacy.html): Informativa sul trattamento dei dati personali nel sito di Amici della Russia Imperiale – Terza Roma.
+- [Informativa sui Cookie](https://www.amicidellarussiaimperiale-terzaroma.it/cookie.html): Informativa sull’uso dei cookie tecnici nel sito di Amici della Russia Imperiale – Terza Roma.
+- [Canale YouTube ufficiale](https://www.youtube.com/@AMICIDELLARUSSIAIMPERIALE): Video del Circolo.
+- [Pagina Facebook ufficiale](https://www.facebook.com/russia.imperiale): Aggiornamenti del Circolo.

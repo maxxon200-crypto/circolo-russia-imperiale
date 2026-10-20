@@ -30,24 +30,112 @@
   <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="css/aesop.css?v=2">
-  <script type="application/ld+json">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="describedby" type="text/plain" href="/llms.txt">
+  <script type="application/ld+json" id="semantic-data">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contatti | Amici della Russia Imperiale – Terza Roma",
-    "url": "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html",
-    "about": {
-      "@type": "Organization",
-      "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization",
-      "name": "Circolo Culturale Internazionale Amici della Russia Imperiale – Terza Roma",
-      "email": "info@amicidellarussia.it",
-      "contactPoint": [
-        { "@type": "ContactPoint", "email": "info@amicidellarussia.it", "contactType": "informazioni", "areaServed": "IT" },
-        { "@type": "ContactPoint", "email": "segreteria@amicidellarussia.it", "contactType": "segreteria", "areaServed": "IT" },
-        { "@type": "ContactPoint", "email": "presidenza@amicidellarussia.it", "contactType": "presidenza", "areaServed": "IT" },
-        { "@type": "ContactPoint", "email": "amicidellarussia@pec.net", "contactType": "PEC", "areaServed": "IT" }
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization",
+        "name": "Circolo Culturale Internazionale Amici della Russia Imperiale – Terza Roma",
+        "email": "info@amicidellarussia.it",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "email": "info@amicidellarussia.it",
+            "contactType": "informazioni",
+            "areaServed": "IT"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "segreteria@amicidellarussia.it",
+            "contactType": "segreteria",
+            "areaServed": "IT"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "presidenza@amicidellarussia.it",
+            "contactType": "presidenza",
+            "areaServed": "IT"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "amicidellarussia@pec.net",
+            "contactType": "PEC",
+            "areaServed": "IT"
+          }
+        ],
+        "foundingDate": "2026",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Milano, Italia"
+        },
+        "sameAs": [
+          "https://www.youtube.com/@AMICIDELLARUSSIAIMPERIALE"
+        ],
+        "knowsAbout": [
+          {
+            "@type": "Thing",
+            "name": "Storia e cultura della Russia imperiale"
+          },
+          {
+            "@type": "Thing",
+            "name": "Dinastia Romanov e Casa Imperiale"
+          },
+          {
+            "@type": "Thing",
+            "name": "Tradizione ortodossa russa"
+          },
+          {
+            "@type": "Thing",
+            "name": "Relazioni culturali tra Italia e Russia"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contatti",
+            "item": "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html"
+          }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html#webpage",
+        "url": "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html",
+        "name": "Contatti",
+        "description": "Contatti ufficiali, email, numeri telefonici e modulo per contattare il Circolo culturale Amici della Russia Imperiale – Terza Roma.",
+        "inLanguage": "it-IT",
+        "isPartOf": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website"
+        },
+        "publisher": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization"
+        },
+        "about": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html#breadcrumb"
+        },
+        "relatedLink": [
+          "https://www.amicidellarussiaimperiale-terzaroma.it/privacy.html"
+        ]
+      }
+    ]
   }
   </script>
 </head>

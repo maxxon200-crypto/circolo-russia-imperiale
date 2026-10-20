@@ -1,3 +1,7 @@
+# Public pages and rendering assets are crawlable for all compliant crawlers.
+# Private placeholders, thank-you pages and unfinished articles use HTML noindex.
+# Do not disallow those pages: crawlers must be able to read their noindex tag.
+# This file is not authentication or an AI-training permission policy.
 User-agent: *
 Allow: /
 
