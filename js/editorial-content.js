@@ -12,6 +12,21 @@
 })(typeof self !== "undefined" ? self : this, function () {
   return [
     {
+      id: "galleria-console-milano-2026",
+      type: "gallery",
+      asset: "assets/img/incontro-console-milano-20-ottobre-2026/IMG_4827.jpg",
+      date: "2026-10-20",
+      routes: { it: "galleria.html#incontro-console-milano-2026" },
+      keys: {
+        date: "ga-console-date",
+        title: "ga-console-title",
+        body: ["ga-console-p1"],
+        photos: "ga-console-photos",
+        caption: "ga-console-caption",
+        imageAlt: ["ga-console-photo-1"]
+      }
+    },
+    {
       id: "galleria-pozzolo-stramezzi",
       type: "gallery",
       asset: "assets/img/incontro-milano-18-ottobre-2026/6cfa9382-a6fe-4230-ab07-a01f960da18f.jpg",

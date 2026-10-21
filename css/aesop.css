@@ -1035,6 +1035,26 @@ main > .articolo {
   font-size: .82rem; font-weight: 600; text-transform: uppercase;
   letter-spacing: .16em; color: var(--grigio); margin: 2.2rem 0 .4rem;
 }
+.ev-arch--single-photo {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  max-width: 760px;
+  margin-inline: auto;
+}
+.ev-arch--single-photo > * { margin: 0; }
+.ev-arch--single-photo .ev-arch__testo { max-width: none; }
+.ev-arch--single-photo .ev-arch__testo p { margin: 0; }
+.ev-arch--single-photo .ev-arch__media {
+  width: 92%;
+  max-width: 680px;
+  justify-self: center;
+}
+.ev-arch--single-photo figcaption {
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  font-size: .9rem;
+  line-height: 1.8;
+  text-align: left;
+}
 /* stato vuoto: nessun evento futuro */
 .ev-vuoto {
   border-top: 1px solid var(--linea);

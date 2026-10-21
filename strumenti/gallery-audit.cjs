@@ -26,6 +26,11 @@ assert.deepEqual(dates, [...dates].sort().reverse(), 'Archivio dal più recente'
 assert.equal(new Set(dates).size, dates.length, 'Nessuna scheda duplicata');
 
 const expected = {
+  'galleria-console-milano-2026': {
+    date: '2026-10-20', photos: [
+      'img/incontro-console-milano-20-ottobre-2026/IMG_4827.jpg'
+    ]
+  },
   'galleria-pozzolo-stramezzi': {
     date: '2026-10-18', photos: [
       'img/incontro-milano-18-ottobre-2026/6cfa9382-a6fe-4230-ab07-a01f960da18f.jpg',
@@ -87,6 +92,14 @@ for (const [id, event] of Object.entries(expected)) {
   }
 }
 assert.equal([...html.matchAll(/<img\b[^>]*fetchpriority="high"/g)].length, 1, 'Una sola immagine prioritaria');
+const consul = articles.find(([, attributes]) => attributes.includes('data-editorial-record="galleria-console-milano-2026"'))[2];
+assert.equal(dates[0], '2026-10-20', 'Il nuovo incontro è il primo dell’archivio');
+assert.match(consul, /<figcaption class="didascalia" data-i18n="ga-console-caption">Da sinistra:/);
+assert.doesNotMatch(consul, /IMG_4828\.jpg/, 'Rimuovere la foto a destra dalla scheda');
+assert.ok(consul.indexOf('IMG_4827.jpg') < consul.indexOf('<figcaption'), 'Didascalia sotto la foto di gruppo');
+assert.match(consul, /Denis Bashirov/);
+assert.match(consul, /Antonio Giuseppe Ranieri Imperatore Barone di Pellizzara, Garescio e Bulfara/);
+assert.equal([...consul.matchAll(/data-i18n="ga-console-p1"/g)].length, 1, 'Testo completo, senza duplicazioni');
 const maslenitsa = articles.find(([, attributes]) => attributes.includes('data-editorial-record="galleria-maslenitsa-2025"'))[2];
 assert.match(maslenitsa, /<figcaption class="didascalia" data-i18n="ga-maslenitsa-caption">Antonio Imperatore, Lali Panchulidze e Ludmila Mitrofanova<\/figcaption>/);
 assert.equal([...maslenitsa.matchAll(/data-i18n="ga-maslenitsa-p\d"/g)].length, 9, 'Resoconto completo di Maslenitsa');
@@ -98,7 +111,7 @@ for (const url of [
   'https://it.m.wikipedia.org/wiki/Paolo_Troubetzkoy',
   'https://www.podkova.it/'
 ]) assert.ok(maslenitsa.includes(`href="${url}"`), 'Collegamento fornito: ' + url);
-for (const record of records.filter(record => ['galleria-maslenitsa-2025', 'galleria-pozzolo-stramezzi'].includes(record.id))) {
+for (const record of records.filter(record => ['galleria-console-milano-2026', 'galleria-maslenitsa-2025', 'galleria-pozzolo-stramezzi'].includes(record.id))) {
   for (const key of record.keys.body) assert.doesNotMatch(translations.it[key], /\p{Script=Cyrillic}/u, 'Caratteri misti nel testo italiano: ' + key);
 }
 console.log(`Gallery audit passed: ${articles.length} entries, ${checkedPhotos} checked photographs, date-first order, 3 locales`);

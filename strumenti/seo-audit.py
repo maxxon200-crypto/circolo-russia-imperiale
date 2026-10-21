@@ -154,7 +154,7 @@ for filename in ("index.html", "contatti.html"):
     assert {point["email"] for point in organization["contactPoint"] if "email" in point} == {
         "info@amicidellarussia.it", "segreteria@amicidellarussia.it", "presidenza@amicidellarussia.it", "amicidellarussia@pec.net"
     }
-assert next(node for node in pages["galleria.html"].graphs if node["@type"] == "ItemList")["numberOfItems"] == 7
+assert next(node for node in pages["galleria.html"].graphs if node["@type"] == "ItemList")["numberOfItems"] == 8
 assert next(node for node in pages["attualita.html"].graphs if node["@type"] == "ItemList")["numberOfItems"] == 4
 print(json.dumps({"status": "PASS", "canonicalPages": len(indexable), "excludedNoindexPages": len(excluded),
                   "contentImages": image_count, "staticSemanticPages": len(indexable), "llmsLinks": len(discovery),
