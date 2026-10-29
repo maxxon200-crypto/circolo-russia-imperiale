@@ -1,6 +1,23 @@
 # circolo-russia-imperiale
 Sito del Circolo Internazionale Amici della Russia Imperiale - Terza Roma
 
+## Pagamenti e donazioni PayPal
+
+Il collegamento fornito dal titolare compare in fondo alla homepage e sotto le
+quote di Tesseramento. I due box funzionano anche senza JavaScript. Testi e
+pulsanti sono disponibili in italiano, inglese e russo tramite `js/i18n.js`.
+
+`js/main.js` mostra un promemoria non modale dopo 20 secondi dalla prima pagina
+della visita, una sola volta per sessione della scheda (`sessionStorage`, chiavi
+`circolo.paypal.startedAt` e `circolo.paypal.shown`). Compare anche con il banner
+cookie aperto, disponendosi sopra di esso senza sovrapporlo; la posizione segue
+la sua altezza. Attende la chiusura del menu mobile e non interrompe i moduli.
+Il popup e unico e riusa i testi del dizionario, senza copie delle frasi nel JS.
+Si chiude con la X o Escape e non sposta il focus all'apertura. Nessun SDK,
+iframe, tracciamento o richiesta a PayPal: la pagina esterna si apre in una nuova
+scheda soltanto quando l'utente seleziona il pulsante. Non conferma iscrizioni
+né pagamenti, e non modifica le quote associative.
+
 ## SEO statico e scoperta dei contenuti
 
 Il sito resta HTML/CSS/JavaScript statico: nessun servizio di ricerca, database,
@@ -30,6 +47,7 @@ python strumenti/seo-audit.py
 node strumenti/translation-audit.cjs
 node strumenti/gallery-audit.cjs
 node strumenti/attualita-audit.cjs
+node strumenti/payment-audit.cjs
 ```
 
 `--write` rigenera soltanto dati di scoperta e markup nel `head`: non cambia il

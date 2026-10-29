@@ -930,6 +930,71 @@ main > .articolo {
 /* didascalia sotto le immagini */
 .didascalia { font-size: .9rem; color: var(--grigio); margin-top: 1rem; text-align: center; }
 
+/* Pagamenti: stessi colori e bottoni del sito, senza widget o script esterni. */
+.payment-box,
+.payment-prompt {
+  padding: clamp(1.25rem, 3vw, 1.8rem);
+  border: 1px solid var(--linea);
+  border-top: 2px solid var(--oro-soft);
+  background: var(--bianco);
+  color: var(--nero-morbido);
+  font-size: .98rem;
+  line-height: 1.7;
+  text-align: left;
+}
+.payment-box { margin-top: 2rem; scroll-margin-top: 7rem; }
+.cta-socio .wrap { max-width: 820px; }
+.cta-socio .payment-box { padding: clamp(1.5rem, 3.5vw, 2.1rem); }
+.payment-title {
+  margin: 0 0 .85rem;
+  color: var(--nero);
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.payment-box .btn,
+.payment-prompt .btn {
+  max-width: 100%;
+  padding: .9rem 1.25rem;
+  font-size: .8rem;
+  line-height: 1.6;
+  letter-spacing: .08em;
+  text-align: center;
+}
+.cta-socio .payment-box .btn {
+  padding: 1.05rem 1.55rem;
+  font-size: .86rem;
+}
+.payment-prompt {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: calc(var(--payment-cookie-offset, 0px) + max(1rem, env(safe-area-inset-bottom)));
+  z-index: 80;
+  width: min(24rem, calc(100% - 2rem));
+  max-height: calc(100svh - var(--payment-header-offset, 6rem) - var(--payment-cookie-offset, 0px) - max(1rem, env(safe-area-inset-bottom)));
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(11, 31, 58, .12);
+}
+.payment-prompt[hidden] { display: none; }
+.payment-prompt .payment-title { padding-right: 2rem; }
+.payment-prompt__close {
+  position: absolute;
+  top: .35rem;
+  right: .35rem;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--nero);
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.payment-prompt__close:hover { color: var(--oro); }
+
 /* ---------- Banner cookie ---------- */
 .cookie-banner {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;

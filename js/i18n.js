@@ -7,6 +7,11 @@
   "use strict";
 
   var DICT = {
+    "payment-title": { it: "Pagamenti e donazioni", ru: "Платежи и пожертвования" },
+    "payment-text": { it: "Per sostenere le attività del Circolo, puoi effettuare pagamenti e donazioni tramite PayPal. Grazie di cuore per il tuo contributo.", ru: "Вы можете поддержать деятельность ассоциации, совершив платёж или пожертвование через PayPal. От всего сердца благодарим вас за ваш добрый вклад." },
+    "payment-action": { it: "Paga o dona con PayPal", ru: "Оплатить или пожертвовать через PayPal" },
+    "payment-close": { it: "Chiudi il promemoria PayPal", ru: "Закрыть напоминание о PayPal" },
+    "cp-payment-storage": { it: "Il promemoria per pagamenti e donazioni usa sessionStorage per ricordare l’inizio della visita e non ripresentarsi nella stessa sessione della scheda. Queste informazioni restano nel browser e non vengono inviate al Circolo o a PayPal. Il collegamento a PayPal si apre solo quando lo scegli.", ru: "Напоминание о платежах и пожертвованиях использует sessionStorage, чтобы запомнить начало посещения и не появляться повторно в той же сессии вкладки. Эти сведения остаются в браузере и не передаются ассоциации или PayPal. Переход на PayPal происходит только при выборе ссылки." },
     "ga-console-date": { it: "20 ottobre 2026", ru: "20 октября 2026 года" },
     "ga-console-title": { it: "L’incontro con il Console della Federazione Russa di Milano", ru: "Встреча с консулом Российской Федерации в Милане" },
     "ga-console-p1": { it: "La nostra Delegazione è stata accolta in modo molto amichevole dal Console Denis Bashirov, che si è informato in modo dettagliato sulle nostre attività ed i nostri programmi futuri, assicurandoci la sua presenza ai nostri eventi ogni volta che gli sarà possibile. Questo incontro costituisce il primo passo per una fattiva collaborazione fra il nostro Circolo ed il Consolato, e più in generale l’intera comunità russa del Nord Italia, che rientra nella sfera di responsabilità del Consolato stesso.", ru: "Наша делегация была очень дружелюбно принята консулом Денисом Башировым, который подробно расспросил о нашей деятельности и планах на будущее, заверив, что будет присутствовать на наших мероприятиях всякий раз, когда у него будет такая возможность. Эта встреча стала первым шагом к плодотворному сотрудничеству между нашей ассоциацией и консульством, а в более широком смысле — со всей русской общиной Северной Италии, входящей в сферу ответственности консульства." },
@@ -708,6 +713,11 @@
      =================================================================== */
   var EN_PLACEHOLDER = "[English version coming soon]";
   var EN = {
+    "payment-title": "Payments and donations",
+    "payment-text": "To support the Circle’s activities, you can make payments and donations through PayPal. Thank you sincerely for your kind contribution.",
+    "payment-action": "Pay or donate with PayPal",
+    "payment-close": "Dismiss the PayPal reminder",
+    "cp-payment-storage": "The payments and donations reminder uses sessionStorage to remember when your visit started and avoid appearing again during the same tab session. This information stays in your browser and is not sent to the Circle or PayPal. The PayPal link opens only when you choose it.",
     "ga-console-date": "20 October 2026",
     "ga-console-title": "Meeting with the Consul of the Russian Federation in Milan",
     "ga-console-p1": "Our delegation received a very friendly welcome from Consul Denis Bashirov, who asked in detail about our activities and future plans, assuring us that he would attend our events whenever possible. This meeting marks the first step towards fruitful cooperation between our Circle and the Consulate and, more broadly, the entire Russian community in Northern Italy, which falls within the Consulate’s area of responsibility.",
@@ -1358,6 +1368,7 @@
       if (localizedRoute) { routeEl.setAttribute("href", localizedRoute); }
     }
     try { localStorage.setItem("lang", lang); } catch (e) {}
+    document.dispatchEvent(new Event("circolo:languagechange"));
   }
 
   function init() {
