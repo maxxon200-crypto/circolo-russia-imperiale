@@ -20,6 +20,25 @@ né pagamenti, e non modifica le quote associative.
 
 ## SEO statico e scoperta dei contenuti
 
+### Domanda di adesione online
+
+La pagina Tesseramento usa il servizio Web3Forms già configurato, senza nuovi
+servizi, database o cambi di destinatario. La domanda richiede tutti i campi
+tranne titoli e gradi; i campi aggiunti sono inclusi nel corpo dell'email.
+Telefono e data di nascita sono verificati nel browser; la validazione client
+non sostituisce le verifiche della Segreteria. Il PDF cartaceo è stato rimosso.
+La conferma dell'invio rimanda alle quote: non attesta né il pagamento né
+l'accettazione dell'adesione e non aggiunge automaticamente a gruppi o chat.
+
+Su richiesta del cliente, i segnaposto di identità, sede e data sono stati
+rimossi dalle informative senza inventare dati. Prima della pubblicazione va
+comunque verificata l'identificazione del titolare, oltre a base giuridica,
+conservazione e accordi con il fornitore. La sola rimozione dei segnaposto non
+completa l'informativa. Le descrizioni tecniche aggiornate non sono una
+certificazione di conformità. Il destinatario effettivo e la consegna delle
+email vanno verificati nel pannello Web3Forms: non si deducono dal link mailto.
+I test browser intercettano gli invii e non inviano domande o pagamenti reali.
+
 Il sito resta HTML/CSS/JavaScript statico: nessun servizio di ricerca, database,
 dipendenza runtime o configurazione DNS aggiunti.
 
@@ -48,6 +67,7 @@ node strumenti/translation-audit.cjs
 node strumenti/gallery-audit.cjs
 node strumenti/attualita-audit.cjs
 node strumenti/payment-audit.cjs
+node strumenti/membership-audit.cjs
 ```
 
 `--write` rigenera soltanto dati di scoperta e markup nel `head`: non cambia il
@@ -66,8 +86,16 @@ Dopo una pubblicazione autorizzata, verificare che `/sitemap.xml`, `/robots.txt`
 e `/llms.txt` rispondano HTTP 200 dal dominio canonico, quindi inviare la sitemap
 in Google Search Console e Bing Webmaster Tools negli account del proprietario.
 Misurare impression, clic e pagine indicizzate: l'indicizzazione e il traffico non
-sono garantiti dai file. Restano da completare dal titolare gli eventuali campi
-segnaposto delle informative legali; questo intervento non inventa dati legali.
+sono garantiti dai file. Le informative legali richiedono la verifica del
+titolare; questo intervento non inventa dati legali.
+
+Controllo del 3 novembre 2026: sia `www.amicidellarussia.it` sia il dominio
+lungo rispondono HTTP 200; entrambi dichiarano il dominio lungo come canonico.
+Non sono stati cambiati domini, DNS o redirect. Un eventuale passaggio al
+dominio breve richiede una scelta esplicita e un piano di consolidamento.
+I metadata di condivisione sono ora generati da titolo e descrizione di pagina
+per evitare versioni discordanti. `llms.txt` descrive il nuovo flusso di adesione
+e i recapiti pubblici, ma non invia URL a Google o Bing e non garantisce traffico.
 
 Riferimenti: [Google: sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap),
 [robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro),

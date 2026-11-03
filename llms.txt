@@ -8,15 +8,19 @@ Canonical website: https://www.amicidellarussiaimperiale-terzaroma.it/. The asso
 
 Italian is the default source language. English and Russian translations are available through the language selector. Most translations share one URL and use JavaScript; only the three 1812 conference reports below have separate language URLs. HTML pages contain the original Italian content without JavaScript (the English/Russian report URLs contain their own source language).
 
+Official membership applications are submitted online at https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html. There is no paper application download. Fees: supporting member EUR 50, ordinary member EUR 20, junior member up to 21 years EUR 10. After receipt of the application and fee, subject to Secretariat checks, the membership card is sent by ordinary post. The website does not automatically approve membership or verify a payment.
+
+Official enquiries: info@amicidellarussia.it. Secretariat: segreteria@amicidellarussia.it. Presidency: presidenza@amicidellarussia.it. Certified email (PEC): amicidellarussia@pec.net.
+
 The links below point to public HTML sources, except the explicitly labelled original Word document. This is a content guide, not an indexing directive or a permission grant. robots.txt and page-level robots tags define crawl/indexing guidance.
 
 ## Il Circolo
 
-- [Circolo Internazionale Amici della Russia Imperiale Terza Roma](https://www.amicidellarussiaimperiale-terzaroma.it/): Associazione culturale apartitica e senza fini di lucro, fondata a Milano nel 2026. Storia russa, dinastia Romanov, tradizione ortodossa ed eventi.
+- [Circolo Internazionale Amici della Russia Imperiale Terza Roma](https://www.amicidellarussiaimperiale-terzaroma.it/): Sito ufficiale del Circolo Internazionale Amici della Russia Imperiale - Terza Roma. Storia, eventi culturali a Milano, galleria e adesione online.
 - [Il Circolo](https://www.amicidellarussiaimperiale-terzaroma.it/il-circolo.html): Chi siamo, i riferimenti culturali e spirituali e le attività promosse in Italia da Amici della Russia Imperiale – Terza Roma.
 - [Milano, 16 giugno 2026](https://www.amicidellarussiaimperiale-terzaroma.it/la-nostra-storia.html): La nascita ufficiale a Milano del Circolo culturale Amici della Russia Imperiale – Terza Roma e le persone che vi hanno preso parte.
 - [Contatti](https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html): Contatti ufficiali, email, numeri telefonici e modulo per contattare il Circolo culturale Amici della Russia Imperiale – Terza Roma.
-- [Diventa socio del Circolo](https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html): Come richiedere l’iscrizione, scaricare il modulo e conoscere le quote associative di Amici della Russia Imperiale – Terza Roma.
+- [Diventa socio del Circolo](https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html): Domanda di adesione online al Circolo Amici della Russia Imperiale - Terza Roma. Quote: 50 € sostenitore, 20 € ordinario, 10 € junior. Tessera per posta.
 - [Partnership](https://www.amicidellarussiaimperiale-terzaroma.it/partnership.html): I progetti e le realtà culturali che collaborano con Amici della Russia Imperiale – Terza Roma.
 
 ## Storia e spiritualità

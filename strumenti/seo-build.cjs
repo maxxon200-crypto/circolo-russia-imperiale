@@ -51,6 +51,7 @@ function text(html) {
     .replace(/&#(?:39|x27);|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 }
 const xml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+const attribute = value => xml(value).replace(/&apos;/g, "'");
 const url = file => file === 'index.html' ? home : origin + '/' + file;
 const ref = id => ({ '@id': id });
 const asTopics = keys => keys.map(key => ({ '@type': 'Thing', name: topics[key] }));
@@ -170,6 +171,8 @@ for (const page of pages) {
     '  <script type="application/ld+json" id="semantic-data">', graph, '  </script>'
   ].join(eol);
   const html = page.html.replace(scriptPattern, '')
+    .replace(/(<meta (?:property="og:title"|name="twitter:title") content=")[^"]*(">)/g, (_, start, end) => start + attribute(page.title) + end)
+    .replace(/(<meta (?:property="og:description"|name="twitter:description") content=")[^"]*(">)/g, (_, start, end) => start + attribute(page.description) + end)
     .replace(/[ \t]*<link rel="(?:sitemap|describedby)"[^>]*>\r?\n?/g, '')
     .replace(/\s*<\/head>/, eol + block + eol + '</head>');
   // This generator must never rewrite visible content, forms, navigation or styles.
@@ -202,6 +205,8 @@ const llms = [
   'Italian name: Circolo Internazionale Amici della Russia Imperiale - Terza Roma. English: International Circle of Friends of Imperial Russia - Third Rome. Russian: Международная ассоциация друзей Российской Империи - Третий Рим.', '',
   'Canonical website: ' + home + '. The association describes its own identity and viewpoints on the About page; it is not the Russian Orthodox Church or the Imperial House itself. Event dates refer to the actual event, not the publication date. Past activities are collected in the Gallery.', '',
   'Italian is the default source language. English and Russian translations are available through the language selector. Most translations share one URL and use JavaScript; only the three 1812 conference reports below have separate language URLs. HTML pages contain the original Italian content without JavaScript (the English/Russian report URLs contain their own source language).', '',
+  'Official membership applications are submitted online at ' + origin + '/tesseramento.html. There is no paper application download. Fees: supporting member EUR 50, ordinary member EUR 20, junior member up to 21 years EUR 10. After receipt of the application and fee, subject to Secretariat checks, the membership card is sent by ordinary post. The website does not automatically approve membership or verify a payment.', '',
+  'Official enquiries: info@amicidellarussia.it. Secretariat: segreteria@amicidellarussia.it. Presidency: presidenza@amicidellarussia.it. Certified email (PEC): amicidellarussia@pec.net.', '',
   'The links below point to public HTML sources, except the explicitly labelled original Word document. This is a content guide, not an indexing directive or a permission grant. robots.txt and page-level robots tags define crawl/indexing guidance.', ''
 ];
 for (const group of [...new Set(pages.map(page => page.group))]) {

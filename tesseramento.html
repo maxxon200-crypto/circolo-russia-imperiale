@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tesseramento: diventa socio | Amici della Russia Imperiale</title>
-  <meta name="description" content="Come richiedere l’iscrizione, scaricare il modulo e conoscere le quote associative di Amici della Russia Imperiale – Terza Roma.">
+  <meta name="description" content="Domanda di adesione online al Circolo Amici della Russia Imperiale - Terza Roma. Quote: 50 € sostenitore, 20 € ordinario, 10 € junior. Tessera per posta.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="Amici della Russia Imperiale – Terza Roma">
   <meta property="og:title" content="Tesseramento: diventa socio | Amici della Russia Imperiale">
-  <meta property="og:description" content="Come richiedere l’iscrizione, scaricare il modulo e conoscere le quote associative di Amici della Russia Imperiale – Terza Roma.">
+  <meta property="og:description" content="Domanda di adesione online al Circolo Amici della Russia Imperiale - Terza Roma. Quote: 50 € sostenitore, 20 € ordinario, 10 € junior. Tessera per posta.">
   <meta property="og:url" content="https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html">
   <meta property="og:image" content="https://www.amicidellarussiaimperiale-terzaroma.it/assets/img/condivisione-circolo-russia-imperiale.jpg">
   <meta property="og:image:width" content="1200">
@@ -19,7 +19,7 @@
   <meta property="og:image:alt" content="Il Palazzo d'Inverno a San Pietroburgo">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Tesseramento: diventa socio | Amici della Russia Imperiale">
-  <meta name="twitter:description" content="Come richiedere l’iscrizione, scaricare il modulo e conoscere le quote associative di Amici della Russia Imperiale – Terza Roma.">
+  <meta name="twitter:description" content="Domanda di adesione online al Circolo Amici della Russia Imperiale - Terza Roma. Quote: 50 € sostenitore, 20 € ordinario, 10 € junior. Tessera per posta.">
   <meta name="twitter:image" content="https://www.amicidellarussiaimperiale-terzaroma.it/assets/img/condivisione-circolo-russia-imperiale.jpg">
   <meta name="twitter:image:alt" content="Il Palazzo d'Inverno a San Pietroburgo">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -59,7 +59,7 @@
         "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html#webpage",
         "url": "https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html",
         "name": "Diventa socio del Circolo",
-        "description": "Come richiedere l’iscrizione, scaricare il modulo e conoscere le quote associative di Amici della Russia Imperiale – Terza Roma.",
+        "description": "Domanda di adesione online al Circolo Amici della Russia Imperiale - Terza Roma. Quote: 50 € sostenitore, 20 € ordinario, 10 € junior. Tessera per posta.",
         "inLanguage": "it-IT",
         "isPartOf": {
           "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/#website"
@@ -71,8 +71,7 @@
           "@id": "https://www.amicidellarussiaimperiale-terzaroma.it/tesseramento.html#breadcrumb"
         },
         "relatedLink": [
-          "https://www.amicidellarussiaimperiale-terzaroma.it/privacy.html",
-          "https://www.amicidellarussiaimperiale-terzaroma.it/contatti.html"
+          "https://www.amicidellarussiaimperiale-terzaroma.it/privacy.html"
         ]
       }
     ]
@@ -126,7 +125,7 @@
       <div class="wrap">
         <p class="eyebrow reveal" data-i18n="nav-tesseramento">Tesseramento</p>
         <h1 class="reveal" data-i18n="ph-tess-h1">Diventa socio del Circolo</h1>
-        <p class="page-intro reveal" data-i18n="ph-tess-lead">Avvicinarsi al Circolo e semplice. Compila la richiesta di iscrizione: ti ricontatteremo con tutte le informazioni.</p>
+        <p class="page-intro reveal" data-i18n="ph-tess-lead">Compila la domanda online e versa la quota associativa. La Segreteria gestirà la richiesta e le eventuali verifiche prima dell’emissione e della spedizione della tessera.</p>
         <div class="filetto-oro reveal" aria-hidden="true"></div>
       </div>
     </section>
@@ -148,7 +147,8 @@
                  La chiave di accesso sta in cima a js/moduli.js.
             ============================================================ -->
             <h2 class="sez-titolo reveal" data-i18n="te-form-title">Domanda di adesione</h2>
-            <form class="form reveal" id="form-iscrizione" novalidate>
+            <p class="nota reveal" data-i18n="te-obbligatori">Tutti i campi sono obbligatori, tranne gli eventuali titoli e gradi.</p>
+            <form class="form reveal" id="form-iscrizione" method="post" novalidate>
               <div class="due">
                 <div class="campo">
                   <label for="nome" data-i18n="lbl-nome">Nome</label>
@@ -165,27 +165,61 @@
                   <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
                 <div class="campo">
-                  <label for="telefono" data-i18n="lbl-telefono">Telefono (facoltativo)</label>
-                  <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+                  <label for="telefono" data-i18n="te-telefono">Telefono (obbligatorio)</label>
+                  <input type="tel" id="telefono" name="telefono" autocomplete="tel" maxlength="40" required>
+                </div>
+              </div>
+              <div class="campo">
+                <label for="titoli" data-i18n="te-titoli">Eventuali titoli accademici, onorifici, nobiliari e/o gradi militari</label>
+                <input type="text" id="titoli" name="titoli" maxlength="250">
+              </div>
+              <div class="due">
+                <div class="campo">
+                  <label for="data-nascita" data-i18n="te-data-nascita">Nato il (data)</label>
+                  <input type="date" id="data-nascita" name="data_nascita" autocomplete="bday" required>
+                </div>
+                <div class="campo">
+                  <label for="luogo-nascita" data-i18n="te-luogo-nascita">A (città + sigla Provincia o Stato estero di nascita)</label>
+                  <input type="text" id="luogo-nascita" name="luogo_nascita" maxlength="150" required>
+                </div>
+              </div>
+              <div class="campo">
+                <label for="residenza" data-i18n="te-residenza">Residente a (città + sigla Provincia o Stato estero di residenza)</label>
+                <input type="text" id="residenza" name="residenza" autocomplete="address-level2" maxlength="150" required>
+              </div>
+              <div class="campo">
+                <label for="indirizzo" data-i18n="te-indirizzo">In (indirizzo)</label>
+                <input type="text" id="indirizzo" name="indirizzo" autocomplete="street-address" maxlength="250" aria-describedby="indirizzo-aiuto" required>
+                <p class="campo-aiuto" id="indirizzo-aiuto" data-i18n="te-indirizzo-aiuto">Per la spedizione della tessera, indica via, numero civico, CAP e Paese.</p>
+              </div>
+              <div class="due">
+                <div class="campo">
+                  <label for="cittadinanza" data-i18n="te-cittadinanza">Cittadinanza</label>
+                  <input type="text" id="cittadinanza" name="cittadinanza" maxlength="100" required>
+                </div>
+                <div class="campo">
+                  <label for="titolo-studio" data-i18n="te-titolo-studio">Titolo di studio</label>
+                  <input type="text" id="titolo-studio" name="titolo_studio" maxlength="150" required>
                 </div>
               </div>
               <div class="campo">
                 <label for="professione" data-i18n="lbl-professione">Professione</label>
-                <input type="text" id="professione" name="professione" autocomplete="organization-title">
+                <input type="text" id="professione" name="professione" autocomplete="organization-title" required>
               </div>
               <div class="campo">
-                <label for="messaggio" data-i18n="lbl-messaggio">Messaggio</label>
-                <textarea id="messaggio" name="messaggio" data-i18n-ph="ph-msg"></textarea>
+                <label for="messaggio" data-i18n="te-presentazione">Presentati in breve</label>
+                <textarea id="messaggio" name="messaggio" data-i18n-ph="ph-msg" required></textarea>
               </div>
               <!-- Campo esca antispam di Web3Forms: nascosto alle persone,
                    i bot automatici lo compilano e l'invio viene scartato. -->
               <input type="checkbox" name="botcheck" class="esca" tabindex="-1" autocomplete="off" aria-hidden="true">
-              <p class="nota" data-i18n="te-nota">Inviando accetti di essere ricontattato dal Circolo. I tuoi dati non saranno ceduti a terzi.</p>
+              <p class="nota" data-i18n="te-nota">I dati saranno inviati al Circolo tramite Web3Forms per gestire la domanda di adesione. Leggi l’informativa privacy prima dell’invio.</p>
               <div class="consenso">
                 <input type="checkbox" id="privacy" name="privacy" required>
                 <label for="privacy" data-i18n="te-privacy">Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>.</label>
               </div>
-              <p><button type="submit" class="btn btn--primary" data-i18n="btn-invia-richiesta">Invia richiesta</button></p>
+              <noscript><p>Per inviare la domanda online è necessario attivare JavaScript. In alternativa contatta <a href="mailto:segreteria@amicidellarussia.it">segreteria@amicidellarussia.it</a>.</p></noscript>
+              <p><button type="submit" class="btn btn--primary" data-i18n="btn-invia-richiesta" disabled>Invia richiesta</button></p>
               <div class="form-errore" role="alert" tabindex="-1" hidden></div>
             </form>
           </div>
@@ -194,38 +228,22 @@
           <div>
             <h2 class="sez-titolo reveal" data-i18n="te-h1">I passi per diventare socio</h2>
             <ol class="passi reveal">
-              <li data-i18n="te-step1">Compila il modulo di richiesta qui sotto.</li>
-              <li data-i18n="te-step2">Riceverai una risposta con le modalita di adesione e la quota associativa.</li>
-              <li data-i18n="te-step3">Perfezioni l'iscrizione e ricevi la tessera del Circolo.</li>
+              <li data-i18n="te-step1">Compila ed inoltra la domanda di adesione.</li>
+              <li data-i18n="te-step2">Effettua il versamento della quota associativa: € 50 sostenitore, € 20 ordinario, € 10 junior (fino a 21 anni).</li>
+              <li data-i18n="te-step3">A ricezione della domanda e della quota associativa, salvo eventuali ulteriori verifiche da parte della Segreteria del Circolo, verrà emessa e spedita per posta ordinaria la tua tessera.</li>
             </ol>
-            <div class="box-info reveal" data-delay="0.1s">
-              <span class="tag" data-i18n="te-box2-tag">Preferisci scriverci</span>
-              <p data-i18n="te-box2">Puoi anche contattarci direttamente a <a href="mailto:info@amicidellarussia.it">info@amicidellarussia.it</a> o dalla pagina <a href="contatti.html">Contatti</a>.</p>
-            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         MODULO CARTACEO DI ISCRIZIONE (PDF) + QUOTE ASSOCIATIVE
-         Il PDF ufficiale sta in assets/doc/modulo-iscrizione-2026.pdf
-    ============================================================ -->
+    <!-- Quote associative e pagamento online, senza modulo cartaceo. -->
     <section class="section">
       <div class="wrap">
         <div class="split split--top">
 
-          <!-- SINISTRA: scarica il modulo -->
-          <div class="te-pdf">
-            <h2 class="sez-titolo reveal" data-i18n="te-pdf-h">Modulo di iscrizione</h2>
-            <p class="reveal">
-              <a class="btn btn--primary" href="assets/doc/modulo-iscrizione-2026.pdf" download data-i18n="te-pdf-btn">Scarica il modulo di iscrizione (PDF)</a>
-            </p>
-            <p class="te-pdf__nota reveal" data-i18n="te-pdf-nota">Il modulo va stampato, compilato, firmato e consegnato o inviato al Circolo. Per informazioni scrivere a <a href="mailto:info@amicidellarussia.it">info@amicidellarussia.it</a>.</p>
-          </div>
-
-          <!-- DESTRA: quote associative -->
+          <!-- Quote associative -->
           <div>
             <h2 class="sez-titolo reveal" data-i18n="te-quote-h">Quote associative</h2>
             <ul class="quote reveal">
@@ -233,6 +251,8 @@
               <li><span class="quote__n" data-i18n="te-q2-n">Socio ordinario</span><span class="quote__v" data-i18n="te-q2-v">20 euro</span></li>
               <li><span class="quote__n" data-i18n="te-q3-n">Socio junior (fino a 21 anni)</span><span class="quote__v" data-i18n="te-q3-v">10 euro</span></li>
             </ul>
+          </div>
+          <div>
             <aside class="payment-box" id="pagamenti" aria-labelledby="membership-payment-title">
               <h3 class="payment-title" id="membership-payment-title" data-i18n="payment-title">Pagamenti e donazioni</h3>
               <p data-i18n="payment-text">Per sostenere le attività del Circolo, puoi effettuare pagamenti e donazioni tramite PayPal. Grazie di cuore per il tuo contributo.</p>

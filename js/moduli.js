@@ -77,8 +77,15 @@
           ["Cognome", v("cognome")],
           ["Email", v("email")],
           ["Telefono", v("telefono")],
+          ["Titoli accademici, onorifici, nobiliari e/o gradi militari", v("titoli")],
+          ["Data di nascita", v("data_nascita")],
+          ["Luogo di nascita (città, Provincia o Stato estero)", v("luogo_nascita")],
+          ["Residenza (città, Provincia o Stato estero)", v("residenza")],
+          ["Indirizzo postale", v("indirizzo")],
+          ["Cittadinanza", v("cittadinanza")],
+          ["Titolo di studio", v("titolo_studio")],
           ["Professione", v("professione")],
-          ["Messaggio", v("messaggio")]
+          ["Presentazione", v("messaggio")]
         ];
       }
     }
@@ -126,7 +133,11 @@
       box.className = "campo-errore";
       contenitore.appendChild(box);
     }
-    box.innerHTML = messaggio;
+    box.id = campo.id + "-errore";
+    box.textContent = messaggio;
+    var riferimenti = (campo.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+    if (riferimenti.indexOf(box.id) < 0) { riferimenti.push(box.id); }
+    campo.setAttribute("aria-describedby", riferimenti.join(" "));
   }
 
   function pulisciErrore(campo) {
@@ -134,20 +145,26 @@
     campo.removeAttribute("aria-invalid");
     var contenitore = campo.closest(".campo") || campo.parentNode;
     var box = contenitore.querySelector(".campo-errore");
-    if (box) { box.remove(); }
+    if (box) {
+      var riferimenti = (campo.getAttribute("aria-describedby") || "").split(/\s+/).filter(function (id) { return id && id !== box.id; });
+      if (riferimenti.length) { campo.setAttribute("aria-describedby", riferimenti.join(" ")); }
+      else { campo.removeAttribute("aria-describedby"); }
+      box.remove();
+    }
   }
 
   function valida(form) {
     var ok = true;
     var primoErrore = null;
-    var obbligatori = form.querySelectorAll("[required]");
+    var obbligatori = form.querySelectorAll("input, textarea, select");
 
     for (var i = 0; i < obbligatori.length; i++) {
       var campo = obbligatori[i];
+      if (campo.name === "botcheck" || campo.type === "hidden") { continue; }
       pulisciErrore(campo);
 
       if (campo.type === "checkbox") {
-        if (!campo.checked) {
+        if (campo.required && !campo.checked) {
           ok = false;
           mostraErroreCampo(campo, t("err-privacy", "Per proseguire e necessario accettare la Privacy Policy."));
           if (!primoErrore) { primoErrore = campo; }
@@ -156,13 +173,22 @@
       }
 
       var valore = (campo.value || "").trim();
-      if (!valore) {
+      if (campo.required && !valore) {
         ok = false;
         mostraErroreCampo(campo, t("err-obbligo", "Questo campo e obbligatorio."));
         if (!primoErrore) { primoErrore = campo; }
-      } else if (campo.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(valore)) {
+      } else if (valore && campo.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(valore)) {
         ok = false;
         mostraErroreCampo(campo, t("err-email", "Inserisci un indirizzo email valido."));
+        if (!primoErrore) { primoErrore = campo; }
+      } else if (form.id === "form-iscrizione" && campo.type === "tel" && valore &&
+          (!/^\+?[\d\s().\/-]+$/.test(valore) || valore.replace(/\D/g, "").length < 6 || valore.replace(/\D/g, "").length > 20)) {
+        ok = false;
+        mostraErroreCampo(campo, t("err-telefono", "Inserisci un numero di telefono valido, con prefisso se necessario."));
+        if (!primoErrore) { primoErrore = campo; }
+      } else if (campo.type === "date" && (campo.validity.badInput || (valore && !campo.validity.valid))) {
+        ok = false;
+        mostraErroreCampo(campo, t("err-nascita", "Inserisci una data di nascita valida, non futura."));
         if (!primoErrore) { primoErrore = campo; }
       }
     }
@@ -221,6 +247,12 @@
 
     var bottone = form.querySelector('button[type="submit"]');
     var boxErrore = form.querySelector(".form-errore");
+    var invioInCorso = false;
+    var nascita = form.elements.data_nascita;
+    if (nascita) {
+      var oggi = new Date();
+      nascita.max = oggi.getFullYear() + "-" + String(oggi.getMonth() + 1).padStart(2, "0") + "-" + String(oggi.getDate()).padStart(2, "0");
+    }
 
     function mostraErroreGenerale(chiave) {
       if (!boxErrore) { return; }
@@ -247,6 +279,7 @@
       /* Sempre per primo: impedisce al browser di navigare verso la
          risposta del server, che e la causa della pagina con codice. */
       e.preventDefault();
+      if (invioInCorso) { return; }
 
       if (boxErrore) { boxErrore.hidden = true; }
 
@@ -261,15 +294,17 @@
       }
 
       var etichettaOriginale = bottone ? bottone.innerHTML : "";
+      invioInCorso = true;
       if (bottone) {
         bottone.disabled = true;
         bottone.innerHTML = t("te-invio", "Invio in corso...");
       }
 
       function ripristina() {
+        invioInCorso = false;
         if (bottone) {
           bottone.disabled = false;
-          bottone.innerHTML = etichettaOriginale;
+          bottone.innerHTML = t(bottone.getAttribute("data-i18n"), etichettaOriginale);
         }
       }
 
@@ -278,7 +313,9 @@
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(payload(form, cfg))
       })
-        .then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (r) {
+          return r.json().catch(function () { return {}; }).then(function (json) { return r.ok ? json : {}; });
+        })
         .then(function (risposta) {
           if (risposta && risposta.success) {
             window.location.href = cfg.grazie;
@@ -292,6 +329,8 @@
           mostraErroreGenerale(cfg.errore);
         });
     });
+    // Abilita l'invio solo dopo aver collegato validazione e gestore POST.
+    if (bottone) { bottone.disabled = false; }
   }
 
   function init() {

@@ -1222,12 +1222,11 @@ main > .articolo {
 }
 
 /* =====================================================================
-   Blocco 4 — Modulo cartaceo (download PDF) + quote associative
+   Quote associative
    ===================================================================== */
-.te-pdf { max-width: 34rem; }
-.te-pdf .btn { margin-bottom: 1.3rem; }
-.te-pdf__nota { font-size: .98rem; color: var(--grigio); line-height: 1.7; margin: 0; }
-.te-pdf__nota a { border-bottom: 1px solid var(--oro); }
+.campo .campo-aiuto { margin: .45rem 0 0; font-size: .85rem; color: var(--grigio); line-height: 1.6; }
+.campo input[type="date"] { min-width: 0; max-width: 100%; }
+#form-iscrizione .due { align-items: end; }
 
 /* elenco sobrio delle quote: nome a sinistra, importo a destra */
 .quote { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linea); max-width: 30rem; }
