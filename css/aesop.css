@@ -1050,12 +1050,6 @@ main > .articolo {
 .partner p { color: var(--grigio); margin: 0 0 1rem; max-width: 62ch; }
 .partner.split { scroll-margin-top: 6rem; }
 .partner .split__media { max-width: 30rem; }
-.partner-logo-title {
-  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
-  font-weight: 500;
-  line-height: 1.3;
-  margin: 0 0 1rem;
-}
 .partner--detailed { align-items: start; }
 .partner-events {
   grid-column: 1 / -1;
