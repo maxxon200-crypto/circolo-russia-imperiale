@@ -728,9 +728,37 @@
     "part-p1-event-photo-4": { it: "Villa Fenaroli con il cortile e il giardino", ru: "Вилла Фенароли с внутренним двором и садом" },
     "part-p2-name": { it: "La Santa Rus’", ru: "Святая Русь" },
     "part-p2-desc": {
-      it: "I libri di padre Adriano Frinchi dedicati alla fede, alla tradizione e alla spiritualità ortodossa.",
-      ru: "Книги отца Адриано Фринки о православной вере, традиции и духовной жизни."
+      it: "Un portale dedicato all’Ortodossia, alla spiritualità e alla cultura della Rus’. Nato per offrire al lettore italiano uno sguardo autentico sulla tradizione cristiana orientale, propone testi di riflessione teologica, agiografia, storia e cultura.",
+      ru: "Портал, посвящённый православию, духовности и культуре Руси. Он создан, чтобы дать итальянскому читателю подлинное представление о восточнохристианской традиции, и публикует богословские размышления, жития святых, материалы по истории и культуре."
     },
+    "part-p2-blog": { it: "Blog di padre Adriano Frinchi", ru: "Блог отца Адриано Фринки" },
+    "part-p2-image": {
+      it: "La Santa Rus’, fede, tradizione e cultura, con una processione cristiana sulla riva di un fiume",
+      ru: "«Святая Русь», вера, традиция и культура, с изображением крестного хода на берегу реки"
+    },
+    "part-p2-books-title": { it: "I libri di padre Adriano Frinchi", ru: "Книги отца Адриано Фринки" },
+    "part-p2-books-intro": {
+      it: "La fede ortodossa non è soltanto una tradizione da conoscere, ma una vita da vivere.",
+      ru: "Православная вера — это не только традиция, которую нужно познать, но и жизнь, которой нужно жить."
+    },
+    "part-p2-books-guide": {
+      it: "Attraverso queste pubblicazioni, padre Adriano Frinchi accompagna il lettore alla scoperta della spiritualità, della storia e dell'esperienza della Chiesa Ortodossa:",
+      ru: "В этих изданиях отец Адриано Фринки помогает читателю открыть для себя духовность, историю и опыт Православной церкви:"
+    },
+    "part-p2-book-gloria": {
+      it: "Un invito a riscoprire il cuore del Cristianesimo ortodosso e la sua proposta spirituale per l'uomo contemporaneo.",
+      ru: "Приглашение заново открыть суть православного христианства и его духовное послание современному человеку."
+    },
+    "part-p2-book-tichon": {
+      it: "La vita e la santità di san Tichon, Patriarca di Mosca e di tutta la Rus'.",
+      ru: "Жизнь и святость святителя Тихона, Патриарха Московского и всея Руси."
+    },
+    "part-p2-book-quaresima": {
+      it: "Una guida semplice e accessibile per comprendere il significato e il cammino della Grande Quaresima.",
+      ru: "Простое и доступное руководство, помогающее понять смысл Великого поста и пройти его духовный путь."
+    },
+    "part-p2-books-available": { it: "Tutti i libri sono disponibili su Amazon:", ru: "Все книги доступны на Amazon:" },
+    "part-p2-books-link": { it: "I libri su Amazon", ru: "Книги на Amazon" },
     "part-p3-name": { it: "Ordine Giovannita", ru: "Орден иоаннитов" },
     "part-p4-name": { it: "Ordine del Drago", ru: "Орден Дракона" },
 
@@ -1213,7 +1241,17 @@
     "part-p1-event-photo-3": "Poster for the Together for Peace charity dinner at Villa Fenaroli on 21 November 2026",
     "part-p1-event-photo-4": "Villa Fenaroli with its courtyard and garden",
     "part-p2-name": "La Santa Rus’",
-    "part-p2-desc": "Books by Father Adriano Frinchi on Orthodox faith, tradition and spirituality.",
+    "part-p2-desc": "A portal dedicated to Orthodoxy, spirituality and the culture of Rus’. Created to offer Italian readers an authentic view of the Eastern Christian tradition, it features theological reflections, hagiography, history and culture.",
+    "part-p2-blog": "Father Adriano Frinchi’s blog",
+    "part-p2-image": "La Santa Rus’, faith, tradition and culture, with a Christian procession on a riverbank",
+    "part-p2-books-title": "Books by Father Adriano Frinchi",
+    "part-p2-books-intro": "The Orthodox faith is not only a tradition to learn about, but a life to be lived.",
+    "part-p2-books-guide": "Through these publications, Father Adriano Frinchi guides readers in discovering the spirituality, history and experience of the Orthodox Church:",
+    "part-p2-book-gloria": "An invitation to rediscover the heart of Orthodox Christianity and its spiritual message for people today.",
+    "part-p2-book-tichon": "The life and holiness of Saint Tikhon, Patriarch of Moscow and All Rus’.",
+    "part-p2-book-quaresima": "A simple and accessible guide to understanding the meaning and journey of Great Lent.",
+    "part-p2-books-available": "All books are available on Amazon:",
+    "part-p2-books-link": "Books on Amazon",
     "part-p3-name": "Order of Saint John",
     "part-p4-name": "Order of the Dragon",
     "te-h1": "The steps to becoming a member",

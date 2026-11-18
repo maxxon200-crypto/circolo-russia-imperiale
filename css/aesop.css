@@ -1051,6 +1051,17 @@ main > .articolo {
 .partner.split { scroll-margin-top: 6rem; }
 .partner .split__media { max-width: 30rem; }
 .partner--detailed { align-items: start; }
+.partner-books { grid-column: 1 / -1; max-width: var(--read); }
+.partner-books .split__media { margin-bottom: 2rem; }
+.partner-books h4 {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+.partner-book-list { margin: 1.5rem 0; }
+.partner-book-list dt { font-weight: 500; margin: 1.5rem 0 .4rem; }
+.partner-book-list dd { color: var(--grigio); margin: 0 0 1rem; max-width: 62ch; }
 .partner-events {
   grid-column: 1 / -1;
   border-top: 1px solid var(--linea);
