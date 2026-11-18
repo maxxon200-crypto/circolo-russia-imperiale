@@ -107,6 +107,9 @@
   <url>
     <loc>https://www.amicidellarussiaimperiale-terzaroma.it/chiesa-ortodossa.html</loc>
     <image:image>
+      <image:loc>https://www.amicidellarussiaimperiale-terzaroma.it/assets/EVANGELIO1.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://www.amicidellarussiaimperiale-terzaroma.it/assets/img/icona-santi-imperiali.jpg</image:loc>
     </image:image>
   </url>

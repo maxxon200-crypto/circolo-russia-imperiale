@@ -657,6 +657,44 @@
     "ga-1812-caption": { it: "Relatori e ospiti del convegno sulla Guerra Patriottica del 1812 a Milano", ru: "Участники и гости конференции об Отечественной войне 1812 года в Милане" },
 
     /* --- Chiesa Ortodossa Russa --- */
+    "chiesa-title": { it: "Chiesa Ortodossa Russa in Italia", ru: "Русская Православная Церковь в Италии" },
+    "chiesa-vangelo-title": { it: "Vangelo della Domenica", ru: "Воскресное Евангелие" },
+    "chiesa-vangelo-image": {
+      it: "Gesù e l’indemoniato guarito, con i porci, nell’illustrazione del Vangelo della Domenica",
+      ru: "Иисус и исцелённый бесноватый, со свиньями, на иллюстрации к Воскресному Евангелию"
+    },
+    "chiesa-vangelo-date": { it: "2 novembre / 15 novembre", ru: "2 ноября / 15 ноября" },
+    "chiesa-vangelo-sunday": { it: "24ª domenica dopo la Pentecoste. Tonale 7.", ru: "24-я неделя по Пятидесятнице. Глас 7." },
+    "chiesa-vangelo-reading": { it: "Il Vangelo di Luca (8:26–39)", ru: "Евангелие от Луки (8:26–39)" },
+    "chiesa-vangelo-p1": {
+      it: "",
+      ru: "И пришли они в город Гадару, говоря, что они были ложными. Когда Он вышел на берег, один из горожан, уже давно одержимый бесом, вышел из города, одетый в ту же одежду, и жил не в доме, а в пещере."
+    },
+    "chiesa-vangelo-p2": {
+      it: "",
+      ru: "Увидев Иисуса, он закричал и пал перед Ним, говоря: «Ты ли Иисус, Сын Божий?» Он попросил Его: «Не наказывай меня, потому что бес мучил меня долгое время, так что меня связывали цепями и верёвками, удерживая меня; но он разрывал цепи, и бес уводил его в пустыню»."
+    },
+    "chiesa-vangelo-p3": {
+      it: "",
+      ru: "Иисус спросил его: «Как твоё имя?» Он сказал: «Легион», потому что много бесов вошло в него. И они спросили Иисуса: «Не хочешь ли Ты отправить нас на дно?»"
+    },
+    "chiesa-vangelo-p4": {
+      it: "",
+      ru: "В это время большое стадо свиней паслось на горе; и бесы попросили Его позволить им войти в них. Он позволил им. Бесы, выйдя из человека, вошли в свиней, и стада бросились в озеро и утонули."
+    },
+    "chiesa-vangelo-p5": {
+      it: "",
+      ru: "Пастухи, увидев случившееся, побежали и рассказали в городе и селениях. И вышли люди посмотреть, что произошло; и, придя к Иисусу, находят человека, из которого вышли бесы, сидящего у ног Иисуса, одетого и в здравом уме; и они были в ужасе."
+    },
+    "chiesa-vangelo-p6": {
+      it: "",
+      ru: "Они рассказали Ему о том, как бес был изгнан. И попросили Его велеть убрать от них весь город Гадару, потому что они были очень испуганы. Он вошёл в лодку и вернулся."
+    },
+    "chiesa-vangelo-p7": {
+      it: "",
+      ru: "Человек, из которого вышли бесы, попросил Его позволить ему быть с Ним. Но Иисус отпустил его и сказал: «Вернись в свой город и расскажи им, что ты сделал». Бесы, выйдя из него, побежали к горе, а человек, сойдя с горы, соскользнул в озеро и утонул. Когда они увидели случившееся, стада свиней убежали и принесли весть в город и на вершины. Люди вышли посмотреть, что произошло, и подошли к Иисусу, и находят человека, из которого вышли бесы, одетого и здорового, сидящего у ног Иисуса; и они были в ужасе. Видевшие это рассказали, что одержимый бесами человек был исцелён. Тогда все жители города попросили Его остаться с ними, потому что были очень испуганы. Иисус сел в лодку и вернулся в город."
+    },
+    "chiesa-italia-social": { it: "Ortodossia in Italia", ru: "Православие в Италии" },
     "chiesa-h2": { it: "Tradizione spirituale e vita culturale", ru: "Духовная традиция и культурная жизнь" },
     "chiesa-p1": { it: "La Chiesa Ortodossa del Patriarcato di Mosca è uno dei riferimenti spirituali del Circolo. L'associazione partecipa a celebrazioni e iniziative legate alla tradizione ortodossa russa.", ru: "Русская Православная Церковь Московского Патриархата является одним из духовных ориентиров ассоциации. Ассоциация участвует в богослужениях и инициативах, связанных с русской православной традицией." },
     "chiesa-feste-link": { it: "Conosci le feste e le ricorrenze ortodosse", ru: "Узнать о православных праздниках и памятных датах" },
@@ -1083,6 +1121,20 @@
     "ga-1812-data": "13 September 2026",
     "ga-1812-title": "Conference on the Patriotic War of 1812",
     "ga-1812-caption": "Speakers and guests at the conference on the Patriotic War of 1812 in Milan",
+    "chiesa-title": "Russian Orthodox Church in Italy",
+    "chiesa-vangelo-title": "Sunday Gospel",
+    "chiesa-vangelo-image": "Jesus and the healed possessed man, with pigs, in the illustration for the Sunday Gospel",
+    "chiesa-vangelo-date": "2 November / 15 November",
+    "chiesa-vangelo-sunday": "24th Sunday after Pentecost. Tone 7.",
+    "chiesa-vangelo-reading": "The Gospel of Luke (8:26–39)",
+    "chiesa-vangelo-p1": "And they came to the city of Gadara, saying that they were false. When He came out onto the shore, one of the citizens, who had been possessed by a demon for a long time, came out of the city, dressed in the same clothes, and lived not in a house, but in a cave.",
+    "chiesa-vangelo-p2": "He saw Jesus and cried out, falling before Him, saying: \"Are you Jesus, the Son of God?\" He asked Him: \"Do not punish me, because the demon has tormented me for a long time, so they tied me with chains and ropes, holding me; but he was tearing the chains apart and was driven away by the demon into the desert.\"",
+    "chiesa-vangelo-p3": "Jesus asked him: \"What is your name?\" He said: \"Legion\", because many demons had entered him. And they asked Jesus: \"Do you not want to send us to the bottom?\"",
+    "chiesa-vangelo-p4": "At that moment, a large herd of pigs was grazing on the mountain; and the demons asked Him to allow them to enter them. He allowed them. The demons, coming out of the man, entered the pigs, and the herds rushed into the lake and drowned.",
+    "chiesa-vangelo-p5": "The herdsmen, seeing what had happened, ran and told the city and the villages. And people came out to see what had happened; and, coming to Jesus, they find the man from whom the demons had gone out, sitting at the feet of Jesus, clothed and in his right mind; and they were terrified.",
+    "chiesa-vangelo-p6": "They told Him the story of how the demon had been driven out. And they asked Him to have the whole city of Gadara removed from them, because they were very frightened. He entered the boat and returned.",
+    "chiesa-vangelo-p7": "A man from whom the demons had gone out asked Him to be with Him. But Jesus let him go and said to him: \"Return to your city and tell them what you have done\". The demons, coming out of him, ran towards the mountain, and the man, coming down from the mountain, slipped into the lake and drowned. When they saw what had happened, the herds of pigs ran away and brought the news to the city and the peaks. The people came out to see what had happened and approached Jesus, and they find the man from whom the demons had gone out, clothed and in good health, sitting at the feet of Jesus; and they were terrified. Those who were watching reported that the man possessed by demons had been healed. Then all the citizens of the city asked Him to stay with them, because they were very frightened. Jesus got into a boat and returned to the city.",
+    "chiesa-italia-social": "Orthodoxy in Italy",
     "chiesa-h2": "Spiritual tradition and cultural life",
     "chiesa-p1": "The Orthodox Church of the Moscow Patriarchate is one of the Circle's spiritual points of reference. The association takes part in celebrations and initiatives connected with the Russian Orthodox tradition.",
     "chiesa-feste-link": "Learn about Orthodox feasts and commemorations",
