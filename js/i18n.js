@@ -676,7 +676,61 @@
     "part-desc-soon": { it: "Descrizione in arrivo.", ru: "Описание скоро." },
     "part-scopri":    { it: "Scopri di più", ru: "Подробнее" },
     "part-p1-name": { it: "Associazione Aristocrazia Europea", ru: "Ассоциация Европейской Аристократии" },
-    "part-p2-name": { it: "Santa Rus", ru: "Святая Русь" },
+    "part-p1-intro": {
+      it: "Aristocrazia Europea è una associazione culturale internazionale cristiana (ecumenica, apolitica e non a fini di lucro) fondata il 25 dicembre 2015, legalmente costituita e ufficialmente riconosciuta da Stato Italiano, Regione Lombardia, Unione Europea e Federazione Russa, che si occupa di storia, cultura e tradizioni (cavalleresche, nobiliari e araldiche), dimore storiche e arte, filosofia e metapolitica, alta formazione universitaria e beneficenza.",
+      ru: "Aristocrazia Europea — международная христианская культурная ассоциация (экуменическая, аполитичная и некоммерческая), основанная 25 декабря 2015 года, юридически учреждённая и официально признанная Итальянским государством, регионом Ломбардия, Европейским союзом и Российской Федерацией. Ассоциация занимается историей, культурой и традициями (рыцарскими, дворянскими и геральдическими), историческими резиденциями и искусством, философией и метаполитикой, углублённым университетским образованием и благотворительностью."
+    },
+    "part-p1-members": {
+      it: "AE ha oltre 1200 associati (la metà italiani, oltre 300 iscritti sostenitori, fra i quali diversi principi, ecclesiastici, militari, diplomatici, docenti universitari, accademici, artisti, intellettuali, giornalisti, proprietari di dimore storiche).",
+      ru: "В AE более 1200 членов (половина — итальянцы, более 300 — члены, оказывающие финансовую поддержку, среди которых князья, священнослужители, военнослужащие, дипломаты, преподаватели университетов, учёные, деятели искусства, интеллектуалы, журналисты и владельцы исторических резиденций)."
+    },
+    "part-p1-board": {
+      it: "Presidente (2025-2030) è l'avv. Cesare Vernarecci di Fossombrone, presidente emerito è il dott. Guido Farneti Merenda Salecchi, vice presidenti sono la dott. Lali Panchulidze e il dott. Carlo Alberto Biggini. Primo Cappellano Cattolico è Mons. Prof. Paolo Cartolari.",
+      ru: "Президент на 2025-2030 годы — адвокат Cesare Vernarecci di Fossombrone, почётный президент — д-р Guido Farneti Merenda Salecchi, вице-президенты — д-р Lali Panchulidze и д-р Carlo Alberto Biggini. Первый католический капеллан — монсеньор, профессор Paolo Cartolari."
+    },
+    "part-p1-address": {
+      it: "La sede legale e postale è attualmente presso lo studio legale del consocio Avv. Victor Jerkunica, in <a href=\"https://www.google.com/maps/search/Via+Lodovico+Settala+2%2FN?entry=gmail&amp;source=g\" target=\"_blank\" rel=\"noopener\">Via Lodovico Settala 2/N.1</a>, zona Porta Venezia, 20124 Milano in Italia.",
+      ru: "Юридический и почтовый адрес в настоящее время находится в адвокатском бюро члена ассоциации, адвоката Victor Jerkunica, по адресу <a href=\"https://www.google.com/maps/search/Via+Lodovico+Settala+2%2FN?entry=gmail&amp;source=g\" target=\"_blank\" rel=\"noopener\">Via Lodovico Settala 2/N.1</a>, район Porta Venezia, 20124 Milano, Италия."
+    },
+    "part-secretariat": { it: "Segreteria", ru: "Секретариат" },
+    "part-p1-events": { it: "Eventi", ru: "Мероприятия" },
+    "part-p1-event-title": { it: "Giornata ecumenica per la pace", ru: "Экуменический день во имя мира" },
+    "part-p1-event-schedule": {
+      it: "Sabato 21 novembre 2026, ore 18.30 preghiera presso il Duomo di Montichiari, ore 20.30 cena presso Villa Fenaroli.",
+      ru: "В субботу, 21 ноября 2026 года, в 18.30 состоится молитва в соборе Монтикьяри, в 20.30 — ужин на вилле Фенароли."
+    },
+    "part-p1-event-speakers": {
+      it: "Interverranno: Monsignore Cesare Cancarini (Chiesa Cattolica Diocesi di Brescia), SE il Protosincello Padre Ambrogio Matsegora (Vicario Chiesa Ortodossa Russa in Italia), SAI il Principe Prof. Roberto Spreti Malmesi Griffo Focas di Cefalonia (Consultore Pontificia Accademia di Teologia e presidente Unione Bizantina), Padre Ambrogio e Padre Vladimir, autorità religiose cristiane, rappresentanti degli ordini cavallereschi e delle confraternite ufficialmente riconosciute, in comunione ecumenica, dalla Chiesa Cattolica e dalle Chiese Ortodosse canoniche.",
+      ru: "В мероприятии примут участие монсеньор Cesare Cancarini (Католическая церковь, епархия Брешии), Его Превосходительство протосинкелл отец Ambrogio Matsegora (викарий Русской православной церкви в Италии), Его Императорское Высочество князь, профессор Roberto Spreti Malmesi Griffo Focas di Cefalonia (консультант Папской академии богословия и президент Unione Bizantina), отец Ambrogio и отец Vladimir, представители христианского духовенства, рыцарских орденов и братств, официально признанных Католической церковью и каноническими православными церквями в духе экуменического общения."
+    },
+    "part-p1-event-organizers": {
+      it: "L'evento è organizzato dalla Confraternita cavalleresca cattolica di Santa Giovanna d'Arco (Diocesi di Brescia) e dalla delegazione di Aristocrazia Europea di Bergamo e Brescia.",
+      ru: "Мероприятие организовано католическим рыцарским братством Святой Жанны д’Арк (епархия Брешии) и делегацией Aristocrazia Europea в Бергамо и Брешии."
+    },
+    "part-p1-event-dinner": {
+      it: "Alla cena di gala e beneficenza interverranno anche il conte Avv. Cesare Vernarecci di Fossombrone dei principi d'Anjou d'Auvergne (presidente Aristocrazia Europea), il barone primo capitano Antonio Imperatore di Pellizzara, Garescio e Bulfara (delegato Russia Imperiale Terza Roma) e il barone Roberto Jonghi Lavarini freiherr von Urnavas.",
+      ru: "На благотворительном гала-ужине также будут присутствовать граф, адвокат Cesare Vernarecci di Fossombrone из рода князей d’Anjou d’Auvergne (президент Aristocrazia Europea), барон, первый капитан Antonio Imperatore di Pellizzara, Garescio e Bulfara (делегат Russia Imperiale Terza Roma) и барон Roberto Jonghi Lavarini freiherr von Urnavas."
+    },
+    "part-p1-event-signatories": {
+      it: "Firmato: il nobile dott. Giovanni dei conti Alborghetti (delegato di AE di Bergamo e Brescia) e il cavaliere dott. Mauro Noventa (priore della Confraternita di Santa Giovanna d'Arco).",
+      ru: "Подписали дворянин д-р Giovanni dei conti Alborghetti (делегат AE в Бергамо и Брешии) и кавалер д-р Mauro Noventa (приор братства Святой Жанны д’Арк)."
+    },
+    "part-p1-event-contact": { it: "Informazioni e adesioni", ru: "Информация и запись" },
+    "part-p1-event-photo-1": {
+      it: "Locandina della preghiera per la pace nel mondo al Duomo di Montichiari del 21 novembre 2026",
+      ru: "Афиша молитвы о мире во всём мире в соборе Монтикьяри 21 ноября 2026 года"
+    },
+    "part-p1-event-photo-2": { it: "Facciata e cupola del Duomo di Montichiari", ru: "Фасад и купол собора Монтикьяри" },
+    "part-p1-event-photo-3": {
+      it: "Locandina della cena di beneficenza Insieme per la pace a Villa Fenaroli del 21 novembre 2026",
+      ru: "Афиша благотворительного ужина «Вместе во имя мира» на вилле Фенароли 21 ноября 2026 года"
+    },
+    "part-p1-event-photo-4": { it: "Villa Fenaroli con il cortile e il giardino", ru: "Вилла Фенароли с внутренним двором и садом" },
+    "part-p2-name": { it: "La Santa Rus’", ru: "Святая Русь" },
+    "part-p2-desc": {
+      it: "I libri di padre Adriano Frinchi dedicati alla fede, alla tradizione e alla spiritualità ortodossa.",
+      ru: "Книги отца Адриано Фринки о православной вере, традиции и духовной жизни."
+    },
     "part-p3-name": { it: "Ordine Giovannita", ru: "Орден иоаннитов" },
     "part-p4-name": { it: "Ordine del Drago", ru: "Орден Дракона" },
 
@@ -1141,7 +1195,25 @@
     "tdc-sub": "A project by Oxana Senchenko Pasqualino di Marineo",
     "part-tdc-desc": "A project of cultural outreach devoted to the dialogue between Italy and Russia: artists, architects and thinkers who over the centuries have interwoven the two cultures, presented with historical rigour and without stereotypes. Conceived by Oxana Senchenko, born in Moscow and living in Italy for over thirty years.",
     "part-p1-name": "Association of European Aristocracy",
-    "part-p2-name": "Holy Rus",
+    "part-p1-intro": "Aristocrazia Europea is an international Christian cultural association (ecumenical, apolitical and non-profit), founded on 25 December 2015, legally established and officially recognised by the Italian State, the Lombardy Region, the European Union and the Russian Federation. Its activities cover history, culture and traditions (chivalric, noble and heraldic), historic residences and art, philosophy and metapolitics, advanced university education and charity.",
+    "part-p1-members": "AE has over 1,200 members (half of them Italian, with over 300 supporting members, including princes, clergy, military personnel, diplomats, university lecturers, academics, artists, intellectuals, journalists and owners of historic residences).",
+    "part-p1-board": "The President for 2025-2030 is lawyer Cesare Vernarecci di Fossombrone, the President Emeritus is Dr Guido Farneti Merenda Salecchi, and the Vice Presidents are Dr Lali Panchulidze and Dr Carlo Alberto Biggini. The First Catholic Chaplain is Monsignor Professor Paolo Cartolari.",
+    "part-p1-address": "The registered office and postal address are currently at the law firm of fellow member and lawyer Victor Jerkunica, at <a href=\"https://www.google.com/maps/search/Via+Lodovico+Settala+2%2FN?entry=gmail&amp;source=g\" target=\"_blank\" rel=\"noopener\">Via Lodovico Settala 2/N.1</a>, in the Porta Venezia area, 20124 Milan, Italy.",
+    "part-secretariat": "Secretariat",
+    "part-p1-events": "Events",
+    "part-p1-event-title": "Ecumenical Day for Peace",
+    "part-p1-event-schedule": "Saturday 21 November 2026, prayer at Montichiari Cathedral at 18.30, followed by dinner at Villa Fenaroli at 20.30.",
+    "part-p1-event-speakers": "Speakers and participants will include Monsignor Cesare Cancarini (Catholic Church, Diocese of Brescia), His Excellency Protosyncellus Father Ambrogio Matsegora (Vicar of the Russian Orthodox Church in Italy), His Imperial Highness Prince Professor Roberto Spreti Malmesi Griffo Focas di Cefalonia (Consultor to the Pontifical Academy of Theology and President of Unione Bizantina), Father Ambrogio and Father Vladimir, Christian religious authorities, and representatives of chivalric orders and confraternities officially recognised, in ecumenical communion, by the Catholic Church and the canonical Orthodox Churches.",
+    "part-p1-event-organizers": "The event is organised by the Catholic chivalric Confraternity of Saint Joan of Arc (Diocese of Brescia) and the Bergamo and Brescia delegation of Aristocrazia Europea.",
+    "part-p1-event-dinner": "The charitable gala dinner will also be attended by Count and lawyer Cesare Vernarecci di Fossombrone of the Princes d'Anjou d'Auvergne (President of Aristocrazia Europea), Baron First Captain Antonio Imperatore di Pellizzara, Garescio e Bulfara (Delegate of Russia Imperiale Terza Roma), and Baron Roberto Jonghi Lavarini freiherr von Urnavas.",
+    "part-p1-event-signatories": "Signed by nobleman Dr Giovanni dei conti Alborghetti (AE Delegate for Bergamo and Brescia) and Knight Dr Mauro Noventa (Prior of the Confraternity of Saint Joan of Arc).",
+    "part-p1-event-contact": "Information and registration",
+    "part-p1-event-photo-1": "Poster for the prayer for world peace at Montichiari Cathedral on 21 November 2026",
+    "part-p1-event-photo-2": "Facade and dome of Montichiari Cathedral",
+    "part-p1-event-photo-3": "Poster for the Together for Peace charity dinner at Villa Fenaroli on 21 November 2026",
+    "part-p1-event-photo-4": "Villa Fenaroli with its courtyard and garden",
+    "part-p2-name": "La Santa Rus’",
+    "part-p2-desc": "Books by Father Adriano Frinchi on Orthodox faith, tradition and spirituality.",
     "part-p3-name": "Order of Saint John",
     "part-p4-name": "Order of the Dragon",
     "te-h1": "The steps to becoming a member",
