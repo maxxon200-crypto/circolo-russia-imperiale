@@ -660,39 +660,39 @@
     "chiesa-title": { it: "Chiesa Ortodossa Russa in Italia", ru: "Русская Православная Церковь в Италии" },
     "chiesa-vangelo-title": { it: "Vangelo della Domenica", ru: "Воскресное Евангелие" },
     "chiesa-vangelo-image": {
-      it: "Gesù e l’indemoniato guarito, con i porci, nell’illustrazione del Vangelo della Domenica",
-      ru: "Иисус и исцелённый бесноватый, со свиньями, на иллюстрации к Воскресному Евангелию"
+      it: "Gesù prende per mano la figlia di Giàiro nell’illustrazione del Vangelo della Domenica",
+      ru: "Иисус берёт за руку дочь Иаира на иллюстрации к Воскресному Евангелию"
     },
-    "chiesa-vangelo-date": { it: "2 novembre / 15 novembre", ru: "2 ноября / 15 ноября" },
-    "chiesa-vangelo-sunday": { it: "24ª domenica dopo la Pentecoste. Tonale 7.", ru: "24-я неделя по Пятидесятнице. Глас 7." },
-    "chiesa-vangelo-reading": { it: "Il Vangelo di Luca (8:26–39)", ru: "Евангелие от Луки (8:26–39)" },
+    "chiesa-vangelo-date": { it: "9 novembre / 22 novembre", ru: "9 ноября / 22 ноября" },
+    "chiesa-vangelo-sunday": { it: "Domenica 25a dopo Pentecoste. Tono 8°.", ru: "25-я неделя по Пятидесятнице. Глас 8." },
+    "chiesa-vangelo-reading": { it: "Vangelo secondo Luca (8,41-56)", ru: "Евангелие от Луки (8:41–56)" },
     "chiesa-vangelo-p1": {
       it: "",
-      ru: "И пришли они в город Гадару, говоря, что они были ложными. Когда Он вышел на берег, один из горожан, уже давно одержимый бесом, вышел из города, одетый в ту же одежду, и жил не в доме, а в пещере."
+      ru: "И вот пришёл человек по имени Иаир, который был начальником синагоги. Пав к ногам Иисуса, он просил Его прийти к нему домой, потому что его единственная дочь, которой было около двенадцати лет, умирала. По пути народ теснился вокруг Него."
     },
     "chiesa-vangelo-p2": {
       it: "",
-      ru: "Увидев Иисуса, он закричал и пал перед Ним, говоря: «Ты ли Иисус, Сын Божий?» Он попросил Его: «Не наказывай меня, потому что бес мучил меня долгое время, так что меня связывали цепями и верёвками, удерживая меня; но он разрывал цепи, и бес уводил его в пустыню»."
+      ru: "Женщина, которая двенадцать лет страдала кровотечением и которую никто не мог исцелить, подошла сзади и коснулась края Его одежды, и тотчас кровотечение прекратилось."
     },
     "chiesa-vangelo-p3": {
       it: "",
-      ru: "Иисус спросил его: «Как твоё имя?» Он сказал: «Легион», потому что много бесов вошло в него. И они спросили Иисуса: «Не хочешь ли Ты отправить нас на дно?»"
+      ru: "Иисус сказал: «Кто прикоснулся ко Мне?» Когда все отрицали, Пётр сказал: «Учитель, народ окружает Тебя со всех сторон и теснит». Но Иисус сказал: «Кто-то прикоснулся ко Мне. Я почувствовал, что из Меня вышла сила»."
     },
     "chiesa-vangelo-p4": {
       it: "",
-      ru: "В это время большое стадо свиней паслось на горе; и бесы попросили Его позволить им войти в них. Он позволил им. Бесы, выйдя из человека, вошли в свиней, и стада бросились в озеро и утонули."
+      ru: "Тогда женщина, видя, что не может остаться незамеченной, с трепетом подошла и, пав к Его ногам, перед всем народом рассказала, почему прикоснулась к Нему и как тотчас исцелилась. Он сказал ей: «Дочь, твоя вера спасла тебя, иди с миром!»"
     },
     "chiesa-vangelo-p5": {
       it: "",
-      ru: "Пастухи, увидев случившееся, побежали и рассказали в городе и селениях. И вышли люди посмотреть, что произошло; и, придя к Иисусу, находят человека, из которого вышли бесы, сидящего у ног Иисуса, одетого и в здравом уме; и они были в ужасе."
+      ru: "Он ещё говорил, когда пришёл человек из дома начальника синагоги и сказал: «Твоя дочь умерла, больше не беспокой Учителя». Но Иисус, услышав это, ответил: «Не бойся, только веруй, и она будет спасена»."
     },
     "chiesa-vangelo-p6": {
       it: "",
-      ru: "Они рассказали Ему о том, как бес был изгнан. И попросили Его велеть убрать от них весь город Гадару, потому что они были очень испуганы. Он вошёл в лодку и вернулся."
+      ru: "Придя в дом, Он не позволил никому войти с Ним, кроме Петра, Иоанна, Иакова, отца и матери девочки. Все плакали и оплакивали её. Иисус сказал: «Не плачьте, она не умерла, но спит»."
     },
     "chiesa-vangelo-p7": {
       it: "",
-      ru: "Человек, из которого вышли бесы, попросил Его позволить ему быть с Ним. Но Иисус отпустил его и сказал: «Вернись в свой город и расскажи им, что ты сделал». Бесы, выйдя из него, побежали к горе, а человек, сойдя с горы, соскользнул в озеро и утонул. Когда они увидели случившееся, стада свиней убежали и принесли весть в город и на вершины. Люди вышли посмотреть, что произошло, и подошли к Иисусу, и находят человека, из которого вышли бесы, одетого и здорового, сидящего у ног Иисуса; и они были в ужасе. Видевшие это рассказали, что одержимый бесами человек был исцелён. Тогда все жители города попросили Его остаться с ними, потому что были очень испуганы. Иисус сел в лодку и вернулся в город."
+      ru: "Они смеялись над Ним, зная, что она умерла. Но Он, взяв её за руку, громко сказал: «Девочка, встань!» Дух её возвратился в неё, и она тотчас встала. Он велел дать ей поесть. Родители её были поражены, но Он велел им никому не рассказывать о случившемся."
     },
     "chiesa-italia-social": { it: "Ortodossia in Italia", ru: "Православие в Италии" },
     "chiesa-h2": { it: "Tradizione spirituale e vita culturale", ru: "Духовная традиция и культурная жизнь" },
@@ -1123,17 +1123,17 @@
     "ga-1812-caption": "Speakers and guests at the conference on the Patriotic War of 1812 in Milan",
     "chiesa-title": "Russian Orthodox Church in Italy",
     "chiesa-vangelo-title": "Sunday Gospel",
-    "chiesa-vangelo-image": "Jesus and the healed possessed man, with pigs, in the illustration for the Sunday Gospel",
-    "chiesa-vangelo-date": "2 November / 15 November",
-    "chiesa-vangelo-sunday": "24th Sunday after Pentecost. Tone 7.",
-    "chiesa-vangelo-reading": "The Gospel of Luke (8:26–39)",
-    "chiesa-vangelo-p1": "And they came to the city of Gadara, saying that they were false. When He came out onto the shore, one of the citizens, who had been possessed by a demon for a long time, came out of the city, dressed in the same clothes, and lived not in a house, but in a cave.",
-    "chiesa-vangelo-p2": "He saw Jesus and cried out, falling before Him, saying: \"Are you Jesus, the Son of God?\" He asked Him: \"Do not punish me, because the demon has tormented me for a long time, so they tied me with chains and ropes, holding me; but he was tearing the chains apart and was driven away by the demon into the desert.\"",
-    "chiesa-vangelo-p3": "Jesus asked him: \"What is your name?\" He said: \"Legion\", because many demons had entered him. And they asked Jesus: \"Do you not want to send us to the bottom?\"",
-    "chiesa-vangelo-p4": "At that moment, a large herd of pigs was grazing on the mountain; and the demons asked Him to allow them to enter them. He allowed them. The demons, coming out of the man, entered the pigs, and the herds rushed into the lake and drowned.",
-    "chiesa-vangelo-p5": "The herdsmen, seeing what had happened, ran and told the city and the villages. And people came out to see what had happened; and, coming to Jesus, they find the man from whom the demons had gone out, sitting at the feet of Jesus, clothed and in his right mind; and they were terrified.",
-    "chiesa-vangelo-p6": "They told Him the story of how the demon had been driven out. And they asked Him to have the whole city of Gadara removed from them, because they were very frightened. He entered the boat and returned.",
-    "chiesa-vangelo-p7": "A man from whom the demons had gone out asked Him to be with Him. But Jesus let him go and said to him: \"Return to your city and tell them what you have done\". The demons, coming out of him, ran towards the mountain, and the man, coming down from the mountain, slipped into the lake and drowned. When they saw what had happened, the herds of pigs ran away and brought the news to the city and the peaks. The people came out to see what had happened and approached Jesus, and they find the man from whom the demons had gone out, clothed and in good health, sitting at the feet of Jesus; and they were terrified. Those who were watching reported that the man possessed by demons had been healed. Then all the citizens of the city asked Him to stay with them, because they were very frightened. Jesus got into a boat and returned to the city.",
+    "chiesa-vangelo-image": "Jesus taking Jairus’s daughter by the hand in the illustration for the Sunday Gospel",
+    "chiesa-vangelo-date": "9 November / 22 November",
+    "chiesa-vangelo-sunday": "25th Sunday after Pentecost. Tone 8.",
+    "chiesa-vangelo-reading": "Gospel according to Luke (8:41–56)",
+    "chiesa-vangelo-p1": "And a man named Jairus, a leader of the synagogue, came and fell at Jesus’s feet, begging Him to come to his house, because his only daughter, about twelve years old, was dying. As He went, the crowds pressed around Him.",
+    "chiesa-vangelo-p2": "A woman who had suffered from bleeding for twelve years, and whom no one had been able to heal, approached Him from behind and touched the edge of His cloak, and immediately the bleeding stopped.",
+    "chiesa-vangelo-p3": "Jesus said: “Who touched me?” While everyone denied it, Peter said: “Master, the crowd is pressing around you on every side and crushing you.” But Jesus said: “Someone touched me. I felt that power had gone out from me.”",
+    "chiesa-vangelo-p4": "Then the woman, seeing that she could not remain hidden, came forward trembling and, falling at His feet, declared before all the people why she had touched Him and how she had been healed immediately. He said to her: “Daughter, your faith has saved you, go in peace!”",
+    "chiesa-vangelo-p5": "While He was still speaking, someone came from the house of the leader of the synagogue and said: “Your daughter is dead, do not trouble the teacher any longer.” But Jesus, who had heard, answered: “Do not fear, only have faith and she will be saved.”",
+    "chiesa-vangelo-p6": "When He reached the house, He allowed no one to enter with Him except Peter, John and James, and the girl’s father and mother. Everyone was weeping and mourning for her. Jesus said: “Do not weep, for she is not dead, but sleeping.”",
+    "chiesa-vangelo-p7": "They laughed at Him, knowing that she was dead, but He took her by the hand and said aloud: “Girl, arise!” Her spirit returned to her and she stood up at once. He ordered that she be given something to eat. Her parents were astonished, but He instructed them to tell no one what had happened.",
     "chiesa-italia-social": "Orthodoxy in Italy",
     "chiesa-h2": "Spiritual tradition and cultural life",
     "chiesa-p1": "The Orthodox Church of the Moscow Patriarchate is one of the Circle's spiritual points of reference. The association takes part in celebrations and initiatives connected with the Russian Orthodox tradition.",
