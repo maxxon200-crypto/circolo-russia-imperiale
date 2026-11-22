@@ -733,7 +733,7 @@
       ru: "Юридический и почтовый адрес в настоящее время находится в адвокатском бюро члена ассоциации, адвоката Victor Jerkunica, по адресу <a href=\"https://www.google.com/maps/search/Via+Lodovico+Settala+2%2FN?entry=gmail&amp;source=g\" target=\"_blank\" rel=\"noopener\">Via Lodovico Settala 2/N.1</a>, район Porta Venezia, 20124 Milano, Италия."
     },
     "part-secretariat": { it: "Segreteria", ru: "Секретариат" },
-    "part-p1-events": { it: "Eventi", ru: "Мероприятия" },
+    "part-p1-events": { it: "Eventi | Associazione Aristocrazia Europea", ru: "Мероприятия | Ассоциация «Европейская аристократия»" },
     "part-p1-event-title": {
       it: "La Cavalleria Cristiana per l'Ecumenismo e la Pace",
       ru: "ХРИСТИАНСКОЕ РЫЦАРСТВО во имя ЭКУМЕНИЗМА и МИРА"
@@ -1303,7 +1303,7 @@
     "part-p1-board": "The President for 2025-2030 is lawyer Cesare Vernarecci di Fossombrone, the President Emeritus is Dr Guido Farneti Merenda Salecchi, and the Vice Presidents are Dr Lali Panchulidze and Dr Carlo Alberto Biggini. The First Catholic Chaplain is Monsignor Professor Paolo Cartolari.",
     "part-p1-address": "The registered office and postal address are currently at the law firm of fellow member and lawyer Victor Jerkunica, at <a href=\"https://www.google.com/maps/search/Via+Lodovico+Settala+2%2FN?entry=gmail&amp;source=g\" target=\"_blank\" rel=\"noopener\">Via Lodovico Settala 2/N.1</a>, in the Porta Venezia area, 20124 Milan, Italy.",
     "part-secretariat": "Secretariat",
-    "part-p1-events": "Events",
+    "part-p1-events": "Events | European Aristocracy Association",
     "part-p1-event-title": "CHRISTIAN CHIVALRY for ECUMENISM and PEACE",
     "part-p1-event-schedule": "Montichiari Cathedral (Brescia), Saturday 21 November 2026",
     "part-p1-event-lead": "A HISTORIC DAY...",
