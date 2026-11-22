@@ -732,38 +732,58 @@
     },
     "part-secretariat": { it: "Segreteria", ru: "Секретариат" },
     "part-p1-events": { it: "Eventi", ru: "Мероприятия" },
-    "part-p1-event-title": { it: "Giornata ecumenica per la pace", ru: "Экуменический день во имя мира" },
+    "part-p1-event-title": {
+      it: "La CAVALLERIA CRISTIANA per l'ECUMENISMO e la PACE",
+      ru: "ХРИСТИАНСКОЕ РЫЦАРСТВО во имя ЭКУМЕНИЗМА и МИРА"
+    },
     "part-p1-event-schedule": {
-      it: "Sabato 21 novembre 2026, ore 18.30 preghiera presso il Duomo di Montichiari, ore 20.30 cena presso Villa Fenaroli.",
-      ru: "В субботу, 21 ноября 2026 года, в 18.30 состоится молитва в соборе Монтикьяри, в 20.30 — ужин на вилле Фенароли."
+      it: "Duomo di Montichiari (BS), sabato 21 novembre 2026",
+      ru: "Собор Монтикьяри (провинция Брешия), суббота, 21 ноября 2026 года"
     },
-    "part-p1-event-speakers": {
-      it: "Interverranno: Monsignore Cesare Cancarini (Chiesa Cattolica Diocesi di Brescia), SE il Protosincello Padre Ambrogio Matsegora (Vicario Chiesa Ortodossa Russa in Italia), SAI il Principe Prof. Roberto Spreti Malmesi Griffo Focas di Cefalonia (Consultore Pontificia Accademia di Teologia e presidente Unione Bizantina), Padre Ambrogio e Padre Vladimir, autorità religiose cristiane, rappresentanti degli ordini cavallereschi e delle confraternite ufficialmente riconosciute, in comunione ecumenica, dalla Chiesa Cattolica e dalle Chiese Ortodosse canoniche.",
-      ru: "В мероприятии примут участие монсеньор Cesare Cancarini (Католическая церковь, епархия Брешии), Его Превосходительство протосинкелл отец Ambrogio Matsegora (викарий Русской православной церкви в Италии), Его Императорское Высочество князь, профессор Roberto Spreti Malmesi Griffo Focas di Cefalonia (консультант Папской академии богословия и президент Unione Bizantina), отец Ambrogio и отец Vladimir, представители христианского духовенства, рыцарских орденов и братств, официально признанных Католической церковью и каноническими православными церквями в духе экуменического общения."
+    "part-p1-event-lead": {
+      it: "UNA GIORNATA STORICA...",
+      ru: "ИСТОРИЧЕСКИЙ ДЕНЬ..."
     },
-    "part-p1-event-organizers": {
-      it: "L'evento è organizzato dalla Confraternita cavalleresca cattolica di Santa Giovanna d'Arco (Diocesi di Brescia) e dalla delegazione di Aristocrazia Europea di Bergamo e Brescia.",
-      ru: "Мероприятие организовано католическим рыцарским братством Святой Жанны д’Арк (епархия Брешии) и делегацией Aristocrazia Europea в Бергамо и Брешии."
+    "part-p1-event-p1": {
+      it: "",
+      ru: "Католические дамы и кавалеры Папского ордена Святого Григория Великого, Рыцарского ордена Святого Гроба Господня Иерусалимского, Суверенного военного Мальтийского ордена (SMOM), Священного Константиновского ордена Святого Георгия (Королевский дом Бурбонов), ордена Святых Маврикия и Лазаря (Королевский дом Савойи) и братства Святого Иакова Компостельского молились о единстве христиан и мире между народами вместе с сёстрами-дамами и братьями-кавалерами православной традиции из ордена Святых мучеников князей Давида и Константина, правителей Аргвети (Королевский дом Багратиони), ордена Дракона (Императорский дом Andronik Cantacuzino), братства Святого Иоанна Иерусалимского и Мальтийского, посвящённого царю Павлу I России (православные иоанниты), братства Святого Креста Грузии и христианского братства восточного обряда, называемого Экуменическим православным орденом Иерусалима (OEOH)."
     },
-    "part-p1-event-dinner": {
-      it: "Alla cena di gala e beneficenza interverranno anche il conte Avv. Cesare Vernarecci di Fossombrone dei principi d'Anjou d'Auvergne (presidente Aristocrazia Europea), il barone primo capitano Antonio Imperatore di Pellizzara, Garescio e Bulfara (delegato Russia Imperiale Terza Roma) e il barone Roberto Jonghi Lavarini freiherr von Urnavas.",
-      ru: "На благотворительном гала-ужине также будут присутствовать граф, адвокат Cesare Vernarecci di Fossombrone из рода князей d’Anjou d’Auvergne (президент Aristocrazia Europea), барон, первый капитан Antonio Imperatore di Pellizzara, Garescio e Bulfara (делегат Russia Imperiale Terza Roma) и барон Roberto Jonghi Lavarini freiherr von Urnavas."
+    "part-p1-event-p2": {
+      it: "",
+      ru: "В этой важной и глубоко прочувствованной церемонии, совместно совершённой католической и православной священническими делегациями во главе соответственно с Его Превосходительством монсеньором Cesare Cancarini и Его Превосходительством протосинкеллом отцом Ambrogio Matsegora (генеральным викарием Православной церкви в Италии), в соборе Монтикьяри с искренним участием собрались более четырёхсот верующих, включая представителей местных, гражданских, военных и дипломатических властей."
     },
-    "part-p1-event-signatories": {
-      it: "Firmato: il nobile dott. Giovanni dei conti Alborghetti (delegato di AE di Bergamo e Brescia) e il cavaliere dott. Mauro Noventa (priore della Confraternita di Santa Giovanna d'Arco).",
-      ru: "Подписали дворянин д-р Giovanni dei conti Alborghetti (делегат AE в Бергамо и Брешии) и кавалер д-р Mauro Noventa (приор братства Святой Жанны д’Арк)."
+    "part-p1-event-p3": {
+      it: "",
+      ru: "Организаторами этой сдержанной и символической экуменической инициативы диалога, общения и мира стали католическое рыцарское братство Святой Жанны д’Арк, подчинённое епархии Брешии и возглавляемое приором Mauro Noventa, и делегация международной христианской культурной ассоциации Aristocrazia Europea в Бергамо и Брешии, представленная известным местным предпринимателем, дворянином Giovanni dei conti Alborghetti."
     },
-    "part-p1-event-contact": { it: "Informazioni e adesioni", ru: "Информация и запись" },
+    "part-p1-event-p4": {
+      it: "",
+      ru: "В завершение этого дня подлинного христианского рыцарского братства состоялся изысканный благотворительный ужин на вилле XVIII века графов Fenaroli. Среди примерно семидесяти гостей присутствовали отец Adriano Frinchi, барон Antonio Imperatore (итальянский делегат международного культурного общества Amici della Russia Imperiale Terza Roma), барон Roberto Jonghi Lavarini, граф, профессор Giuseppe Manzoni di Chiosca e Poggiolo, Giovanni Trobetta из Centro Studi Multipolari R360, местные предприниматели и специалисты, представители местных правоцентристских политических сил."
+    },
+    "part-p1-event-p5": {
+      it: "",
+      ru: "«Благодарим Giovanni Alborghetti за столь прекрасную организацию этого значимого культурного события в поддержку экуменического диалога и мира в Украине и на Ближнем Востоке. Эта достойная инициатива впервые в Италии объединила в братском сотрудничестве членов законных рыцарских орденов, признанных Ватиканом и канонической Православной церковью», — заявили в заключительном совместном обращении граф, адвокат Cesare Vernarecci di Fossombrone (президент Aristocrazia Europea) и князь, профессор Roberto Spreti Malmesi Griffo Focas di Cefalonia (президент Unione Bizantina, преподаватель университета и член Папской академии богословия)."
+    },
     "part-p1-event-photo-1": {
-      it: "Locandina della preghiera per la pace nel mondo al Duomo di Montichiari del 21 novembre 2026",
-      ru: "Афиша молитвы о мире во всём мире в соборе Монтикьяри 21 ноября 2026 года"
+      it: "Collage della cerimonia ecumenica al Duomo di Montichiari, con i sacerdoti davanti all’altare e i fedeli in chiesa",
+      ru: "Коллаж экуменической церемонии в соборе Монтикьяри со священнослужителями перед алтарём и верующими в храме"
     },
-    "part-p1-event-photo-2": { it: "Facciata e cupola del Duomo di Montichiari", ru: "Фасад и купол собора Монтикьяри" },
-    "part-p1-event-photo-3": {
-      it: "Locandina della cena di beneficenza Insieme per la pace a Villa Fenaroli del 21 novembre 2026",
-      ru: "Афиша благотворительного ужина «Вместе во имя мира» на вилле Фенароли 21 ноября 2026 года"
+    "part-p1-event-post-1": {
+      it: "Post Facebook 1",
+      ru: "Публикация Facebook 1"
     },
-    "part-p1-event-photo-4": { it: "Villa Fenaroli con il cortile e il giardino", ru: "Вилла Фенароли с внутренним двором и садом" },
+    "part-p1-event-video-1": {
+      it: "Video Facebook 1",
+      ru: "Видео Facebook 1"
+    },
+    "part-p1-event-video-2": {
+      it: "Video Facebook 2",
+      ru: "Видео Facebook 2"
+    },
+    "part-p1-event-post-2": {
+      it: "Post Facebook 2",
+      ru: "Публикация Facebook 2"
+    },
     "part-p2-name": { it: "La Santa Rus’", ru: "Святая Русь" },
     "part-p2-desc": {
       it: "Un portale dedicato all’Ortodossia, alla spiritualità e alla cultura della Rus’. Nato per offrire al lettore italiano uno sguardo autentico sulla tradizione cristiana orientale, propone testi di riflessione teologica, agiografia, storia e cultura.",
@@ -1281,17 +1301,19 @@
     "part-p1-address": "The registered office and postal address are currently at the law firm of fellow member and lawyer Victor Jerkunica, at <a href=\"https://www.google.com/maps/search/Via+Lodovico+Settala+2%2FN?entry=gmail&amp;source=g\" target=\"_blank\" rel=\"noopener\">Via Lodovico Settala 2/N.1</a>, in the Porta Venezia area, 20124 Milan, Italy.",
     "part-secretariat": "Secretariat",
     "part-p1-events": "Events",
-    "part-p1-event-title": "Ecumenical Day for Peace",
-    "part-p1-event-schedule": "Saturday 21 November 2026, prayer at Montichiari Cathedral at 18.30, followed by dinner at Villa Fenaroli at 20.30.",
-    "part-p1-event-speakers": "Speakers and participants will include Monsignor Cesare Cancarini (Catholic Church, Diocese of Brescia), His Excellency Protosyncellus Father Ambrogio Matsegora (Vicar of the Russian Orthodox Church in Italy), His Imperial Highness Prince Professor Roberto Spreti Malmesi Griffo Focas di Cefalonia (Consultor to the Pontifical Academy of Theology and President of Unione Bizantina), Father Ambrogio and Father Vladimir, Christian religious authorities, and representatives of chivalric orders and confraternities officially recognised, in ecumenical communion, by the Catholic Church and the canonical Orthodox Churches.",
-    "part-p1-event-organizers": "The event is organised by the Catholic chivalric Confraternity of Saint Joan of Arc (Diocese of Brescia) and the Bergamo and Brescia delegation of Aristocrazia Europea.",
-    "part-p1-event-dinner": "The charitable gala dinner will also be attended by Count and lawyer Cesare Vernarecci di Fossombrone of the Princes d'Anjou d'Auvergne (President of Aristocrazia Europea), Baron First Captain Antonio Imperatore di Pellizzara, Garescio e Bulfara (Delegate of Russia Imperiale Terza Roma), and Baron Roberto Jonghi Lavarini freiherr von Urnavas.",
-    "part-p1-event-signatories": "Signed by nobleman Dr Giovanni dei conti Alborghetti (AE Delegate for Bergamo and Brescia) and Knight Dr Mauro Noventa (Prior of the Confraternity of Saint Joan of Arc).",
-    "part-p1-event-contact": "Information and registration",
-    "part-p1-event-photo-1": "Poster for the prayer for world peace at Montichiari Cathedral on 21 November 2026",
-    "part-p1-event-photo-2": "Facade and dome of Montichiari Cathedral",
-    "part-p1-event-photo-3": "Poster for the Together for Peace charity dinner at Villa Fenaroli on 21 November 2026",
-    "part-p1-event-photo-4": "Villa Fenaroli with its courtyard and garden",
+    "part-p1-event-title": "CHRISTIAN CHIVALRY for ECUMENISM and PEACE",
+    "part-p1-event-schedule": "Montichiari Cathedral (Brescia), Saturday 21 November 2026",
+    "part-p1-event-lead": "A HISTORIC DAY...",
+    "part-p1-event-p1": "Catholic dames and knights of the Pontifical Order of Saint Gregory the Great, the Equestrian Order of the Holy Sepulchre of Jerusalem, the Sovereign Military Order of Malta (SMOM), the Sacred Constantinian Order of Saint George (Royal House of Bourbon), the Order of Saints Maurice and Lazarus (Royal House of Savoy) and the Confraternity of Saint James of Compostela prayed for Christian unity and peace among peoples, together with their sister dames and brother knights of the Orthodox tradition from the Order of the Holy Martyr Princes David and Constantine, Dukes of Argveti (Royal House of Bagrationi), the Order of the Dragon (Imperial House of Andronik Cantacuzino), the Confraternity of Saint John of Jerusalem and Malta dedicated to Tsar Paul I of Russia (Orthodox Knights of Saint John), the Confraternity of the Holy Cross of Georgia and the Eastern-rite Christian confraternity named the Ecumenical Orthodox Order of Jerusalem (OEOH).",
+    "part-p1-event-p2": "On the occasion of this important and deeply felt ceremony, concelebrated by the Catholic and Orthodox priestly delegations led respectively by His Excellency Monsignor Cesare Cancarini and His Excellency Protosyncellus Father Ambrogio Matsegora (Vicar General of the Orthodox Church in Italy), Montichiari Cathedral welcomed the wholehearted participation of more than four hundred faithful, including local, civil, military and diplomatic authorities.",
+    "part-p1-event-p3": "This restrained and symbolic ecumenical initiative of dialogue, sharing and peace was organised by the Catholic chivalric Confraternity of Saint Joan of Arc, under the Diocese of Brescia and led by Prior Mauro Noventa, and by the Bergamo and Brescia delegation of the international Christian cultural association Aristocrazia Europea, represented by the well-known local entrepreneur and nobleman Giovanni dei conti Alborghetti.",
+    "part-p1-event-p4": "This day of authentic Christian chivalric brotherhood concluded with an elegant charity dinner at the eighteenth-century villa of the Counts Fenaroli. Among the approximately seventy guests were Father Adriano Frinchi, Baron Antonio Imperatore (Italian delegate of the international cultural circle Amici della Russia Imperiale Terza Roma), Baron Roberto Jonghi Lavarini, Count Professor Giuseppe Manzoni di Chiosca e Poggiolo, Giovanni Trobetta of Centro Studi Multipolari R360, local entrepreneurs and professionals, and representatives of the local centre-right political parties.",
+    "part-p1-event-p5": "“We thank Giovanni Alborghetti for organising this important cultural event so well in support of ecumenical dialogue and peace in Ukraine and the Middle East. This worthy initiative saw, for the first time in Italy, fraternal cooperation among members of legitimate chivalric orders recognised by the Vatican and the canonical Orthodox Church,” stated Count and lawyer Cesare Vernarecci di Fossombrone (President of Aristocrazia Europea) and Prince Professor Roberto Spreti Malmesi Griffo Focas di Cefalonia (President of Unione Bizantina, university lecturer and member of the Pontifical Academy of Theology) in a concluding joint statement.",
+    "part-p1-event-photo-1": "Collage of the ecumenical ceremony at Montichiari Cathedral, with clergy before the altar and the faithful in the church",
+    "part-p1-event-post-1": "Facebook post 1",
+    "part-p1-event-video-1": "Facebook video 1",
+    "part-p1-event-video-2": "Facebook video 2",
+    "part-p1-event-post-2": "Facebook post 2",
     "part-p2-name": "La Santa Rus’",
     "part-p2-desc": "A portal dedicated to Orthodoxy, spirituality and the culture of Rus’. Created to offer Italian readers an authentic view of the Eastern Christian tradition, it features theological reflections, hagiography, history and culture.",
     "part-p2-blog": "Father Adriano Frinchi’s blog",
