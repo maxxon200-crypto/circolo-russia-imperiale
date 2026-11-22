@@ -308,7 +308,7 @@
 
     /* --- Navigazione --- */
     "nav-home":         { it: "Home", ru: "Главная" },
-    "nav-storia":       { it: "Storia dell'Impero", ru: "История Империи" },
+    "nav-storia":       { it: "Storia dell'Impero Russo", ru: "История Российской империи" },
     "nav-eventi":       { it: "Eventi e attivita", ru: "Мероприятия" },
     "nav-attualita":    { it: "Attualità", ru: "Актуальное" },
     "nav-feste":        { it: "Feste e ricorrenze", ru: "Праздники и памятные даты" },
@@ -538,7 +538,7 @@
       "<p>Сегодня законной наследницей и признанной Главой Российского Императорского Дома является Её Императорское Высочество великая княгиня Мария Владимировна Романова, родившаяся в 1953 году и ранее состоявшая в браке с принцем Францем Вильгельмом Гогенцоллерном Прусским. У супругов, разведённых в 1985 году, в 1981 году родился наследник, цесаревич Его Императорское Высочество великий князь Георгий Михайлович Романов. Великий князь, ныне гражданин России и десятый в линии наследования германского императорского престола, в 2021 году женился на итальянской графине Ребекке Беттарини, принявшей в православии имя Виктории Романовой. У супругов двое детей: князь Александр, родившийся 21 октября 2022 года, и княжна Кира Леонида, родившаяся 2 июня 2025 года.</p>" +
       "<p>Эту линию престолонаследия оспаривал князь Николай Романович Романов, умерший в 2014 году без сыновей и опиравшийся на так называемое &laquo;Объединение членов рода Романовых&raquo;. Представителем этой ветви является князь Алексис Андреевич Романов, гражданин США, живущий в Соединённых Штатах.</p>"
     },
-    "art-torna-storia": { it: "Torna a Storia dell'Impero", ru: "Вернуться к Истории Империи" },
+    "art-torna-storia": { it: "Torna a Storia dell'Impero Russo", ru: "Вернуться к истории Российской империи" },
 
     /* --- Feste e ricorrenze: calendario + Borodino / Martirio / San Nicola --- */
     "cat-ricorrenze": { it: "Ricorrenze", ru: "Памятные даты" },
@@ -1245,7 +1245,7 @@
       "<h2>The Imperial House today</h2>" +
       "<p>Today the legitimate descendant and recognised Head of the Imperial House of Romanov is Her Imperial Highness Grand Duchess Maria Vladimirovna Romanova, born in 1953 and formerly married to Prince Franz Wilhelm Hohenzollern of Prussia. The couple, who divorced in 1985, had an heir in 1981: His Imperial Highness Grand Duke George Mikhailovich Romanov, the tsarevich. Grand Duke George, now a Russian citizen and tenth in the line of succession to the German imperial throne, married the Italian Countess Rebecca Bettarini in 2021; she took the Orthodox name Victoria Romanova. The couple have two children: Prince Alexander, born on 21 October 2022, and Princess Kira Leonida, born on 2 June 2025.</p>" +
       "<p>This line of succession was disputed by Prince Nicholas Romanovich Romanov, who died in 2014 without sons and was associated with the self-styled &ldquo;Romanov Family Association&rdquo;. The representative of this branch is Prince Alexis Andreevich Romanov, a United States citizen living in America.</p>",
-    "art-torna-storia": "Back to History of the Empire",
+    "art-torna-storia": "Back to History of the Russian Empire",
     "soon-date": "Forthcoming",
     "soon-title": "New study",
     "soon-excerpt": "Article in preparation. Available shortly in this section.",
@@ -1418,7 +1418,7 @@
 
     "nav-home": "Home",
     "nav-circolo": "The Circle",
-    "nav-storia": "History of the Empire",
+    "nav-storia": "History of the Russian Empire",
     "nav-eventi": "Events and activities",
     "nav-attualita": "News",
     "nav-feste": "Feasts and commemorations",
