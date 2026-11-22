@@ -1106,6 +1106,7 @@ main > .articolo {
    ===================================================================== */
 .partner-title,
 .partner .partner-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; line-height: 1.2; margin: 0 0 .7rem; }
+#aristocrazia-europea .partner-title { margin-bottom: 1.4rem; }
 .partner-featured .eyebrow,
 .partner .split__text > .eyebrow { margin: 0 0 1.4rem; }
 .partner-desc,
