@@ -33,8 +33,22 @@
 
   if (toggle && nav) {
     var mobileNav = window.matchMedia("(max-width: 1080px)");
+    var submenus = nav.querySelectorAll(".nav-dropdown");
+
+    function closeSubmenus(except) {
+      submenus.forEach(function (submenu) {
+        if (submenu !== except) { submenu.open = false; }
+      });
+    }
+
+    submenus.forEach(function (submenu) {
+      submenu.addEventListener("toggle", function () {
+        if (submenu.open) { closeSubmenus(submenu); }
+      });
+    });
 
     var setNavState = function (open) {
+      closeSubmenus();
       nav.classList.toggle("open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Chiudi il menu" : "Apri il menu");
@@ -55,12 +69,23 @@
     });
     // Chiudi il menu dopo aver scelto una voce (su mobile)
     nav.addEventListener("click", function (e) {
-      if (e.target.tagName === "A" && nav.classList.contains("open")) {
-        setNavState(false);
+      if (e.target.closest("a")) {
+        closeSubmenus();
+        if (nav.classList.contains("open")) { setNavState(false); }
       }
     });
 
+    document.addEventListener("click", function (e) {
+      if (!nav.contains(e.target)) { closeSubmenus(); }
+    });
+
     document.addEventListener("keydown", function (e) {
+      var submenu = nav.querySelector(".nav-dropdown[open]");
+      if (e.key === "Escape" && submenu) {
+        submenu.open = false;
+        submenu.querySelector("summary").focus();
+        return;
+      }
       if (e.key === "Escape" && nav.classList.contains("open")) {
         setNavState(false);
         toggle.focus();
@@ -129,7 +154,10 @@
       '<button class="payment-prompt__close" type="button" data-i18n-attr="aria-label:payment-close"><span aria-hidden="true">×</span></button>' +
       '<h2 class="payment-title" id="payment-prompt-title" data-i18n="payment-title"></h2>' +
       '<p data-i18n="payment-text"></p>' +
-      '<a class="btn btn--primary" href="https://www.paypal.com/ncp/payment/2KEMKNKA334T6" target="_blank" rel="noopener noreferrer" data-i18n="payment-action"></a>';
+      '<div class="payment-actions">' +
+      '<a class="btn btn--primary" href="tesseramento.html#domanda-di-adesione" data-i18n="payment-join-action"></a>' +
+      '<a class="btn btn--ghost" href="https://www.paypal.com/ncp/payment/2KEMKNKA334T6" target="_blank" rel="noopener noreferrer" data-i18n="payment-action"></a>' +
+      '</div>';
     document.body.appendChild(prompt);
 
     var shown = false;
@@ -158,6 +186,7 @@
         previousFocus.focus({ preventScroll: true });
       }
       document.removeEventListener("click", checkPrompt);
+      document.removeEventListener("toggle", checkPrompt, true);
       document.removeEventListener("focusin", onFocus);
       document.removeEventListener("focusout", onBlur);
       document.removeEventListener("visibilitychange", checkPrompt);
@@ -170,7 +199,7 @@
     function checkPrompt() {
       positionPrompt();
       var inForm = document.activeElement && document.activeElement.closest("form");
-      var menuOpen = document.querySelector("#main-nav.open");
+      var menuOpen = document.querySelector("#main-nav.open, #main-nav .nav-dropdown[open]");
       if (shown) {
         if (inForm || menuOpen) { dismissPrompt(); }
         return;
@@ -194,8 +223,11 @@
       if (e.key === "Escape" && !prompt.hidden) { dismissPrompt(); }
     }
     prompt.querySelector("button").addEventListener("click", dismissPrompt);
-    prompt.querySelector("a").addEventListener("click", dismissPrompt);
+    prompt.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", dismissPrompt);
+    });
     document.addEventListener("click", checkPrompt);
+    document.addEventListener("toggle", checkPrompt, true);
     document.addEventListener("focusin", onFocus);
     document.addEventListener("focusout", onBlur);
     document.addEventListener("visibilitychange", checkPrompt);
