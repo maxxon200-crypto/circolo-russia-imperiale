@@ -963,6 +963,7 @@ main > .articolo {
 
 /* griglia fotografica (galleria): foto intere, mai tagliate */
 .foto-colonne { columns: 3; column-gap: 1.2rem; }
+.foto-colonne--two { columns: 2; }
 .foto-colonne figure { margin: 0 0 1.2rem; break-inside: avoid; }
 .foto-colonne img { width: 100%; height: auto; border: 1px solid var(--oro-soft); display: block; }
 
@@ -1129,6 +1130,8 @@ main > .articolo {
 #ordine-giovannita,
 #ordine-del-drago,
 #chiesa-ortodossa-russa,
+#monachesimo-ortodosso-italia,
+#vangelo-della-domenica,
 #domanda-di-adesione { scroll-margin-top: 8rem; }
 .partner .split__media { max-width: 30rem; }
 .partner--detailed { align-items: start; }

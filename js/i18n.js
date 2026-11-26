@@ -659,6 +659,33 @@
 
     /* --- Chiesa Ortodossa Russa --- */
     "chiesa-title": { it: "Chiesa Ortodossa Russa in Italia", ru: "Русская Православная Церковь в Италии" },
+    "chiesa-monachesimo-title": { it: "Il monachesimo ortodosso in Italia", ru: "Православное монашество в Италии" },
+    "chiesa-monachesimo-photo-4": {
+      it: "Clero e fedeli davanti a una chiesa, in un fotogramma del video sul monachesimo ortodosso in Italia",
+      ru: "Духовенство и прихожане у храма: кадр из видео о православном монашестве в Италии"
+    },
+    "chiesa-monachesimo-photo-5": {
+      it: "Lo ieromonaco Siluan durante l’intervista sul monachesimo ortodosso in Italia",
+      ru: "Иеромонах Силуан во время интервью о православном монашестве в Италии"
+    },
+    "chiesa-monachesimo-intro": {
+      it: "Come si vive da monaci fuori dalle mura di un monastero? Come si tengono insieme la vocazione monastica, il ministero sacerdotale e il lavoro nell'Europa occidentale?",
+      ru: "Как живут монахи за пределами монастырских стен? Как совмещать монашеское призвание, священническое служение и работу в Западной Европе?"
+    },
+    "chiesa-monachesimo-racconto": {
+      it: "Lo ieromonaco Siluan (Yaroslavtsev), rettore della chiesa dei santi Sergio di Radonež, Serafino di Sarov e Vincenzo di Saragozza a Milano, racconta il suo cammino verso il monachesimo e la benedizione ricevuta dallo starec Naum. Spiega anche perché la vita spirituale va custodita in qualunque circostanza esteriore.",
+      ru: "Иеромонах Силуан (Ярославцев), настоятель храма святых Сергия Радонежского, Серафима Саровского и Викентия Сарагосского в Милане, рассказывает о своём пути к монашеству и благословении, полученном от старца Наума. Он также объясняет, почему духовную жизнь необходимо хранить при любых внешних обстоятельствах."
+    },
+    "chiesa-monachesimo-fonte": {
+      it: "Il video è stato pubblicato dal Dipartimento sinodale per i monasteri e il monachesimo della Chiesa ortodossa russa.",
+      ru: "Видео опубликовано Синодальным отделом по монастырям и монашеству Русской Православной Церкви."
+    },
+    "chiesa-monachesimo-sottotitoli": {
+      it: "Sottotitoli italiani a cura di «Ortodossia in Italia / Православие в Италии».",
+      ru: "Итальянские субтитры подготовлены «Ortodossia in Italia / Православие в Италии»."
+    },
+    "chiesa-monachesimo-facebook": { it: "Guarda su Facebook", ru: "Смотреть в Facebook" },
+    "chiesa-monachesimo-youtube": { it: "Guarda su YouTube", ru: "Смотреть на YouTube" },
     "chiesa-vangelo-title": { it: "Vangelo della Domenica", ru: "Воскресное Евангелие" },
     "chiesa-vangelo-image": {
       it: "Gesù prende per mano la figlia di Giàiro nell’illustrazione del Vangelo della Domenica",
@@ -1145,6 +1172,15 @@
     "ga-1812-title": "Conference on the Patriotic War of 1812",
     "ga-1812-caption": "Speakers and guests at the conference on the Patriotic War of 1812 in Milan",
     "chiesa-title": "Russian Orthodox Church in Italy",
+    "chiesa-monachesimo-title": "Orthodox monasticism in Italy",
+    "chiesa-monachesimo-photo-4": "Clergy and faithful outside a church, in a still from the video on Orthodox monasticism in Italy",
+    "chiesa-monachesimo-photo-5": "Hieromonk Siluan during the interview on Orthodox monasticism in Italy",
+    "chiesa-monachesimo-intro": "How do monks live outside the walls of a monastery? How do they bring together a monastic vocation, priestly ministry and work in Western Europe?",
+    "chiesa-monachesimo-racconto": "Hieromonk Siluan (Yaroslavtsev), rector of the Church of Saints Sergius of Radonezh, Seraphim of Sarov and Vincent of Saragossa in Milan, talks about his journey towards monasticism and the blessing he received from Elder Naum. He also explains why spiritual life must be safeguarded whatever the external circumstances.",
+    "chiesa-monachesimo-fonte": "The video was published by the Synodal Department for Monasteries and Monasticism of the Russian Orthodox Church.",
+    "chiesa-monachesimo-sottotitoli": "Italian subtitles by «Ortodossia in Italia / Православие в Италии».",
+    "chiesa-monachesimo-facebook": "Watch on Facebook",
+    "chiesa-monachesimo-youtube": "Watch on YouTube",
     "chiesa-vangelo-title": "Sunday Gospel",
     "chiesa-vangelo-image": "Jesus taking Jairus’s daughter by the hand in the illustration for the Sunday Gospel",
     "chiesa-vangelo-date": "9 November / 22 November",
