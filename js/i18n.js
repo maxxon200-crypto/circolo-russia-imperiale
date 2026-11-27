@@ -848,6 +848,44 @@
     "part-p2-books-link": { it: "I libri su Amazon", ru: "Книги на Amazon" },
     "part-p3-name": { it: "Ordine Giovannita", ru: "Орден иоаннитов" },
     "part-p4-name": { it: "Ordine del Drago", ru: "Орден Дракона" },
+    "part-p4-emblem": {
+      it: "Stemma dell’Ordine del Drago con drago verde, croce rossa e manto porpora",
+      ru: "Герб Ордена Дракона с зелёным драконом, красным крестом и пурпурной мантией"
+    },
+    "part-p4-photo": {
+      it: "La Principessa Silvia Andronik Cantacuzino in una fotografia con lo stemma dell’Ordine del Drago",
+      ru: "Княгиня Сильвия Андроник Кантакузино на фотографии с гербом Ордена Дракона"
+    },
+    // Come per gli articoli lunghi, l'italiano resta nell'HTML e viene ripristinato dal selettore lingua.
+    "part-p4-p1": {
+      it: "",
+      ru: "Орден Дракона (<em>Ordo Draconis</em>) был учреждён в 1387 году Сигизмундом Люксембургским, королём Венгрии и императором Священной Римской империи германской нации, с апостольского благословения папы Евгения IV как новый военно-политический инструмент для борьбы с османским наступлением в Карпатах и на Балканах. Сигизмунд избрал святыми покровителями святого Георгия и святого архангела Михаила, к которым позднее добавилась святая Маргарита Антиохийская. В его рядах сражались как католики, так и православные, объединённые общей волей защищать христианство."
+    },
+    "part-p4-p2": {
+      it: "",
+      ru: "Европейская аристократия откликнулась на призыв к оружию, начав новый оборонительный крестовый поход на юго-востоке Европы. Орден быстро распространился в Центральной Европе и Подунавье (Богемии, Венгрии, Польше, Албании и Дунайских княжествах), а затем в Германии, Австрии, Италии и Испании."
+    },
+    "part-p4-p3": {
+      it: "",
+      ru: "Замысел оказался успешным: христианские князья, государи и феодальные сеньоры этих земель, нередко соперничавшие и враждовавшие между собой, объединились в Ордене Дракона и сумели остановить турецкое военное вторжение и исламизацию Восточной Европы, особенно в период с конца XIV до середины XV века. Однако Ордену не удалось предотвратить ослабление и последующее падение Константинопольской империи, в том числе, следует сказать, из-за отсутствия в тот момент большинства католических держав."
+    },
+    "part-p4-p4": {
+      it: "",
+      ru: "Во всяком случае, особенно с конца XIV до первой половины XV века, рыцари Дракона проливали кровь в часто отчаянной, но столь же мужественной борьбе во всех крупных сражениях против турок: при Ровине (1395), Никополе (1396), Ангоре (1402), Варне (1444), во второй битве на Косовом поле (1448). В некоторых из этих сражений Орден был практически уничтожен, но всегда сумел восстановить свои ряды. Даже после падения Константинополя в 1453 году он продолжал играть важную роль в защите самой Венгрии, Хорватии, Сербии, Румынии и Албании вплоть до конца XVII века."
+    },
+    "part-p4-p5": {
+      it: "",
+      ru: "Кроме уже упомянутого основателя Сигизмунда Люксембургского, в Орден входили и под его знамёнами сражались выдающиеся европейские деятели той эпохи: Янош Хуньяди, регент Венгерского королевства и воевода Трансильвании; Влад II Дракул, воевода Валахии; его сын Влад III «Цепеш», воевода Валахии, позднее известный как «граф Дракула»; Георгий Кастриоти Скандербег, король Албании; Эрнст I Габсбург, герцог Штирии, Каринтии и Крайны, прозванный «Железным герцогом»; великий князь литовский Витовт. Среди итальянцев можно вспомнить Альфонсо V, короля Арагона и Неаполя; Фердинанда I Арагонского, короля Неаполя; Филиппо Сколари, известного также как Пиппо Спано, знаменитого предводителя наёмников; и Панталеоне Бальбо, посла Венецианской республики при императорском дворе."
+    },
+    "part-p4-p6": {
+      it: "",
+      ru: "В 1660 году, с благословения Вселенского патриарха Мефодия III, покровительство Ордену перешло по наследству к князю Константину Кантакузино, румынскому дворянину византийского фанариотского происхождения. Его род происходил от морейских деспотов и императора Иоанна VI Кантакузина и впоследствии породнился с тремя другими великими византийскими императорскими династиями: Андрониками, Ангелами Комнинами и Палеологами."
+    },
+    "part-p4-p7": {
+      it: "",
+      ru: "Сегодня Орден находится под покровительством княгини Сильвии Марии Андроник Кантакузино, главы Императорского дома, потомка князя Константина и гражданки Румынии. В Италии Орден представлен севастом доном Антонио Джузеппе Раньери Императоре, бароном Пеллиццары, Гарешо и Бульфары; первым викарием Cavaler Dragon Domn Romulus Popescu; и вторым викарием донной Кристиной Витторией Эггер, графиней Бертотти Таталов и дамой Савойского дома."
+    },
+    "part-p4-facebook": { it: "Ordine del Drago su Facebook", ru: "Орден Дракона в Facebook" },
 
     /* --- Banner cookie (informativo) --- */
     "cb-text": { it: "Questo sito utilizza solo cookie tecnici necessari al suo funzionamento.", ru: "Этот сайт использует только технические файлы cookie, необходимые для его работы." },
@@ -1367,6 +1405,16 @@
     "part-p2-books-link": "Books on Amazon",
     "part-p3-name": "Order of Saint John",
     "part-p4-name": "Order of the Dragon",
+    "part-p4-emblem": "Emblem of the Order of the Dragon with a green dragon, a red cross and a purple mantle",
+    "part-p4-photo": "Princess Silvia Andronik Cantacuzino in a photograph with the emblem of the Order of the Dragon",
+    "part-p4-p1": "The Order of the Dragon (<em>Ordo Draconis</em>) was established in 1387 by Sigismund of Luxembourg, King of Hungary and Holy Roman Emperor, with the apostolic blessing of Pope Eugene IV, as a new political and military instrument to combat the Ottoman advance in the Carpathians and the Balkans. Sigismund chose Saint George and Saint Michael the Archangel as its patron saints; Saint Margaret of Antioch was added later. Both Catholics and Orthodox Christians served in its ranks, united by a common determination to defend Christianity.",
+    "part-p4-p2": "The European aristocracy answered the call to arms by launching a new defensive crusade in south-eastern Europe. The Order spread rapidly through Central Europe and the Danube region (Bohemia, Hungary, Poland, Albania and the Danubian Principalities), and then into Germany, Austria, Italy and Spain.",
+    "part-p4-p3": "The undertaking succeeded because the Christian princes, sovereigns and feudal lords of those lands, often rivals and in conflict with one another, joined in the Order of the Dragon and managed to halt the Turkish military invasion and the Islamisation of Eastern Europe, especially between the end of the fourteenth and the middle of the fifteenth century. It did not, however, prevent the weakening and eventual fall of the Empire of Constantinople, in part, it must be said, because most Catholic powers were absent at that moment.",
+    "part-p4-p4": "In any event, particularly from the late 1300s to the first half of the 1400s, the Knights of the Dragon shed their blood in a struggle that was often desperate but equally courageous, in all the major battles against the Turks: Rovine (1395), Nicopolis (1396), Angora (1402), Varna (1444) and the second Battle of Kosovo Polje (1448). In some of these military encounters the Order was virtually annihilated, yet it always managed to rebuild its ranks. Even after the fall of Constantinople in 1453, it continued to play an important role in the defence of Hungary itself, Croatia, Serbia, Romania and Albania, until the end of the seventeenth century.",
+    "part-p4-p5": "Besides its founder Sigismund of Luxembourg, distinguished European figures of that era belonged to the Order and fought under its banner: John Hunyadi, Regent of the Kingdom of Hungary and Voivode of Transylvania; Vlad II Dracul, Voivode of Wallachia; his son Vlad III “the Impaler”, Voivode of Wallachia, later known as “Count Dracula”; George Kastrioti Skanderbeg, King of Albania; Ernest I of Habsburg, Duke of Styria, Carinthia and Carniola, known as “the Iron Duke”; and Grand Duke Vytautas of Lithuania. Among the Italians were Alfonso V, King of Aragon and Naples; Ferdinand I of Aragon, King of Naples; Filippo Scolari, also known as Pippo Spano, a celebrated mercenary commander; and Pantaleone Balbo, Ambassador of the Republic of Venice to the imperial court.",
+    "part-p4-p6": "In 1660, with the blessing of Ecumenical Patriarch Methodius III, protection of the Order passed by inheritance to Prince Constantine Cantacuzino, a Romanian nobleman of Byzantine Phanariot origin. His family descended from the Despots of the Morea and Emperor John VI Kantakouzenos and later became related to three other great Byzantine imperial families: the Andronikos, the Angelos Komnenos and the Palaiologos.",
+    "part-p4-p7": "Today the Order is under the protection of Princess Silvia Maria Andronik Cantacuzino, Head of the Imperial House, a descendant of Prince Constantine and a Romanian citizen. In Italy, the Order is represented by Sebaste Don Antonio Giuseppe Ranieri Imperatore, Baron of Pellizzara, Garescio and Bulfara; by the First Vicar, Cavaler Dragon Domn Romulus Popescu; and by the Second Vicar, Donna Cristina Vittoria Egger, Countess Bertotti Tatalov and Dame of the House of Savoy.",
+    "part-p4-facebook": "Order of the Dragon on Facebook",
     "te-h1": "The steps to becoming a member",
     "te-step1": "Complete and submit your membership application.",
     "te-step2": "Pay the membership fee: €50 supporting member, €20 ordinary member, €10 junior member (up to 21 years old).",

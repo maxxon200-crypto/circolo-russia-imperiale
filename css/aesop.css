@@ -1134,6 +1134,21 @@ main > .articolo {
 #vangelo-della-domenica,
 #domanda-di-adesione { scroll-margin-top: 8rem; }
 .partner .split__media { max-width: 30rem; }
+.partner-photos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  max-width: var(--read);
+  margin: 1.6rem auto 2rem;
+}
+.partner-photos figure { margin: 0; }
+.partner-photos img { width: 100%; height: auto; }
+.partner-photos .partner-photos__emblem { width: 100%; max-width: 14rem; justify-self: center; }
+@media (max-width: 640px) {
+  .partner-photos { grid-template-columns: minmax(0, 1fr); }
+  .partner-photos .partner-photos__emblem { max-width: 12rem; }
+}
 .partner--detailed { align-items: start; }
 .partner-books { grid-column: 1 / -1; max-width: var(--read); }
 .partner-books .split__media { margin-bottom: 2rem; }

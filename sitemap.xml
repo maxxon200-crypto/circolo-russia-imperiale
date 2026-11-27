@@ -64,6 +64,12 @@
     <image:image>
       <image:loc>https://www.amicidellarussiaimperiale-terzaroma.it/assets/ADRIANO.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://www.amicidellarussiaimperiale-terzaroma.it/assets/ordine%20del%20drago.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.amicidellarussiaimperiale-terzaroma.it/assets/principessa-Silvia-Lucia-Andronik-Cantacuzino.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.amicidellarussiaimperiale-terzaroma.it/storia.html</loc>
