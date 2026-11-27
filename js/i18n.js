@@ -820,6 +820,10 @@
     },
     "part-p2-blog": { it: "Blog di padre Adriano Frinchi", ru: "Блог отца Адриано Фринки" },
     "part-p2-image": {
+      it: "Logo di La Santa Rus’ con cupola rossa, croce ortodossa e nome del portale",
+      ru: "Логотип «Святая Русь» с красным куполом, православным крестом и названием портала"
+    },
+    "part-p2-cover": {
       it: "La Santa Rus’, fede, tradizione e cultura, con una processione cristiana sulla riva di un fiume",
       ru: "«Святая Русь», вера, традиция и культура, с изображением крестного хода на берегу реки"
     },
@@ -1394,7 +1398,8 @@
     "part-p2-name": "La Santa Rus’",
     "part-p2-desc": "A portal dedicated to Orthodoxy, spirituality and the culture of Rus’. Created to offer Italian readers an authentic view of the Eastern Christian tradition, it features theological reflections, hagiography, history and culture.",
     "part-p2-blog": "Father Adriano Frinchi’s blog",
-    "part-p2-image": "La Santa Rus’, faith, tradition and culture, with a Christian procession on a riverbank",
+    "part-p2-image": "La Santa Rus’ logo with a red dome, an Orthodox cross and the name of the portal",
+    "part-p2-cover": "La Santa Rus’, faith, tradition and culture, with a Christian procession on a riverbank",
     "part-p2-books-title": "Books by Father Adriano Frinchi",
     "part-p2-books-intro": "The Orthodox faith is not only a tradition to learn about, but a life to be lived.",
     "part-p2-books-guide": "Through these publications, Father Adriano Frinchi guides readers in discovering the spirituality, history and experience of the Orthodox Church:",
