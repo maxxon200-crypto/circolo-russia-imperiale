@@ -743,8 +743,12 @@
     "part-desc-soon": { it: "Descrizione in arrivo.", ru: "Описание скоро." },
     "part-scopri":    { it: "Scopri di più", ru: "Подробнее" },
     "part-p1-name": { it: "Aristocrazia Europea", ru: "Европейская аристократия" },
+    "part-p1-image": {
+      it: "Aristocrazia Europea: aquila bicipite coronata sullo sfondo e stemma circolare giallo in primo piano",
+      ru: "«Европейская аристократия»: коронованный двуглавый орёл на заднем плане и круглый жёлтый герб на переднем"
+    },
     "part-p1-intro": {
-      it: "<span class=\"partner-intro-name\">Aristocrazia Europea</span> è una associazione culturale internazionale cristiana (ecumenica, apolitica e non a fini di lucro) fondata il 25 dicembre 2015, legalmente costituita e ufficialmente riconosciuta da Stato Italiano, Regione Lombardia, Unione Europea e Federazione Russa, che si occupa di storia, cultura e tradizioni (cavalleresche, nobiliari e araldiche), dimore storiche e arte, filosofia e metapolitica, alta formazione universitaria e beneficenza.",
+      it: "<span class=\"partner-intro-name\">Aristocrazia Europea</span> Associazione culturale internazionale cristiana (ecumenica, apolitica e non a fini di lucro) fondata il 25 dicembre 2015, legalmente costituita e ufficialmente riconosciuta da Stato Italiano, Regione Lombardia, Unione Europea e Federazione Russa, che si occupa di storia, cultura e tradizioni (cavalleresche, nobiliari e araldiche), dimore storiche e arte, filosofia e metapolitica, alta formazione universitaria e beneficenza.",
       ru: "<span class=\"partner-intro-name\">Aristocrazia Europea</span> — международная христианская культурная ассоциация (экуменическая, аполитичная и некоммерческая), основанная 25 декабря 2015 года, юридически учреждённая и официально признанная Итальянским государством, регионом Ломбардия, Европейским союзом и Российской Федерацией. Ассоциация занимается историей, культурой и традициями (рыцарскими, дворянскими и геральдическими), историческими резиденциями и искусством, философией и метаполитикой, углублённым университетским образованием и благотворительностью."
     },
     "part-p1-members": {
@@ -1376,6 +1380,7 @@
     "tdc-sub": "A project by Oxana Senchenko Pasqualino di Marineo",
     "part-tdc-desc": "A project of cultural outreach devoted to the dialogue between Italy and Russia: artists, architects and thinkers who over the centuries have interwoven the two cultures, presented with historical rigour and without stereotypes. Conceived by Oxana Senchenko, born in Moscow and living in Italy for over thirty years.",
     "part-p1-name": "European Aristocracy",
+    "part-p1-image": "Aristocrazia Europea: a crowned double-headed eagle in the background and a round yellow emblem in the foreground",
     "part-p1-intro": "<span class=\"partner-intro-name\">Aristocrazia Europea</span> is an international Christian cultural association (ecumenical, apolitical and non-profit), founded on 25 December 2015, legally established and officially recognised by the Italian State, the Lombardy Region, the European Union and the Russian Federation. Its activities cover history, culture and traditions (chivalric, noble and heraldic), historic residences and art, philosophy and metapolitics, advanced university education and charity.",
     "part-p1-members": "AE has over 1,200 members (half of them Italian, with over 300 supporting members, including princes, clergy, military personnel, diplomats, university lecturers, academics, artists, intellectuals, journalists and owners of historic residences).",
     "part-p1-board": "The President for 2025-2030 is lawyer Cesare Vernarecci di Fossombrone, the President Emeritus is Dr Guido Farneti Merenda Salecchi, and the Vice Presidents are Dr Lali Panchulidze and Dr Carlo Alberto Biggini. The First Catholic Chaplain is Monsignor Professor Paolo Cartolari.",

@@ -1110,12 +1110,15 @@ main > .articolo {
 #aristocrazia-europea .partner-title,
 #la-santa-rus .partner-title { margin-bottom: 1.4rem; text-align: center; }
 #la-santa-rus > .split__media > .eyebrow { text-align: center; margin-inline: auto; }
+#aristocrazia-europea,
 #la-santa-rus { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+#aristocrazia-europea > .split__media { width: 100%; justify-self: center; }
+#aristocrazia-europea > .split__text,
 #la-santa-rus > .split__media,
 #la-santa-rus > .split__text,
 #la-santa-rus > .partner-books { width: 100%; max-width: var(--read); justify-self: center; }
 #la-santa-rus .partner-photos { margin-bottom: 0; }
-.partner-intro-name { font-size: 1.35em; }
+.partner-intro-name { display: block; font-size: 1.35em; margin-bottom: .7rem; }
 .partner-featured .eyebrow,
 .partner .split__text > .eyebrow { margin: 0 0 1.4rem; }
 .partner-desc,
