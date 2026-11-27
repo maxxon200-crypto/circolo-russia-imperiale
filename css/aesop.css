@@ -1109,7 +1109,7 @@ main > .articolo {
 .partner .partner-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; line-height: 1.2; margin: 0 0 .7rem; }
 #aristocrazia-europea .partner-title,
 #la-santa-rus .partner-title { margin-bottom: 1.4rem; text-align: center; }
-#la-santa-rus > .split__media > .eyebrow { text-align: center; }
+#la-santa-rus > .split__media > .eyebrow { text-align: center; margin-inline: auto; }
 #la-santa-rus { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
 #la-santa-rus > .split__media,
 #la-santa-rus > .split__text,
